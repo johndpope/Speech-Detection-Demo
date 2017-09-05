@@ -1,0 +1,254 @@
+\section{cont\_\-ad\_\-t Struct Reference}
+\label{structcont__ad__t}\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}}
+Continuous listening module or object Continuous listening module or object.  
+
+
+{\tt \#include $<$cont\_\-ad.h$>$}
+
+\subsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+int32($\ast$ \textbf{adfunc} )(ad\_\-rec\_\-t $\ast${\bf ad}, int16 $\ast$buf, int32 max)\label{structcont__ad__t_adf8527490391e283821a014c8645415}
+
+\item 
+ad\_\-rec\_\-t $\ast$ {\bf ad}
+\begin{CompactList}\small\item\em A/D device argument for adfunc. \item\end{CompactList}\item 
+int32 {\bf rawmode}\label{structcont__ad__t_7726e8ea1bcca281a39c4b27bbb115e3}
+
+\begin{CompactList}\small\item\em Pass all input data through, without filtering silence. \item\end{CompactList}\item 
+int16 $\ast$ {\bf adbuf}\label{structcont__ad__t_719f5c6816cd0da0a31930a2e572b933}
+
+\begin{CompactList}\small\item\em Circular buffer for maintaining A/D data read until consumed. \item\end{CompactList}\item 
+int32 {\bf state}
+\begin{CompactList}\small\item\em State of data returned by most recent cont\_\-ad\_\-read call; CONT\_\-AD\_\-STATE\_\-SIL or CONT\_\-AD\_\-STATE\_\-SPEECH. \item\end{CompactList}\item 
+int32 {\bf read\_\-ts}
+\begin{CompactList}\small\item\em Absolute timestamp (total no. \item\end{CompactList}\item 
+int32 {\bf seglen}
+\begin{CompactList}\small\item\em Total no. \item\end{CompactList}\item 
+int32 {\bf siglvl}
+\begin{CompactList}\small\item\em Max signal level for the data consumed by the most recent cont\_\-ad\_\-read call (dB range: 0-99). \item\end{CompactList}\item 
+int32 {\bf sps}
+\begin{CompactList}\small\item\em Samples/sec; moved from ad-$>$sps to break dependence on ad by N. \item\end{CompactList}\item 
+int32 {\bf eof}\label{structcont__ad__t_f7b9044b76ed3b86ce74e4e7215ca4c3}
+
+\begin{CompactList}\small\item\em Whether the source ad device has encountered EOF. \item\end{CompactList}\item 
+int32 {\bf spf}\label{structcont__ad__t_55f701abf33b5f68f9ef4cbf95dfaf73}
+
+\begin{CompactList}\small\item\em Samples/frame; audio level is analyzed within frames. \item\end{CompactList}\item 
+int32 {\bf adbufsize}\label{structcont__ad__t_5c6edc6be287f3ae013c59fef90cb4bd}
+
+\begin{CompactList}\small\item\em Buffer size (Number of samples). \item\end{CompactList}\item 
+int32 {\bf prev\_\-sample}\label{structcont__ad__t_54e2013d9634ec473aaf79a606fb2e0f}
+
+\begin{CompactList}\small\item\em For pre-emphasis filter. \item\end{CompactList}\item 
+int32 {\bf headfrm}\label{structcont__ad__t_a0617a92c549ac916258a54ec2cdc756}
+
+\begin{CompactList}\small\item\em Frame number in adbuf with unconsumed A/D data. \item\end{CompactList}\item 
+int32 {\bf n\_\-frm}\label{structcont__ad__t_bed5c6e9a2e078b70fc4c30b667612b2}
+
+\begin{CompactList}\small\item\em Number of complete frames of unconsumed A/D data in adbuf. \item\end{CompactList}\item 
+int32 {\bf n\_\-sample}\label{structcont__ad__t_7ae5362560d9edfa6c16555285487a7a}
+
+\begin{CompactList}\small\item\em Number of samples of unconsumed data in adbuf. \item\end{CompactList}\item 
+int32 {\bf tot\_\-frm}\label{structcont__ad__t_4ed32427e6a785b571b1346c85481899}
+
+\begin{CompactList}\small\item\em Total number of frames of A/D data read, including consumed ones. \item\end{CompactList}\item 
+int32 {\bf noise\_\-level}\label{structcont__ad__t_f60b0f78f9959a25cf7e7bf4c4aab4d7}
+
+\begin{CompactList}\small\item\em PWP: what we claim as the \char`\"{}current\char`\"{} noise level. \item\end{CompactList}\item 
+int32 $\ast$ {\bf pow\_\-hist}\label{structcont__ad__t_01f61a105019bea12533db84351d07b9}
+
+\begin{CompactList}\small\item\em Histogram of frame power, moving window, decayed. \item\end{CompactList}\item 
+char $\ast$ {\bf frm\_\-pow}\label{structcont__ad__t_18f146239c77ff4ca6157261acdf4083}
+
+\begin{CompactList}\small\item\em Frame power. \item\end{CompactList}\item 
+int32 {\bf auto\_\-thresh}\label{structcont__ad__t_9e23379bf649ee06ece20133316253e5}
+
+\begin{CompactList}\small\item\em Do automatic threshold adjustment or not. \item\end{CompactList}\item 
+int32 {\bf delta\_\-sil}\label{structcont__ad__t_74a6f56fb4cbde7fc789c9b463cf2f8f}
+
+\begin{CompactList}\small\item\em Max silence power/frame ABOVE noise level. \item\end{CompactList}\item 
+int32 {\bf delta\_\-speech}\label{structcont__ad__t_fca0f69a21d9f28c9610fcefc0e7cb10}
+
+\begin{CompactList}\small\item\em Min speech power/frame ABOVE noise level. \item\end{CompactList}\item 
+int32 {\bf min\_\-noise}\label{structcont__ad__t_c301114b24356aef2edccba155e3cf33}
+
+\begin{CompactList}\small\item\em noise lower than this we ignore \item\end{CompactList}\item 
+int32 {\bf max\_\-noise}\label{structcont__ad__t_f3b50663565964bb18ebb9f9e0002421}
+
+\begin{CompactList}\small\item\em noise higher than this signals an error \item\end{CompactList}\item 
+int32 {\bf winsize}\label{structcont__ad__t_7c61513f48e8fbc9ab6b57db66dad7b9}
+
+\begin{CompactList}\small\item\em how many frames to look at for speech det \item\end{CompactList}\item 
+int32 {\bf speech\_\-onset}\label{structcont__ad__t_1b0bb7e53a2bf537ed362badddca341b}
+
+\begin{CompactList}\small\item\em start speech on $>$= these many frames out of winsize, of $>$= delta\_\-speech \item\end{CompactList}\item 
+int32 {\bf sil\_\-onset}\label{structcont__ad__t_9f5e138f4b79b59bf4daa5603d171165}
+
+\begin{CompactList}\small\item\em end speech on $>$= these many frames out of winsize, of $<$= delta\_\-sil \item\end{CompactList}\item 
+int32 {\bf leader}\label{structcont__ad__t_0d42e3ac6c1e5c59c86a40f4cf26a861}
+
+\begin{CompactList}\small\item\em pad beggining of speech with this many extra frms \item\end{CompactList}\item 
+int32 {\bf trailer}\label{structcont__ad__t_a15db1e9fbb0048225521555ab8d9388}
+
+\begin{CompactList}\small\item\em pad end of speech with this many extra frms \item\end{CompactList}\item 
+int32 {\bf thresh\_\-speech}\label{structcont__ad__t_0b9333d9acc41b5bfb67f69fc22ca901}
+
+\begin{CompactList}\small\item\em Frame considered to be speech if power $>$= thresh\_\-speech (for transitioning from SILENCE to SPEECH state). \item\end{CompactList}\item 
+int32 {\bf thresh\_\-sil}\label{structcont__ad__t_dbbe28dca87d06a3ca8d2390d08ea83a}
+
+\begin{CompactList}\small\item\em Frame considered to be silence if power $<$= thresh\_\-sil (for transitioning from SPEECH to SILENCE state). \item\end{CompactList}\item 
+int32 {\bf thresh\_\-update}\label{structcont__ad__t_2168183b25add085cf3aa29ddab1c8ce}
+
+\begin{CompactList}\small\item\em Number of frames before next update to pow\_\-hist/thresholds. \item\end{CompactList}\item 
+float32 {\bf adapt\_\-rate}\label{structcont__ad__t_c22395096037175bf9a0a1f6877e5ec5}
+
+\begin{CompactList}\small\item\em Linear interpolation constant for rate at which noise level adapted to each estimate; range: 0-1; 0=$>$ no adaptation, 1=$>$ instant adaptation. \item\end{CompactList}\item 
+int32 {\bf tail\_\-state}
+\begin{CompactList}\small\item\em State at the end of its internal buffer (internal use): CONT\_\-AD\_\-STATE\_\-SIL or CONT\_\-AD\_\-STATE\_\-SPEECH. \item\end{CompactList}\item 
+int32 {\bf win\_\-startfrm}\label{structcont__ad__t_75bc7d23bfedfd79a2fd1e3ea2188e4c}
+
+\begin{CompactList}\small\item\em Where next analysis window begins. \item\end{CompactList}\item 
+int32 {\bf win\_\-validfrm}\label{structcont__ad__t_14ee16922e7287ad4ce8c51c6ddb74fc}
+
+\begin{CompactList}\small\item\em Number of frames currently available from win\_\-startfrm for analysis. \item\end{CompactList}\item 
+int32 {\bf n\_\-other}\label{structcont__ad__t_628e5b444bde5e0eb0dc7fe8731a31a6}
+
+\begin{CompactList}\small\item\em If in SILENCE state, number of frames in analysis window considered to be speech; otherwise number of frames considered to be silence. \item\end{CompactList}\item 
+{\bf spseg\_\-t} $\ast$ {\bf spseg\_\-head}\label{structcont__ad__t_bffe61140bc2a02ae4222183b3ef6159}
+
+\begin{CompactList}\small\item\em First of unconsumed speech segments. \item\end{CompactList}\item 
+{\bf spseg\_\-t} $\ast$ {\bf spseg\_\-tail}\label{structcont__ad__t_c77e8f8bd27cea3b99238d9663455972}
+
+\begin{CompactList}\small\item\em Last of unconsumed speech segments. \item\end{CompactList}\item 
+FILE $\ast$ {\bf rawfp}
+\begin{CompactList}\small\item\em If non-NULL, raw audio input data processed by cont\_\-ad is dumped to this file. \item\end{CompactList}\item 
+FILE $\ast$ {\bf logfp}
+\begin{CompactList}\small\item\em If non-NULL, write detailed logs of this object's progress to the file. \item\end{CompactList}\item 
+int32 {\bf n\_\-calib\_\-frame}
+\begin{CompactList}\small\item\em Number of frames of calibration data seen so far. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Continuous listening module or object Continuous listening module or object. 
+
+An application can open and maintain several such objects, if necessary. FYI: Module always in one of two states: SILENCE or SPEECH. Transitions between the two detected by sliding a window spanning several frames and looking for some minimum number of frames of the other type. 
+
+Definition at line 151 of file cont\_\-ad.h.
+
+\subsection{Field Documentation}
+\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!ad@{ad}}
+\index{ad@{ad}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{ad}]{\setlength{\rightskip}{0pt plus 5cm}ad\_\-rec\_\-t$\ast$ {\bf cont\_\-ad\_\-t::ad}}\label{structcont__ad__t_ae5b9d977e62424b0cf0e245485b20a0}
+
+
+A/D device argument for adfunc. 
+
+Also, ad-$>$sps used to determine frame size (spf, see below) 
+
+Definition at line 154 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-attach(), cont\_\-ad\_\-calib(), and cont\_\-ad\_\-detach().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!logfp@{logfp}}
+\index{logfp@{logfp}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{logfp}]{\setlength{\rightskip}{0pt plus 5cm}FILE$\ast$ {\bf cont\_\-ad\_\-t::logfp}}\label{structcont__ad__t_dbbb6765386309476549beb058a235c5}
+
+
+If non-NULL, write detailed logs of this object's progress to the file. 
+
+Controlled by user application via \doxyref{cont\_\-ad\_\-set\_\-logfp()}{p.}{cont__ad_8h_16c5810eb19ed89522ef4c3394bbfe83}. NULL when cont\_\-ad object is initially created. 
+
+Definition at line 231 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-read(), and cont\_\-ad\_\-set\_\-logfp().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!n\_\-calib\_\-frame@{n\_\-calib\_\-frame}}
+\index{n\_\-calib\_\-frame@{n\_\-calib\_\-frame}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{n\_\-calib\_\-frame}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf cont\_\-ad\_\-t::n\_\-calib\_\-frame}}\label{structcont__ad__t_c6e6809727ddc78a13674478d5b527db}
+
+
+Number of frames of calibration data seen so far. 
+
+
+
+Definition at line 236 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-calib(), and cont\_\-ad\_\-calib\_\-loop().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!rawfp@{rawfp}}
+\index{rawfp@{rawfp}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{rawfp}]{\setlength{\rightskip}{0pt plus 5cm}FILE$\ast$ {\bf cont\_\-ad\_\-t::rawfp}}\label{structcont__ad__t_f8cd2a7e0ef0f4e2c825c7812a091f9c}
+
+
+If non-NULL, raw audio input data processed by cont\_\-ad is dumped to this file. 
+
+Controlled by user application via \doxyref{cont\_\-ad\_\-set\_\-rawfp()}{p.}{cont__ad_8h_662ed7c409479060e3b5ac8eb7bd1865}. NULL when cont\_\-ad object is initially created. 
+
+Definition at line 227 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-set\_\-rawfp().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!read\_\-ts@{read\_\-ts}}
+\index{read\_\-ts@{read\_\-ts}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{read\_\-ts}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf cont\_\-ad\_\-t::read\_\-ts}}\label{structcont__ad__t_7b71e87abfcb3ca4ae73af34c86f955e}
+
+
+Absolute timestamp (total no. 
+
+of raw samples consumed upto the most recent cont\_\-ad\_\-read call, starting from the very beginning). Note that this is a 32-bit integer; applications should guard against overflow. 
+
+Definition at line 167 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-read().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!seglen@{seglen}}
+\index{seglen@{seglen}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{seglen}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf cont\_\-ad\_\-t::seglen}}\label{structcont__ad__t_478939247e09a8ae142c8996ec17d8c8}
+
+
+Total no. 
+
+of raw samples consumed in the segment returned by the most recent cont\_\-ad\_\-read call. Can be used to detect silence segments that have stretched long enough to terminate an utterance 
+
+Definition at line 171 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-read().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!siglvl@{siglvl}}
+\index{siglvl@{siglvl}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{siglvl}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf cont\_\-ad\_\-t::siglvl}}\label{structcont__ad__t_5524c052dcd0a3d1a1c3b1fc2134b62e}
+
+
+Max signal level for the data consumed by the most recent cont\_\-ad\_\-read call (dB range: 0-99). 
+
+Can be used to update a V-U meter, for example. 
+
+Definition at line 175 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-read().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!sps@{sps}}
+\index{sps@{sps}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{sps}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf cont\_\-ad\_\-t::sps}}\label{structcont__ad__t_11a4bb48870007b39f8fa46e4b8f111a}
+
+
+Samples/sec; moved from ad-$>$sps to break dependence on ad by N. 
+
+Roy. 
+
+Definition at line 180 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-powhist\_\-dump().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!state@{state}}
+\index{state@{state}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf cont\_\-ad\_\-t::state}}\label{structcont__ad__t_5d9420ea711733d1eea9b8f29a638fdb}
+
+
+State of data returned by most recent cont\_\-ad\_\-read call; CONT\_\-AD\_\-STATE\_\-SIL or CONT\_\-AD\_\-STATE\_\-SPEECH. 
+
+
+
+Definition at line 165 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-read().\index{cont\_\-ad\_\-t@{cont\_\-ad\_\-t}!tail\_\-state@{tail\_\-state}}
+\index{tail\_\-state@{tail\_\-state}!cont_ad_t@{cont\_\-ad\_\-t}}
+\subsubsection[{tail\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf cont\_\-ad\_\-t::tail\_\-state}}\label{structcont__ad__t_e52185e7f7dfe424060c0ff562a8858b}
+
+
+State at the end of its internal buffer (internal use): CONT\_\-AD\_\-STATE\_\-SIL or CONT\_\-AD\_\-STATE\_\-SPEECH. 
+
+Note: This is different from \doxyref{cont\_\-ad\_\-t.state}{p.}{structcont__ad__t_5d9420ea711733d1eea9b8f29a638fdb}. 
+
+Definition at line 217 of file cont\_\-ad.h.
+
+Referenced by cont\_\-ad\_\-read(), cont\_\-ad\_\-reset(), and cont\_\-set\_\-thresh().
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/{\bf cont\_\-ad.h}\end{CompactItemize}

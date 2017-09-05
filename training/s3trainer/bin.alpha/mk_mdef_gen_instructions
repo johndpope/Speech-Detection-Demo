@@ -1,0 +1,88 @@
+mk_mdef_gen:
+
+This tool allows you to analyze the occurence frequencies of phones
+and triphones in a given data set, provided you have a dictionary for
+all the words which occur in the set.
+
+flags:
+
+[Switch]      [Default] [Description]                                
+-phnlstfn               List of phones                               
+-inCImdef               Input CI model definition file.
+			If given -phnlstfn ignored
+-triphnlstfn            A SPHINX-III triphone file name.
+			If given -phnlstfn, -incimdef ignored
+-inCDmdef               Input CD model definition file.
+			If given -triphnfn, -phnlstfn, -incimdef ignored
+-dictfn                 Dictionary                                      
+-fdictfn                Filler dictionary                                     
+-lsnfn                  Transcripts file                                     
+-n_state_pm   3         No. of states per HMM                                
+-ocountfn               Output phone and triphone counts file               
+-ocimdef                Output CI model definition file                       
+-oalltphnmdef           Output all triphone model definition file             
+-ountiedmdef            Output untied model definition file                   
+-minocc       1         Min occurances of a triphone must occur for 
+                        inclusion in mdef file 
+-maxtriphones 100000    Max. number of triphones desired in mdef file 
+
+
+------------------------------------------------------------------------
+Some instructions for use:
+To use mk_mdef_gen as a tool for analyzing triphone and phone
+distributions in a given set of transcripts using a given dictionary,
+the following are needed:
+
+1) a set of transcripts which you want to study <trans>
+2) a dictionary which corresponds to these transcripts eg. the training
+   dictionary <dict>
+3) a list of phones which are in the dictionary written in a file
+   with one phone per line (as in the phonelist used for training).
+   The phonelist should include the silence phone, which must be written
+   as "SIL". So a trypical phonelist should look like:
+
+   SIL
+   AE
+   AW
+   B
+   CH
+
+   etc.
+
+To generate trihone counts using mk_mdef_gen, give the command:
+
+mk_mdef_gen -phnlstfn phonelist -dictfn dict -lsnfn trans -ocountfn triphone.counts
+
+This will generate a file called "triphone.counts" which has the counts
+of all the triphones listed in the mdef file you have given, as they
+occur in the transcripts.
+
+The triphone.counts file will look like this:
+
+> base    left    right   wdpos   count
+> AE      -       -       -       3
+> B       -       -       -       1
+> DH      -       -       -       3
+> Z       -       -       -       3
+> AE      B       T       i       1
+> AE      K       T       i       1
+> AE      R       T       i       1
+> B       EY      AE      b       1
+> DH      SIL     I       b       3
+> EY      Z       B       s       1
+> EY      Z       K       s       1
+> T       AE      SIL     e       3
+> Z       I       EY      e       3
+
+
+where base = base_phone
+      left = left context of basephone
+      right= right context of basephone
+      i = word internal triphone
+      b = word begining trihpne
+      s = single word triphone
+      e = word ending triphone
+      count = no. of times the triphone has occured in the database as
+              represented by the transcripts.
+
+------------------------------------------------------------------------

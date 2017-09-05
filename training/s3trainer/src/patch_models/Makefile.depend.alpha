@@ -1,0 +1,31 @@
+# DO NOT DELETE
+
+main.o: cmd_ln.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/cmd_ln.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/prim_type.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/s3mixw_io.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/s3.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/err.h
+main.o: /usr/include/stdarg.h /usr/include/standards.h /usr/include/va_list.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/s3gau_io.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/vector.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/s3tmat_io.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/gauden.h
+main.o: /usr/include/stdio.h /usr/include/sys/seek.h /usr/include/sys/types.h
+main.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+main.o: /usr/include/getopt.h /usr/include/sys/limits.h
+main.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+main.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/ckd_alloc.h
+main.o: /usr/include/stdlib.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/feat.h
+main.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/corpus.h
+main.o: /usr/include/stddef.h
+cmd_ln.o: cmd_ln.h
+cmd_ln.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/cmd_ln.h
+cmd_ln.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/prim_type.h
+cmd_ln.o: /net/alf30/usr3/bhiksha/work/sphinx-3/trainer/include/s3/err.h
+cmd_ln.o: /usr/include/stdarg.h /usr/include/standards.h
+cmd_ln.o: /usr/include/va_list.h /usr/include/stdlib.h /usr/include/getopt.h
+cmd_ln.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+cmd_ln.o: /usr/include/sys/select.h cmd_ln_defn.h

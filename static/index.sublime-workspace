@@ -1,0 +1,209 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/samemon/Desktop/AudioRecorder-master/static/js/recorderjs/recorder.js",
+		"/Users/samemon/Desktop/AudioRecorder-master/static/js/main.js",
+		"/Users/samemon/Desktop/AudioRecorder-master/static/index.html",
+		"/Users/samemon/Desktop/AudioRecorder-master/server.py",
+		"/Users/samemon/Desktop/AudioRecorder-master/static/js/recorderjs/recorderWorker.js",
+		"/Users/samemon/Desktop/Sample Server/static/test.html",
+		"/Users/samemon/Desktop/Sample Server/fserver.py",
+		"/Users/samemon/Desktop/Sample Server/test.html",
+		"/Users/samemon/Desktop/Sample Server/server.py",
+		"/Users/samemon/Desktop/record-rtc-audio-upload-node-example-master/index.js",
+		"/Users/samemon/Desktop/AudioRecorder-master/spectrogram.js",
+		"/Users/samemon/Desktop/AudioRecorder-master/index.html",
+		"/Users/samemon/Desktop/AudioRecorder-master/js/main.js",
+		"/Users/samemon/Desktop/record-rtc-audio-upload-node-example-master/static/index.html",
+		"/Users/samemon/Desktop/AudioRecorder-master/js/recorderjs/recorderWorker.js",
+		"/Users/samemon/Desktop/AudioRecorder-master/js/recorderjs/recorder.js",
+		"/Users/samemon/Desktop/Audio Recorder_files/audiodisplay.js",
+		"/Users/samemon/Desktop/Audio Recorder.htm",
+		"/Users/samemon/Desktop/record-rtc-audio-upload-node-example-master/router.js",
+		"/Users/samemon/Desktop/record-rtc-audio-upload-node-example-master/server.js",
+		"/Users/samemon/Downloads/CMUGeneric.ppd",
+		"/Users/samemon/Downloads/Android-Audio-Recording-to-NodeJS-Server-master/nodejs-app/server.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"disable",
+			"enable",
+			"save",
+			"toggleRecording",
+			"saveAudio()",
+			"saveAudio()saveAudio()",
+			"saveAudio()",
+			"exportWAV",
+			"draw",
+			"cancelAnalyserUpdates",
+			"saveAudio",
+			"exportWAV",
+			"RECORDER",
+			"initAudio",
+			"updateAnalysers",
+			"drawBuffer",
+			"audioDis",
+			"audiodisplay",
+			"recorder",
+			"drawBuffer",
+			"saveaUDIO",
+			"save",
+			"draw"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

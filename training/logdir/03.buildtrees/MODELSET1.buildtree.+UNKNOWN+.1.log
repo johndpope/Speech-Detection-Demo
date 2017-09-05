@@ -1,0 +1,51 @@
+../..//s3trainer/bin.linux/bldtree \
+ -treefn ../..//trees/MODELSET1.unpruned/+UNKNOWN+-1.dtree \
+ -moddeffn ../..//model_architecture/MODELSET1.untied.mdef \
+ -mixwfn ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights \
+ -ts2cbfn .cont. \
+ -meanfn ../..//model_parameters/MODELSET1.cd_continuous_untied/means \
+ -varfn ../..//model_parameters/MODELSET1.cd_continuous_untied/variances \
+ -mwfloor 1e-8 \
+ -psetfn ../..//c_scripts/03.buildtrees/linguistic_questions.automatic \
+ -phone +UNKNOWN+ \
+ -state 1 \
+ -stwt 1.0 0.05 0.0 \
+ -ssplitmin 1 \
+ -ssplitmax 7 \
+ -ssplitthr 0 \
+ -csplitmin 1 \
+ -csplitmax 2000 \
+ -csplitthr 0 \
+ -cntthresh 1
+
+[Switch]   [Default] [Value]
+-treefn              ../..//trees/MODELSET1.unpruned/+UNKNOWN+-1.dtree
+-moddeffn            ../..//model_architecture/MODELSET1.untied.mdef
+-ts2cbfn   .semi.    .cont. 
+-meanfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/means
+-varfn               ../..//model_parameters/MODELSET1.cd_continuous_untied/variances
+-varfloor  0.00001   1.000000e-05
+-cntthresh 0.00001   1.000000e+00
+-mixwfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+-psetfn              ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+-phone               +UNKNOWN+
+-state               1      
+-mwfloor   1e-4      1.000000e-08
+-stwt                1.0 0.05 0.0
+-ssplitthr 8e-4      0.000000e+00
+-ssplitmin 1         1      
+-ssplitmax 5         7      
+-csplitthr 8e-4      0.000000e+00
+-csplitmin 1         1      
+-csplitmax 100       2000   
+INFO: ../main.c(152): Reading: ../..//model_architecture/MODELSET1.untied.mdef
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 1000 total models defined (50 base, 950 tri)
+INFO: ../model_def_io.c(564): 4000 total states
+INFO: ../model_def_io.c(565): 3000 total tied states
+INFO: ../model_def_io.c(566): 150 total tied CI states
+INFO: ../model_def_io.c(567): 50 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+ERROR: "../main.c", line 160: +UNKNOWN+ is a filler phone! No decision tree will be built
+FATAL_ERROR: "../main.c", line 680: Initialization failed

@@ -1,0 +1,188 @@
+\section{include/err.h File Reference}
+\label{err_8h}\index{include/err.h@{include/err.h}}
+Implementation of logging routines.  
+
+
+{\tt \#include $<$stdarg.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$errno.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf E\_\-FATAL}~\_\-E\_\-\_\-pr\_\-header(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \char`\"{}FATAL\_\-ERROR\char`\"{}),\_\-E\_\-\_\-die\_\-error\label{err_8h_1a4495946ab2449d61108fe829a94613}
+
+\begin{CompactList}\small\item\em Exit with non-zero status after error message. \item\end{CompactList}\item 
+\#define {\bf E\_\-FATAL\_\-SYSTEM}~\_\-E\_\-\_\-pr\_\-header(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \char`\"{}SYSTEM\_\-ERROR\char`\"{}),\_\-E\_\-\_\-fatal\_\-sys\_\-error\label{err_8h_5229a1d58f5f5e69963a8d038ff5bc3e}
+
+\begin{CompactList}\small\item\em Print error text; Call perror(\char`\"{}\char`\"{}); exit(errno);. \item\end{CompactList}\item 
+\#define {\bf E\_\-WARN\_\-SYSTEM}~\_\-E\_\-\_\-pr\_\-header(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \char`\"{}SYSTEM\_\-ERROR\char`\"{}),\_\-E\_\-\_\-sys\_\-error\label{err_8h_63de511eaca101291914f701e67c5c44}
+
+\begin{CompactList}\small\item\em Print error text; Call perror(\char`\"{}\char`\"{});. \item\end{CompactList}\item 
+\#define {\bf E\_\-ERROR\_\-SYSTEM}~\_\-E\_\-\_\-pr\_\-header(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \char`\"{}SYSTEM\_\-ERROR\char`\"{}),\_\-E\_\-\_\-sys\_\-error\label{err_8h_54ffbfe898d74595c586a1f48f32ef03}
+
+\begin{CompactList}\small\item\em Print error text; Call perror(\char`\"{}\char`\"{});. \item\end{CompactList}\item 
+\#define {\bf E\_\-INFO}~\_\-E\_\-\_\-pr\_\-info\_\-header(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \char`\"{}INFO\char`\"{}),\_\-E\_\-\_\-pr\_\-info\label{err_8h_c3c705943d946708cea0a1443be1c853}
+
+\begin{CompactList}\small\item\em Print logging information to standard error stream. \item\end{CompactList}\item 
+\#define {\bf E\_\-INFOCONT}~\_\-E\_\-\_\-pr\_\-info\label{err_8h_e5a17ac5be8c738d3d977b1bea2d4538}
+
+\begin{CompactList}\small\item\em Print logging information without header, to standard error stream. \item\end{CompactList}\item 
+\#define {\bf E\_\-INFO\_\-NOFN}~\_\-E\_\-\_\-pr\_\-info\_\-header\_\-wofn(\char`\"{}INFO\char`\"{}),\_\-E\_\-\_\-pr\_\-info\label{err_8h_d95ccef073dd6f3c81c84e6aedca1f16}
+
+\begin{CompactList}\small\item\em Print logging information without filename. \item\end{CompactList}\item 
+\#define {\bf E\_\-WARN}~\_\-E\_\-\_\-pr\_\-header(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \char`\"{}WARNING\char`\"{}),\_\-E\_\-\_\-pr\_\-warn\label{err_8h_6a794bec721b555ac1f2167f9e12f662}
+
+\begin{CompactList}\small\item\em Print warning information to standard error stream. \item\end{CompactList}\item 
+\#define {\bf E\_\-ERROR}~\_\-E\_\-\_\-pr\_\-header(\_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-, \char`\"{}ERROR\char`\"{}),\_\-E\_\-\_\-pr\_\-warn\label{err_8h_5f7b2f58f5a663a6bdd51f197ae21993}
+
+\begin{CompactList}\small\item\em Print error message to standard error stream. \item\end{CompactList}\item 
+\#define {\bf E\_\-DEBUG}(level, x)
+\begin{CompactList}\small\item\em Print debugging information to standard error stream. \item\end{CompactList}\item 
+\#define \textbf{E\_\-DEBUGCONT}(level, x)\label{err_8h_7e8c4b068434a0424751fc2d2c457807}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-pr\_\-header} (char const $\ast$file, long line, char const $\ast$msg)\label{err_8h_96379bbd8a6c62698d166e5d12f3370d}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-pr\_\-debug\_\-header} (char const $\ast$file, long line, int level)\label{err_8h_173ee0173de4543e08d9d7a38ce18b88}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-pr\_\-info\_\-header} (char const $\ast$file, long line, char const $\ast$tag)\label{err_8h_583592f006ae14756c0c4812048c9b5f}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-pr\_\-info\_\-header\_\-wofn} (char const $\ast$msg)\label{err_8h_bb0389e05db688aee439b339f7f6ed89}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-pr\_\-warn} (char const $\ast$fmt,...)\label{err_8h_3c2a4f988b27b2fa9baaa8ecd3f1e61f}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-pr\_\-info} (char const $\ast$fmt,...)\label{err_8h_04fbf9d2c44e4e72f64cd3e2f5a24c38}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-die\_\-error} (char const $\ast$fmt,...)\label{err_8h_e2149bb7cde661a9bee0bdaaea7fab2d}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-abort\_\-error} (char const $\ast$fmt,...)\label{err_8h_0cdeb87987f0c30cd0c99826f9a1f7a8}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-sys\_\-error} (char const $\ast$fmt,...)\label{err_8h_750133ab0eeba2bceba2a4054469857b}
+
+\item 
+SPHINXBASE\_\-EXPORT void \textbf{\_\-E\_\-\_\-fatal\_\-sys\_\-error} (char const $\ast$fmt,...)\label{err_8h_39faf53d575084585f79fe685943e95a}
+
+\item 
+SPHINXBASE\_\-EXPORT FILE $\ast$ {\bf err\_\-set\_\-logfp} (FILE $\ast$logfp)
+\begin{CompactList}\small\item\em Direct all logging to a given filehandle. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT FILE $\ast$ {\bf err\_\-get\_\-logfp} (void)
+\begin{CompactList}\small\item\em Get the current logging filehandle. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int {\bf err\_\-set\_\-logfile} (char const $\ast$file)
+\begin{CompactList}\small\item\em Append all log messages to a given file. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int {\bf err\_\-set\_\-debug\_\-level} (int level)
+\begin{CompactList}\small\item\em Set debugging verbosity level. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int {\bf err\_\-get\_\-debug\_\-level} (void)
+\begin{CompactList}\small\item\em Get debugging verbosity level. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of logging routines. 
+
+Logging, warning and error message output funtionality is provided in this file. 
+
+Definition in file {\bf err.h}.
+
+\subsection{Define Documentation}
+\index{err.h@{err.h}!E\_\-DEBUG@{E\_\-DEBUG}}
+\index{E\_\-DEBUG@{E\_\-DEBUG}!err.h@{err.h}}
+\subsubsection[{E\_\-DEBUG}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\_\-DEBUG(level, \/  x)}\label{err_8h_f46f94d0e21f22f1153f8f1cd9a372d6}
+
+
+Print debugging information to standard error stream. 
+
+This will only print a message if: 1. Debugging is enabled at compile time 2. The debug level is greater than or equal to {\em level\/} 
+
+Note that for portability reasons the format and arguments must be enclosed in an extra set of parentheses. 
+
+Definition at line 224 of file err.h.
+
+\subsection{Function Documentation}
+\index{err.h@{err.h}!err\_\-get\_\-debug\_\-level@{err\_\-get\_\-debug\_\-level}}
+\index{err\_\-get\_\-debug\_\-level@{err\_\-get\_\-debug\_\-level}!err.h@{err.h}}
+\subsubsection[{err\_\-get\_\-debug\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int err\_\-get\_\-debug\_\-level (void)}\label{err_8h_1500dc011016aa15244d0d7f2fe66a7e}
+
+
+Get debugging verbosity level. 
+
+Note that debugging messages are only enabled when compiled with -DDEBUG. 
+
+Definition at line 72 of file err.c.\index{err.h@{err.h}!err\_\-get\_\-logfp@{err\_\-get\_\-logfp}}
+\index{err\_\-get\_\-logfp@{err\_\-get\_\-logfp}!err.h@{err.h}}
+\subsubsection[{err\_\-get\_\-logfp}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT FILE$\ast$ err\_\-get\_\-logfp (void)}\label{err_8h_9707012f263e46ea66e93349313ddbe6}
+
+
+Get the current logging filehandle. 
+
+\begin{Desc}
+\item[Returns:]Current logging filehandle, NULL if disabled. \end{Desc}
+
+
+Definition at line 145 of file err.c.
+
+Referenced by cmd\_\-ln\_\-parse\_\-r(), err\_\-set\_\-logfile(), and err\_\-set\_\-logfp().\index{err.h@{err.h}!err\_\-set\_\-debug\_\-level@{err\_\-set\_\-debug\_\-level}}
+\index{err\_\-set\_\-debug\_\-level@{err\_\-set\_\-debug\_\-level}!err.h@{err.h}}
+\subsubsection[{err\_\-set\_\-debug\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int err\_\-set\_\-debug\_\-level (int {\em level})}\label{err_8h_b77fa009824260d9f103308272dc89b8}
+
+
+Set debugging verbosity level. 
+
+Note that debugging messages are only enabled when compiled with -DDEBUG.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em level}]Verbosity level to set, or 0 to disable debug messages. \end{description}
+\end{Desc}
+
+
+Definition at line 66 of file err.c.\index{err.h@{err.h}!err\_\-set\_\-logfile@{err\_\-set\_\-logfile}}
+\index{err\_\-set\_\-logfile@{err\_\-set\_\-logfile}!err.h@{err.h}}
+\subsubsection[{err\_\-set\_\-logfile}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int err\_\-set\_\-logfile (char const $\ast$ {\em file})}\label{err_8h_a605de73499066475ec4cfb03e4c5a20}
+
+
+Append all log messages to a given file. 
+
+Previous logging filehandle is closed (unless it was stdout or stderr).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em file}]File to send log messages to, or NULL to disable logging. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 for success, $<$0 for failure (e.g. if file does not exist) \end{Desc}
+
+
+Definition at line 173 of file err.c.
+
+References err\_\-get\_\-logfp().\index{err.h@{err.h}!err\_\-set\_\-logfp@{err\_\-set\_\-logfp}}
+\index{err\_\-set\_\-logfp@{err\_\-set\_\-logfp}!err.h@{err.h}}
+\subsubsection[{err\_\-set\_\-logfp}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT FILE$\ast$ err\_\-set\_\-logfp (FILE $\ast$ {\em logfp})}\label{err_8h_8bac37b001e58048b9f52ea1c756fc08}
+
+
+Direct all logging to a given filehandle. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em logfp}]Filehandle to send log messages to, or NULL to disable logging. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Previous logging filehandle, if any. \end{Desc}
+
+
+Definition at line 162 of file err.c.
+
+References err\_\-get\_\-logfp().

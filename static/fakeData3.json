@@ -1,0 +1,703 @@
+[{
+	"key": "Abrasive",
+	"value": 0
+}, {
+	"key": "Abrupt",
+	"value": 0
+}, {
+	"key": "Agonizing",
+	"value": 0
+}, {
+	"key": "Aimless",
+	"value": 0
+}, {
+	"key": "Airy",
+	"value": 0
+}, {
+	"key": "Aloof",
+	"value": 0
+}, {
+	"key": "Anxious",
+	"value": 0
+}, {
+	"key": "Apathetic",
+	"value": 0
+}, {
+	"key": "Arbitrary",
+	"value": 0
+}, {
+	"key": "Argumentative",
+	"value": 0
+}, {
+	"key": "Arrogant",
+	"value": 0
+}, {
+	"key": "Artificial",
+	"value": 0
+}, {
+	"key": "Asocial",
+	"value": 0
+}, {
+	"key": "Assertive",
+	"value": 0
+}, {
+	"key": "Astigmatic",
+	"value": 0
+}, {
+	"key": "Barbaric",
+	"value": 0
+}, {
+	"key": "Bewildered",
+	"value": 0
+}, {
+	"key": "Bizarre",
+	"value": 0
+}, {
+	"key": "Bland",
+	"value": 0
+}, {
+	"key": "Blunt",
+	"value": 0
+}, {
+	"key": "Boisterous",
+	"value": 0
+}, {
+	"key": "Brittle",
+	"value": 0
+}, {
+	"key": "Brutal",
+	"value": 0
+}, {
+	"key": "Calculating",
+	"value": 0
+}, {
+	"key": "Callous",
+	"value": 0
+}, {
+	"key": "Cantankerous",
+	"value": 0
+}, {
+	"key": "Careless",
+	"value": 0
+}, {
+	"key": "Cautious",
+	"value": 0
+}, {
+	"key": "Charmless",
+	"value": 0
+}, {
+	"key": "Childish",
+	"value": 0
+}, {
+	"key": "Clumsy",
+	"value": 0
+}, {
+	"key": "Coarse",
+	"value": 0
+}, {
+	"key": "Cold",
+	"value": 0
+}, {
+	"key": "Colorless",
+	"value": 0
+}, {
+	"key": "Complacent",
+	"value": 0
+}, {
+	"key": "Complaintive",
+	"value": 0
+}, {
+	"key": "Compulsive",
+	"value": 0
+}, {
+	"key": "Conceited",
+	"value": 0
+}, {
+	"key": "Condemnatory",
+	"value": 0
+}, {
+	"key": "Conformist",
+	"value": 0
+}, {
+	"key": "Confused",
+	"value": 0
+}, {
+	"key": "Contemptible",
+	"value": 0
+}, {
+	"key": "Conventional",
+	"value": 0
+}, {
+	"key": "Cowardly",
+	"value": 0
+}, {
+	"key": "Crafty",
+	"value": 0
+}, {
+	"key": "Crass",
+	"value": 0
+}, {
+	"key": "Crazy",
+	"value": 0
+}, {
+	"key": "Criminal",
+	"value": 0
+}, {
+	"key": "Critical",
+	"value": 0
+}, {
+	"key": "Crude",
+	"value": 0
+}, {
+	"key": "Cruel",
+	"value": 0
+}, {
+	"key": "Cynical",
+	"value": 0
+}, {
+	"key": "Decadent",
+	"value": 0
+}, {
+	"key": "Deceitful",
+	"value": 0
+}, {
+	"key": "Delicate",
+	"value": 0
+}, {
+	"key": "Demanding",
+	"value": 0
+}, {
+	"key": "Dependent",
+	"value": 0
+}, {
+	"key": "Desperate",
+	"value": 0
+}, {
+	"key": "Destructive",
+	"value": 0
+}, {
+	"key": "Devious",
+	"value": 0
+}, {
+	"key": "Difficult",
+	"value": 0
+}, {
+	"key": "Dirty",
+	"value": 0
+}, {
+	"key": "Disconcerting",
+	"value": 0
+}, {
+	"key": "Discontented",
+	"value": 0
+}, {
+	"key": "Discouraging",
+	"value": 0
+}, {
+	"key": "Discourteous",
+	"value": 0
+}, {
+	"key": "Dishonest",
+	"value": 0
+}, {
+	"key": "Disloyal",
+	"value": 0
+}, {
+	"key": "Disobedient",
+	"value": 0
+}, {
+	"key": "Disorderly",
+	"value": 0
+}, {
+	"key": "Disorganized",
+	"value": 0
+}, {
+	"key": "Disputatious",
+	"value": 0
+}, {
+	"key": "Disrespectful",
+	"value": 0
+}, {
+	"key": "Disruptive",
+	"value": 0
+}, {
+	"key": "Dissolute",
+	"value": 0
+}, {
+	"key": "Dissonant",
+	"value": 0
+}, {
+	"key": "Distractible",
+	"value": 0
+}, {
+	"key": "Disturbing",
+	"value": 0
+}, {
+	"key": "Dogmatic",
+	"value": 0
+}, {
+	"key": "Domineering",
+	"value": 0
+}, {
+	"key": "Dull",
+	"value": 0
+}, {
+	"key": "Easily Discouraged",
+	"value": 0
+}, {
+	"key": "Egocentric",
+	"value": 0
+}, {
+	"key": "Enervated",
+	"value": 0
+}, {
+	"key": "Envious",
+	"value": 0
+}, {
+	"key": "Erratic",
+	"value": 0
+}, {
+	"key": "Escapist",
+	"value": 0
+}, {
+	"key": "Excitable",
+	"value": 0
+}, {
+	"key": "Expedient",
+	"value": 0
+}, {
+	"key": "Extravagant",
+	"value": 0
+}, {
+	"key": "Extreme",
+	"value": 0
+}, {
+	"key": "Faithless",
+	"value": 0
+}, {
+	"key": "False",
+	"value": 0
+}, {
+	"key": "Fanatical",
+	"value": 0
+}, {
+	"key": "Fanciful",
+	"value": 0
+}, {
+	"key": "Fatalistic",
+	"value": 0
+}, {
+	"key": "Fawning",
+	"value": 0
+}, {
+	"key": "Fearful",
+	"value": 0
+}, {
+	"key": "Fixed",
+	"value": 0
+}, {
+	"key": "Flamboyant",
+	"value": 0
+}, {
+	"key": "Foolish",
+	"value": 0
+}, {
+	"key": "Forgetful",
+	"value": 0
+}, {
+	"key": "Fraudulent",
+	"value": 0
+}, {
+	"key": "Frightening",
+	"value": 0
+}, {
+	"key": "Frivolous",
+	"value": 0
+}, {
+	"key": "Gloomy",
+	"value": 0
+}, {
+	"key": "Graceless",
+	"value": 0
+}, {
+	"key": "Grand",
+	"value": 0
+}, {
+	"key": "Greedy",
+	"value": 0
+}, {
+	"key": "Grim",
+	"value": 0
+}, {
+	"key": "Gullible",
+	"value": 0
+}, {
+	"key": "Hateful",
+	"value": 0
+}, {
+	"key": "Haughty",
+	"value": 0
+}, {
+	"key": "Hedonistic",
+	"value": 0
+}, {
+	"key": "Hesitant",
+	"value": 0
+}, {
+	"key": "Hidebound",
+	"value": 0
+}, {
+	"key": "High-handed",
+	"value": 0
+}, {
+	"key": "Hostile",
+	"value": 0
+}, {
+	"key": "Ignorant",
+	"value": 0
+}, {
+	"key": "Imitative",
+	"value": 0
+}, {
+	"key": "Impatient",
+	"value": 0
+}, {
+	"key": "Impractical",
+	"value": 0
+}, {
+	"key": "Imprudent",
+	"value": 0
+}, {
+	"key": "Impulsive",
+	"value": 0
+}, {
+	"key": "Inconsiderate",
+	"value": 0
+}, {
+	"key": "Incurious",
+	"value": 0
+}, {
+	"key": "Indecisive",
+	"value": 0
+}, {
+	"key": "Indulgent",
+	"value": 0
+}, {
+	"key": "Inert",
+	"value": 0
+}, {
+	"key": "Inhibited",
+	"value": 0
+}, {
+	"key": "Insecure",
+	"value": 0
+}, {
+	"key": "Insensitive",
+	"value": 0
+}, {
+	"key": "Insincere",
+	"value": 0
+}, {
+	"key": "Insulting",
+	"value": 0
+}, {
+	"key": "Intolerant",
+	"value": 0
+}, {
+	"key": "Irascible",
+	"value": 0
+}, {
+	"key": "Irrational",
+	"value": 0
+}, {
+	"key": "Irresponsible",
+	"value": 0
+}, {
+	"key": "Irritable",
+	"value": 0
+}, {
+	"key": "Lazy",
+	"value": 0
+}, {
+	"key": "Miserly",
+	"value": 0
+}, {
+	"key": "Misguided",
+	"value": 0
+}, {
+	"key": "Mistaken",
+	"value": 0
+}, {
+	"key": "Money-minded",
+	"value": 0
+}, {
+	"key": "Monstrous",
+	"value": 0
+}, {
+	"key": "Moody",
+	"value": 0
+}, {
+	"key": "Morbid",
+	"value": 0
+}, {
+	"key": "Muddle-headed",
+	"value": 0
+}, {
+	"key": "Naive",
+	"value": 0
+}, {
+	"key": "Narcissistic",
+	"value": 0
+}, {
+	"key": "Narrow",
+	"value": 0
+}, {
+	"key": "Narrow-minded",
+	"value": 0
+}, {
+	"key": "Natty",
+	"value": 0
+}, {
+	"key": "Negativistic",
+	"value": 0
+}, {
+	"key": "Neglectful",
+	"value": 0
+}, {
+	"key": "Neurotic",
+	"value": 0
+}, {
+	"key": "Nihilistic",
+	"value": 0
+}, {
+	"key": "Obnoxious",
+	"value": 0
+}, {
+	"key": "Obsessive",
+	"value": 0
+}, {
+	"key": "Obvious",
+	"value": 0
+}, {
+	"key": "Odd",
+	"value": 0
+}, {
+	"key": "Offhand",
+	"value": 0
+}, {
+	"key": "One-dimensional",
+	"value": 0
+}, {
+	"key": "One-sided",
+	"value": 0
+}, {
+	"key": "Opinionated",
+	"value": 0
+}, {
+	"key": "Opportunistic",
+	"value": 0
+}, {
+	"key": "Oppressed",
+	"value": 0
+}, {
+	"key": "Outrageous",
+	"value": 0
+}, {
+	"key": "Overimaginative",
+	"value": 0
+}, {
+	"key": "Paranoid",
+	"value": 0
+}, {
+	"key": "Passive",
+	"value": 0
+}, {
+	"key": "Pedantic",
+	"value": 0
+}, {
+	"key": "Perverse",
+	"value": 0
+}, {
+	"key": "Petty",
+	"value": 0
+}, {
+	"key": "Pharissical",
+	"value": 0
+}, {
+	"key": "Phlegmatic",
+	"value": 0
+}, {
+	"key": "Rowdy",
+	"value": 0
+}, {
+	"key": "Ruined",
+	"value": 0
+}, {
+	"key": "Sadistic",
+	"value": 0
+}, {
+	"key": "Scheming",
+	"value": 0
+}, {
+	"key": "Scornful",
+	"value": 0
+}, {
+	"key": "Secretive",
+	"value": 0
+}, {
+	"key": "Sedentary",
+	"value": 0
+}, {
+	"key": "Selfish",
+	"value": 0
+}, {
+	"key": "Self-indulgent",
+	"value": 0
+}, {
+	"key": "Shallow",
+	"value": 0
+}, {
+	"key": "Shortsighted",
+	"value": 0
+}, {
+	"key": "Shy",
+	"value": 0
+}, {
+	"key": "Silly",
+	"value": 0
+}, {
+	"key": "Single-minded",
+	"value": 0
+}, {
+	"key": "Sloppy",
+	"value": 0
+}, {
+	"key": "Slow",
+	"value": 0
+}, {
+	"key": "Softheaded",
+	"value": 0
+}, {
+	"key": "Sordid",
+	"value": 0
+}, {
+	"key": "Steely",
+	"value": 0
+}, {
+	"key": "Stiff",
+	"value": 0
+}, {
+	"key": "Strong-willed",
+	"value": 0
+}, {
+	"key": "Stupid",
+	"value": 0
+}, {
+	"key": "Submissive",
+	"value": 0
+}, {
+	"key": "Superficial",
+	"value": 0
+}, {
+	"key": "Superstitious",
+	"value": 0
+}, {
+	"key": "Suspicious",
+	"value": 0
+}, {
+	"key": "Tense",
+	"value": 0
+}, {
+	"key": "Transparent",
+	"value": 0
+}, {
+	"key": "Treacherous",
+	"value": 0
+}, {
+	"key": "Trendy",
+	"value": 0
+}, {
+	"key": "Troublesome",
+	"value": 0
+}, {
+	"key": "Unappreciative",
+	"value": 0
+}, {
+	"key": "Uncaring",
+	"value": 0
+}, {
+	"key": "Uncharitable",
+	"value": 0
+}, {
+	"key": "Unconvincing",
+	"value": 0
+}, {
+	"key": "Uncooperative",
+	"value": 0
+}, {
+	"key": "Uncreative",
+	"value": 0
+}, {
+	"key": "Uncritical",
+	"value": 0
+}, {
+	"key": "Unctuous",
+	"value": 0
+}, {
+	"key": "Undisciplined",
+	"value": 0
+}, {
+	"key": "Unfriendly",
+	"value": 0
+}, {
+	"key": "Ungrateful",
+	"value": 0
+}, {
+	"key": "Unhealthy",
+	"value": 0
+}, {
+	"key": "Unimaginative",
+	"value": 0
+}, {
+	"key": "Unimpressive",
+	"value": 0
+}, {
+	"key": "Unlovable",
+	"value": 0
+}, {
+	"key": "Unpolished",
+	"value": 0
+}, {
+	"key": "Unprincipled",
+	"value": 0
+}, {
+	"key": "Unrealistic",
+	"value": 0
+}, {
+	"key": "Unreflective",
+	"value": 0
+}, {
+	"key": "Unreliable",
+	"value": 0
+}, {
+	"key": "Unrestrained",
+	"value": 0
+}, {
+	"key": "Unself-critical",
+	"value": 0
+}, {
+	"key": "Vague",
+	"value": 0
+}, {
+	"key": "Well-meaning",
+	"value": 0
+}, {
+	"key": "Willful",
+	"value": 0
+}, {
+	"key": "Wishful",
+	"value": 0
+}, {
+	"key": "Zany",
+	"value": 0
+}]

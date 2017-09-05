@@ -1,0 +1,703 @@
+[{
+	"key": "Accessible",
+	"value": 0
+}, {
+	"key": "Active",
+	"value": 0
+}, {
+	"key": "Adaptable",
+	"value": 0
+}, {
+	"key": "Admirable",
+	"value": 0
+}, {
+	"key": "Adventurous",
+	"value": 0
+}, {
+	"key": "Agreeable",
+	"value": 0
+}, {
+	"key": "Alert",
+	"value": 0
+}, {
+	"key": "Allocentric",
+	"value": 0
+}, {
+	"key": "Amiable",
+	"value": 0
+}, {
+	"key": "Anticipative",
+	"value": 0
+}, {
+	"key": "Appreciative",
+	"value": 0
+}, {
+	"key": "Articulate",
+	"value": 0
+}, {
+	"key": "Aspiring",
+	"value": 0
+}, {
+	"key": "Athletic",
+	"value": 0
+}, {
+	"key": "Attractive",
+	"value": 0
+}, {
+	"key": "Balanced",
+	"value": 0
+}, {
+	"key": "Benevolent",
+	"value": 0
+}, {
+	"key": "Brilliant",
+	"value": 0
+}, {
+	"key": "Calm",
+	"value": 0
+}, {
+	"key": "Capable",
+	"value": 0
+}, {
+	"key": "Captivating",
+	"value": 0
+}, {
+	"key": "Caring",
+	"value": 0
+}, {
+	"key": "Challenging",
+	"value": 0
+}, {
+	"key": "Charismatic",
+	"value": 0
+}, {
+	"key": "Charming",
+	"value": 0
+}, {
+	"key": "Cheerful",
+	"value": 0
+}, {
+	"key": "Clean",
+	"value": 0
+}, {
+	"key": "Clear-headed",
+	"value": 0
+}, {
+	"key": "Clever",
+	"value": 0
+}, {
+	"key": "Colorful",
+	"value": 0
+}, {
+	"key": "Companionly",
+	"value": 0
+}, {
+	"key": "Compassionate",
+	"value": 0
+}, {
+	"key": "Conciliatory",
+	"value": 0
+}, {
+	"key": "Confident",
+	"value": 0
+}, {
+	"key": "Conscientious",
+	"value": 0
+}, {
+	"key": "Considerate",
+	"value": 0
+}, {
+	"key": "Constant",
+	"value": 0
+}, {
+	"key": "Contemplative",
+	"value": 0
+}, {
+	"key": "Cooperative",
+	"value": 0
+}, {
+	"key": "Courageous",
+	"value": 0
+}, {
+	"key": "Courteous",
+	"value": 0
+}, {
+	"key": "Creative",
+	"value": 0
+}, {
+	"key": "Cultured",
+	"value": 0
+}, {
+	"key": "Curious",
+	"value": 0
+}, {
+	"key": "Daring",
+	"value": 0
+}, {
+	"key": "Debonair",
+	"value": 0
+}, {
+	"key": "Decent",
+	"value": 0
+}, {
+	"key": "Decisive",
+	"value": 0
+}, {
+	"key": "Dedicated",
+	"value": 0
+}, {
+	"key": "Deep",
+	"value": 0
+}, {
+	"key": "Dignified",
+	"value": 0
+}, {
+	"key": "Directed",
+	"value": 0
+}, {
+	"key": "Disciplined",
+	"value": 0
+}, {
+	"key": "Discreet",
+	"value": 0
+}, {
+	"key": "Dramatic",
+	"value": 0
+}, {
+	"key": "Dutiful",
+	"value": 0
+}, {
+	"key": "Dynamic",
+	"value": 0
+}, {
+	"key": "Earnest",
+	"value": 0
+}, {
+	"key": "Ebullient",
+	"value": 0
+}, {
+	"key": "Educated",
+	"value": 0
+}, {
+	"key": "Efficient",
+	"value": 0
+}, {
+	"key": "Elegant",
+	"value": 0
+}, {
+	"key": "Eloquent",
+	"value": 0
+}, {
+	"key": "Empathetic",
+	"value": 0
+}, {
+	"key": "Energetic",
+	"value": 0
+}, {
+	"key": "Enthusiastic",
+	"value": 0
+}, {
+	"key": "Esthetic",
+	"value": 0
+}, {
+	"key": "Exciting",
+	"value": 0
+}, {
+	"key": "Extraordinary",
+	"value": 0
+}, {
+	"key": "Fair",
+	"value": 0
+}, {
+	"key": "Faithful",
+	"value": 0
+}, {
+	"key": "Farsighted",
+	"value": 0
+}, {
+	"key": "Felicific",
+	"value": 0
+}, {
+	"key": "Firm",
+	"value": 0
+}, {
+	"key": "Flexible",
+	"value": 0
+}, {
+	"key": "Focused",
+	"value": 0
+}, {
+	"key": "Forecful",
+	"value": 0
+}, {
+	"key": "Forgiving",
+	"value": 0
+}, {
+	"key": "Forthright",
+	"value": 0
+}, {
+	"key": "Freethinking",
+	"value": 0
+}, {
+	"key": "Friendly",
+	"value": 0
+}, {
+	"key": "Fun-loving",
+	"value": 0
+}, {
+	"key": "Gallant",
+	"value": 0
+}, {
+	"key": "Generous",
+	"value": 0
+}, {
+	"key": "Gentle",
+	"value": 0
+}, {
+	"key": "Genuine",
+	"value": 0
+}, {
+	"key": "Good-natured",
+	"value": 0
+}, {
+	"key": "Gracious",
+	"value": 0
+}, {
+	"key": "Hardworking",
+	"value": 0
+}, {
+	"key": "Healthy",
+	"value": 0
+}, {
+	"key": "Hearty",
+	"value": 0
+}, {
+	"key": "Helpful",
+	"value": 0
+}, {
+	"key": "Herioc",
+	"value": 0
+}, {
+	"key": "High-minded",
+	"value": 0
+}, {
+	"key": "Honest",
+	"value": 0
+}, {
+	"key": "Honorable",
+	"value": 0
+}, {
+	"key": "Humble",
+	"value": 0
+}, {
+	"key": "Humorous",
+	"value": 0
+}, {
+	"key": "Idealistic",
+	"value": 0
+}, {
+	"key": "Imaginative",
+	"value": 0
+}, {
+	"key": "Impressive",
+	"value": 0
+}, {
+	"key": "Incisive",
+	"value": 0
+}, {
+	"key": "Incorruptible",
+	"value": 0
+}, {
+	"key": "Independent",
+	"value": 0
+}, {
+	"key": "Individualistic",
+	"value": 0
+}, {
+	"key": "Innovative",
+	"value": 0
+}, {
+	"key": "Inoffensive",
+	"value": 0
+}, {
+	"key": "Insightful",
+	"value": 0
+}, {
+	"key": "Insouciant",
+	"value": 0
+}, {
+	"key": "Intelligent",
+	"value": 0
+}, {
+	"key": "Intuitive",
+	"value": 0
+}, {
+	"key": "Invulnerable",
+	"value": 0
+}, {
+	"key": "Kind",
+	"value": 0
+}, {
+	"key": "Knowledge",
+	"value": 0
+}, {
+	"key": "Leaderly",
+	"value": 0
+}, {
+	"key": "Leisurely",
+	"value": 0
+}, {
+	"key": "Liberal",
+	"value": 0
+}, {
+	"key": "Logical",
+	"value": 0
+}, {
+	"key": "Lovable",
+	"value": 0
+}, {
+	"key": "Loyal",
+	"value": 0
+}, {
+	"key": "Lyrical",
+	"value": 0
+}, {
+	"key": "Magnanimous",
+	"value": 0
+}, {
+	"key": "Many-sided",
+	"value": 0
+}, {
+	"key": "Masculine  (Manly)",
+	"value": 0
+}, {
+	"key": "Mature",
+	"value": 0
+}, {
+	"key": "Methodical",
+	"value": 0
+}, {
+	"key": "Maticulous",
+	"value": 0
+}, {
+	"key": "Moderate",
+	"value": 0
+}, {
+	"key": "Modest",
+	"value": 0
+}, {
+	"key": "Multi-leveled",
+	"value": 0
+}, {
+	"key": "Neat",
+	"value": 0
+}, {
+	"key": "Nonauthoritarian",
+	"value": 0
+}, {
+	"key": "Objective",
+	"value": 0
+}, {
+	"key": "Observant",
+	"value": 0
+}, {
+	"key": "Open",
+	"value": 0
+}, {
+	"key": "Optimistic",
+	"value": 0
+}, {
+	"key": "Orderly",
+	"value": 0
+}, {
+	"key": "Organized",
+	"value": 0
+}, {
+	"key": "Original",
+	"value": 0
+}, {
+	"key": "Painstaking",
+	"value": 0
+}, {
+	"key": "Passionate",
+	"value": 0
+}, {
+	"key": "Patient",
+	"value": 0
+}, {
+	"key": "Patriotic",
+	"value": 0
+}, {
+	"key": "Peaceful",
+	"value": 0
+}, {
+	"key": "Perceptive",
+	"value": 0
+}, {
+	"key": "Perfectionist",
+	"value": 0
+}, {
+	"key": "Personable",
+	"value": 0
+}, {
+	"key": "Persuasive",
+	"value": 0
+}, {
+	"key": "Planful",
+	"value": 0
+}, {
+	"key": "Playful",
+	"value": 0
+}, {
+	"key": "Polished",
+	"value": 0
+}, {
+	"key": "Popular",
+	"value": 0
+}, {
+	"key": "Practical",
+	"value": 0
+}, {
+	"key": "Precise",
+	"value": 0
+}, {
+	"key": "Principled",
+	"value": 0
+}, {
+	"key": "Profound",
+	"value": 0
+}, {
+	"key": "Protean",
+	"value": 0
+}, {
+	"key": "Protective",
+	"value": 0
+}, {
+	"key": "Providential",
+	"value": 0
+}, {
+	"key": "Prudent",
+	"value": 0
+}, {
+	"key": "Punctual",
+	"value": 0
+}, {
+	"key": "Pruposeful",
+	"value": 0
+}, {
+	"key": "Rational",
+	"value": 0
+}, {
+	"key": "Realistic",
+	"value": 0
+}, {
+	"key": "Reflective",
+	"value": 0
+}, {
+	"key": "Relaxed",
+	"value": 0
+}, {
+	"key": "Reliable",
+	"value": 0
+}, {
+	"key": "Resourceful",
+	"value": 0
+}, {
+	"key": "Respectful",
+	"value": 0
+}, {
+	"key": "Responsible",
+	"value": 0
+}, {
+	"key": "Responsive",
+	"value": 0
+}, {
+	"key": "Reverential",
+	"value": 0
+}, {
+	"key": "Romantic",
+	"value": 0
+}, {
+	"key": "Rustic",
+	"value": 0
+}, {
+	"key": "Sage",
+	"value": 0
+}, {
+	"key": "Sane",
+	"value": 0
+}, {
+	"key": "Scholarly",
+	"value": 0
+}, {
+	"key": "Scrupulous",
+	"value": 0
+}, {
+	"key": "Secure",
+	"value": 0
+}, {
+	"key": "Selfless",
+	"value": 0
+}, {
+	"key": "Self-critical",
+	"value": 0
+}, {
+	"key": "Self-defacing",
+	"value": 0
+}, {
+	"key": "Self-denying",
+	"value": 0
+}, {
+	"key": "Self-reliant",
+	"value": 0
+}, {
+	"key": "Self-sufficent",
+	"value": 0
+}, {
+	"key": "Sensitive",
+	"value": 0
+}, {
+	"key": "Sentimental",
+	"value": 0
+}, {
+	"key": "Seraphic",
+	"value": 0
+}, {
+	"key": "Serious",
+	"value": 0
+}, {
+	"key": "Sexy",
+	"value": 0
+}, {
+	"key": "Sharing",
+	"value": 0
+}, {
+	"key": "Shrewd",
+	"value": 0
+}, {
+	"key": "Simple",
+	"value": 0
+}, {
+	"key": "Skillful",
+	"value": 0
+}, {
+	"key": "Sober",
+	"value": 0
+}, {
+	"key": "Sociable",
+	"value": 0
+}, {
+	"key": "Solid",
+	"value": 0
+}, {
+	"key": "Sophisticated",
+	"value": 0
+}, {
+	"key": "Spontaneous",
+	"value": 0
+}, {
+	"key": "Sporting",
+	"value": 0
+}, {
+	"key": "Stable",
+	"value": 0
+}, {
+	"key": "Steadfast",
+	"value": 0
+}, {
+	"key": "Steady",
+	"value": 0
+}, {
+	"key": "Stoic",
+	"value": 0
+}, {
+	"key": "Strong",
+	"value": 0
+}, {
+	"key": "Studious",
+	"value": 0
+}, {
+	"key": "Suave",
+	"value": 0
+}, {
+	"key": "Subtle",
+	"value": 0
+}, {
+	"key": "Sweet",
+	"value": 0
+}, {
+	"key": "Sympathetic",
+	"value": 0
+}, {
+	"key": "Systematic",
+	"value": 0
+}, {
+	"key": "Tasteful",
+	"value": 0
+}, {
+	"key": "Teacherly",
+	"value": 0
+}, {
+	"key": "Thorough",
+	"value": 0
+}, {
+	"key": "Tidy",
+	"value": 0
+}, {
+	"key": "Tolerant",
+	"value": 0
+}, {
+	"key": "Tractable",
+	"value": 0
+}, {
+	"key": "Trusting",
+	"value": 0
+}, {
+	"key": "Uncomplaining",
+	"value": 0
+}, {
+	"key": "Understanding",
+	"value": 0
+}, {
+	"key": "Undogmatic",
+	"value": 0
+}, {
+	"key": "Unfoolable",
+	"value": 0
+}, {
+	"key": "Upright",
+	"value": 0
+}, {
+	"key": "Urbane",
+	"value": 0
+}, {
+	"key": "Venturesome",
+	"value": 0
+}, {
+	"key": "Vivacious",
+	"value": 0
+}, {
+	"key": "Warm",
+	"value": 0
+}, {
+	"key": "Well-bred",
+	"value": 0
+}, {
+	"key": "Well-read",
+	"value": 0
+}, {
+	"key": "Well-rounded",
+	"value": 0
+}, {
+	"key": "Winning",
+	"value": 0
+}, {
+	"key": "Wise",
+	"value": 0
+}, {
+	"key": "Witty",
+	"value": 0
+}, {
+	"key": "Youthful",
+	"value": 0
+}]

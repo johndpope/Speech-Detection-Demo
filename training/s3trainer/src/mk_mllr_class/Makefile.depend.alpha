@@ -1,0 +1,22 @@
+# DO NOT DELETE
+
+main.o: cmd_ln.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+main.o: /usr/include/stdarg.h /usr/include/standards.h /usr/include/va_list.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3cb2mllr_io.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+main.o: /usr/include/stdlib.h /usr/include/getopt.h /usr/include/sys/types.h
+main.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+main.o: /usr/include/stdio.h /usr/include/sys/seek.h
+main.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+main.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+main.o: /usr/include/sys/rt_limits.h
+cmd_ln.o: cmd_ln.h
+cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+cmd_ln.o: /usr/include/stdarg.h /usr/include/standards.h
+cmd_ln.o: /usr/include/va_list.h

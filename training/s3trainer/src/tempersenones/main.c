@@ -1,0 +1,133 @@
+/*********************************************************************
+ *
+ * Carnegie Mellon ARPA Speech Group
+ *
+ * Copyright (c) 1995 Carnegie Mellon University.
+ * All rights reserved.
+ *
+ *********************************************************************/
+
+static char rcsid[] = "@(#)$Id: main.c,v 1.12 97/07/16 11:17:32 eht Exp Locker: eht $";
+
+#include "parse_cmd_ln.h"
+
+/* The SPHINX-III common library */
+#include <s3/common.h>
+
+#include <s3/s3gau_io.h>
+#include <s3/s3mixw_io.h>
+#include <sys_compat/file.h>
+#include <s3/s3.h>
+#include <s3/err.h>
+#include <stdio.h>
+#include <math.h>
+#include <assert.h>
+
+void temper(const char *vfn, const char *ovfn, 
+	    const char *mwfn, const char *omwfn,
+	    float32 eta)
+{
+    vector_t ***var;
+    float32 ***mixw, logmw[4096], logv[4096], maxlogmw;
+    uint32 n_mgau, n_mixw, n_feat, n_feat2, n_density, n_density2;
+    const uint32 *veclen;
+    uint32 i, ii, j, k, l;
+    uint32 semicont = 0;
+
+    E_INFO("Reading %s\n",  vfn);
+    
+    if (s3gau_read(vfn,
+		   &var,
+		   &n_mgau,
+		   &n_feat,
+		   &n_density,
+		   &veclen) != S3_SUCCESS)
+	E_FATAL("Error reading %s\n",vfn);
+
+    printf("param %u %u %u\n", n_mgau, n_feat, n_density);
+    if (n_mgau == 1) {
+        E_INFO("Only one codebook found; assuming semicontinuous models\n");
+	semicont = 1;
+    }
+
+    E_INFO("Reading %s\n",  mwfn);
+    
+    if (s3mixw_read(mwfn,
+                    &mixw,
+                    &n_mixw,
+                    &n_feat2,
+                    &n_density2) != S3_SUCCESS) 
+	E_FATAL("Error reading %s\n",mwfn);
+
+    assert(n_feat==n_feat2 && n_density==n_density2 && 
+           (n_mixw == n_mgau || semicont));
+
+
+    for (i = 0; i < n_mixw; i++) {
+        ii = semicont ? 0 : i;
+	for (j = 0; j < n_feat; j++) {
+            maxlogmw = -1e+32;
+	    for (k = 0; k < n_density; k++) {
+                logv[k] = 0;
+		for (l = 0; l < veclen[j]; l++) {
+		    /* Floor Variance */
+		    if (var[ii][j][k][l] < 1e-6) 
+		        var[ii][j][k][l] = 1e-6;
+                    logv[k] += log(var[ii][j][k][l]);
+		}
+                logmw[k] = log(mixw[i][j][k])*eta - 0.5*(eta-1.0)*logv[k];
+		if (logmw[k] > maxlogmw) maxlogmw = logmw[k];
+	    }
+	    for (k = 0; k < n_density; k++) 
+		mixw[i][j][k] = exp(logmw[k] - maxlogmw + 10);
+	}
+    }
+    for (i = 0; i < n_mixw; i++) {
+        ii = semicont ? 0 : i;
+	for (j = 0; j < n_feat; j++) {
+	    for (k = 0; k < n_density; k++) {
+		for (l = 0; l < veclen[j]; l++) {
+		    if (!semicont || i == 0) // Dont repeatedly normalize
+		        var[ii][j][k][l] /= eta;
+		}
+	    }
+	}
+    }
+
+    if (s3gau_write(ovfn,
+		   var,
+		   n_mgau,
+		   n_feat,
+		   n_density,
+		   veclen) != S3_SUCCESS)
+	E_FATAL("Error writing %s\n",ovfn);
+
+    if (s3mixw_write(omwfn,
+                     mixw,
+                     n_mixw,
+                     n_feat,
+                     n_density) != S3_SUCCESS)
+	E_FATAL("Error writing %s\n",omwfn);
+
+
+    ckd_free_4d((void ****)var);
+    ckd_free_3d((void ***)mixw);
+}
+
+
+main(int argc, char *argv[])
+{
+    float32 eta;
+
+    parse_cmd_ln(argc,argv);
+
+    eta = *(float32 *)cmd_ln_access("-eta");
+
+    temper(cmd_ln_access("-varfn"), 
+	   cmd_ln_access("-out_varfn"),
+           cmd_ln_access("-mixwfn"), 
+           cmd_ln_access("-out_mixwfn"), 
+	   eta);
+
+    exit(0);
+}

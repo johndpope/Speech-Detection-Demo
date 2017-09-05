@@ -1,0 +1,77 @@
+../..//s3trainer/bin.linux/bldtree \
+ -treefn ../..//trees/MODELSET1.unpruned/T-1.dtree \
+ -moddeffn ../..//model_architecture/MODELSET1.untied.mdef \
+ -mixwfn ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights \
+ -ts2cbfn .cont. \
+ -meanfn ../..//model_parameters/MODELSET1.cd_continuous_untied/means \
+ -varfn ../..//model_parameters/MODELSET1.cd_continuous_untied/variances \
+ -mwfloor 1e-8 \
+ -psetfn ../..//c_scripts/03.buildtrees/linguistic_questions.automatic \
+ -phone T \
+ -state 1 \
+ -stwt 1.0 0.05 0.0 \
+ -ssplitmin 1 \
+ -ssplitmax 7 \
+ -ssplitthr 0 \
+ -csplitmin 1 \
+ -csplitmax 2000 \
+ -csplitthr 0 \
+ -cntthresh 1
+
+[Switch]   [Default] [Value]
+-treefn              ../..//trees/MODELSET1.unpruned/T-1.dtree
+-moddeffn            ../..//model_architecture/MODELSET1.untied.mdef
+-ts2cbfn   .semi.    .cont. 
+-meanfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/means
+-varfn               ../..//model_parameters/MODELSET1.cd_continuous_untied/variances
+-varfloor  0.00001   1.000000e-05
+-cntthresh 0.00001   1.000000e+00
+-mixwfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+-psetfn              ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+-phone               T      
+-state               1      
+-mwfloor   1e-4      1.000000e-08
+-stwt                1.0 0.05 0.0
+-ssplitthr 8e-4      0.000000e+00
+-ssplitmin 1         1      
+-ssplitmax 5         7      
+-csplitthr 8e-4      0.000000e+00
+-csplitmin 1         1      
+-csplitmax 100       2000   
+INFO: ../main.c(152): Reading: ../..//model_architecture/MODELSET1.untied.mdef
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 1000 total models defined (50 base, 950 tri)
+INFO: ../model_def_io.c(564): 4000 total states
+INFO: ../model_def_io.c(565): 3000 total tied states
+INFO: ../model_def_io.c(566): 150 total tied CI states
+INFO: ../model_def_io.c(567): 50 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+INFO: ../main.c(196): Building trees for [T AE I i] through [T T OW b]
+INFO: ../main.c(224): Covering states |[2505 2675]| == 171
+INFO: ../main.c(231): Reading: ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+INFO: ../s3mixw_io.c(151): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights [171x1x1 array]
+INFO: ../main.c(269): 57 of 57 models have observation count greater than 1.000000
+INFO: ../main.c(67): nrm stwt: 0.045 0.909 0.045 
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/means [3000x1x1 array]
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/variances [3000x1x1 array]
+INFO: ../main.c(510): Reading: ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+INFO: ../main.c(547): 176 total simple questions (168 phone; 8 word bndry)
+INFO: ../main.c(549): 42 Left Only questions, and 42 Right Only questions
+N model = 57
+s>    ( SILENCE -1 -1.759e+03 2.559e+02 1.900e+02
+s>        ( - 2.404e+02 1 0)
+s>        ( QUESTION2_8_L -1 -1.744e+03 2.551e+02 1.890e+02
+s>            ( - 2.379e+02 1 0)
+s>            ( SILENCE 1 -1.726e+03 2.417e+02 1.880e+02
+s>                ( - 2.441e+02 1 0)
+s>                ( QUESTION4 -1 -1.729e+03 2.004e+02 1.870e+02
+s>                    ( QUESTION0_2_R 1 6.160e+01 2.586e+02 1.300e+01
+s>                        ( - 2.440e+02 1 0)
+s>                        ( QUESTION0_15_R 1 7.614e+01 2.168e+02 1.200e+01
+s>                            ( - 1.968e+02 1 0)
+s>                            ( WDBNDRY_B 0 9.616e+01 2.644e+02 1.000e+01
+s>                                ( - 2.440e+02 1 0)
+s>                                ( - 1.166e+02 1 0))))
+s>                    ( - -1.590e+03 50 0 QUESTION2 -1 1.713e+02 1.740e+02)))))INFO: ../dtree.c(1327): Comp split 0
+INFO: ../dtree.c(1336): stop. b_n->wt_ent_dec (-1.675e+03) <= 0

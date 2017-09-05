@@ -1,0 +1,44 @@
+../..//s3trainer/bin.linux/make_quests \
+ -moddeffn ../..//model_architecture/MODELSET1.ci.mdef \
+ -meanfn ../..//model_parameters/MODELSET1.ci_continuous/means \
+ -varfn ../..//model_parameters/MODELSET1.ci_continuous/variances \
+ -mixwfn ../..//model_parameters/MODELSET1.ci_continuous/mixture_weights \
+ -npermute 12 \
+ -niter 1 \
+ -qstperstt 20 \
+ -type .cont. \
+ -tempfn ../..//tmp/questions.30784 \
+ -questfn ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+
+[Switch]   [Default]        [Value]
+-moddeffn                   ../..//model_architecture/MODELSET1.ci.mdef
+-meanfn                     ../..//model_parameters/MODELSET1.ci_continuous/means
+-varfn                      ../..//model_parameters/MODELSET1.ci_continuous/variances
+-varfloor  1.0e-08          1.000000e-08
+-mixwfn                     ../..//model_parameters/MODELSET1.ci_continuous/mixture_weights
+-npermute  6                12     
+-type      .cont.           .cont. 
+-qstperstt 12               20     
+-niter     1                1      
+-tempfn    /tmp/TEMP.QUESTS ../..//tmp/questions.30784
+-questfn                    ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+INFO: ../main.c(749): Reading: ../..//model_architecture/MODELSET1.ci.mdef
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 50 total models defined (50 base, 0 tri)
+INFO: ../model_def_io.c(564): 200 total states
+INFO: ../model_def_io.c(565): 150 total tied states
+INFO: ../model_def_io.c(566): 150 total tied CI states
+INFO: ../model_def_io.c(567): 50 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+INFO: ../main.c(768): Reading: ../..//model_parameters/MODELSET1.ci_continuous/mixture_weights
+INFO: ../s3mixw_io.c(92): Read ../..//model_parameters/MODELSET1.ci_continuous/mixture_weights [150x1x1 array]
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.ci_continuous/means [150x1x1 array]
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.ci_continuous/variances [150x1x1 array]
+INFO: ../main.c(1031): Done building questions using state 0
+INFO: ../main.c(1032):  21 questions from state 0
+INFO: ../main.c(1031): Done building questions using state 1
+INFO: ../main.c(1032):  20 questions from state 1
+INFO: ../main.c(1031): Done building questions using state 2
+INFO: ../main.c(1032):  21 questions from state 2
+INFO: ../main.c(1037): Stored questions in ../..//c_scripts/03.buildtrees/linguistic_questions.automatic

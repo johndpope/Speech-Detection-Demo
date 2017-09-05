@@ -1,0 +1,9 @@
+The cepview executable allows you to view the
+mfcc feature files that you generate before training and decoding in ascii format.
+
+~/lab6/SPHINX3/s3trainer/bin.linux/cepview <cepstra filename> | more
+
+Usually the MFCCs in the first column are positive numbers and range from 1 to 20. If the 
+numbers in the file are much bigger, or if you see the sequence "NaN" in the ascii
+output, it indicates that there is some problem with your audio data. This is
+just for your information and should not be a concern in this lab.

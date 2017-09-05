@@ -1,0 +1,7 @@
+# DO NOT DELETE
+
+main.o: cmd_ln.h /usr/include/assert.h /usr/include/features.h
+main.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+cmd_ln.o: cmd_ln.h /usr/include/stdlib.h /usr/include/features.h
+cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h

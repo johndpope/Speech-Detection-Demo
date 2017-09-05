@@ -1,0 +1,44 @@
+For sphinxbase:
+
+wget http://sourceforge.net/projects/cmusphinx/files/sphinxbase/0.6/sphinxbase-0.6.tar.gz/download
+
+
+For sphinx3:
+
+wget http://sourceforge.net/projects/cmusphinx/files/sphinx3/0.8/sphinx3-0.8.tar.gz/download
+
+For sphinxtrain:
+
+wget http://sourceforge.net/projects/cmusphinx/files/SphinxTrain/1.0/SphinxTrain-1.0.tar.bz2/download
+
+-------------------------------------------
+
+To Compile:
+
+Sphinxbase:
+------------
+
+cd sphinxbase-0.6
+
+./configure --prefix=/usr1/home/rsingh/mlsp_archive/sphinx.opensource.26may10
+
+setenv PYTHONPATH /usr1/home/rsingh/mlsp_archive/sphinx.opensource.26may10/lib64/python2.5/site-packages/
+mkdir -p ../lib64/python2.5/site-packages
+
+make install
+
+
+Sphinx3
+-------
+
+cd sphinx3-0.8
+./configure --prefix=/usr1/home/rsingh/mlsp_archive/sphinx.opensource.26may10
+make install
+
+Sphinxtrain
+-----------
+
+cd SphinxTrain-1.0
+./configure
+make
+

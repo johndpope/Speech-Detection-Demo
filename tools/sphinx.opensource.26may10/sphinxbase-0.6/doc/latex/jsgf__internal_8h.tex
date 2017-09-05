@@ -1,0 +1,87 @@
+\section{src/libsphinxbase/lm/jsgf\_\-internal.h File Reference}
+\label{jsgf__internal_8h}\index{src/libsphinxbase/lm/jsgf\_\-internal.h@{src/libsphinxbase/lm/jsgf\_\-internal.h}}
+Internal definitions for JSGF grammar compiler.  
+
+
+{\tt \#include $<$hash\_\-table.h$>$}\par
+{\tt \#include $<$glist.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$fsg\_\-model.h$>$}\par
+{\tt \#include $<$logmath.h$>$}\par
+{\tt \#include $<$strfuncs.h$>$}\par
+{\tt \#include $<$jsgf.h$>$}\par
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct \textbf{jsgf\_\-s}
+\item 
+struct \textbf{jsgf\_\-rule\_\-s}
+\item 
+struct \textbf{jsgf\_\-rhs\_\-s}
+\item 
+struct \textbf{jsgf\_\-atom\_\-s}
+\item 
+struct \textbf{jsgf\_\-link\_\-s}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \textbf{YY\_\-NO\_\-UNISTD\_\-H}~1\label{jsgf__internal_8h_e78ac56cd1f29572e967ed7636952d15}
+
+\item 
+\#define \textbf{YY\_\-NO\_\-INPUT}\label{jsgf__internal_8h_85523a0c7d95c059d251b4e9829947aa}
+
+\item 
+\#define \textbf{jsgf\_\-atom\_\-is\_\-rule}(atom)~((atom) $\rightarrow$ name[0] == '$<$')\label{jsgf__internal_8h_c4452bbb59863e64d73f4fe2d6cd394f}
+
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct jsgf\_\-rhs\_\-s \textbf{jsgf\_\-rhs\_\-t}\label{jsgf__internal_8h_d8fc00ae94c7a558005de3e89c35142f}
+
+\item 
+typedef struct jsgf\_\-atom\_\-s \textbf{jsgf\_\-atom\_\-t}\label{jsgf__internal_8h_439a04913bdb6a58d86ad152b952f0ee}
+
+\item 
+typedef struct jsgf\_\-link\_\-s \textbf{jsgf\_\-link\_\-t}\label{jsgf__internal_8h_5b84ef71c936d856751f19992a7245eb}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void \textbf{jsgf\_\-add\_\-link} (jsgf\_\-t $\ast$grammar, jsgf\_\-atom\_\-t $\ast$atom, int from, int to)\label{jsgf__internal_8h_cb5af4a04abc56a8584eba9b937f8154}
+
+\item 
+jsgf\_\-atom\_\-t $\ast$ \textbf{jsgf\_\-atom\_\-new} (char $\ast$name, float weight)\label{jsgf__internal_8h_0e59b63784fa8761358bb2bdf568bec1}
+
+\item 
+jsgf\_\-atom\_\-t $\ast$ \textbf{jsgf\_\-kleene\_\-new} (jsgf\_\-t $\ast$jsgf, jsgf\_\-atom\_\-t $\ast$atom, int plus)\label{jsgf__internal_8h_b9dc2ab39224cda76c43822150cf7e67}
+
+\item 
+jsgf\_\-rule\_\-t $\ast$ \textbf{jsgf\_\-optional\_\-new} (jsgf\_\-t $\ast$jsgf, jsgf\_\-rhs\_\-t $\ast$exp)\label{jsgf__internal_8h_4a07cb0721add8783f0ea24dfacd6c0f}
+
+\item 
+jsgf\_\-rule\_\-t $\ast$ \textbf{jsgf\_\-define\_\-rule} (jsgf\_\-t $\ast$jsgf, char $\ast$name, jsgf\_\-rhs\_\-t $\ast$rhs, int public)\label{jsgf__internal_8h_91539f6bf30f85af4b90b5a85598f53f}
+
+\item 
+jsgf\_\-rule\_\-t $\ast$ \textbf{jsgf\_\-import\_\-rule} (jsgf\_\-t $\ast$jsgf, char $\ast$name)\label{jsgf__internal_8h_fe1e47584e4dd80929552ffed77373f2}
+
+\item 
+int \textbf{jsgf\_\-atom\_\-free} (jsgf\_\-atom\_\-t $\ast$atom)\label{jsgf__internal_8h_289d683bf62d1a5aaac6917fa64f54f2}
+
+\item 
+int \textbf{jsgf\_\-rule\_\-free} (jsgf\_\-rule\_\-t $\ast$rule)\label{jsgf__internal_8h_f2faf6fb74ad1e4d43cf990c1bcec672}
+
+\item 
+jsgf\_\-rule\_\-t $\ast$ \textbf{jsgf\_\-rule\_\-retain} (jsgf\_\-rule\_\-t $\ast$rule)\label{jsgf__internal_8h_d152a23eb0f0d9af8417919fc93074fd}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Internal definitions for JSGF grammar compiler. 
+
+
+
+Definition in file {\bf jsgf\_\-internal.h}.

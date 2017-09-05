@@ -1,0 +1,104 @@
+# cepdist.c
+obj.x86_64-unknown-linux-gnu/cepdist.o: cepdist.c
+
+# correction.c
+obj.x86_64-unknown-linux-gnu/correction.o: correction.c header.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h ../../../include/s3/s2io.h
+
+# initialize.c
+obj.x86_64-unknown-linux-gnu/initialize.o: initialize.c
+
+# main.c
+obj.x86_64-unknown-linux-gnu/main.o: main.c header.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h ../../../include/s3/s2io.h
+
+# max_q.c
+obj.x86_64-unknown-linux-gnu/max_q.o: max_q.c header.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h ../../../include/s3/s2io.h
+
+# mmse_x.c
+obj.x86_64-unknown-linux-gnu/mmse_x.o: mmse_x.c header.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h ../../../include/s3/s2io.h
+
+# norm_utt.c
+obj.x86_64-unknown-linux-gnu/norm_utt.o: norm_utt.c header.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h ../../../include/s3/s2io.h
+
+# readdistribution.c
+obj.x86_64-unknown-linux-gnu/readdistribution.o: readdistribution.c header.h \
+  ../../../include/s3/common.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/corpus.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/n_words.h \
+  ../../../include/s3/remap.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/lts.h ../../../include/s3/err.h \
+  ../../../include/s3/s2io.h
+
+# resfft.c
+obj.x86_64-unknown-linux-gnu/resfft.o: resfft.c header.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h ../../../include/s3/s2io.h
+
+# rsfft.c
+obj.x86_64-unknown-linux-gnu/rsfft.o: rsfft.c
+
+# two_D_ize.c
+obj.x86_64-unknown-linux-gnu/two_D_ize.o: two_D_ize.c
+

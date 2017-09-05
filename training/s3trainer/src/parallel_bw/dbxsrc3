@@ -1,0 +1,35 @@
+run \
+ -moddeffn /net/alf34/usr3/mseltzer/wsj0/model_architecture/si84.mfc13.lsp20.5000.mdef \
+ -ts2cbfn .cont. \
+ -mixwfn /net/alf34/usr3/mseltzer/wsj0/model_parameters/si84.mfc13.lsp20.cd_continuous_8gau/mixture_weights \
+ -mwfloor 1e-5 \
+ -tmatfn /net/alf34/usr3/mseltzer/wsj0/model_parameters/si84.mfc13.lsp20.cd_continuous_8gau/transition_matrices \
+ -tpfloor 1e-5 \
+ -meanfn /net/alf34/usr3/mseltzer/wsj0/model_parameters/si84.mfc13.lsp20.cd_continuous_8gau/means \
+ -varfn /net/alf34/usr3/mseltzer/wsj0/model_parameters/si84.mfc13.lsp20.cd_continuous_8gau/variances \
+ -dictfn /net/alf34/usr3/mseltzer/wsj0/lists/wsj0.falign.dict \
+ -fdictfn /net/alf34/usr3/mseltzer/wsj0/lists/wsj0.filler.dict \
+ -ctlfn /net/alf34/usr3/mseltzer/wsj0/lists/wsj0.si84.train.ctl \
+ -part 1 \
+ -npart 10 \
+ -parallelbw yes \
+ -cepdir /net/alf34/usr3/mseltzer/wsj0/train_features/mfc13dim_logspec20dim \
+ -cepdir_2ndfeat /net/alf34/usr3/mseltzer/wsj0/train_features/logspec20dim \
+ -cepext mfc \
+ -cepext_2ndfeat logsp20 \
+ -feat 1s_c_d_dd \
+ -feat_2ndfeat 1s_c_d_dd \
+ -ceplen 13 \
+ -ceplen_2ndfeat 20 \
+ -lsnfn /net/alf34/usr3/mseltzer/wsj0/lists/wsj0.si84.train.falign.lsn \
+ -accumdir /net/alf34/usr3/mseltzer/wsj0/bwaccumdir/si84.lsp20.parallel_buff_1 \
+ -varfloor 1e-4 \
+ -topn 64 \
+ -abeam 1e-120 \
+ -bbeam 1e-100 \
+ -agc none \
+ -cmn current \
+ -varnorm no \
+ -meanreest yes \
+ -varreest yes -2passvar no \
+ -tmatreest yes

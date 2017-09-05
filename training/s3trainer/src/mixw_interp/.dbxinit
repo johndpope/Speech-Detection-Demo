@@ -1,0 +1,2 @@
+run -SImixwfn /net/alf19/usr2/eht/s3/exp/si_284/baseline/hmm/10000/s_sc_cd_g/mixw -SDmixwfn /net/db7/usr0/vparikh/work/map/buffers/dev-94.sc.mixw.interp_add.60sents.1.4tb/mixw_counts -outmixwfn /net/db7/usr0/vparikh/work/map/buffers/dev-94.sc.mixw.interp_add.60sents.1.4tb/interp_mixw_counts
+

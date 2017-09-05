@@ -1,0 +1,13 @@
+prefix=/usr0/home/rsingh/work/genietrain/sphinx.opensource.26may10
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+libs="-lasound -lpthread -lm  "
+
+Name: SphinxBase
+Description: Shared components for Sphinx speech recognition
+Version: 0.6
+URL: http://www.cmusphinx.org/
+Libs: -L${libdir} -lsphinxbase -lsphinxad
+Libs.private: ${libs}
+Cflags: -I${includedir}/sphinxbase

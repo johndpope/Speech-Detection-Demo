@@ -1,0 +1,12 @@
+# blas_lite.c
+obj.x86_64-unknown-linux-gnu/blas_lite.o: blas_lite.c ../../../include/s3/f2c.h
+
+# slapack_lite.c
+obj.x86_64-unknown-linux-gnu/slapack_lite.o: slapack_lite.c ../../../include/s3/f2c.h
+
+# slamch.c
+obj.x86_64-unknown-linux-gnu/slamch.o: slamch.c ../../../include/s3/f2c.h
+
+# f2c_lite.c
+obj.x86_64-unknown-linux-gnu/f2c_lite.o: f2c_lite.c ../../../include/s3/f2c.h
+

@@ -1,0 +1,475 @@
+# DO NOT DELETE
+
+s2_read_map.o: ../include/s3/s2_read_map.h
+s2_read_map.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+s2_read_map.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+s2_read_map.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_read_map.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+s2_read_map.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+s2_read_map.o: /usr/include/stdlib.h /usr/include/features.h
+s2_read_map.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_read_map.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_read_map.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+s2_read_map.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+s2_read_map.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+s2_read_map.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_read_map.o: /usr/include/string.h /usr/include/assert.h
+s2_read_map.o: /usr/include/stdio.h /usr/include/bits/types.h
+s2_read_map.o: /usr/include/libio.h /usr/include/_G_config.h
+s2_read_map.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+s2_read_map.o: /usr/include/gconv.h /usr/include/bits/stdio_lim.h
+s2_read_seno.o: ../include/s3/s2_read_seno.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_inventory.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+s2_read_seno.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+s2_read_seno.o: /usr/include/stdio.h /usr/include/features.h
+s2_read_seno.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_read_seno.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_read_seno.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_read_seno.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_read_seno.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_read_seno.o: /usr/include/bits/stdio_lim.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+s2_read_seno.o: ../include/s3/s2_read_map.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/common.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+s2_read_seno.o: /usr/include/stdlib.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/matrix.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prefix_upto.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+s2_read_seno.o: /usr/include/sys/types.h /usr/include/time.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/n_words.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/remap.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+s2_read_seno.o: ../include/s3/s2io.h /usr/include/math.h
+s2_read_seno.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+s2_read_seno.o: /usr/include/bits/mathcalls.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/log.h
+s2_read_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+s2_read_seno.o: /usr/include/sys/file.h /usr/include/fcntl.h
+s2_read_seno.o: /usr/include/bits/fcntl.h /usr/include/sys/param.h
+s2_read_seno.o: /usr/include/limits.h
+s2_read_seno.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+s2_read_seno.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+s2_read_seno.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+s2_read_seno.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+s2_read_seno.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+s2_read_seno.o: /usr/include/bits/confname.h
+s2_read_tmat.o: ../include/s3/s2_read_tmat.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+s2_read_tmat.o: /usr/include/stdlib.h /usr/include/features.h
+s2_read_tmat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_read_tmat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_read_tmat.o: ../include/s3/int32_io.h /usr/include/stdio.h
+s2_read_tmat.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_read_tmat.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_read_tmat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_read_tmat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_read_tmat.o: /usr/include/bits/stdio_lim.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/log.h
+s2_read_tmat.o: /usr/include/math.h /usr/include/bits/huge_val.h
+s2_read_tmat.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/magic.h
+s2_read_tmat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+s2_read_tmat.o: /usr/include/sys/file.h /usr/include/fcntl.h
+s2_read_tmat.o: /usr/include/bits/fcntl.h /usr/include/sys/types.h
+s2_read_tmat.o: /usr/include/time.h /usr/include/sys/param.h
+s2_read_tmat.o: /usr/include/limits.h
+s2_read_tmat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+s2_read_tmat.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+s2_read_tmat.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+s2_read_tmat.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+s2_read_tmat.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+s2_read_tmat.o: /usr/include/bits/confname.h /usr/include/assert.h
+s2_read_cb.o: ../include/s3/s2_read_cb.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+s2_read_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+s2_read_cb.o: /usr/include/stdio.h /usr/include/features.h
+s2_read_cb.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_read_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_read_cb.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_read_cb.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_read_cb.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_read_cb.o: /usr/include/bits/stdio_lim.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+s2_read_cb.o: ../include/s3/s2io.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/common.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+s2_read_cb.o: /usr/include/stdlib.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/matrix.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prefix_upto.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+s2_read_cb.o: /usr/include/sys/types.h /usr/include/time.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/n_words.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/remap.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+s2_read_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+s2_read_cb.o: /usr/include/sys/file.h /usr/include/fcntl.h
+s2_read_cb.o: /usr/include/bits/fcntl.h /usr/include/sys/param.h
+s2_read_cb.o: /usr/include/limits.h
+s2_read_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+s2_read_cb.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+s2_read_cb.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+s2_read_cb.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+s2_read_cb.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+s2_read_cb.o: /usr/include/bits/confname.h /usr/include/assert.h
+s2_read_cb.o: /usr/include/string.h
+s2_write_cb.o: ../include/s3/s2_write_cb.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+s2_write_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+s2_write_cb.o: /usr/include/stdio.h /usr/include/features.h
+s2_write_cb.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_write_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_write_cb.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_write_cb.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_write_cb.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_write_cb.o: /usr/include/bits/stdio_lim.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+s2_write_cb.o: ../include/s3/s2io.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/common.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+s2_write_cb.o: /usr/include/stdlib.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/matrix.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prefix_upto.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+s2_write_cb.o: /usr/include/sys/types.h /usr/include/time.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/n_words.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/remap.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+s2_write_cb.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+s2_write_cb.o: /usr/include/sys/file.h /usr/include/fcntl.h
+s2_write_cb.o: /usr/include/bits/fcntl.h /usr/include/sys/param.h
+s2_write_cb.o: /usr/include/limits.h
+s2_write_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+s2_write_cb.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+s2_write_cb.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+s2_write_cb.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+s2_write_cb.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+s2_write_cb.o: /usr/include/bits/confname.h /usr/include/assert.h
+s2_write_cb.o: /usr/include/string.h
+s2_write_seno.o: ../include/s3/s2_write_seno.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+s2_write_seno.o: /usr/include/stdlib.h /usr/include/features.h
+s2_write_seno.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_write_seno.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_write_seno.o: ../include/s3/s2io.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+s2_write_seno.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_inventory.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+s2_write_seno.o: /usr/include/stdio.h /usr/include/bits/types.h
+s2_write_seno.o: /usr/include/libio.h /usr/include/_G_config.h
+s2_write_seno.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+s2_write_seno.o: /usr/include/gconv.h /usr/include/bits/stdio_lim.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/common.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/matrix.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prefix_upto.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+s2_write_seno.o: /usr/include/sys/types.h /usr/include/time.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/n_words.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/remap.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/log.h
+s2_write_seno.o: /usr/include/math.h /usr/include/bits/huge_val.h
+s2_write_seno.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+s2_write_seno.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+s2_write_seno.o: /usr/include/sys/file.h /usr/include/fcntl.h
+s2_write_seno.o: /usr/include/bits/fcntl.h /usr/include/sys/param.h
+s2_write_seno.o: /usr/include/limits.h
+s2_write_seno.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+s2_write_seno.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+s2_write_seno.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+s2_write_seno.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+s2_write_seno.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+s2_write_seno.o: /usr/include/bits/confname.h
+s2_write_hmm.o: ../include/s3/s2_write_hmm.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+s2_write_hmm.o: /usr/include/stdlib.h /usr/include/features.h
+s2_write_hmm.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_write_hmm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+s2_write_hmm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/log.h
+s2_write_hmm.o: /usr/include/math.h /usr/include/bits/huge_val.h
+s2_write_hmm.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/magic.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/byteorder.h
+s2_write_hmm.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+s2_write_hmm.o: /usr/include/sys/file.h /usr/include/fcntl.h
+s2_write_hmm.o: /usr/include/bits/fcntl.h /usr/include/sys/types.h
+s2_write_hmm.o: /usr/include/bits/types.h /usr/include/time.h
+s2_write_hmm.o: /usr/include/sys/param.h /usr/include/limits.h
+s2_write_hmm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+s2_write_hmm.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+s2_write_hmm.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+s2_write_hmm.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+s2_write_hmm.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+s2_write_hmm.o: /usr/include/bits/confname.h /usr/include/assert.h
+s2_write_hmm.o: /usr/include/stdio.h /usr/include/libio.h
+s2_write_hmm.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_write_hmm.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_write_hmm.o: /usr/include/bits/stdio_lim.h
+s2_mixing_weights.o: ../include/s3/s2_mixing_weights.h
+s2_mixing_weights.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+s2_mixing_weights.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+s2_mixing_weights.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+s2_mixing_weights.o: /usr/include/stdlib.h /usr/include/features.h
+s2_mixing_weights.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_mixing_weights.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_mixing_weights.o: ../include/s3/int32_io.h /usr/include/stdio.h
+s2_mixing_weights.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_mixing_weights.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_mixing_weights.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_mixing_weights.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_mixing_weights.o: /usr/include/bits/stdio_lim.h
+s2_mixing_weights.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+s2_mixing_weights.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+s2_mixing_weights.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/log.h
+s2_mixing_weights.o: /usr/include/math.h /usr/include/bits/huge_val.h
+s2_mixing_weights.o: /usr/include/bits/mathdef.h
+s2_mixing_weights.o: /usr/include/bits/mathcalls.h
+s2_mixing_weights.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/magic.h
+s2_mixing_weights.o: /usr/include/assert.h
+areadfloat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/byteorder.h
+areadfloat.o: ../include/s3/s2io.h
+areadfloat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+areadfloat.o: /usr/include/sys/file.h /usr/include/features.h
+areadfloat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+areadfloat.o: /usr/include/fcntl.h /usr/include/bits/fcntl.h
+areadfloat.o: /usr/include/sys/types.h /usr/include/bits/types.h
+areadfloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+areadfloat.o: /usr/include/time.h /usr/include/sys/param.h
+areadfloat.o: /usr/include/limits.h
+areadfloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+areadfloat.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+areadfloat.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+areadfloat.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+areadfloat.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+areadfloat.o: /usr/include/bits/confname.h /usr/include/stdio.h
+areadfloat.o: /usr/include/libio.h /usr/include/_G_config.h
+areadfloat.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+areadfloat.o: /usr/include/gconv.h
+areadfloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+areadfloat.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+areadfloat.o: /usr/include/stdlib.h /usr/include/string.h
+areadint.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/byteorder.h
+areadint.o: ../include/s3/s2io.h
+areadint.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+areadint.o: /usr/include/sys/file.h /usr/include/features.h
+areadint.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+areadint.o: /usr/include/fcntl.h /usr/include/bits/fcntl.h
+areadint.o: /usr/include/sys/types.h /usr/include/bits/types.h
+areadint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+areadint.o: /usr/include/time.h /usr/include/sys/param.h
+areadint.o: /usr/include/limits.h
+areadint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+areadint.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+areadint.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+areadint.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+areadint.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+areadint.o: /usr/include/bits/confname.h /usr/include/stdio.h
+areadint.o: /usr/include/libio.h /usr/include/_G_config.h
+areadint.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+areadint.o: /usr/include/gconv.h
+areadint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+areadint.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+areadshort.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+areadshort.o: /usr/include/sys/file.h /usr/include/features.h
+areadshort.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+areadshort.o: /usr/include/fcntl.h /usr/include/bits/fcntl.h
+areadshort.o: /usr/include/sys/types.h /usr/include/bits/types.h
+areadshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+areadshort.o: /usr/include/time.h /usr/include/sys/param.h
+areadshort.o: /usr/include/limits.h
+areadshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+areadshort.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+areadshort.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+areadshort.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+areadshort.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+areadshort.o: /usr/include/bits/confname.h
+areadshort.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/byteorder.h
+areadshort.o: ../include/s3/s2io.h /usr/include/stdio.h /usr/include/libio.h
+areadshort.o: /usr/include/_G_config.h /usr/include/wchar.h
+areadshort.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+areadshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+areadshort.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+awriteshort.o: /usr/include/stdio.h /usr/include/features.h
+awriteshort.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+awriteshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+awriteshort.o: /usr/include/bits/types.h /usr/include/libio.h
+awriteshort.o: /usr/include/_G_config.h /usr/include/wchar.h
+awriteshort.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+awriteshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+awriteshort.o: /usr/include/bits/stdio_lim.h
+awriteshort.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+awriteshort.o: /usr/include/sys/file.h /usr/include/fcntl.h
+awriteshort.o: /usr/include/bits/fcntl.h /usr/include/sys/types.h
+awriteshort.o: /usr/include/time.h /usr/include/sys/param.h
+awriteshort.o: /usr/include/limits.h
+awriteshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+awriteshort.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+awriteshort.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+awriteshort.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+awriteshort.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+awriteshort.o: /usr/include/bits/confname.h
+awriteshort.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/byteorder.h
+areadchar.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/byteorder.h
+areadchar.o: ../include/s3/s2io.h
+areadchar.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+areadchar.o: /usr/include/sys/file.h /usr/include/features.h
+areadchar.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+areadchar.o: /usr/include/fcntl.h /usr/include/bits/fcntl.h
+areadchar.o: /usr/include/sys/types.h /usr/include/bits/types.h
+areadchar.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+areadchar.o: /usr/include/time.h /usr/include/sys/param.h
+areadchar.o: /usr/include/limits.h
+areadchar.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+areadchar.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+areadchar.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+areadchar.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+areadchar.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+areadchar.o: /usr/include/bits/confname.h /usr/include/stdio.h
+areadchar.o: /usr/include/libio.h /usr/include/_G_config.h
+areadchar.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+areadchar.o: /usr/include/gconv.h
+areadchar.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+areadchar.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+awritefloat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/byteorder.h
+awritefloat.o: ../include/s3/s2io.h
+awritefloat.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+awritefloat.o: /usr/include/sys/file.h /usr/include/features.h
+awritefloat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+awritefloat.o: /usr/include/fcntl.h /usr/include/bits/fcntl.h
+awritefloat.o: /usr/include/sys/types.h /usr/include/bits/types.h
+awritefloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+awritefloat.o: /usr/include/time.h /usr/include/sys/param.h
+awritefloat.o: /usr/include/limits.h
+awritefloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+awritefloat.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+awritefloat.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+awritefloat.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+awritefloat.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+awritefloat.o: /usr/include/bits/confname.h /usr/include/stdio.h
+awritefloat.o: /usr/include/libio.h /usr/include/_G_config.h
+awritefloat.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+awritefloat.o: /usr/include/gconv.h
+awritefloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+awritefloat.o: /usr/include/bits/stdio_lim.h
+awriteint.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s2/byteorder.h
+awriteint.o: ../include/s3/s2io.h
+awriteint.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+awriteint.o: /usr/include/sys/file.h /usr/include/features.h
+awriteint.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+awriteint.o: /usr/include/fcntl.h /usr/include/bits/fcntl.h
+awriteint.o: /usr/include/sys/types.h /usr/include/bits/types.h
+awriteint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+awriteint.o: /usr/include/time.h /usr/include/sys/param.h
+awriteint.o: /usr/include/limits.h
+awriteint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+awriteint.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+awriteint.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+awriteint.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+awriteint.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+awriteint.o: /usr/include/bits/confname.h /usr/include/stdio.h
+awriteint.o: /usr/include/libio.h /usr/include/_G_config.h
+awriteint.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+awriteint.o: /usr/include/gconv.h
+awriteint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+awriteint.o: /usr/include/bits/stdio_lim.h
+pset_io.o: ../include/s3/pset_io.h
+pset_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+pset_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+pset_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+pset_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+pset_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/quest.h
+pset_io.o: /usr/include/stdio.h /usr/include/features.h
+pset_io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+pset_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+pset_io.o: /usr/include/bits/types.h /usr/include/libio.h
+pset_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+pset_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+pset_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+pset_io.o: /usr/include/bits/stdio_lim.h
+pset_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+pset_io.o: /usr/include/stdlib.h
+pset_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+pset_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+pset_io.o: /usr/include/string.h
+int32_io.o: ../include/s3/int32_io.h /usr/include/stdio.h
+int32_io.o: /usr/include/features.h /usr/include/sys/cdefs.h
+int32_io.o: /usr/include/gnu/stubs.h
+int32_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+int32_io.o: /usr/include/bits/types.h /usr/include/libio.h
+int32_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+int32_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+int32_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+int32_io.o: /usr/include/bits/stdio_lim.h
+int32_io.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h

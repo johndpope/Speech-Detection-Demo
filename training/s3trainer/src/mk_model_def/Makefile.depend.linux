@@ -1,0 +1,30 @@
+# DO NOT DELETE
+
+mk_model_def.o: parse_cmd_ln.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+mk_model_def.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+mk_model_def.o: /usr/include/stdlib.h /usr/include/features.h
+mk_model_def.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+mk_model_def.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_read_map.h
+mk_model_def.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+mk_model_def.o: /usr/include/stdio.h /usr/include/bits/types.h
+mk_model_def.o: /usr/include/libio.h /usr/include/_G_config.h
+mk_model_def.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+mk_model_def.o: /usr/include/gconv.h /usr/include/bits/stdio_lim.h
+mk_model_def.o: /usr/include/string.h /usr/include/assert.h
+mk_model_def.o: /usr/include/time.h /usr/include/bits/time.h
+parse_cmd_ln.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+parse_cmd_ln.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+parse_cmd_ln.o: parse_cmd_ln.h /usr/include/stdlib.h /usr/include/features.h
+parse_cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+parse_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h

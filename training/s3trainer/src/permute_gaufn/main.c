@@ -1,0 +1,198 @@
+/*********************************************************************
+ *
+ * $Header: /net/alf19/usr2/eht/s3/src/cp_parm/RCS/main.c,v 1.1 97/07/16 11:36:22 eht Exp Locker: eht $
+ *
+ * CMU ARPA Speech Project
+ *
+ * Copyright (c) 1997 Carnegie Mellon University.
+ * All rights reserved.
+ *
+ *********************************************************************
+ *
+ * File: main.c
+ * 
+ * Description: 
+ * 	Copies parameters from an input file to and output file
+ *
+ * Author: 
+ *     Eric H. Thayer (eht@cs.cmu.edu)
+ *********************************************************************/
+
+static char rcsid[] = "@(#)$Id: main.c,v 1.1 97/07/16 11:36:22 eht Exp Locker: eht $";
+
+#include "cmd_ln.h"
+#include <s3/s3gau_io.h>
+#include <s3/gauden.h>
+#include <s3/ckd_alloc.h>
+#include <s3/feat.h>
+#include <s3/cmd_ln.h>
+
+#include <s3/s3.h>
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+static int rd_parm(void);
+static int flip_parm(void);
+static int wr_parm(void);
+
+
+static uint32 n_stream;
+static uint32 n_density;
+
+static vector_t ***igau;
+static uint32 n_cb_i;
+static uint32 n_cb_o;
+static const uint32 *veclen;
+
+
+
+static int
+rd_gau(const char *fn)
+{
+    if (s3gau_read(fn,
+		   &igau,
+		   &n_cb_i,
+		   &n_stream,
+		   &n_density,
+		   &veclen) != S3_SUCCESS)
+	return S3_ERROR;
+
+    return S3_SUCCESS;
+}
+
+static int
+flip_gau()
+{
+    uint32 i, j, k, l, ins31x = 0, in1scddd = 0, outs31x = 0, out1scddd = 0;
+    float32 tmp[100];
+    char *infeatname, *outfeatname;
+
+    infeatname = (char *)cmd_ln_access("-infeat");
+    if (strcmp(infeatname,"1s_c_d_dd") == 0) in1scddd = 1;
+    if (strcmp(infeatname,"s3_1x39") == 0) ins31x = 1;
+    if (!ins31x && !in1scddd)
+        E_FATAL("-infeat must be one of s3_1x39 or 1s_c_d_dd\n");
+        
+    outfeatname = (char *)cmd_ln_access("-outfeat");
+    if (strcmp(outfeatname,"1s_c_d_dd") == 0) out1scddd = 1;
+    if (strcmp(outfeatname,"s3_1x39") == 0) outs31x = 1;
+    if (!outs31x && !out1scddd)
+        E_FATAL("-outfeat must be one of s3_1x39 or 1s_c_d_dd\n");
+
+    E_INFO("Flipping from %s to %s\n",infeatname, outfeatname);
+
+    /* First flip input gau to 1_s_c_d_dd */ 
+    if (ins31x) {
+        E_INFO("Permuting from S3_1x39 to 1S_C_D_DD\n");
+        for (i = 0; i < n_cb_i; i++) {
+            for (j = 0; j < n_stream; j++) {
+	        for (k = 0; k < n_density; k++) {
+	            for (l = 0; l < veclen[j]; l++) {
+		        tmp[l] = igau[i][j][k][l];
+	            }
+
+		    igau[i][j][k][0] = tmp[24];
+	            for (l = 1; l < 13; l++) 
+		        igau[i][j][k][l] = tmp[l-1];
+
+		    igau[i][j][k][13] = tmp[25];
+	            for (l = 14; l < 26; l++) 
+		        igau[i][j][k][l] = tmp[l-2];
+
+	            for (l = 26; l < 39; l++) 
+		        igau[i][j][k][l] = tmp[l];
+	        }
+	    }
+        }
+    }
+
+    /* flip gau to s3_1x39 if needed */ 
+    if (outs31x) {
+        E_INFO("Permuting from 1S_C_D_DD to S3_1x39\n");
+        for (i = 0; i < n_cb_i; i++) {
+            for (j = 0; j < n_stream; j++) {
+	        for (k = 0; k < n_density; k++) {
+	            for (l = 0; l < veclen[j]; l++) {
+		        tmp[l] = igau[i][j][k][l];
+	            }
+
+	            for (l = 0; l < 12; l++) 
+		        igau[i][j][k][l] = tmp[l+1];
+		    igau[i][j][k][24] = tmp[0];
+
+	            for (l = 12; l < 24; l++) 
+		        igau[i][j][k][l] = tmp[l+2];
+		    igau[i][j][k][25] = tmp[13];
+
+	            for (l = 26; l < 39; l++) 
+		        igau[i][j][k][l] = tmp[l];
+	        }
+	    }
+        }
+    }
+
+    return S3_SUCCESS;
+}
+
+static int
+wr_gau(const char *fn)
+{
+    if (s3gau_write(fn,
+		    (const vector_t ***)igau,
+		    n_cb_i,
+		    n_stream,
+		    n_density,
+		    veclen) != S3_SUCCESS)
+	return S3_ERROR;
+
+    gauden_free_param(igau);
+
+    return S3_SUCCESS;
+}
+
+
+static int
+rd_parm()
+{
+    if (cmd_ln_access("-igaufn")) 
+	rd_gau((const char *)cmd_ln_access("-igaufn"));
+}
+
+static int
+flip_parm()
+{
+    flip_gau();
+
+    return S3_SUCCESS;
+}
+
+static int
+wr_parm()
+{
+    wr_gau((const char *)cmd_ln_access("-ogaufn"));
+    return S3_SUCCESS;
+}
+
+
+main(int argc, char *argv[])
+{
+    parse_cmd_ln(argc, argv);
+
+    rd_parm();
+    flip_parm();
+    wr_parm();
+
+    return 0;
+}
+
+/*
+ * Log record.  Maintained by RCS.
+ *
+ * $Log:	main.c,v $
+ * Revision 1.1  97/07/16  11:36:22  eht
+ * Initial revision
+ * 
+ *
+ */

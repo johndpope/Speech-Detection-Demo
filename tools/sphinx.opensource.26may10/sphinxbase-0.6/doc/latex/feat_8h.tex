@@ -1,0 +1,455 @@
+\section{include/feat.h File Reference}
+\label{feat_8h}\index{include/feat.h@{include/feat.h}}
+compute the dynamic coefficients from the cepstral vector.  
+
+
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+{\tt \#include $<$fe.h$>$}\par
+{\tt \#include $<$cmn.h$>$}\par
+{\tt \#include $<$agc.h$>$}\par
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct \textbf{feat\_\-s}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \textbf{LIVEBUFBLOCKSIZE}~256\label{feat_8h_0e0d4a6b5ad951229bec259ce9637325}
+
+\item 
+\#define \textbf{S3\_\-MAX\_\-FRAMES}~15000\label{feat_8h_7858f0e32903e11a6cb9d659ad4f6542}
+
+\item 
+\#define \textbf{cepstral\_\-to\_\-feature\_\-command\_\-line\_\-macro}()\label{feat_8h_da461d1a4db89192fbd7d8a7e15ca22d}
+
+\item 
+\#define {\bf feat\_\-name}(f)~((f) $\rightarrow$ name)\label{feat_8h_196b41ab9dfffcea885ee1a9075ede9e}
+
+\begin{CompactList}\small\item\em Name of feature type. \item\end{CompactList}\item 
+\#define {\bf feat\_\-cepsize}(f)~((f) $\rightarrow$ cepsize)\label{feat_8h_c691993ec890de3daefbcffe89788f5a}
+
+\begin{CompactList}\small\item\em Input dimensionality of feature. \item\end{CompactList}\item 
+\#define {\bf feat\_\-window\_\-size}(f)~((f) $\rightarrow$ window\_\-size)\label{feat_8h_69cdcd91578c26565c7653ad6f2eb510}
+
+\begin{CompactList}\small\item\em Size of dynamic feature window. \item\end{CompactList}\item 
+\#define {\bf feat\_\-n\_\-stream}(f)~((f) $\rightarrow$ n\_\-stream)
+\begin{CompactList}\small\item\em Number of feature streams. \item\end{CompactList}\item 
+\#define {\bf feat\_\-stream\_\-len}(f, i)~((f) $\rightarrow$ stream\_\-len[i])
+\begin{CompactList}\small\item\em Length of feature stream i. \item\end{CompactList}\item 
+\#define {\bf feat\_\-dimension1}(f)~((f) $\rightarrow$ n\_\-sv ? (f) $\rightarrow$ n\_\-sv : f $\rightarrow$ n\_\-stream)\label{feat_8h_badd19e2cc72df33e81e9d73a7ddffdb}
+
+\begin{CompactList}\small\item\em Number of streams or subvectors in feature output. \item\end{CompactList}\item 
+\#define {\bf feat\_\-dimension2}(f, i)~((f) $\rightarrow$ sv\_\-len ? (f) $\rightarrow$ sv\_\-len[i] : f $\rightarrow$ stream\_\-len[i])\label{feat_8h_5bd29a80c7f23f281d55555757f97f34}
+
+\begin{CompactList}\small\item\em Dimensionality of stream/subvector i in feature output. \item\end{CompactList}\item 
+\#define {\bf feat\_\-dimension}(f)~((f) $\rightarrow$ out\_\-dim)\label{feat_8h_66dc16aeea4307bf36ec4e08e05d0c7c}
+
+\begin{CompactList}\small\item\em Total dimensionality of feature output. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct feat\_\-s \textbf{feat\_\-t}\label{feat_8h_cce3586bdd820afe9518147a6ada8bd9}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT int32 $\ast$$\ast$ {\bf parse\_\-subvecs} (char const $\ast$str)
+\begin{CompactList}\small\item\em Parse subvector specification string. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf subvecs\_\-free} (int32 $\ast$$\ast$subvecs)\label{feat_8h_d209a1028b315a96a3a2447eccdb8605}
+
+\begin{CompactList}\small\item\em Free array of subvector specs. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf feat\_\-s2mfc\_\-read} (char $\ast$file, int32 win, int32 sf, int32 ef, mfcc\_\-t $\ast$$\ast$$\ast$out\_\-mfc, int32 maxfr, int32 cepsize)
+\begin{CompactList}\small\item\em Read Sphinx-II format mfc file (s2mfc = Sphinx-II format MFC data). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT mfcc\_\-t $\ast$$\ast$$\ast$ {\bf feat\_\-array\_\-alloc} ({\bf feat\_\-t} $\ast$fcb, int32 nfr)
+\begin{CompactList}\small\item\em Allocate an array to hold several frames worth of feature vectors. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf feat\_\-array\_\-free} (mfcc\_\-t $\ast$$\ast$$\ast$feat)\label{feat_8h_d5c87f80af670b7a949af65bc3ba82a8}
+
+\begin{CompactList}\small\item\em Free a buffer allocated with \doxyref{feat\_\-array\_\-alloc()}{p.}{feat_8h_03071d6d5c6b233117871f583c258b1e}. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT {\bf feat\_\-t} $\ast$ {\bf feat\_\-init} (char const $\ast$type, {\bf cmn\_\-type\_\-t} cmn, int32 varnorm, {\bf agc\_\-type\_\-t} agc, int32 breport, int32 cepsize)
+\begin{CompactList}\small\item\em Initialize feature module to use the selected type of feature stream. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf feat\_\-read\_\-lda} ({\bf feat\_\-t} $\ast$feat, const char $\ast$ldafile, int32 dim)
+\begin{CompactList}\small\item\em Add an LDA transformation to the feature module from a file. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf feat\_\-lda\_\-transform} ({\bf feat\_\-t} $\ast$fcb, mfcc\_\-t $\ast$$\ast$$\ast$inout\_\-feat, uint32 nfr)
+\begin{CompactList}\small\item\em Transform a block of features using the feature module's LDA transform. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int {\bf feat\_\-set\_\-subvecs} ({\bf feat\_\-t} $\ast$fcb, int32 $\ast$$\ast$subvecs)
+\begin{CompactList}\small\item\em Add a subvector specification to the feature module. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf feat\_\-print} ({\bf feat\_\-t} $\ast$fcb, mfcc\_\-t $\ast$$\ast$$\ast$feat, int32 nfr, FILE $\ast$fp)
+\begin{CompactList}\small\item\em Print the given block of feature vectors to the given FILE. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf feat\_\-s2mfc2feat} ({\bf feat\_\-t} $\ast$fcb, const char $\ast$file, const char $\ast$dir, const char $\ast$cepext, int32 sf, int32 ef, mfcc\_\-t $\ast$$\ast$$\ast$feat, int32 maxfr)
+\begin{CompactList}\small\item\em Read a specified MFC file (or given segment within it), perform CMN/AGC as indicated by {\tt fcb}, and compute feature vectors. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf feat\_\-s2mfc2feat\_\-live} ({\bf feat\_\-t} $\ast$fcb, mfcc\_\-t $\ast$$\ast$uttcep, int32 $\ast$inout\_\-ncep, int32 beginutt, int32 endutt, mfcc\_\-t $\ast$$\ast$$\ast$ofeat)
+\begin{CompactList}\small\item\em Feature computation routine for live mode decoder. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT {\bf feat\_\-t} $\ast$ {\bf feat\_\-retain} ({\bf feat\_\-t} $\ast$f)
+\begin{CompactList}\small\item\em Retain ownership of \doxyref{feat\_\-t}{p.}{structfeat__t}. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int {\bf feat\_\-free} ({\bf feat\_\-t} $\ast$f)
+\begin{CompactList}\small\item\em Release resource associated with \doxyref{feat\_\-t}{p.}{structfeat__t}. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf feat\_\-report} ({\bf feat\_\-t} $\ast$f)
+\begin{CompactList}\small\item\em Report the \doxyref{feat\_\-t}{p.}{structfeat__t} data structure. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+compute the dynamic coefficients from the cepstral vector. 
+
+
+
+Definition in file {\bf feat.h}.
+
+\subsection{Define Documentation}
+\index{feat.h@{feat.h}!feat\_\-n\_\-stream@{feat\_\-n\_\-stream}}
+\index{feat\_\-n\_\-stream@{feat\_\-n\_\-stream}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-n\_\-stream}]{\setlength{\rightskip}{0pt plus 5cm}\#define feat\_\-n\_\-stream(f)~((f) $\rightarrow$ n\_\-stream)}\label{feat_8h_1fe686c88d5b0598d7509af21acd9b76}
+
+
+Number of feature streams. 
+
+\begin{Desc}
+\item[{\bf Deprecated}]Do not use this, use \doxyref{feat\_\-dimension1()}{p.}{feat_8h_badd19e2cc72df33e81e9d73a7ddffdb} instead. \end{Desc}
+
+
+Definition at line 219 of file feat.h.\index{feat.h@{feat.h}!feat\_\-stream\_\-len@{feat\_\-stream\_\-len}}
+\index{feat\_\-stream\_\-len@{feat\_\-stream\_\-len}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-stream\_\-len}]{\setlength{\rightskip}{0pt plus 5cm}\#define feat\_\-stream\_\-len(f, \/  i)~((f) $\rightarrow$ stream\_\-len[i])}\label{feat_8h_3d50283fc416fff87f3b907a12c2c11e}
+
+
+Length of feature stream i. 
+
+\begin{Desc}
+\item[{\bf Deprecated}]Do not use this, use \doxyref{feat\_\-dimension2()}{p.}{feat_8h_5bd29a80c7f23f281d55555757f97f34} instead. \end{Desc}
+
+
+Definition at line 225 of file feat.h.
+
+\subsection{Function Documentation}
+\index{feat.h@{feat.h}!feat\_\-array\_\-alloc@{feat\_\-array\_\-alloc}}
+\index{feat\_\-array\_\-alloc@{feat\_\-array\_\-alloc}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-array\_\-alloc}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT mfcc\_\-t$\ast$$\ast$$\ast$ feat\_\-array\_\-alloc ({\bf feat\_\-t} $\ast$ {\em fcb}, \/  int32 {\em nfr})}\label{feat_8h_03071d6d5c6b233117871f583c258b1e}
+
+
+Allocate an array to hold several frames worth of feature vectors. 
+
+The returned value is the mfcc\_\-t $\ast$$\ast$$\ast$data array, organized as follows:
+
+\begin{itemize}
+\item data[0][0] = frame 0 stream 0 vector, data[0][1] = frame 0 stream 1 vector, ...\item data[1][0] = frame 1 stream 0 vector, data[0][1] = frame 1 stream 1 vector, ...\item data[2][0] = frame 2 stream 0 vector, data[0][1] = frame 2 stream 1 vector, ...\item ...\end{itemize}
+
+
+NOTE: For I/O convenience, the entire data area is allocated as one contiguous block. \begin{Desc}
+\item[Returns:]pointer to the allocated space if successful, NULL if any error. \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fcb}]In: Descriptor from \doxyref{feat\_\-init()}{p.}{feat_8h_7a5e2e02e99e368e1e9e3b1ded35e3dc}, used to obtain number of streams and stream sizes \item[{\em 
+nfr}]In: Number of frames for which to allocate \end{description}
+\end{Desc}
+
+
+Definition at line 519 of file feat.c.
+
+References ckd\_\-calloc, ckd\_\-calloc\_\-2d, feat\_\-array\_\-alloc(), feat\_\-dimension, feat\_\-dimension1, and feat\_\-dimension2.
+
+Referenced by feat\_\-array\_\-alloc().\index{feat.h@{feat.h}!feat\_\-free@{feat\_\-free}}
+\index{feat\_\-free@{feat\_\-free}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int feat\_\-free ({\bf feat\_\-t} $\ast$ {\em f})}\label{feat_8h_98463b4ab5fe4265fc817523b0e25ee9}
+
+
+Release resource associated with \doxyref{feat\_\-t}{p.}{structfeat__t}. 
+
+\begin{Desc}
+\item[Returns:]new reference count (0 if freed) \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+f}]In: \doxyref{feat\_\-t}{p.}{structfeat__t} \end{description}
+\end{Desc}
+
+
+Definition at line 1365 of file feat.c.
+
+References agc\_\-free(), ckd\_\-free(), ckd\_\-free\_\-2d(), ckd\_\-free\_\-3d(), feat\_\-free(), and subvecs\_\-free().
+
+Referenced by feat\_\-free().\index{feat.h@{feat.h}!feat\_\-init@{feat\_\-init}}
+\index{feat\_\-init@{feat\_\-init}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT {\bf feat\_\-t}$\ast$ feat\_\-init (char const $\ast$ {\em type}, \/  {\bf cmn\_\-type\_\-t} {\em cmn}, \/  int32 {\em varnorm}, \/  {\bf agc\_\-type\_\-t} {\em agc}, \/  int32 {\em breport}, \/  int32 {\em cepsize})}\label{feat_8h_7a5e2e02e99e368e1e9e3b1ded35e3dc}
+
+
+Initialize feature module to use the selected type of feature stream. 
+
+One-time only initialization at the beginning of the program. Input type is a string defining the kind of input-$>$feature conversion desired:
+
+\begin{itemize}
+\item \char`\"{}s2\_\-4x\char`\"{}: s2mfc-$>$Sphinx-II 4-feature stream,\item \char`\"{}1s\_\-c\_\-d\_\-dd\char`\"{}: s2mfc-$>$Sphinx 3.x single feature stream,\item \char`\"{}s3\_\-1x39\char`\"{}: s2mfc-$>$Sphinx 3.0 single feature stream,\item \char`\"{}n1,n2,n3,...\char`\"{}: Explicit feature vector layout spec. with comma-separated feature stream lengths. In this case, the input data is already in the feature format and there is no conversion necessary.\end{itemize}
+
+
+\begin{Desc}
+\item[Returns:](\doxyref{feat\_\-t}{p.}{structfeat__t} $\ast$) descriptor if successful, NULL if error. Caller must not directly modify the contents of the returned value. \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+type}]In: Type of feature stream \item[{\em 
+cmn}]In: Type of cepstram mean normalization to be done before feature computation; can be CMN\_\-NONE (for none) \item[{\em 
+varnorm}]In: (boolean) Whether variance normalization done on each utt; only applicable if CMN also done \item[{\em 
+agc}]In: Type of automatic gain control to be done before feature computation \item[{\em 
+breport}]In: Whether to show a report for \doxyref{feat\_\-t}{p.}{structfeat__t} \item[{\em 
+cepsize}]Number of components in the input vector (or 0 for the default for this feature type, which is usually 13) \end{description}
+\end{Desc}
+
+
+Definition at line 840 of file feat.c.
+
+References agc\_\-emax\_\-set(), agc\_\-init(), agc\_\-type\_\-str, ckd\_\-calloc, ckd\_\-calloc\_\-2d, ckd\_\-free(), ckd\_\-salloc, cmn\_\-type\_\-str, E\_\-ERROR, E\_\-FATAL, E\_\-INFO, feat\_\-cepsize, feat\_\-init(), and feat\_\-window\_\-size.
+
+Referenced by feat\_\-init().\index{feat.h@{feat.h}!feat\_\-lda\_\-transform@{feat\_\-lda\_\-transform}}
+\index{feat\_\-lda\_\-transform@{feat\_\-lda\_\-transform}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-lda\_\-transform}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void feat\_\-lda\_\-transform ({\bf feat\_\-t} $\ast$ {\em fcb}, \/  mfcc\_\-t $\ast$$\ast$$\ast$ {\em inout\_\-feat}, \/  uint32 {\em nfr})}\label{feat_8h_7452702cb435ea9244c7e1f61bbf5da1}
+
+
+Transform a block of features using the feature module's LDA transform. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fcb}]In: Descriptor from \doxyref{feat\_\-init()}{p.}{feat_8h_7a5e2e02e99e368e1e9e3b1ded35e3dc} \item[{\em 
+inout\_\-feat}]Feature block to transform. \item[{\em 
+nfr}]In: Number of frames in inout\_\-feat. \end{description}
+\end{Desc}
+
+
+Definition at line 139 of file lda.c.
+
+References ckd\_\-calloc, ckd\_\-free(), feat\_\-dimension, and feat\_\-lda\_\-transform().
+
+Referenced by feat\_\-lda\_\-transform(), and feat\_\-s2mfc2feat\_\-live().\index{feat.h@{feat.h}!feat\_\-print@{feat\_\-print}}
+\index{feat\_\-print@{feat\_\-print}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void feat\_\-print ({\bf feat\_\-t} $\ast$ {\em fcb}, \/  mfcc\_\-t $\ast$$\ast$$\ast$ {\em feat}, \/  int32 {\em nfr}, \/  FILE $\ast$ {\em fp})}\label{feat_8h_feaef030a5ec32c2164b5bd55e912714}
+
+
+Print the given block of feature vectors to the given FILE. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fcb}]In: Descriptor from \doxyref{feat\_\-init()}{p.}{feat_8h_7a5e2e02e99e368e1e9e3b1ded35e3dc} \item[{\em 
+feat}]In: Feature data to be printed \item[{\em 
+nfr}]In: Number of frames of feature data above \item[{\em 
+fp}]In: Output file pointer \end{description}
+\end{Desc}
+
+
+Definition at line 1014 of file feat.c.
+
+References feat\_\-dimension1, feat\_\-dimension2, and feat\_\-print().
+
+Referenced by feat\_\-print().\index{feat.h@{feat.h}!feat\_\-read\_\-lda@{feat\_\-read\_\-lda}}
+\index{feat\_\-read\_\-lda@{feat\_\-read\_\-lda}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-read\_\-lda}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 feat\_\-read\_\-lda ({\bf feat\_\-t} $\ast$ {\em feat}, \/  const char $\ast$ {\em ldafile}, \/  int32 {\em dim})}\label{feat_8h_7639fbc34e3328d7e3259e61372c64b8}
+
+
+Add an LDA transformation to the feature module from a file. 
+
+\begin{Desc}
+\item[Returns:]0 for success or -1 if reading the LDA file failed. \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+feat}]In: Descriptor from \doxyref{feat\_\-init()}{p.}{feat_8h_7a5e2e02e99e368e1e9e3b1ded35e3dc} \item[{\em 
+ldafile}]In: File to read the LDA matrix from. \item[{\em 
+dim}]In: Dimensionality of LDA output. \end{description}
+\end{Desc}
+
+
+Definition at line 61 of file lda.c.
+
+References bio\_\-fread\_\-3d(), bio\_\-hdrarg\_\-free(), bio\_\-readhdr(), ckd\_\-free\_\-3d(), E\_\-ERROR, E\_\-ERROR\_\-SYSTEM, E\_\-WARN, and feat\_\-read\_\-lda().
+
+Referenced by feat\_\-read\_\-lda().\index{feat.h@{feat.h}!feat\_\-report@{feat\_\-report}}
+\index{feat\_\-report@{feat\_\-report}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-report}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void feat\_\-report ({\bf feat\_\-t} $\ast$ {\em f})}\label{feat_8h_e3e67bd629f9756ddb6c5a599d223f6e}
+
+
+Report the \doxyref{feat\_\-t}{p.}{structfeat__t} data structure. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+f}]In: \doxyref{feat\_\-t}{p.}{structfeat__t} \end{description}
+\end{Desc}
+
+
+Definition at line 1396 of file feat.c.
+
+References E\_\-INFO\_\-NOFN, E\_\-INFOCONT, and feat\_\-report().
+
+Referenced by feat\_\-report().\index{feat.h@{feat.h}!feat\_\-retain@{feat\_\-retain}}
+\index{feat\_\-retain@{feat\_\-retain}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-retain}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT {\bf feat\_\-t}$\ast$ feat\_\-retain ({\bf feat\_\-t} $\ast$ {\em f})}\label{feat_8h_80d6eabf01ff119d324a07c1de8fda80}
+
+
+Retain ownership of \doxyref{feat\_\-t}{p.}{structfeat__t}. 
+
+\begin{Desc}
+\item[Returns:]pointer to retained \doxyref{feat\_\-t}{p.}{structfeat__t}. \end{Desc}
+
+
+Definition at line 1358 of file feat.c.
+
+References feat\_\-retain().
+
+Referenced by feat\_\-retain().\index{feat.h@{feat.h}!feat\_\-s2mfc2feat@{feat\_\-s2mfc2feat}}
+\index{feat\_\-s2mfc2feat@{feat\_\-s2mfc2feat}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-s2mfc2feat}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 feat\_\-s2mfc2feat ({\bf feat\_\-t} $\ast$ {\em fcb}, \/  const char $\ast$ {\em file}, \/  const char $\ast$ {\em dir}, \/  const char $\ast$ {\em cepext}, \/  int32 {\em sf}, \/  int32 {\em ef}, \/  mfcc\_\-t $\ast$$\ast$$\ast$ {\em feat}, \/  int32 {\em maxfr})}\label{feat_8h_918e21c2b28a6951a83c64f7023126a7}
+
+
+Read a specified MFC file (or given segment within it), perform CMN/AGC as indicated by {\tt fcb}, and compute feature vectors. 
+
+Feature vectors are computed for the entire segment specified, by including additional surrounding or padding frames to accommodate the feature windows.
+
+\begin{Desc}
+\item[Returns:]Number of frames of feature vectors computed if successful; -1 if any error. {\tt If} feat is NULL, then no actual computation will be done, and the number of frames which must be allocated will be returned.\end{Desc}
+A note on how the file path is constructed: If the control file already specifies extension or absolute path, then these are not applied. The default extension is defined by the application. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fcb}]In: Descriptor from \doxyref{feat\_\-init()}{p.}{feat_8h_7a5e2e02e99e368e1e9e3b1ded35e3dc} \item[{\em 
+file}]In: File to be read \item[{\em 
+dir}]In: Directory prefix for file, if needed; can be NULL \item[{\em 
+cepext}]In: Extension of the cepstrum file.It cannot be NULL \item[{\em 
+feat}]Out: Computed feature vectors; caller must allocate this space \item[{\em 
+maxfr}]In: Available space (number of frames) in above feat array; it must be sufficient to hold the result. Pass -1 for no limit. \end{description}
+\end{Desc}
+
+
+Definition at line 1112 of file feat.c.
+
+References ckd\_\-calloc, ckd\_\-free(), ckd\_\-free\_\-2d(), ckd\_\-realloc, E\_\-ERROR, E\_\-INFO, feat\_\-s2mfc2feat(), feat\_\-s2mfc\_\-read(), and feat\_\-window\_\-size.
+
+Referenced by feat\_\-s2mfc2feat().\index{feat.h@{feat.h}!feat\_\-s2mfc2feat\_\-live@{feat\_\-s2mfc2feat\_\-live}}
+\index{feat\_\-s2mfc2feat\_\-live@{feat\_\-s2mfc2feat\_\-live}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-s2mfc2feat\_\-live}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 feat\_\-s2mfc2feat\_\-live ({\bf feat\_\-t} $\ast$ {\em fcb}, \/  mfcc\_\-t $\ast$$\ast$ {\em uttcep}, \/  int32 $\ast$ {\em inout\_\-ncep}, \/  int32 {\em beginutt}, \/  int32 {\em endutt}, \/  mfcc\_\-t $\ast$$\ast$$\ast$ {\em ofeat})}\label{feat_8h_68bf7d2c15e3f76b08833449eb254aed}
+
+
+Feature computation routine for live mode decoder. 
+
+This function computes features for blocks of incoming data. It retains an internal buffer for computing deltas, which means that the number of output frames will not necessarily equal the number of input frames.
+
+{\bf It is very important} to realize that the number of output frames can be {\bf greater than} the number of input frames, specifically when {\tt endutt} is true. It is guaranteed to never exceed {\tt $\ast$inout\_\-ncep + \doxyref{feat\_\-window\_\-size(fcb)}{p.}{feat_8h_69cdcd91578c26565c7653ad6f2eb510}}. You {\bf MUST} have allocated at least that many frames in {\tt ofeat}, or you will experience a buffer overflow.
+
+If beginutt and endutt are both true, CMN\_\-CURRENT and AGC\_\-MAX will be done. Otherwise only CMN\_\-PRIOR and AGC\_\-EMAX will be done.
+
+If beginutt is false, endutt is true, and the number of input frames exceeds the input size, then end-of-utterance processing won't actually be done. This condition can easily be checked, because {\tt $\ast$inout\_\-ncep} will equal the return value on exit, and will also be smaller than the value of {\tt $\ast$inout\_\-ncep} on entry.
+
+\begin{Desc}
+\item[Returns:]The number of output frames actually computed. \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fcb}]In: Descriptor from \doxyref{feat\_\-init()}{p.}{feat_8h_7a5e2e02e99e368e1e9e3b1ded35e3dc} \item[{\em 
+uttcep}]In: Incoming cepstral buffer \item[{\em 
+inout\_\-ncep}]In: Size of incoming buffer. Out: Number of incoming frames consumed. \item[{\em 
+beginutt}]In: Begining of utterance flag \item[{\em 
+endutt}]In: End of utterance flag \item[{\em 
+ofeat}]In: Output feature buffer. See {\bf VERY IMPORTANT} note about the size of this buffer above. \end{description}
+\end{Desc}
+
+
+Definition at line 1242 of file feat.c.
+
+References feat\_\-cepsize, feat\_\-lda\_\-transform(), feat\_\-s2mfc2feat\_\-live(), and feat\_\-window\_\-size.
+
+Referenced by feat\_\-s2mfc2feat\_\-live().\index{feat.h@{feat.h}!feat\_\-s2mfc\_\-read@{feat\_\-s2mfc\_\-read}}
+\index{feat\_\-s2mfc\_\-read@{feat\_\-s2mfc\_\-read}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-s2mfc\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 feat\_\-s2mfc\_\-read (char $\ast$ {\em file}, \/  int32 {\em win}, \/  int32 {\em sf}, \/  int32 {\em ef}, \/  mfcc\_\-t $\ast$$\ast$$\ast$ {\em out\_\-mfc}, \/  int32 {\em maxfr}, \/  int32 {\em cepsize})}\label{feat_8h_2ae638cb35d8fa1b3f509972b7c37eb3}
+
+
+Read Sphinx-II format mfc file (s2mfc = Sphinx-II format MFC data). 
+
+\begin{Desc}
+\item[Returns:]\# frames read (plus padding) if successful, -1 if error (e.g., mfc array too small). If out\_\-mfc is NULL, no actual reading will be done, and the number of frames (plus padding) that would be read is returned. \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+win}]In: Sphinx-II format MFC file to be read \item[{\em 
+sf}]In: Size of dynamic feature window to add to the input. Padding will be added if necessary. \item[{\em 
+out\_\-mfc}]In: Start/end frames (range) to be read from file; Can use 0,-1 to read entire file. Note that the window will be added on either side of these. \item[{\em 
+maxfr}]Out: 2-D array to be filled with read data; this will be allocated internally and must be freed with \doxyref{ckd\_\-free\_\-2d()}{p.}{ckd__alloc_8h_8246c071ac12e98b7e1df9fe6da15aef}. \item[{\em 
+cepsize}]In: Number of frames of mfc array allocated; error if attempt to read more than this amount. Pass -1 to read as many frames as available. In: Length of each MFC vector. \end{description}
+\end{Desc}
+
+
+Definition at line 360 of file feat.c.
+
+References ckd\_\-calloc, ckd\_\-calloc\_\-2d, ckd\_\-free(), ckd\_\-free\_\-2d(), E\_\-ERROR, E\_\-INFO, E\_\-WARN, feat\_\-s2mfc\_\-read(), fread\_\-retry(), and stat\_\-retry().
+
+Referenced by feat\_\-s2mfc2feat(), and feat\_\-s2mfc\_\-read().\index{feat.h@{feat.h}!feat\_\-set\_\-subvecs@{feat\_\-set\_\-subvecs}}
+\index{feat\_\-set\_\-subvecs@{feat\_\-set\_\-subvecs}!feat.h@{feat.h}}
+\subsubsection[{feat\_\-set\_\-subvecs}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int feat\_\-set\_\-subvecs ({\bf feat\_\-t} $\ast$ {\em fcb}, \/  int32 $\ast$$\ast$ {\em subvecs})}\label{feat_8h_9a79c7278d484fa8178cd7c06156b794}
+
+
+Add a subvector specification to the feature module. 
+
+The subvector splitting will be performed after dynamic feature computation, CMN, AGC, and any LDA transformation. The number of streams in the dynamic feature type must be one, as with LDA.
+
+After adding a subvector specification, the output of feature computation will be split into multiple subvectors, and \doxyref{feat\_\-array\_\-alloc()}{p.}{feat_8h_03071d6d5c6b233117871f583c258b1e} will allocate pointers accordingly. The number of {\em streams\/} will remain the
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fcb}]the feature descriptor. \item[{\em subvecs}]subvector specification. This pointer is retained by the \doxyref{feat\_\-t}{p.}{structfeat__t} and should not be freed manually. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 for success or -1 if the subvector specification was invalid. \end{Desc}
+
+
+Definition at line 277 of file feat.c.
+
+References ckd\_\-calloc, ckd\_\-free(), E\_\-ERROR, feat\_\-dimension, feat\_\-set\_\-subvecs(), and subvecs\_\-free().
+
+Referenced by feat\_\-set\_\-subvecs().\index{feat.h@{feat.h}!parse\_\-subvecs@{parse\_\-subvecs}}
+\index{parse\_\-subvecs@{parse\_\-subvecs}!feat.h@{feat.h}}
+\subsubsection[{parse\_\-subvecs}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32$\ast$$\ast$ parse\_\-subvecs (char const $\ast$ {\em str})}\label{feat_8h_613aca09a7f45f5ddc550efe685cb83b}
+
+
+Parse subvector specification string. 
+
+Format of specification: \begin{itemize}
+\item '/' separated list of subvectors \item each subvector is a ',' separated list of subranges \item each subrange is a single 
+
+\footnotesize\begin{verbatim}<number> \end{verbatim}
+\normalsize
+ or 
+
+\footnotesize\begin{verbatim}<number>-<number> \end{verbatim}
+\normalsize
+ (inclusive), where 
+
+\footnotesize\begin{verbatim}<number> \end{verbatim}
+\normalsize
+ is a feature vector dimension specifier.\end{itemize}
+E.g., \char`\"{}24,0-11/25,12-23/26,27-38\char`\"{} has: \begin{itemize}
+\item 3 subvectors \item the 1st subvector has feature dims: 24, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 11. \item etc.\end{itemize}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em str}]subvector specification string. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]allocated 2-D array of subvector specs (free with \doxyref{subvecs\_\-free()}{p.}{feat_8h_d209a1028b315a96a3a2447eccdb8605}). If there are N subvectors specified, subvec[N] = NULL; and each subvec[0]..subvec[N-1] is -1 terminated vector of feature dims. \end{Desc}
+
+
+Definition at line 169 of file feat.c.
+
+References ckd\_\-calloc, E\_\-FATAL, glist\_\-add\_\-int32(), glist\_\-add\_\-ptr(), glist\_\-count(), glist\_\-free(), gnode\_\-ptr, and parse\_\-subvecs().
+
+Referenced by parse\_\-subvecs().

@@ -1,0 +1,37 @@
+dumbo.speech.cs.cmu.edu
+../..//s3trainer/bin.linux/norm.mop64 \
+ -accumdir ../..//bwaccumdir/MODELSET1_buff_1 ../..//bwaccumdir/MODELSET1_buff_2 \
+ -mixwfn ../..//model_parameters/MODELSET1.cd_continuous/mixture_weights \
+ -tmatfn ../..//model_parameters/MODELSET1.cd_continuous/transition_matrices \
+ -meanfn ../..//model_parameters/MODELSET1.cd_continuous/means \
+ -varfn ../..//model_parameters/MODELSET1.cd_continuous/variances
+
+[Switch]   [Default] [Value]
+-accumdir            ../..//bwaccumdir/MODELSET1_buff_1 ../..//bwaccumdir/MODELSET1_buff_2
+-oaccumdir                  
+-tmatfn              ../..//model_parameters/MODELSET1.cd_continuous/transition_matrices
+-mixwfn              ../..//model_parameters/MODELSET1.cd_continuous/mixture_weights
+-meanfn              ../..//model_parameters/MODELSET1.cd_continuous/means
+-varfn               ../..//model_parameters/MODELSET1.cd_continuous/variances
+-regmatfn                   
+-dcountfn                   
+-inmixwfn                   
+-inmeanfn                   
+-invarfn                    
+INFO: ../main.c(476): Reading and accumulating counts from ../..//bwaccumdir/MODELSET1_buff_1
+INFO: ../s3mixw_io.c(92): Read ../..//bwaccumdir/MODELSET1_buff_1/mixw_counts [450x1x1 array]
+INFO: ../s3tmat_io.c(92): Read ../..//bwaccumdir/MODELSET1_buff_1/tmat_counts [50x3x4 array]
+INFO: ../s3gau_io.c(343): Read ../..//bwaccumdir/MODELSET1_buff_1/gauden_counts with means with vars (2pass) [450x1x1 vector arrays]
+INFO: ../main.c(476): Reading and accumulating counts from ../..//bwaccumdir/MODELSET1_buff_2
+INFO: ../s3mixw_io.c(92): Read ../..//bwaccumdir/MODELSET1_buff_2/mixw_counts [450x1x1 array]
+INFO: ../s3tmat_io.c(92): Read ../..//bwaccumdir/MODELSET1_buff_2/tmat_counts [50x3x4 array]
+INFO: ../s3gau_io.c(343): Read ../..//bwaccumdir/MODELSET1_buff_2/gauden_counts with means with vars (2pass) [450x1x1 vector arrays]
+INFO: ../main.c(674): Normalizing mean for n_mgau= 450, n_stream= 1, n_density= 1
+INFO: ../main.c(688): Normalizing var
+INFO: ../s3mixw_io.c(212): Wrote ../..//model_parameters/MODELSET1.cd_continuous/mixture_weights [450x1x1 array]
+INFO: ../s3tmat_io.c(152): Wrote ../..//model_parameters/MODELSET1.cd_continuous/transition_matrices [50x3x4 array]
+INFO: ../s3gau_io.c(188): Wrote ../..//model_parameters/MODELSET1.cd_continuous/means [450x1x1 array]
+INFO: ../s3gau_io.c(188): Wrote ../..//model_parameters/MODELSET1.cd_continuous/variances [450x1x1 array]
+Thu Mar 18 15:51:54 EST 2004
+Current Overall Likelihood Per Frame = 4.43113
+Convergence Ratio = 0.052502

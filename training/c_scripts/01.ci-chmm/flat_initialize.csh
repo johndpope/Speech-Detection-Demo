@@ -1,0 +1,192 @@
+#!/bin/csh -fx
+
+source ../variables.def
+unlimit
+limit core 0k
+
+#**************************************************************************
+# This script assigns means and unit-variances to the gaussians that
+# are associated with each state listed in the ci-mdef file.
+#**************************************************************************
+
+set scriptdir = $base_dir/c_scripts/01.ci-chmm
+cd  $scriptdir
+
+set ci_mdeffile         = $base_dir/model_architecture/$exptname.ci.mdef 
+set logdir = $base_dir/logdir/01.ci_chmm
+if ( ! -e $logdir ) mkdir -p $logdir                                       
+
+set modarchdir    = $base_dir/model_architecture
+if (! -e $modarchdir) mkdir -p $modarchdir
+
+set rawphonefile           = $modarchdir/$exptname.phonelist
+sed 's+$+ - - - +g' $phonefile >! $rawphonefile
+
+set MAKE_MDEF = $bindir/mk_mdef_gen
+
+$MAKE_MDEF \
+        -phnlstfn     $phonefile    \
+        -ocimdef       $ci_mdeffile  \
+	-n_state_pm	$statesperhmm \
+    >&! $logdir/${exptname}.make_ci_mdef_fromphonelist.log
+#..
+
+#$listoffiles obtained from variables.def
+#$featfiles_dir obtained from variables.def
+
+if ($type == ".semi.") then
+   set modeltype = semi
+else
+   set modeltype = continuous
+endif
+
+set bwaccumdir      = $base_dir/bwaccumdir/${exptname}_buff_1
+set modeldir       = $base_dir/model_parameters/${exptname}.ci_${modeltype}_flatinitial
+set topologyfile       = $modarchdir/${exptname}.topology
+
+if ( ! -e $scriptdir/maketopology.csh ) then
+    echo "++++++ ERROR ++++++ - wrong script directory"
+    exit 0
+endif
+
+$scriptdir/maketopology.csh $statesperhmm $skipstate >! $topologyfile
+
+set copyoperations = $base_dir/model_architecture/cp.ci_meanvar
+set numphones = `wc -l $rawphonefile | awk '{print $1}'`
+
+#number of ci states = numphones times the number of states per hmm
+@  numcistates = $numphones * $statesperhmm
+set i = 0
+/bin/rm $copyoperations
+touch $copyoperations
+while ($i < $numcistates)
+    echo "$i	0" >> $copyoperations
+@   i = $i + 1
+end
+
+if ( ! -e $bwaccumdir ) mkdir -p $bwaccumdir
+if ( ! -e $modeldir  ) mkdir -p $modeldir
+
+set logdir = $base_dir/logdir/01.ci_chmm
+if ( ! -e $logdir ) mkdir -p $logdir                                       
+set logfile        = $logdir/${exptname}.initialize.ci_models.log
+
+set accum          = $bindir/init_gau
+#set norm           = $bindir/norm.mop64
+set norm           = $bindir/norm
+set flat           = $bindir/mk_flat
+set cpparm         = $bindir/cp_parm
+
+echo "flat initializing" >&! $logfile
+
+if ($type == ".semi.") then
+    set nstream = 4
+    set ndensity = 256
+endif
+if ($type != ".semi.")  then
+    set nstream = 1
+    set ndensity = 1
+endif
+
+$flat \
+        -moddeffn $ci_mdeffile \
+        -topo $topologyfile \
+        -mixwfn $modeldir/mixture_weights \
+        -tmatfn $modeldir/transition_matrices \
+        -nstream $nstream \
+        -ndensity $ndensity \
+>>& $logfile    
+
+if ($type == ".semi.") exit 0
+
+echo "ACCUMULATING FOR MEAN" >>& $logfile
+
+$accum \
+        -accumdir       $bwaccumdir \
+	-ctlfn		$listoffiles \
+        -part           1 \
+        -npart          1 \
+	-cepdir		$featfiles_dir \
+	-cepext		$featfile_extension \
+	-feat		$feature \
+        -ceplen         $vector_length \
+        -agc            $agc \
+	-cmn            $cmn \
+	-varnorm	$varnorm \
+>>& $logfile
+#---------------------------------------------------------------
+# Norm, when called the first time around (for initialization), 
+# computes the means of the set gathered together by accum
+#---------------------------------------------------------------
+
+echo "COMPUTING GLOBAL MEAN" >>& $logfile
+
+
+$norm \
+        -accumdir $bwaccumdir \
+        -meanfn   $modeldir/globalmean \
+>>& $logfile
+
+#----------------------------------------------------------------------
+# When called the second time around (when the mean file is given to the
+# program, accum collects a set of (x-mean)^2 for the entire data set
+#-----------------------------------------------------------------------
+echo "ACCUMULATING FOR VARIANCE" >>& $logfile
+
+$accum \
+        -accumdir $bwaccumdir \
+        -meanfn   $modeldir/globalmean \
+        -ctlfn    $listoffiles \
+        -part     1 \
+        -npart    1 \
+        -cepdir   $featfiles_dir \
+        -cepext   $featfile_extension\
+        -feat     $feature \
+	-ceplen   $vector_length \
+	-agc      $agc \
+	-cmn      $cmn \
+	-varnorm	yes \
+>>& $logfile
+
+#--------------------------------------------------------------------------
+# This time around norm computes the variances (since the -varfn option is
+# given)
+#---------------------------------------------------------------------------
+
+echo "COMPUTING GLOBAL VARIANCE" >>& $logfile
+
+
+$norm \
+        -accumdir $bwaccumdir \
+        -varfn    $modeldir/globalvariance \
+>>& $logfile
+
+#------------------------------------------------------------------------
+# Copy the global mean to represent the means of all n_states states
+#------------------------------------------------------------------------
+
+echo "COPYING MEANS" >>& $logfile
+
+$cpparm \
+        -cpopsfn  $copyoperations \
+        -igaufn   $modeldir/globalmean \
+        -ncbout   $numcistates \
+        -ogaufn   $modeldir/means \
+>>& $logfile
+#------------------------------------------------------------------------
+# Copy the global variance into all numcistates states too..
+#------------------------------------------------------------------------
+
+echo "COPYING VARIANCES" >>& $logfile
+
+$cpparm \
+        -cpopsfn  $copyoperations \
+        -igaufn   $modeldir/globalvariance \
+        -ncbout   $numcistates \
+        -ogaufn   $modeldir/variances \
+>>& $logfile
+
+
+#/bin/rm $copyoperations
+
+exit 0

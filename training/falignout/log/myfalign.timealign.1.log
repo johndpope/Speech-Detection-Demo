@@ -1,0 +1,159 @@
+../decoding/s3decoder/bin/linux/s3align -outsentfn ../training/falignout/myfalign.1.newtranscripts -insentfn ../training/lists/train.transcripts.forFalignment -ctlfn ../training/lists/train.ctl -ctloffset 0 -ctlcount 12 -cepdir ../features -cepext mfc -dictfn ../training/lists/train.dict.forFalignment -fdictfn ../training/lists/fillerdict.forFalignment -mdeffn ../training/model_architecture/MODELSET1.ci.mdef -senmgaufn .cont. -meanfn ../training/model_parameters/MODELSET1.ci_continuous/means -varfn ../training/model_parameters/MODELSET1.ci_continuous/variances -mixwfn ../training/model_parameters/MODELSET1.ci_continuous/mixture_weights -tmatfn ../training/model_parameters/MODELSET1.ci_continuous/transition_matrices -topn 1 -feat s3_1x39 -beam 1e-80 -agc none -cmn current
+INFO: ../align-main.c(1216): ../decoding/s3decoder/bin/linux/s3align COMPILED ON: Oct  1 1999, AT: 08:47:55
+
+INFO: ../align-main.c(253): Parsing command line:
+../decoding/s3decoder/bin/linux/s3align \
+	-outsentfn ../training/falignout/myfalign.1.newtranscripts \
+	-insentfn ../training/lists/train.transcripts.forFalignment \
+	-ctlfn ../training/lists/train.ctl \
+	-ctloffset 0 \
+	-ctlcount 12 \
+	-cepdir ../features \
+	-cepext mfc \
+	-dictfn ../training/lists/train.dict.forFalignment \
+	-fdictfn ../training/lists/fillerdict.forFalignment \
+	-mdeffn ../training/model_architecture/MODELSET1.ci.mdef \
+	-senmgaufn .cont. \
+	-meanfn ../training/model_parameters/MODELSET1.ci_continuous/means \
+	-varfn ../training/model_parameters/MODELSET1.ci_continuous/variances \
+	-mixwfn ../training/model_parameters/MODELSET1.ci_continuous/mixture_weights \
+	-tmatfn ../training/model_parameters/MODELSET1.ci_continuous/transition_matrices \
+	-topn 1 \
+	-feat s3_1x39 \
+	-beam 1e-80 \
+	-agc none \
+	-cmn current 
+
+INFO: ../align-main.c(289): Configuration in effect:
+[Switch]    [Default] [Value]                                                                 
+-logbase                                                                                      
+-mdeffn               ../training/model_architecture/MODELSET1.ci.mdef                        
+-tmatfn               ../training/model_parameters/MODELSET1.ci_continuous/transition_matrices
+-meanfn               ../training/model_parameters/MODELSET1.ci_continuous/means              
+-varfn                ../training/model_parameters/MODELSET1.ci_continuous/variances          
+-senmgaufn  .cont.    .cont.                                                                  
+-mixwfn               ../training/model_parameters/MODELSET1.ci_continuous/mixture_weights    
+-lambdafn                                                                                     
+-tpfloor    0.0001    1.000000e-04                                                            
+-varfloor   0.0001    1.000000e-04                                                            
+-mwfloor    0.0000001 1.000000e-07                                                            
+-agc        max       none                                                                    
+-cmn        current   current                                                                 
+-varnorm    no        no                                                                      
+-feat       s2_4x     s3_1x39                                                                 
+-dictfn               ../training/lists/train.dict.forFalignment                              
+-fdictfn              ../training/lists/fillerdict.forFalignment                              
+-ctlfn                ../training/lists/train.ctl                                             
+-ctloffset  0         0                                                                       
+-ctlcount             12                                                                      
+-cepdir     .         ../features                                                             
+-ceplen     13        13                                                                      
+-cepext     mfc       mfc                                                                     
+-mllrctlfn                                                                                    
+-topn       4         1                                                                       
+-beam       1e-64     1.000000e-80                                                            
+-insentfn             ../training/lists/train.transcripts.forFalignment                       
+-outsentfn            ../training/falignout/myfalign.1.newtranscripts                         
+-stsegdir                                                                                     
+-phsegdir                                                                                     
+-wdsegdir                                                                                     
+-s2stsegdir                                                                                   
+-logfn                                                                                        
+
+INFO: ../logs3.c(56): Initializing logbase: 1.000100e+00
+INFO: ../logs3.c(113): Log-Add table size = 99042
+INFO: ../feat.c(111): Initializing feature stream to type: s3_1x39
+INFO: ../mdef.c(472): Reading model definition: ../training/model_architecture/MODELSET1.ci.mdef
+INFO: ../mdef.c(583): 50 CI-phones, 0 CD-phones, 3 emitting states/phone, 150 sen, 150 CI-sen
+INFO: ../dict.c(143): Reading dictionary
+INFO: ../dict.c(187): Reading main dictionary: ../training/lists/train.dict.forFalignment
+INFO: ../dict.c(190): 249 words read
+INFO: ../dict.c(195): Reading filler dictionary: ../training/lists/fillerdict.forFalignment
+INFO: ../dict.c(198): 3 words read
+INFO: ../gauden.c(118): Reading mixture gaussian parameter: ../training/model_parameters/MODELSET1.ci_continuous/means
+INFO: ../gauden.c(209): 150 codebook, 1 feature, size 1x39
+INFO: ../gauden.c(118): Reading mixture gaussian parameter: ../training/model_parameters/MODELSET1.ci_continuous/variances
+INFO: ../gauden.c(209): 150 codebook, 1 feature, size 1x39
+INFO: ../senone.c(137): Reading senone mixture weights: ../training/model_parameters/MODELSET1.ci_continuous/mixture_weights
+INFO: ../senone.c(182): Truncating senone logs3(pdf) values by 10 bits, to 8 bits
+WARNING: "../senone.c", line 227: Weight normalization failed for 3 senones
+INFO: ../senone.c(239): Read mixture weights for 150 senones: 1 features x 1 codewords
+INFO: ../tmat.c(67): Reading HMM transition matrix: ../training/model_parameters/MODELSET1.ci_continuous/transition_matrices
+ERROR: "../tmat.c", line 125: Normalization failed for tmat 32 from state 0
+ERROR: "../tmat.c", line 125: Normalization failed for tmat 32 from state 1
+ERROR: "../tmat.c", line 125: Normalization failed for tmat 32 from state 2
+INFO: ../tmat.c(146): Read 50 transition matrices of size 3x4
+INFO: ../align.c(1252): logs3(beam)= -1842160
+
+INFO: ../align-main.c(990): Processing ctl file ../training/lists/train.ctl
+
+INFO: ../align-main.c(1036): Utterance: 919448 1 1787 (919448_FEMALE_SANDRA_WOZNIAK_0.01_17.87)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_0.01_17.87)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_0.01_17.87"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 1787 mfc frames
+
+CTR:[NS     157207]
+EXECTIME:  1787 frames,    0.10 sec CPU,   0.01 xRT;    0.10 sec elapsed,   0.01 xRT
+
+INFO: ../align-main.c(1036): Utterance: 919448 1788 2085 (919448_FEMALE_SANDRA_WOZNIAK_17.88_20.85)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_17.88_20.85)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_17.88_20.85"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 298 mfc frames
+
+CTR:[NS      19457]
+EXECTIME:   298 frames,    0.01 sec CPU,   0.00 xRT;    0.01 sec elapsed,   0.00 xRT
+
+INFO: ../align-main.c(1036): Utterance: 919448 2086 4521 (919448_FEMALE_SANDRA_WOZNIAK_20.86_45.21)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_20.86_45.21)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_20.86_45.21"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 2436 mfc frames
+
+CTR:[NS     134492]
+EXECTIME:  2436 frames,    0.09 sec CPU,   0.00 xRT;    0.09 sec elapsed,   0.00 xRT
+
+INFO: ../align-main.c(1036): Utterance: 919448 4522 5635 (919448_FEMALE_SANDRA_WOZNIAK_45.22_56.35)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_45.22_56.35)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_45.22_56.35"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 1114 mfc frames
+
+CTR:[NS      74343]
+EXECTIME:  1114 frames,    0.05 sec CPU,   0.00 xRT;    0.05 sec elapsed,   0.00 xRT
+
+INFO: ../align-main.c(1036): Utterance: 919448 5636 5966 (919448_FEMALE_SANDRA_WOZNIAK_56.36_59.66)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_56.36_59.66)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_56.36_59.66"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 331 mfc frames
+
+CTR:[NS      28314]
+EXECTIME:   331 frames,    0.02 sec CPU,   0.01 xRT;    0.02 sec elapsed,   0.01 xRT
+
+INFO: ../align-main.c(1036): Utterance: 919448 6623 8755 (919448_FEMALE_SANDRA_WOZNIAK_66.23_87.55)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_66.23_87.55)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_66.23_87.55"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 2133 mfc frames
+
+ERROR: "../align-main.c", line 909: Final state not reached; no alignment for (919448_FEMALE_SANDRA_WOZNIAK_66.23_87.55)
+
+CTR:[NS     124734]
+EXECTIME:  2133 frames,    0.08 sec CPU,   0.00 xRT;    0.08 sec elapsed,   0.00 xRT
+
+INFO: ../align-main.c(1036): Utterance: 919448 8756 10556 (919448_FEMALE_SANDRA_WOZNIAK_87.56_105.56)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_87.56_105.56)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_87.56_105.56"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 1801 mfc frames
+
+CTR:[NS     128300]
+EXECTIME:  1801 frames,    0.09 sec CPU,   0.00 xRT;    0.08 sec elapsed,   0.00 xRT
+
+INFO: ../align-main.c(1036): Utterance: 919448 10557 11295 (919448_FEMALE_SANDRA_WOZNIAK_105.57_112.95)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_105.57_112.95)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_105.57_112.95"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 739 mfc frames
+
+CTR:[NS      53963]
+EXECTIME:   739 frames,    0.04 sec CPU,   0.01 xRT;    0.04 sec elapsed,   0.00 xRT
+
+INFO: ../align-main.c(1036): Utterance: 919448 11296 13839 (919448_FEMALE_SANDRA_WOZNIAK_112.96_138.39)
+ERROR: "../align-main.c", line 1117: Uttid mismatch: ctlfile = "(919448_FEMALE_SANDRA_WOZNIAK_112.96_138.39)"; transcript = "919448_FEMALE_SANDRA_WOZNIAK_112.96_138.39"
+INFO: ../feat.c(176): Reading mfc file: ../features/919448.mfc
+INFO: ../align-main.c(1129): 2544 mfc frames

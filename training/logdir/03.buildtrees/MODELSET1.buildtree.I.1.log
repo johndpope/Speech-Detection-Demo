@@ -1,0 +1,77 @@
+../..//s3trainer/bin.linux/bldtree \
+ -treefn ../..//trees/MODELSET1.unpruned/I-1.dtree \
+ -moddeffn ../..//model_architecture/MODELSET1.untied.mdef \
+ -mixwfn ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights \
+ -ts2cbfn .cont. \
+ -meanfn ../..//model_parameters/MODELSET1.cd_continuous_untied/means \
+ -varfn ../..//model_parameters/MODELSET1.cd_continuous_untied/variances \
+ -mwfloor 1e-8 \
+ -psetfn ../..//c_scripts/03.buildtrees/linguistic_questions.automatic \
+ -phone I \
+ -state 1 \
+ -stwt 1.0 0.05 0.0 \
+ -ssplitmin 1 \
+ -ssplitmax 7 \
+ -ssplitthr 0 \
+ -csplitmin 1 \
+ -csplitmax 2000 \
+ -csplitthr 0 \
+ -cntthresh 1
+
+[Switch]   [Default] [Value]
+-treefn              ../..//trees/MODELSET1.unpruned/I-1.dtree
+-moddeffn            ../..//model_architecture/MODELSET1.untied.mdef
+-ts2cbfn   .semi.    .cont. 
+-meanfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/means
+-varfn               ../..//model_parameters/MODELSET1.cd_continuous_untied/variances
+-varfloor  0.00001   1.000000e-05
+-cntthresh 0.00001   1.000000e+00
+-mixwfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+-psetfn              ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+-phone               I      
+-state               1      
+-mwfloor   1e-4      1.000000e-08
+-stwt                1.0 0.05 0.0
+-ssplitthr 8e-4      0.000000e+00
+-ssplitmin 1         1      
+-ssplitmax 5         7      
+-csplitthr 8e-4      0.000000e+00
+-csplitmin 1         1      
+-csplitmax 100       2000   
+INFO: ../main.c(152): Reading: ../..//model_architecture/MODELSET1.untied.mdef
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 1000 total models defined (50 base, 950 tri)
+INFO: ../model_def_io.c(564): 4000 total states
+INFO: ../model_def_io.c(565): 3000 total tied states
+INFO: ../model_def_io.c(566): 150 total tied CI states
+INFO: ../model_def_io.c(567): 50 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+INFO: ../main.c(196): Building trees for [I D K i] through [I ng N b]
+INFO: ../main.c(224): Covering states |[1173 1361]| == 189
+INFO: ../main.c(231): Reading: ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+INFO: ../s3mixw_io.c(151): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights [189x1x1 array]
+INFO: ../main.c(269): 63 of 63 models have observation count greater than 1.000000
+INFO: ../main.c(67): nrm stwt: 0.045 0.909 0.045 
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/means [3000x1x1 array]
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/variances [3000x1x1 array]
+INFO: ../main.c(510): Reading: ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+INFO: ../main.c(547): 176 total simple questions (168 phone; 8 word bndry)
+INFO: ../main.c(549): 42 Left Only questions, and 42 Right Only questions
+N model = 63
+s>    ( QUESTION0_12_R 1 -9.043e+02 2.563e+02 1.429e+02
+s>        ( - 2.440e+02 1 0)
+s>        ( QUESTION0_11_R 1 -8.920e+02 2.643e+02 1.419e+02
+s>            ( - 2.440e+02 1 0)
+s>            ( QUESTION2_2_L -1 -8.717e+02 2.521e+02 1.409e+02
+s>                ( - 2.398e+02 1 0)
+s>                ( QUESTION0_13_R 1 -8.594e+02 1.690e+02 1.399e+02
+s>                    ( WDBNDRY_B 0 1.333e+02 2.690e+02 3.300e+01
+s>                        ( - 2.415e+02 1 0)
+s>                        ( - 1.608e+02 13 0 QUESTION2_8_L -1 1.631e+02 3.200e+01))
+s>                    ( QUESTION2_8_L -1 -8.237e+02 2.572e+02 1.069e+02
+s>                        ( - 2.440e+02 1 0)
+s>                        ( QUESTION10 -1 -8.105e+02 1.655e+02 1.059e+02
+s>                            ( - 1.500e+02 1 0)
+s>                            ( - -7.950e+02 44 0 SILENCE -1 1.591e+02 1.029e+02)))))))INFO: ../dtree.c(1327): Comp split 0
+INFO: ../dtree.c(1336): stop. b_n->wt_ent_dec (-8.254e+02) <= 0

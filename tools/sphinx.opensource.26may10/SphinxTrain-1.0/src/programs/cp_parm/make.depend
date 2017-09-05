@@ -1,0 +1,14 @@
+# parse_cmd_ln.c
+obj.x86_64-unknown-linux-gnu/parse_cmd_ln.o: parse_cmd_ln.c parse_cmd_ln.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/err.h cmd_ln_defn.h
+
+# main.c
+obj.x86_64-unknown-linux-gnu/main.o: main.c parse_cmd_ln.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/s3mixw_io.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/s3gau_io.h ../../../include/s3/s3tmat_io.h \
+  ../../../include/s3/gauden.h ../../../include/s3/ckd_alloc.h
+

@@ -1,0 +1,144 @@
+\section{src/libsphinxbase/util/err.c File Reference}
+\label{err_8c}\index{src/libsphinxbase/util/err.c@{src/libsphinxbase/util/err.c}}
+Somewhat antiquated logging and error interface.  
+
+
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$errno.h$>$}\par
+{\tt \#include \char`\"{}err.h\char`\"{}}\par
+{\tt \#include \char`\"{}config.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int {\bf err\_\-set\_\-debug\_\-level} (int level)
+\begin{CompactList}\small\item\em Set debugging verbosity level. \item\end{CompactList}\item 
+int {\bf err\_\-get\_\-debug\_\-level} (void)
+\begin{CompactList}\small\item\em Get debugging verbosity level. \item\end{CompactList}\item 
+FILE $\ast$ {\bf err\_\-get\_\-logfp} (void)
+\begin{CompactList}\small\item\em Get the current logging filehandle. \item\end{CompactList}\item 
+FILE $\ast$ {\bf err\_\-set\_\-logfp} (FILE $\ast$newfp)
+\begin{CompactList}\small\item\em Direct all logging to a given filehandle. \item\end{CompactList}\item 
+int {\bf err\_\-set\_\-logfile} (char const $\ast$file)
+\begin{CompactList}\small\item\em Append all log messages to a given file. \item\end{CompactList}\item 
+void \textbf{\_\-E\_\-\_\-pr\_\-info\_\-header\_\-wofn} (char const $\ast$msg)\label{err_8c_fd2e78db5fc2b29d87b434d0a2d0d07e}
+
+\item 
+void \textbf{\_\-E\_\-\_\-pr\_\-header} (char const $\ast$f, long ln, char const $\ast$msg)\label{err_8c_5ff468fc371d3fd651257df3819e412a}
+
+\item 
+void \textbf{\_\-E\_\-\_\-pr\_\-info\_\-header} (char const $\ast$f, long ln, char const $\ast$msg)\label{err_8c_f0a195f2b0f1f9fc2ef7d60593b66faa}
+
+\item 
+void \textbf{\_\-E\_\-\_\-pr\_\-warn} (char const $\ast$fmt,...)\label{err_8c_8cdfd1775cf364e5705bb00a262c7865}
+
+\item 
+void \textbf{\_\-E\_\-\_\-pr\_\-info} (char const $\ast$fmt,...)\label{err_8c_d90268a25147c7485c0b41b1b12783e4}
+
+\item 
+void \textbf{\_\-E\_\-\_\-die\_\-error} (char const $\ast$fmt,...)\label{err_8c_d6271835d1ac95bf7d04cf30a148fb79}
+
+\item 
+void \textbf{\_\-E\_\-\_\-fatal\_\-sys\_\-error} (char const $\ast$fmt,...)\label{err_8c_dd44119b26798320a43e2eaee0f71a15}
+
+\item 
+void \textbf{\_\-E\_\-\_\-sys\_\-error} (char const $\ast$fmt,...)\label{err_8c_9b5c6b51090d5a2aaedf1ab8e43e8f5c}
+
+\item 
+void \textbf{\_\-E\_\-\_\-abort\_\-error} (char const $\ast$fmt,...)\label{err_8c_28cf0aaaf44493d5a78dec076d227df4}
+
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+FILE $\ast$ \textbf{logfp} = (FILE $\ast$)-1\label{err_8c_c16dab5cefce6fed135c20d1bae372a5}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Somewhat antiquated logging and error interface. 
+
+
+
+Definition in file {\bf err.c}.
+
+\subsection{Function Documentation}
+\index{err.c@{err.c}!err\_\-get\_\-debug\_\-level@{err\_\-get\_\-debug\_\-level}}
+\index{err\_\-get\_\-debug\_\-level@{err\_\-get\_\-debug\_\-level}!err.c@{err.c}}
+\subsubsection[{err\_\-get\_\-debug\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}int err\_\-get\_\-debug\_\-level (void)}\label{err_8c_393ad2383651d1fed0223c92208a6631}
+
+
+Get debugging verbosity level. 
+
+Note that debugging messages are only enabled when compiled with -DDEBUG. 
+
+Definition at line 72 of file err.c.\index{err.c@{err.c}!err\_\-get\_\-logfp@{err\_\-get\_\-logfp}}
+\index{err\_\-get\_\-logfp@{err\_\-get\_\-logfp}!err.c@{err.c}}
+\subsubsection[{err\_\-get\_\-logfp}]{\setlength{\rightskip}{0pt plus 5cm}FILE$\ast$ err\_\-get\_\-logfp (void)}\label{err_8c_e32e95118a1273e1e99584f2c555231a}
+
+
+Get the current logging filehandle. 
+
+\begin{Desc}
+\item[Returns:]Current logging filehandle, NULL if disabled. \end{Desc}
+
+
+Definition at line 145 of file err.c.
+
+Referenced by cmd\_\-ln\_\-parse\_\-r(), err\_\-set\_\-logfile(), and err\_\-set\_\-logfp().\index{err.c@{err.c}!err\_\-set\_\-debug\_\-level@{err\_\-set\_\-debug\_\-level}}
+\index{err\_\-set\_\-debug\_\-level@{err\_\-set\_\-debug\_\-level}!err.c@{err.c}}
+\subsubsection[{err\_\-set\_\-debug\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}int err\_\-set\_\-debug\_\-level (int {\em level})}\label{err_8c_c7956e03cd685da5fe6e134c462f73e1}
+
+
+Set debugging verbosity level. 
+
+Note that debugging messages are only enabled when compiled with -DDEBUG.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em level}]Verbosity level to set, or 0 to disable debug messages. \end{description}
+\end{Desc}
+
+
+Definition at line 66 of file err.c.\index{err.c@{err.c}!err\_\-set\_\-logfile@{err\_\-set\_\-logfile}}
+\index{err\_\-set\_\-logfile@{err\_\-set\_\-logfile}!err.c@{err.c}}
+\subsubsection[{err\_\-set\_\-logfile}]{\setlength{\rightskip}{0pt plus 5cm}int err\_\-set\_\-logfile (char const $\ast$ {\em file})}\label{err_8c_aa2d9e5fcb8d7b80d941ba6374762ebe}
+
+
+Append all log messages to a given file. 
+
+Previous logging filehandle is closed (unless it was stdout or stderr).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em file}]File to send log messages to, or NULL to disable logging. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 for success, $<$0 for failure (e.g. if file does not exist) \end{Desc}
+
+
+Definition at line 173 of file err.c.
+
+References err\_\-get\_\-logfp().\index{err.c@{err.c}!err\_\-set\_\-logfp@{err\_\-set\_\-logfp}}
+\index{err\_\-set\_\-logfp@{err\_\-set\_\-logfp}!err.c@{err.c}}
+\subsubsection[{err\_\-set\_\-logfp}]{\setlength{\rightskip}{0pt plus 5cm}FILE$\ast$ err\_\-set\_\-logfp (FILE $\ast$ {\em logfp})}\label{err_8c_60adc1968822a513d4111963b3eddd79}
+
+
+Direct all logging to a given filehandle. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em logfp}]Filehandle to send log messages to, or NULL to disable logging. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Previous logging filehandle, if any. \end{Desc}
+
+
+Definition at line 162 of file err.c.
+
+References err\_\-get\_\-logfp().

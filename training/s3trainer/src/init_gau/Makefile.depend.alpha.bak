@@ -1,0 +1,107 @@
+# DO NOT DELETE
+
+main.o: init_gau.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+main.o: /usr/include/sys/types.h /usr/include/standards.h
+main.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+main.o: /usr/include/stdarg.h /usr/include/va_list.h parse_cmd_ln.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+main.o: /usr/include/stdio.h /usr/include/sys/seek.h /usr/include/getopt.h
+main.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+main.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+main.o: /usr/include/sys/rt_limits.h /usr/include/stddef.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3ts2cb_io.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ts2cb.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+main.o: /usr/include/stdlib.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+main.o: /usr/include/sys/file.h /usr/include/sys/param.h
+main.o: /usr/include/machine/machparam.h /usr/include/machine/endian.h
+main.o: /usr/include/sys/signal.h /usr/include/sys/siginfo.h
+main.o: /usr/include/sys/sysmisc.h /usr/include/machine/signal.h
+main.o: /usr/include/machine/context.h /usr/include/sys/procset.h
+main.o: /usr/include/sys/access.h /usr/include/sys/fcntl.h
+main.o: /usr/include/sys/mode.h /usr/include/sys/stat.h /usr/include/unistd.h
+main.o: /usr/include/string.h /usr/include/strings.h
+init_gau.o: init_gau.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+init_gau.o: /usr/include/sys/types.h /usr/include/standards.h
+init_gau.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+init_gau.o: /usr/include/stdarg.h /usr/include/va_list.h accum.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_sseq.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ck_seg.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+init_gau.o: /usr/include/stdio.h /usr/include/sys/seek.h
+init_gau.o: /usr/include/getopt.h /usr/include/sys/limits.h
+init_gau.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+init_gau.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+init_gau.o: /usr/include/stddef.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_wordlist.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_phone_list.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cvt2triphone.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3gau_io.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+init_gau.o: /usr/include/stdlib.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+init_gau.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+init_gau.o: /usr/include/sys/file.h /usr/include/sys/param.h
+init_gau.o: /usr/include/machine/machparam.h /usr/include/machine/endian.h
+init_gau.o: /usr/include/sys/signal.h /usr/include/sys/siginfo.h
+init_gau.o: /usr/include/sys/sysmisc.h /usr/include/machine/signal.h
+init_gau.o: /usr/include/machine/context.h /usr/include/sys/procset.h
+init_gau.o: /usr/include/sys/access.h /usr/include/sys/fcntl.h
+init_gau.o: /usr/include/sys/mode.h /usr/include/sys/stat.h
+init_gau.o: /usr/include/unistd.h /usr/include/assert.h
+accum.o: accum.h
+accum.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+accum.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+parse_cmd_ln.o: parse_cmd_ln.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+parse_cmd_ln.o: /usr/include/stdarg.h /usr/include/standards.h
+parse_cmd_ln.o: /usr/include/va_list.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/misc.h
+parse_cmd_ln.o: /usr/include/unistd.h /usr/include/sys/types.h
+parse_cmd_ln.o: /usr/include/mach/machine/vm_types.h
+parse_cmd_ln.o: /usr/include/sys/select.h /usr/include/sys/access.h
+parse_cmd_ln.o: /usr/include/sys/seek.h /usr/include/getopt.h
+parse_cmd_ln.o: /usr/include/stdlib.h /usr/include/sys/param.h
+parse_cmd_ln.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+parse_cmd_ln.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+parse_cmd_ln.o: /usr/include/sys/rt_limits.h /usr/include/machine/machparam.h
+parse_cmd_ln.o: /usr/include/machine/endian.h /usr/include/sys/signal.h
+parse_cmd_ln.o: /usr/include/sys/siginfo.h /usr/include/sys/sysmisc.h
+parse_cmd_ln.o: /usr/include/machine/signal.h /usr/include/machine/context.h
+parse_cmd_ln.o: /usr/include/sys/procset.h /usr/include/stdio.h
+parse_cmd_ln.o: /usr/include/assert.h

@@ -1,0 +1,153 @@
+../..//s3trainer/bin.linux/tiestate \
+ -imoddeffn ../..//model_architecture/MODELSET1.alltriphones.mdef \
+ -omoddeffn ../..//model_architecture/MODELSET1.300.mdef \
+ -treedir ../..//trees/MODELSET1.300 \
+ -psetfn ../03.buildtrees/linguistic_questions.automatic
+
+[Switch]   [Default] [Value]
+-imoddeffn           ../..//model_architecture/MODELSET1.alltriphones.mdef
+-omoddeffn           ../..//model_architecture/MODELSET1.300.mdef
+-treedir             ../..//trees/MODELSET1.300
+-psetfn              ../03.buildtrees/linguistic_questions.automatic
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 19338 total models defined (50 base, 19288 tri)
+INFO: ../model_def_io.c(564): 77352 total states
+INFO: ../model_def_io.c(565): 58014 total tied states
+INFO: ../model_def_io.c(566): 150 total tied CI states
+INFO: ../model_def_io.c(567): 50 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+INFO: ../main.c(68): Reading: ../03.buildtrees/linguistic_questions.automatic
+INFO: ../main.c(86): AA-0: offset 150
+INFO: ../main.c(86): AA-1: offset 151
+INFO: ../main.c(86): AA-2: offset 152
+INFO: ../main.c(86): AE-0: offset 153
+INFO: ../main.c(86): AE-1: offset 154
+INFO: ../main.c(86): AE-2: offset 155
+INFO: ../main.c(86): AO-0: offset 165
+INFO: ../main.c(86): AO-1: offset 166
+INFO: ../main.c(86): AO-2: offset 167
+INFO: ../main.c(86): AW-0: offset 168
+INFO: ../main.c(86): AW-1: offset 170
+INFO: ../main.c(86): AW-2: offset 171
+INFO: ../main.c(86): AX-0: offset 172
+INFO: ../main.c(86): AX-1: offset 173
+INFO: ../main.c(86): AX-2: offset 179
+INFO: ../main.c(86): AY-0: offset 204
+INFO: ../main.c(86): AY-1: offset 205
+INFO: ../main.c(86): AY-2: offset 206
+INFO: ../main.c(86): B-0: offset 207
+INFO: ../main.c(86): B-1: offset 208
+INFO: ../main.c(86): B-2: offset 209
+INFO: ../main.c(86): CH-0: offset 210
+INFO: ../main.c(86): CH-1: offset 211
+INFO: ../main.c(86): CH-2: offset 213
+INFO: ../main.c(86): D-0: offset 218
+INFO: ../main.c(86): D-1: offset 219
+INFO: ../main.c(86): D-2: offset 220
+INFO: ../main.c(86): DH-0: offset 221
+INFO: ../main.c(86): DH-1: offset 228
+INFO: ../main.c(86): DH-2: offset 229
+INFO: ../main.c(86): E-0: offset 230
+INFO: ../main.c(86): E-1: offset 231
+INFO: ../main.c(86): E-2: offset 232
+INFO: ../main.c(86): EH-0: offset 233
+INFO: ../main.c(86): EH-1: offset 234
+INFO: ../main.c(86): EH-2: offset 235
+INFO: ../main.c(86): ER-0: offset 240
+INFO: ../main.c(86): ER-1: offset 241
+INFO: ../main.c(86): ER-2: offset 242
+INFO: ../main.c(86): EY-0: offset 243
+INFO: ../main.c(86): EY-1: offset 244
+INFO: ../main.c(86): EY-2: offset 245
+INFO: ../main.c(86): F-0: offset 252
+INFO: ../main.c(86): F-1: offset 253
+INFO: ../main.c(86): F-2: offset 273
+INFO: ../main.c(86): G-0: offset 274
+INFO: ../main.c(86): G-1: offset 280
+INFO: ../main.c(86): G-2: offset 283
+INFO: ../main.c(86): HH-0: offset 284
+INFO: ../main.c(86): HH-1: offset 285
+INFO: ../main.c(86): HH-2: offset 286
+INFO: ../main.c(86): I-0: offset 287
+INFO: ../main.c(86): I-1: offset 288
+INFO: ../main.c(86): I-2: offset 289
+INFO: ../main.c(86): II-0: offset 290
+INFO: ../main.c(86): II-1: offset 291
+INFO: ../main.c(86): II-2: offset 297
+INFO: ../main.c(86): JH-0: offset 298
+INFO: ../main.c(86): JH-1: offset 299
+INFO: ../main.c(86): JH-2: offset 300
+INFO: ../main.c(86): K-0: offset 301
+INFO: ../main.c(86): K-1: offset 302
+INFO: ../main.c(86): K-2: offset 303
+INFO: ../main.c(86): L-0: offset 304
+INFO: ../main.c(86): L-1: offset 305
+INFO: ../main.c(86): L-2: offset 320
+INFO: ../main.c(86): M-0: offset 321
+INFO: ../main.c(86): M-1: offset 322
+INFO: ../main.c(86): M-2: offset 323
+INFO: ../main.c(86): N-0: offset 324
+INFO: ../main.c(86): N-1: offset 326
+INFO: ../main.c(86): N-2: offset 332
+INFO: ../main.c(86): O-0: offset 333
+INFO: ../main.c(86): O-1: offset 336
+INFO: ../main.c(86): O-2: offset 337
+INFO: ../main.c(86): OO-0: offset 338
+INFO: ../main.c(86): OO-1: offset 339
+INFO: ../main.c(86): OO-2: offset 340
+INFO: ../main.c(86): OW-0: offset 347
+INFO: ../main.c(86): OW-1: offset 348
+INFO: ../main.c(86): OW-2: offset 349
+INFO: ../main.c(86): OY-0: offset 350
+INFO: ../main.c(86): OY-1: offset 351
+INFO: ../main.c(86): OY-2: offset 352
+INFO: ../main.c(86): P-0: offset 353
+INFO: ../main.c(86): P-1: offset 368
+INFO: ../main.c(86): P-2: offset 373
+INFO: ../main.c(86): R-0: offset 374
+INFO: ../main.c(86): R-1: offset 375
+INFO: ../main.c(86): R-2: offset 378
+INFO: ../main.c(86): S-0: offset 379
+INFO: ../main.c(86): S-1: offset 384
+INFO: ../main.c(86): S-2: offset 385
+INFO: ../main.c(86): SH-0: offset 386
+INFO: ../main.c(86): SH-1: offset 387
+INFO: ../main.c(86): SH-2: offset 388
+INFO: ../main.c(86): T-0: offset 389
+INFO: ../main.c(86): T-1: offset 390
+INFO: ../main.c(86): T-2: offset 391
+INFO: ../main.c(86): TH-0: offset 392
+INFO: ../main.c(86): TH-1: offset 393
+INFO: ../main.c(86): TH-2: offset 394
+INFO: ../main.c(86): TS-0: offset 400
+INFO: ../main.c(86): TS-1: offset 401
+INFO: ../main.c(86): TS-2: offset 402
+INFO: ../main.c(86): U-0: offset 403
+INFO: ../main.c(86): U-1: offset 408
+INFO: ../main.c(86): U-2: offset 409
+INFO: ../main.c(86): V-0: offset 410
+INFO: ../main.c(86): V-1: offset 411
+INFO: ../main.c(86): V-2: offset 412
+INFO: ../main.c(86): W-0: offset 413
+INFO: ../main.c(86): W-1: offset 414
+INFO: ../main.c(86): W-2: offset 415
+INFO: ../main.c(86): Y-0: offset 416
+INFO: ../main.c(86): Y-1: offset 417
+INFO: ../main.c(86): Y-2: offset 418
+INFO: ../main.c(86): Z-0: offset 419
+INFO: ../main.c(86): Z-1: offset 420
+INFO: ../main.c(86): Z-2: offset 425
+INFO: ../main.c(86): ZH-0: offset 426
+INFO: ../main.c(86): ZH-1: offset 427
+INFO: ../main.c(86): ZH-2: offset 428
+INFO: ../main.c(86): ed-0: offset 429
+INFO: ../main.c(86): ed-1: offset 431
+INFO: ../main.c(86): ed-2: offset 433
+INFO: ../main.c(86): ez-0: offset 435
+INFO: ../main.c(86): ez-1: offset 436
+INFO: ../main.c(86): ez-2: offset 437
+INFO: ../main.c(86): ng-0: offset 438
+INFO: ../main.c(86): ng-1: offset 439
+INFO: ../main.c(86): ng-2: offset 444
+INFO: ../main.c(108): n_seno= 450

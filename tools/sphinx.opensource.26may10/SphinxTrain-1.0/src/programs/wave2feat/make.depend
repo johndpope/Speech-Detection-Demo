@@ -1,0 +1,91 @@
+# fe_interface.c
+obj.x86_64-unknown-linux-gnu/fe_interface.o: fe_interface.c ../../../include/s3/err.h fe.h \
+  ../../../include/s3/prim_type.h fe_internal.h
+
+# fe_sigproc.c
+obj.x86_64-unknown-linux-gnu/fe_sigproc.o: fe_sigproc.c ../../../include/s3/err.h fe.h \
+  ../../../include/s3/prim_type.h fe_internal.h fe_warp.h \
+  ../../../include/s3/common.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h
+
+# fe_warp.c
+obj.x86_64-unknown-linux-gnu/fe_warp.o: fe_warp.c fe_warp_inverse_linear.h fe.h \
+  ../../../include/s3/prim_type.h fe_warp_affine.h \
+  fe_warp_piecewise_linear.h fe_warp.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/corpus.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/n_words.h \
+  ../../../include/s3/remap.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/lts.h ../../../include/s3/err.h
+
+# fe_warp_affine.c
+obj.x86_64-unknown-linux-gnu/fe_warp_affine.o: fe_warp_affine.c fe_warp.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h fe_warp_affine.h fe.h
+
+# fe_warp_inverse_linear.c
+obj.x86_64-unknown-linux-gnu/fe_warp_inverse_linear.o: fe_warp_inverse_linear.c fe_warp.h \
+  ../../../include/s3/common.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/corpus.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/n_words.h \
+  ../../../include/s3/remap.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/lts.h ../../../include/s3/err.h \
+  fe_warp_inverse_linear.h fe.h
+
+# fe_warp_piecewise_linear.c
+obj.x86_64-unknown-linux-gnu/fe_warp_piecewise_linear.o: fe_warp_piecewise_linear.c fe_warp.h \
+  ../../../include/s3/common.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/corpus.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/n_words.h \
+  ../../../include/s3/remap.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/lts.h ../../../include/s3/err.h \
+  fe_warp_piecewise_linear.h fe.h
+
+# parse_cmd_ln.c
+obj.x86_64-unknown-linux-gnu/parse_cmd_ln.o: parse_cmd_ln.c parse_cmd_ln.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/err.h cmd_ln_defn.h fe.h wave2feat.h
+
+# wave2feat.c
+obj.x86_64-unknown-linux-gnu/wave2feat.o: wave2feat.c fe.h ../../../include/s3/prim_type.h \
+  fe_internal.h wave2feat.h parse_cmd_ln.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/common.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/corpus.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/n_words.h \
+  ../../../include/s3/remap.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/lts.h ../../../include/s3/err.h
+

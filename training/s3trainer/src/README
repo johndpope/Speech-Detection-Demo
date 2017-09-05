@@ -1,0 +1,45 @@
+bw         : Baum-Welch reestimation 
+norm       : Accumulate reestimation sums and normalize mixtures
+interp     : Semi-continuous model smoothing
+mk_flat	   : Generate initial estimates for mixing weights and transition probs
+init_gau   : Initialize single Gaussian models from seg files, 
+             word transcripts and dictionary.
+inc_comp   : Increment the number of densities per mixture by some N.
+  	     N is less than or equal to the existing number of densities
+init_mixw  : Initialize a destination set of mixing weights from a source set
+mk_mdef_gen: Create various types of mdef files/counts
+bldtree    : Build decision trees
+prunetree  : Prune decision trees
+tiestate   : Tie states using pruned decision trees
+
+USEFUL TOOLS
+-------------
+printp    : Print the model parameter file
+
+LIBRARIES
+----------
+libcep_feat : Feature manipulation library.  Includes
+	      stuff like cepstral mean normalization, automatic gain control,
+	      silence deletion and derived feature extraction routines.
+
+libcommon   : Common routines.  Stuff like:
+	      Cphone set object
+	      lexicon object
+	      memory allocation
+	      command line processing
+	      acoustic feature computation
+	      list module
+	      hash table module
+	      vector operations module
+
+libio	    : I/O library
+
+libmodinv   : model inventory library
+
+libs2io     : Sphinx-II I/O library
+
+librpcc     : CPU time profiling low-level support for DEC Alpha machines.
+
+libclust    : Routines for clustering (for VQ etc.)
+	      Routines for merging PDFs (for decision trees)
+

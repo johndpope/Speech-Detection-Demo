@@ -1,0 +1,54 @@
+# DO NOT DELETE
+
+main.o: parse_cmd_ln.h param_cnt.h ts_cnt.h /usr/include/string.h
+main.o: /usr/include/features.h /usr/include/sys/cdefs.h
+main.o: /usr/include/gnu/stubs.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+param_cnt.o: param_cnt.h cnt_fn.h ts_cnt.h cb_cnt.h phone_cnt.h enum_corpus.h
+param_cnt.o: /usr/include/string.h /usr/include/features.h
+param_cnt.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+param_cnt.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+param_cnt.o: /usr/include/stdio.h /usr/include/bits/types.h
+param_cnt.o: /usr/include/libio.h /usr/include/_G_config.h
+param_cnt.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+param_cnt.o: /usr/include/gconv.h
+param_cnt.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+param_cnt.o: /usr/include/bits/stdio_lim.h
+enum_corpus.o: enum_corpus.h cnt_fn.h mk_sseq.h phone_cnt.h
+enum_corpus.o: /usr/include/stdio.h /usr/include/features.h
+enum_corpus.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+enum_corpus.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+enum_corpus.o: /usr/include/bits/types.h /usr/include/libio.h
+enum_corpus.o: /usr/include/_G_config.h /usr/include/wchar.h
+enum_corpus.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+enum_corpus.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+enum_corpus.o: /usr/include/bits/stdio_lim.h
+ts_cnt.o: ts_cnt.h mk_sseq.h /usr/include/stdio.h /usr/include/features.h
+ts_cnt.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+ts_cnt.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+ts_cnt.o: /usr/include/bits/types.h /usr/include/libio.h
+ts_cnt.o: /usr/include/_G_config.h /usr/include/wchar.h
+ts_cnt.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+ts_cnt.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+ts_cnt.o: /usr/include/bits/stdio_lim.h
+cb_cnt.o: cb_cnt.h cnt_fn.h mk_sseq.h /usr/include/stdio.h
+cb_cnt.o: /usr/include/features.h /usr/include/sys/cdefs.h
+cb_cnt.o: /usr/include/gnu/stubs.h
+cb_cnt.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+cb_cnt.o: /usr/include/bits/types.h /usr/include/libio.h
+cb_cnt.o: /usr/include/_G_config.h /usr/include/wchar.h
+cb_cnt.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+cb_cnt.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+cb_cnt.o: /usr/include/bits/stdio_lim.h
+phone_cnt.o: phone_cnt.h
+mk_sseq.o: mk_sseq.h /usr/include/assert.h /usr/include/features.h
+mk_sseq.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+parse_cmd_ln.o: parse_cmd_ln.h /usr/include/stdio.h /usr/include/features.h
+parse_cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+parse_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+parse_cmd_ln.o: /usr/include/bits/types.h /usr/include/libio.h
+parse_cmd_ln.o: /usr/include/_G_config.h /usr/include/wchar.h
+parse_cmd_ln.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+parse_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+parse_cmd_ln.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+parse_cmd_ln.o: /usr/include/assert.h

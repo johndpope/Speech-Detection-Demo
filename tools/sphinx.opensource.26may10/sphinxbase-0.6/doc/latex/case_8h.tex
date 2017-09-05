@@ -1,0 +1,86 @@
+\section{include/case.h File Reference}
+\label{case_8h}\index{include/case.h@{include/case.h}}
+Locale-independent implementation of case swapping operation.  
+
+
+{\tt \#include $<$prim\_\-type.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf UPPER\_\-CASE}(c)~((((c) $>$= 'a') \&\& ((c) $<$= 'z')) ? (c-32) : c)\label{case_8h_3299c549655d5af1fcbc384ee7fd68e3}
+
+\begin{CompactList}\small\item\em Return upper case form for c. \item\end{CompactList}\item 
+\#define {\bf LOWER\_\-CASE}(c)~((((c) $>$= 'A') \&\& ((c) $<$= 'Z')) ? (c+32) : c)\label{case_8h_44403ce2c3f4378aca12ffb732f24cef}
+
+\begin{CompactList}\small\item\em Return lower case form for c. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT void {\bf ucase} (char $\ast$str)
+\begin{CompactList}\small\item\em Convert str to all upper case. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf lcase} (char $\ast$str)
+\begin{CompactList}\small\item\em Convert str to all lower case. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf strcmp\_\-nocase} (const char $\ast$str1, const char $\ast$str2)
+\begin{CompactList}\small\item\em (FIXME! The implementation is incorrect!) Case insensitive string compare. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf strncmp\_\-nocase} (const char $\ast$str1, const char $\ast$str2, size\_\-t len)\label{case_8h_e7c2a7f29d72b9516a947f5c69a043db}
+
+\begin{CompactList}\small\item\em Like \doxyref{strcmp\_\-nocase()}{p.}{case_8h_d276a997bd6709d986aa6e1e4e06c210} but with a maximum length. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Locale-independent implementation of case swapping operation. 
+
+This function implements ASCII-only case switching and comparison related operations, which do not depend on the locale and are guaranteed to exist on all versions of Windows. 
+
+Definition in file {\bf case.h}.
+
+\subsection{Function Documentation}
+\index{case.h@{case.h}!lcase@{lcase}}
+\index{lcase@{lcase}!case.h@{case.h}}
+\subsubsection[{lcase}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void lcase (char $\ast$ {\em str})}\label{case_8h_c0e30dac40f15762f39270f65bd8cdba}
+
+
+Convert str to all lower case. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em str}]is a string. \end{description}
+\end{Desc}
+
+
+Referenced by ngram\_\-model\_\-casefold().\index{case.h@{case.h}!strcmp\_\-nocase@{strcmp\_\-nocase}}
+\index{strcmp\_\-nocase@{strcmp\_\-nocase}!case.h@{case.h}}
+\subsubsection[{strcmp\_\-nocase}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 strcmp\_\-nocase (const char $\ast$ {\em str1}, \/  const char $\ast$ {\em str2})}\label{case_8h_d276a997bd6709d986aa6e1e4e06c210}
+
+
+(FIXME! The implementation is incorrect!) Case insensitive string compare. 
+
+Return the usual -1, 0, +1, depending on str1 $<$, =, $>$ str2 (case insensitive, of course). \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em str1}]is the first string. \item[{\em str2}]is the second string. \end{description}
+\end{Desc}
+
+
+Definition at line 93 of file case.c.
+
+References strcmp\_\-nocase(), and UPPER\_\-CASE.
+
+Referenced by ngram\_\-file\_\-name\_\-to\_\-type(), ngram\_\-str\_\-to\_\-type(), and strcmp\_\-nocase().\index{case.h@{case.h}!ucase@{ucase}}
+\index{ucase@{ucase}!case.h@{case.h}}
+\subsubsection[{ucase}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void ucase (char $\ast$ {\em str})}\label{case_8h_79d99e36b7c2c36dcc6f7f0df746384e}
+
+
+Convert str to all upper case. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em str}]is a string. \end{description}
+\end{Desc}
+
+
+Referenced by ngram\_\-model\_\-casefold().

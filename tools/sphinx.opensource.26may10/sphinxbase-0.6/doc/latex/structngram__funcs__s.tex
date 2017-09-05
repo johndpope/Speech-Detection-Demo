@@ -1,0 +1,71 @@
+\section{ngram\_\-funcs\_\-s Struct Reference}
+\label{structngram__funcs__s}\index{ngram\_\-funcs\_\-s@{ngram\_\-funcs\_\-s}}
+Implementation-specific functions for operating on ngram\_\-model\_\-t objects.  
+
+
+{\tt \#include $<$ngram\_\-model\_\-internal.h$>$}
+
+\subsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+void($\ast$ {\bf free} )({\bf ngram\_\-model\_\-t} $\ast$model)\label{structngram__funcs__s_4211130880131f38e16022985816952f}
+
+\begin{CompactList}\small\item\em Implementation-specific function for freeing an ngram\_\-model\_\-t. \item\end{CompactList}\item 
+int($\ast$ {\bf apply\_\-weights} )({\bf ngram\_\-model\_\-t} $\ast$model, float32 lw, float32 wip, float32 uw)\label{structngram__funcs__s_bfd7e53c672aef5a34ec5114ec475916}
+
+\begin{CompactList}\small\item\em Implementation-specific function for applying language model weights. \item\end{CompactList}\item 
+int32($\ast$ {\bf score} )({\bf ngram\_\-model\_\-t} $\ast$model, int32 wid, int32 $\ast$history, int32 n\_\-hist, int32 $\ast$n\_\-used)\label{structngram__funcs__s_81b0c7948179c2572fb274401b82278e}
+
+\begin{CompactList}\small\item\em Implementation-specific function for querying language model score. \item\end{CompactList}\item 
+int32($\ast$ {\bf raw\_\-score} )({\bf ngram\_\-model\_\-t} $\ast$model, int32 wid, int32 $\ast$history, int32 n\_\-hist, int32 $\ast$n\_\-used)\label{structngram__funcs__s_2a64c66491914168bd830237cc93b16c}
+
+\begin{CompactList}\small\item\em Implementation-specific function for querying raw language model probability. \item\end{CompactList}\item 
+int32($\ast$ {\bf add\_\-ug} )({\bf ngram\_\-model\_\-t} $\ast$model, int32 wid, int32 lweight)
+\begin{CompactList}\small\item\em Implementation-specific function for adding unigrams. \item\end{CompactList}\item 
+void($\ast$ {\bf flush} )({\bf ngram\_\-model\_\-t} $\ast$model)\label{structngram__funcs__s_7abf2864db9c8e8d1d5909ea92144ffe}
+
+\begin{CompactList}\small\item\em Implementation-specific function for purging N-Gram cache. \item\end{CompactList}\item 
+{\bf ngram\_\-iter\_\-t} $\ast$($\ast$ {\bf iter} )({\bf ngram\_\-model\_\-t} $\ast$model, int32 wid, int32 $\ast$history, int32 n\_\-hist)\label{structngram__funcs__s_8148f132a986660ff500e46f9b2ea1c1}
+
+\begin{CompactList}\small\item\em Implementation-specific function for iterating. \item\end{CompactList}\item 
+{\bf ngram\_\-iter\_\-t} $\ast$($\ast$ {\bf mgrams} )({\bf ngram\_\-model\_\-t} $\ast$model, int32 m)\label{structngram__funcs__s_3a264fcbdbe8b4b342c533af090cfe8f}
+
+\begin{CompactList}\small\item\em Implementation-specific function for iterating. \item\end{CompactList}\item 
+{\bf ngram\_\-iter\_\-t} $\ast$($\ast$ {\bf successors} )({\bf ngram\_\-iter\_\-t} $\ast$itor)\label{structngram__funcs__s_f83b5620eb7bc37984ad522b66e266ad}
+
+\begin{CompactList}\small\item\em Implementation-specific function for iterating. \item\end{CompactList}\item 
+int32 const $\ast$($\ast$ {\bf iter\_\-get} )({\bf ngram\_\-iter\_\-t} $\ast$itor, int32 $\ast$out\_\-score, int32 $\ast$out\_\-bowt)\label{structngram__funcs__s_c515e6ad9a1afbda6b74e8204fd460b5}
+
+\begin{CompactList}\small\item\em Implementation-specific function for iterating. \item\end{CompactList}\item 
+{\bf ngram\_\-iter\_\-t} $\ast$($\ast$ {\bf iter\_\-next} )({\bf ngram\_\-iter\_\-t} $\ast$itor)\label{structngram__funcs__s_57777056985f8adc3494e859c1102f3e}
+
+\begin{CompactList}\small\item\em Implementation-specific function for iterating. \item\end{CompactList}\item 
+void($\ast$ {\bf iter\_\-free} )({\bf ngram\_\-iter\_\-t} $\ast$itor)\label{structngram__funcs__s_d7031e996c16516cf7f52e7a4adee4bb}
+
+\begin{CompactList}\small\item\em Implementation-specific function for iterating. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation-specific functions for operating on ngram\_\-model\_\-t objects. 
+
+Definition at line 110 of file ngram\_\-model\_\-internal.h.
+
+\subsection{Field Documentation}
+\index{ngram\_\-funcs\_\-s@{ngram\_\-funcs\_\-s}!add\_\-ug@{add\_\-ug}}
+\index{add\_\-ug@{add\_\-ug}!ngram_funcs_s@{ngram\_\-funcs\_\-s}}
+\subsubsection[{add\_\-ug}]{\setlength{\rightskip}{0pt plus 5cm}int32($\ast$ {\bf ngram\_\-funcs\_\-s::add\_\-ug})({\bf ngram\_\-model\_\-t} $\ast$model, int32 wid, int32 lweight)}\label{structngram__funcs__s_6d553c95c7f4da4993f2b9df757ac016}
+
+
+Implementation-specific function for adding unigrams. 
+
+This function updates the internal structures of a language model to add the given unigram with the given weight (defined as a log-factor applied to the uniform distribution). This includes reallocating or otherwise resizing the set of unigrams.
+
+\begin{Desc}
+\item[Returns:]The language model score (not raw log-probability) of the new word, or 0 for failure. \end{Desc}
+
+
+Referenced by ngram\_\-model\_\-add\_\-word().
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+src/libsphinxbase/lm/ngram\_\-model\_\-internal.h\end{CompactItemize}

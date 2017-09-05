@@ -1,0 +1,15 @@
+run -segdmpdirs /net/alpha4/usr1/bhiksha/sphinx-3/an4/cont_train/dmp_tree_agg \
+-segdmpfn /tmp/g_out.dmp -segidxfn /tmp/g_out.idx -segtype phn \
+-cntfn /net/alpha4/usr1/bhiksha/sphinx-3/an4/cont_train/dmp_tree_agg/phncnt \
+-ctlfn /net/alpha4/usr1/bhiksha/sphinx-3/an4/ctldir/an4.train.ctl \
+-lsnfn /net/alpha4/usr1/bhiksha/sphinx-3/an4/segdir/an4.train.trans.out.lsn \
+-segdir /net/db7/usr2/bhiksha/sphinx/an4//cep/stdCMN/train \
+-ccodedir /net/db7/usr2/bhiksha/sphinx/an4//cep/stdCMN/train \
+-dcodedir /net/db7/usr2/bhiksha/sphinx/an4//cep/stdCMN/train \
+-pcodedir /net/db7/usr2/bhiksha/sphinx/an4//cep/stdCMN/train \
+-ddcodedir /net/db7/usr2/bhiksha/sphinx/an4//cep/stdCMN/train \
+-dictfn /net/alpha4/usr1/bhiksha/sphinx-3/an4/extras/an4_train.dic \
+-fdictfn /net/alpha4/usr1/bhiksha/sphinx-3/an4/extras/filler.dic \
+-moddeffn /net/alpha4/usr1/bhiksha/sphinx-3/an4/extras/an4.1800.mdef \
+-agc none -cmn current
+

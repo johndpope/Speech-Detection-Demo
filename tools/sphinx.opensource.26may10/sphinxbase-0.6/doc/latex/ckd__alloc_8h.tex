@@ -1,0 +1,153 @@
+\section{include/ckd\_\-alloc.h File Reference}
+\label{ckd__alloc_8h}\index{include/ckd\_\-alloc.h@{include/ckd\_\-alloc.h}}
+Sphinx's memory allocation/deallocation routines.  
+
+
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$setjmp.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf ckd\_\-calloc}(n, sz)~\_\-\_\-ckd\_\-calloc\_\-\_\-((n),(sz),\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)
+\begin{CompactList}\small\item\em Macros to simplify the use of above functions. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-malloc}(sz)~\_\-\_\-ckd\_\-malloc\_\-\_\-((sz),\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)\label{ckd__alloc_8h_8e89a31c3c70710a8e023a177084bff2}
+
+\begin{CompactList}\small\item\em Macro for \_\-\_\-ckd\_\-malloc\_\-\_\-. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-realloc}(ptr, sz)~\_\-\_\-ckd\_\-realloc\_\-\_\-(ptr,(sz),\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)\label{ckd__alloc_8h_fd496738b3e114bd494c5a0955f1bfb3}
+
+\begin{CompactList}\small\item\em Macro for \_\-\_\-ckd\_\-realloc\_\-\_\-. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-salloc}(ptr)~\_\-\_\-ckd\_\-salloc\_\-\_\-(ptr,\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)\label{ckd__alloc_8h_d313f92478859f9e4ea99d0f6e78c393}
+
+\begin{CompactList}\small\item\em Macro for \_\-\_\-ckd\_\-salloc\_\-\_\-. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-calloc\_\-2d}(d1, d2, sz)~\_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-((d1),(d2),(sz),\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)\label{ckd__alloc_8h_949e7b50fcd9697b1563fa57f50e9c4f}
+
+\begin{CompactList}\small\item\em Macro for \_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-calloc\_\-3d}(d1, d2, d3, sz)~\_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-((d1),(d2),(d3),(sz),\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)\label{ckd__alloc_8h_f716d69c9fbde1d8b2678da9c260ddc7}
+
+\begin{CompactList}\small\item\em Macro for \_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-alloc\_\-2d\_\-ptr}(d1, d2, bf, sz)~\_\-\_\-ckd\_\-alloc\_\-2d\_\-ptr((d1), (d2), (bf), (sz), \_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-)\label{ckd__alloc_8h_d5d0dce212e97207af42803a3add00e1}
+
+\begin{CompactList}\small\item\em Macro for \_\-\_\-ckd\_\-alloc\_\-2d\_\-ptr\_\-\_\-. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-free\_\-2d\_\-ptr}(bf)~ckd\_\-free(bf)\label{ckd__alloc_8h_0afe1152d34da544602e6ab1635e05b1}
+
+\begin{CompactList}\small\item\em Free only the pointer arrays allocated with \doxyref{ckd\_\-alloc\_\-2d\_\-ptr()}{p.}{ckd__alloc_8h_d5d0dce212e97207af42803a3add00e1}. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-alloc\_\-3d\_\-ptr}(d1, d2, d3, bf, sz)~\_\-\_\-ckd\_\-alloc\_\-3d\_\-ptr((d1), (d2), (d3), (bf), (sz), \_\-\_\-FILE\_\-\_\-, \_\-\_\-LINE\_\-\_\-)\label{ckd__alloc_8h_b29a3fbbd58bc59aa2827eaeda090d06}
+
+\begin{CompactList}\small\item\em Macro for \_\-\_\-ckd\_\-alloc\_\-3d\_\-ptr\_\-\_\-. \item\end{CompactList}\item 
+\#define {\bf ckd\_\-free\_\-3d\_\-ptr}(bf)~ckd\_\-free\_\-2d(bf)\label{ckd__alloc_8h_f03a0583f358dbee5200910d151b490e}
+
+\begin{CompactList}\small\item\em Free only the pointer arrays allocated with \doxyref{ckd\_\-alloc\_\-3d\_\-ptr()}{p.}{ckd__alloc_8h_b29a3fbbd58bc59aa2827eaeda090d06}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+jmp\_\-buf $\ast$ {\bf ckd\_\-set\_\-jump} (jmp\_\-buf $\ast$env, int abort)
+\begin{CompactList}\small\item\em Control behaviour of the program when allocation fails. \item\end{CompactList}\item 
+void {\bf ckd\_\-fail} (char $\ast$format,...)\label{ckd__alloc_8h_b81dfe13d2237c64182f06f66fab7b0e}
+
+\begin{CompactList}\small\item\em Fail (with a message) according to behaviour specified by \doxyref{ckd\_\-set\_\-jump()}{p.}{ckd__alloc_8h_0ec6d92241b1912b10f59519d553acb9}. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void $\ast$ \textbf{\_\-\_\-ckd\_\-calloc\_\-\_\-} (size\_\-t n\_\-elem, size\_\-t elem\_\-size, const char $\ast$caller\_\-file, int caller\_\-line)\label{ckd__alloc_8h_903aef4c99a8f19b555a34c9e31c61f8}
+
+\item 
+SPHINXBASE\_\-EXPORT void $\ast$ \textbf{\_\-\_\-ckd\_\-malloc\_\-\_\-} (size\_\-t size, const char $\ast$caller\_\-file, int caller\_\-line)\label{ckd__alloc_8h_861f3b9f9730dd87a1dfaf3be2218fd0}
+
+\item 
+SPHINXBASE\_\-EXPORT void $\ast$ \textbf{\_\-\_\-ckd\_\-realloc\_\-\_\-} (void $\ast$ptr, size\_\-t new\_\-size, const char $\ast$caller\_\-file, int caller\_\-line)\label{ckd__alloc_8h_138dd425d0b3329aa214597cb3bd62bd}
+
+\item 
+SPHINXBASE\_\-EXPORT char $\ast$ {\bf \_\-\_\-ckd\_\-salloc\_\-\_\-} (const char $\ast$origstr, const char $\ast$caller\_\-file, int caller\_\-line)\label{ckd__alloc_8h_d92dae54c994a4f90c842e42d05c494a}
+
+\begin{CompactList}\small\item\em Like strdup, except that if an error occurs it prints a diagnostic message and exits. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void $\ast$ {\bf \_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-} (size\_\-t d1, size\_\-t d2, size\_\-t elemsize, const char $\ast$caller\_\-file, int caller\_\-line)
+\begin{CompactList}\small\item\em Allocate a 2-D array and return ptr to it (ie, ptr to vector of ptrs). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void $\ast$ {\bf \_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-} (size\_\-t d1, size\_\-t d2, size\_\-t d3, size\_\-t elemsize, const char $\ast$caller\_\-file, int caller\_\-line)
+\begin{CompactList}\small\item\em Allocate a 3-D array and return ptr to it. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void $\ast$ {\bf \_\-\_\-ckd\_\-alloc\_\-3d\_\-ptr} (size\_\-t d1, size\_\-t d2, size\_\-t d3, void $\ast$store, size\_\-t elem\_\-size, char $\ast$caller\_\-file, int caller\_\-line)\label{ckd__alloc_8h_f9a3ef2d363ee6a53429427d1d9327a6}
+
+\begin{CompactList}\small\item\em Overlay a 3-D array over a previously allocated storage area. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void $\ast$ {\bf \_\-\_\-ckd\_\-alloc\_\-2d\_\-ptr} (size\_\-t d1, size\_\-t d2, void $\ast$store, size\_\-t elem\_\-size, char $\ast$caller\_\-file, int caller\_\-line)\label{ckd__alloc_8h_965f553ee64bbfbeda048d43393ae04b}
+
+\begin{CompactList}\small\item\em Overlay a s-D array over a previously allocated storage area. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ckd\_\-free} (void $\ast$ptr)\label{ckd__alloc_8h_31c6b405558620ac37599737b5722fbf}
+
+\begin{CompactList}\small\item\em Test and free a 1-D array. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ckd\_\-free\_\-2d} (void $\ast$ptr)\label{ckd__alloc_8h_8246c071ac12e98b7e1df9fe6da15aef}
+
+\begin{CompactList}\small\item\em Free a 2-D array (ptr) previously allocated by ckd\_\-calloc\_\-2d. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ckd\_\-free\_\-3d} (void $\ast$ptr)\label{ckd__alloc_8h_443accde4663a4a07c6d147088614d57}
+
+\begin{CompactList}\small\item\em Free a 3-D array (ptr) previously allocated by ckd\_\-calloc\_\-3d. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Sphinx's memory allocation/deallocation routines. 
+
+Implementation of efficient memory allocation deallocation for multiple dimensional arrays. 
+
+Definition in file {\bf ckd\_\-alloc.h}.
+
+\subsection{Define Documentation}
+\index{ckd\_\-alloc.h@{ckd\_\-alloc.h}!ckd\_\-calloc@{ckd\_\-calloc}}
+\index{ckd\_\-calloc@{ckd\_\-calloc}!ckd_alloc.h@{ckd\_\-alloc.h}}
+\subsubsection[{ckd\_\-calloc}]{\setlength{\rightskip}{0pt plus 5cm}\#define ckd\_\-calloc(n, \/  sz)~\_\-\_\-ckd\_\-calloc\_\-\_\-((n),(sz),\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)}\label{ckd__alloc_8h_a00ef21903bc4f8a972488417adc8d2e}
+
+
+Macros to simplify the use of above functions. 
+
+One should use these, rather than target functions directly. Macro for \_\-\_\-ckd\_\-calloc\_\-\_\- 
+
+Definition at line 230 of file ckd\_\-alloc.h.
+
+Referenced by agc\_\-init(), bio\_\-fread\_\-1d(), bio\_\-fwrite(), bio\_\-readhdr(), bit\_\-encode\_\-attach(), cmd\_\-ln\_\-init(), cmd\_\-ln\_\-parse\_\-file\_\-r(), cmd\_\-ln\_\-parse\_\-r(), feat\_\-array\_\-alloc(), feat\_\-init(), feat\_\-lda\_\-transform(), feat\_\-s2mfc2feat(), feat\_\-s2mfc\_\-read(), feat\_\-set\_\-subvecs(), fopen\_\-compchk(), glist\_\-add\_\-float32(), glist\_\-add\_\-float64(), glist\_\-add\_\-int32(), glist\_\-add\_\-ptr(), glist\_\-add\_\-uint32(), glist\_\-insert\_\-float32(), glist\_\-insert\_\-float64(), glist\_\-insert\_\-int32(), glist\_\-insert\_\-ptr(), glist\_\-insert\_\-uint32(), hash\_\-table\_\-iter(), hash\_\-table\_\-new(), heap\_\-new(), huff\_\-code\_\-build\_\-int(), huff\_\-code\_\-build\_\-str(), huff\_\-code\_\-read(), jsgf\_\-grammar\_\-new(), lineiter\_\-start(), listelem\_\-alloc\_\-init(), logmath\_\-init(), logmath\_\-read(), mmio\_\-file\_\-read(), ngram\_\-iter(), ngram\_\-model\_\-add\_\-class(), ngram\_\-model\_\-set\_\-init(), ngram\_\-model\_\-set\_\-iter(), ngram\_\-model\_\-set\_\-map\_\-words(), ngram\_\-model\_\-set\_\-read(), ngram\_\-prob(), ngram\_\-score(), parse\_\-subvecs(), pctr\_\-new(), sbevent\_\-init(), sbmsgq\_\-init(), sbmtx\_\-init(), sbthread\_\-start(), string\_\-join(), and yin\_\-init().
+
+\subsection{Function Documentation}
+\index{ckd\_\-alloc.h@{ckd\_\-alloc.h}!\_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-@{\_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-}}
+\index{\_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-@{\_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-}!ckd_alloc.h@{ckd\_\-alloc.h}}
+\subsubsection[{\_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void$\ast$ \_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\- (size\_\-t {\em d1}, \/  size\_\-t {\em d2}, \/  size\_\-t {\em elemsize}, \/  const char $\ast$ {\em caller\_\-file}, \/  int {\em caller\_\-line})}\label{ckd__alloc_8h_141713f7d0ac99eac338d6d8ae35b771}
+
+
+Allocate a 2-D array and return ptr to it (ie, ptr to vector of ptrs). 
+
+The data area is allocated in one block so it can also be treated as a 1-D array. 
+
+Definition at line 220 of file ckd\_\-alloc.c.
+
+References \_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-().
+
+Referenced by \_\-\_\-ckd\_\-calloc\_\-2d\_\-\_\-().\index{ckd\_\-alloc.h@{ckd\_\-alloc.h}!\_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-@{\_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-}}
+\index{\_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-@{\_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-}!ckd_alloc.h@{ckd\_\-alloc.h}}
+\subsubsection[{\_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void$\ast$ \_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\- (size\_\-t {\em d1}, \/  size\_\-t {\em d2}, \/  size\_\-t {\em d3}, \/  size\_\-t {\em elemsize}, \/  const char $\ast$ {\em caller\_\-file}, \/  int {\em caller\_\-line})}\label{ckd__alloc_8h_19c770c65f642488f6045c442f53fc0c}
+
+
+Allocate a 3-D array and return ptr to it. 
+
+The data area is allocated in one block so it can also be treated as a 1-D array. 
+
+Definition at line 262 of file ckd\_\-alloc.c.
+
+References \_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-().
+
+Referenced by \_\-\_\-ckd\_\-calloc\_\-3d\_\-\_\-().\index{ckd\_\-alloc.h@{ckd\_\-alloc.h}!ckd\_\-set\_\-jump@{ckd\_\-set\_\-jump}}
+\index{ckd\_\-set\_\-jump@{ckd\_\-set\_\-jump}!ckd_alloc.h@{ckd\_\-alloc.h}}
+\subsubsection[{ckd\_\-set\_\-jump}]{\setlength{\rightskip}{0pt plus 5cm}jmp\_\-buf$\ast$ ckd\_\-set\_\-jump (jmp\_\-buf $\ast$ {\em env}, \/  int {\em abort})}\label{ckd__alloc_8h_0ec6d92241b1912b10f59519d553acb9}
+
+
+Control behaviour of the program when allocation fails. 
+
+Although your program is probably toast when memory allocation fails, it is also probably a good idea to be able to catch these errors and alert the user in some way. Either that, or you might want the program to call abort() so that you can debug the failed code. This function allows you to control that behaviour.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em env}]Pointer to a {\tt jmp\_\-buf} initialized with setjmp(), or NULL to remove a previously set jump target. \item[{\em abort}]If non-zero, the program will call abort() when allocation fails rather than exiting or calling longjmp(). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to a previously set {\tt jmp\_\-buf}, if any. \end{Desc}
+
+
+Definition at line 109 of file ckd\_\-alloc.c.
+
+References ckd\_\-set\_\-jump().
+
+Referenced by ckd\_\-set\_\-jump().

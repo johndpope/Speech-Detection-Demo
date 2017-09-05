@@ -1,0 +1,62 @@
+/net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/bin.linux/bldtree \
+ -treefn /net/goofy/usr3/rsingh/SPINE/trees/semi_2000sen.unpruned/AA-1.dtree \
+ -moddeffn /net/goofy/usr3/rsingh/SPINE/model_architecture/semi_2000sen.untied.mdef \
+ -mixwfn /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/mixture_weights \
+ -ts2cbfn .semi. \
+ -meanfn /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/means \
+ -varfn /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/variances \
+ -mwfloor 1e-8 \
+ -psetfn /net/goofy/usr3/rsingh/SPINE/model_architecture/semi_2000sen.tree_questions \
+ -phone AA \
+ -state 1 \
+ -stwt 1.0 0.05 0.0 \
+ -ssplitmin 1 \
+ -ssplitmax 7 \
+ -ssplitthr 0 \
+ -csplitmin 1 \
+ -csplitmax 2000 \
+ -csplitthr 0 \
+ -cntthresh 1
+
+[Switch]   [Default] [Value]
+-treefn              /net/goofy/usr3/rsingh/SPINE/trees/semi_2000sen.unpruned/AA-1.dtree
+-moddeffn            /net/goofy/usr3/rsingh/SPINE/model_architecture/semi_2000sen.untied.mdef
+-ts2cbfn   .semi.    .semi. 
+-meanfn              /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/means
+-varfn               /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/variances
+-varfloor  0.00001   1.000000e-05
+-cntthresh 0.00001   1.000000e+00
+-mixwfn              /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/mixture_weights
+-psetfn              /net/goofy/usr3/rsingh/SPINE/model_architecture/semi_2000sen.tree_questions
+-phone               AA     
+-state               1      
+-mwfloor   1e-4      1.000000e-08
+-stwt                1.0 0.05 0.0
+-ssplitthr 8e-4      0.000000e+00
+-ssplitmin 1         1      
+-ssplitmax 5         7      
+-csplitthr 8e-4      0.000000e+00
+-csplitmin 1         1      
+-csplitmax 100       2000   
+INFO: ../main.c(153): Reading: /net/goofy/usr3/rsingh/SPINE/model_architecture/semi_2000sen.untied.mdef
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 6786 total models defined (44 base, 6742 tri)
+INFO: ../model_def_io.c(564): 27144 total states
+INFO: ../model_def_io.c(565): 20358 total tied states
+INFO: ../model_def_io.c(566): 132 total tied CI states
+INFO: ../model_def_io.c(567): 44 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+INFO: ../main.c(197): Building trees for [AA AX R b] through [AA ng R b]
+INFO: ../main.c(225): Covering states |[132 509]| == 378
+INFO: ../main.c(232): Reading: /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/mixture_weights
+INFO: ../s3mixw_io.c(151): Read /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/mixture_weights [378x4x256 array]
+INFO: ../main.c(270): 126 of 126 models have observation count greater than 1.000000
+INFO: ../main.c(68): nrm stwt: 0.045 0.909 0.045 
+INFO: ../main.c(382): 126-class entropy: 1.096314e+08
+INFO: ../main.c(505): Reading: /net/goofy/usr3/rsingh/SPINE/model_architecture/semi_2000sen.tree_questions
+INFO: ../main.c(542): 94 total simple questions (86 phone; 8 word bndry)
+INFO: ../main.c(544): 20 Left Only questions, and 22 Right Only questions
+N model = 126
+INFO: ../dtree.c(1464): stop. b_n->wt_ent_dec (-5.613e+00) <= 0
+s>    ( - 1.096e+08 126 0 QUESTION5 1 -5.613e+00 7.267e+06)

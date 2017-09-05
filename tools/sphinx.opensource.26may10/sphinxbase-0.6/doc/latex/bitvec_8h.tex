@@ -1,0 +1,182 @@
+\section{include/bitvec.h File Reference}
+\label{bitvec_8h}\index{include/bitvec.h@{include/bitvec.h}}
+An implementation of bit vectors.  
+
+
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$sphinx\_\-config.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+{\tt \#include $<$ckd\_\-alloc.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \textbf{BITVEC\_\-BITS}~32\label{bitvec_8h_a992f8d4c7dbe0b71bfd1e01ce279167}
+
+\item 
+\#define {\bf bitvec\_\-size}(n)~(((n)+BITVEC\_\-BITS-1)/BITVEC\_\-BITS)\label{bitvec_8h_1d82193826583f234a71cba32267d3f3}
+
+\begin{CompactList}\small\item\em Number of bitvec\_\-t in a bit vector. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-alloc}(n)~ckd\_\-calloc(bitvec\_\-size(n), sizeof(bitvec\_\-t))\label{bitvec_8h_866043a7ac23e137f6c2f2466f4abc70}
+
+\begin{CompactList}\small\item\em Allocate a bit vector. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-realloc}(v, n)~ckd\_\-realloc(v, bitvec\_\-size(n) $\ast$ sizeof(bitvec\_\-t))\label{bitvec_8h_e53ebce7c4c616fdc601e8306aebcc4b}
+
+\begin{CompactList}\small\item\em Resize a bit vector. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-free}(v)~ckd\_\-free(v)\label{bitvec_8h_5628e35c88ac7e91b99dce916758824a}
+
+\begin{CompactList}\small\item\em Free a bit vector. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-set}(v, b)~(v[(b)/BITVEC\_\-BITS] $|$= (1UL $<$$<$ ((b) \& (BITVEC\_\-BITS-1))))
+\begin{CompactList}\small\item\em Set the b-th bit of bit vector v. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-set\_\-all}(v, n)
+\begin{CompactList}\small\item\em Set all n bits in bit vector v. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-clear}(v, b)~(v[(b)/BITVEC\_\-BITS] \&= $\sim$(1UL $<$$<$ ((b) \& (BITVEC\_\-BITS-1))))
+\begin{CompactList}\small\item\em Clear the b-th bit of bit vector v. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-clear\_\-all}(v, n)
+\begin{CompactList}\small\item\em Clear all n bits in bit vector v. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-is\_\-set}(v, b)~(v[(b)/BITVEC\_\-BITS] \& (1UL $<$$<$ ((b) \& (BITVEC\_\-BITS-1))))
+\begin{CompactList}\small\item\em Check whether the b-th bit is set in vector v. \item\end{CompactList}\item 
+\#define {\bf bitvec\_\-is\_\-clear}(v, b)~(! (bitvec\_\-is\_\-set(v,b)))
+\begin{CompactList}\small\item\em Check whether the b-th bit is cleared in vector v. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef uint32 \textbf{bitvec\_\-t}\label{bitvec_8h_de0d20aa7e2ccec4e6fcf06419251f71}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT size\_\-t {\bf bitvec\_\-count\_\-set} (bitvec\_\-t $\ast$vec, size\_\-t len)
+\begin{CompactList}\small\item\em Return the number of bits set in the given bitvector. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+An implementation of bit vectors. 
+
+Implementation of basic operations of bit vectors. 
+
+Definition in file {\bf bitvec.h}.
+
+\subsection{Define Documentation}
+\index{bitvec.h@{bitvec.h}!bitvec\_\-clear@{bitvec\_\-clear}}
+\index{bitvec\_\-clear@{bitvec\_\-clear}!bitvec.h@{bitvec.h}}
+\subsubsection[{bitvec\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}\#define bitvec\_\-clear(v, \/  b)~(v[(b)/BITVEC\_\-BITS] \&= $\sim$(1UL $<$$<$ ((b) \& (BITVEC\_\-BITS-1))))}\label{bitvec_8h_74b3387345ca2730a8067626878843fc}
+
+
+Clear the b-th bit of bit vector v. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em v}]is a vector \item[{\em b}]is the bit which will be set \end{description}
+\end{Desc}
+
+
+Definition at line 111 of file bitvec.h.\index{bitvec.h@{bitvec.h}!bitvec\_\-clear\_\-all@{bitvec\_\-clear\_\-all}}
+\index{bitvec\_\-clear\_\-all@{bitvec\_\-clear\_\-all}!bitvec.h@{bitvec.h}}
+\subsubsection[{bitvec\_\-clear\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}\#define bitvec\_\-clear\_\-all(v, \/  n)}\label{bitvec_8h_89f80d7a8040e9225f3c1c9bf102ae1d}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}memset(v, 0, (((n)+BITVEC_BITS-1)/BITVEC_BITS) * \
+                                       sizeof(bitvec_t))
+\end{verbatim}
+\end{Code}
+Clear all n bits in bit vector v. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em v}]is a vector \item[{\em n}]is the number of bits \end{description}
+\end{Desc}
+
+
+Definition at line 119 of file bitvec.h.\index{bitvec.h@{bitvec.h}!bitvec\_\-is\_\-clear@{bitvec\_\-is\_\-clear}}
+\index{bitvec\_\-is\_\-clear@{bitvec\_\-is\_\-clear}!bitvec.h@{bitvec.h}}
+\subsubsection[{bitvec\_\-is\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}\#define bitvec\_\-is\_\-clear(v, \/  b)~(! (bitvec\_\-is\_\-set(v,b)))}\label{bitvec_8h_8154409a6e05e7c1ed7f21eff5ed06d4}
+
+
+Check whether the b-th bit is cleared in vector v. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em v}]is a vector \item[{\em b}]is the bit which will be checked \end{description}
+\end{Desc}
+
+
+Definition at line 136 of file bitvec.h.\index{bitvec.h@{bitvec.h}!bitvec\_\-is\_\-set@{bitvec\_\-is\_\-set}}
+\index{bitvec\_\-is\_\-set@{bitvec\_\-is\_\-set}!bitvec.h@{bitvec.h}}
+\subsubsection[{bitvec\_\-is\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}\#define bitvec\_\-is\_\-set(v, \/  b)~(v[(b)/BITVEC\_\-BITS] \& (1UL $<$$<$ ((b) \& (BITVEC\_\-BITS-1))))}\label{bitvec_8h_e323f80288b2ff946d6d8b0e38f791c9}
+
+
+Check whether the b-th bit is set in vector v. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em v}]is a vector \item[{\em b}]is the bit which will be checked \end{description}
+\end{Desc}
+
+
+Definition at line 128 of file bitvec.h.\index{bitvec.h@{bitvec.h}!bitvec\_\-set@{bitvec\_\-set}}
+\index{bitvec\_\-set@{bitvec\_\-set}!bitvec.h@{bitvec.h}}
+\subsubsection[{bitvec\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}\#define bitvec\_\-set(v, \/  b)~(v[(b)/BITVEC\_\-BITS] $|$= (1UL $<$$<$ ((b) \& (BITVEC\_\-BITS-1))))}\label{bitvec_8h_e90878b8f2316f5733d83a3f47d378ac}
+
+
+Set the b-th bit of bit vector v. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em v}]is a vector \item[{\em b}]is the bit which will be set \end{description}
+\end{Desc}
+
+
+Definition at line 94 of file bitvec.h.\index{bitvec.h@{bitvec.h}!bitvec\_\-set\_\-all@{bitvec\_\-set\_\-all}}
+\index{bitvec\_\-set\_\-all@{bitvec\_\-set\_\-all}!bitvec.h@{bitvec.h}}
+\subsubsection[{bitvec\_\-set\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}\#define bitvec\_\-set\_\-all(v, \/  n)}\label{bitvec_8h_b7abefb917e02790e9384d3149ff461e}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}memset(v, (bitvec_t)-1, \
+                                       (((n)+BITVEC_BITS-1)/BITVEC_BITS) * \
+                                       sizeof(bitvec_t))
+\end{verbatim}
+\end{Code}
+Set all n bits in bit vector v. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em v}]is a vector \item[{\em n}]is the number of bits \end{description}
+\end{Desc}
+
+
+Definition at line 102 of file bitvec.h.
+
+\subsection{Function Documentation}
+\index{bitvec.h@{bitvec.h}!bitvec\_\-count\_\-set@{bitvec\_\-count\_\-set}}
+\index{bitvec\_\-count\_\-set@{bitvec\_\-count\_\-set}!bitvec.h@{bitvec.h}}
+\subsubsection[{bitvec\_\-count\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT size\_\-t bitvec\_\-count\_\-set (bitvec\_\-t $\ast$ {\em vec}, \/  size\_\-t {\em len})}\label{bitvec_8h_c8eeaf487cd029e23fffe676f9a77a10}
+
+
+Return the number of bits set in the given bitvector. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em vec}]is the bit vector \item[{\em len}]is the length of bit vector {\tt vec} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the number of bits being set in vector {\tt vec} \end{Desc}
+
+
+Definition at line 64 of file bitvec.c.
+
+References bitvec\_\-count\_\-set().
+
+Referenced by bitvec\_\-count\_\-set().

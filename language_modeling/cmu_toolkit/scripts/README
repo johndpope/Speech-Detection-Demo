@@ -1,0 +1,35 @@
+About makelm.csh:
+-----------------
+To generate an ARPA format lm, run the script makelm.csh
+It will ask for a transcript file, a vocabulary file, an integer N
+which will tell it to compute an N-gram lm, and an output filename.
+
+Every input and output is in ascii. The script is currently set
+to do absolute discounting.
+
+In the vocabulary file, the string <s> and </s> must be included. 
+These stand for begining and end sentence silence respectively.
+
+About find_interpolation_wts.csh:
+----------------------------------
+This script takes two ARPA format LMs, sample text for which you
+want to generate an optimal interpolated LM and writes out interpolation
+weights into an output ascii file. The interpolation weights can then
+be used to interpolate the LMs (code for this has to be written, the
+toolkit does not actually interpolate LMs, it oly computes interpolation
+weights).
+
+Be careful about the following:
+a) the two ARPA format LMs must have been generated using the same
+   (combined) vocabulary
+b) the sample text on which interpolation weights must be optimized
+   must not contain begin and end-sentence silence markers (<s> and
+   </s>), and must be written out one-word-per-line (in the correct
+   order).  
+c) The LMs must be properly made. Good-turing based LMs built with small 
+   amounts of data (< average 100 instances per word) are bad. It 
+   is better to use absolute discounting or even Witten-Bell discounting.
+d) The words must be written in the same case in all text files as in the
+   corresponding vocabularies.
+
+

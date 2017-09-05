@@ -1,0 +1,12 @@
+# DO NOT DELETE
+
+kmeans.o: ../include/s3/kmeans.h /usr/include/assert.h /usr/include/features.h
+kmeans.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+div.o: /usr/include/math.h /usr/include/features.h /usr/include/sys/cdefs.h
+div.o: /usr/include/gnu/stubs.h /usr/include/bits/huge_val.h
+div.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+div.o: ../include/s3/div.h /usr/include/assert.h
+merge_den.o: ../include/s3/merge_den.h /usr/include/string.h
+merge_den.o: /usr/include/features.h /usr/include/sys/cdefs.h
+merge_den.o: /usr/include/gnu/stubs.h
+merge_den.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h

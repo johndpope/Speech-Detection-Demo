@@ -1,0 +1,57 @@
+# DO NOT DELETE
+
+accum.o: accum.h /usr/include/stdio.h /usr/include/features.h
+accum.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+accum.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+accum.o: /usr/include/bits/types.h /usr/include/libio.h
+accum.o: /usr/include/_G_config.h /usr/include/wchar.h
+accum.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+accum.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+accum.o: /usr/include/bits/stdio_lim.h /usr/include/math.h
+accum.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+accum.o: /usr/include/bits/mathcalls.h /usr/include/assert.h
+accum.o: /usr/include/string.h /usr/include/time.h /usr/include/bits/time.h
+backward.o: accum.h /usr/include/assert.h /usr/include/features.h
+backward.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+backward.o: /usr/include/math.h /usr/include/bits/huge_val.h
+backward.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+backward.o: /usr/include/string.h
+backward.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+baum_welch.o: baum_welch.h forward.h backward.h accum.h /usr/include/math.h
+baum_welch.o: /usr/include/features.h /usr/include/sys/cdefs.h
+baum_welch.o: /usr/include/gnu/stubs.h /usr/include/bits/huge_val.h
+baum_welch.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+baum_welch.o: /usr/include/assert.h /usr/include/string.h
+baum_welch.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+viterbi.o: viterbi.h accum.h /usr/include/math.h /usr/include/features.h
+viterbi.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+viterbi.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+viterbi.o: /usr/include/bits/mathcalls.h /usr/include/assert.h
+forward.o: /usr/include/assert.h /usr/include/features.h
+forward.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+forward.o: /usr/include/math.h /usr/include/bits/huge_val.h
+forward.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+main.o: train_cmd_ln.h forward.h viterbi.h next_utt_states.h baum_welch.h
+main.o: accum.h /usr/include/stdio.h /usr/include/features.h
+main.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+main.o: /usr/include/bits/types.h /usr/include/libio.h
+main.o: /usr/include/_G_config.h /usr/include/wchar.h
+main.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+main.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+main.o: /usr/include/string.h /usr/include/math.h
+main.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+main.o: /usr/include/bits/mathcalls.h /usr/include/assert.h
+next_utt_states.o: next_utt_states.h
+train_cmd_ln.o: train_cmd_ln.h /usr/include/stdio.h /usr/include/features.h
+train_cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+train_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+train_cmd_ln.o: /usr/include/bits/types.h /usr/include/libio.h
+train_cmd_ln.o: /usr/include/_G_config.h /usr/include/wchar.h
+train_cmd_ln.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+train_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+train_cmd_ln.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+train_cmd_ln.o: /usr/include/string.h /usr/include/sys/types.h
+train_cmd_ln.o: /usr/include/time.h /usr/include/bits/time.h
+train_cmd_ln.o: /usr/include/assert.h

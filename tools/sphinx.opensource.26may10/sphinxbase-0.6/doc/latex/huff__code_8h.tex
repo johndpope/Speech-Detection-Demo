@@ -1,0 +1,64 @@
+\section{include/huff\_\-code.h File Reference}
+\label{huff__code_8h}\index{include/huff\_\-code.h@{include/huff\_\-code.h}}
+Huffman code and bitstream implementation.  
+
+
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+{\tt \#include $<$cmd\_\-ln.h$>$}\par
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct huff\_\-code\_\-s \textbf{huff\_\-code\_\-t}\label{huff__code_8h_99a5188e6a18682c96100cd5232af0f4}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+huff\_\-code\_\-t $\ast$ {\bf huff\_\-code\_\-build\_\-int} (int32 const $\ast$values, int32 const $\ast$frequencies, int nvals)\label{huff__code_8h_eac9c787bd2b0c44645fc36668c8cb72}
+
+\begin{CompactList}\small\item\em Create a codebook from 32-bit integer data. \item\end{CompactList}\item 
+huff\_\-code\_\-t $\ast$ {\bf huff\_\-code\_\-build\_\-str} (char $\ast$const $\ast$values, int32 const $\ast$frequencies, int nvals)\label{huff__code_8h_e36c06fbf1ea3d3d8b8898489b8d0555}
+
+\begin{CompactList}\small\item\em Create a codebook from string data. \item\end{CompactList}\item 
+huff\_\-code\_\-t $\ast$ {\bf huff\_\-code\_\-read} (FILE $\ast$infh)\label{huff__code_8h_56e0b59ab72965a106d981edfcb80a58}
+
+\begin{CompactList}\small\item\em Read a codebook from a file. \item\end{CompactList}\item 
+int {\bf huff\_\-code\_\-write} (huff\_\-code\_\-t $\ast$hc, FILE $\ast$outfh)\label{huff__code_8h_00510cb2e10d3257cebb637c1f92967e}
+
+\begin{CompactList}\small\item\em Write a codebook to a file. \item\end{CompactList}\item 
+int {\bf huff\_\-code\_\-dump} (huff\_\-code\_\-t $\ast$hc, FILE $\ast$dumpfh)\label{huff__code_8h_13073aec67ffe7c7d01dfeba7aefacf8}
+
+\begin{CompactList}\small\item\em Print a codebook to a file as text (for debugging). \item\end{CompactList}\item 
+huff\_\-code\_\-t $\ast$ {\bf huff\_\-code\_\-retain} (huff\_\-code\_\-t $\ast$hc)\label{huff__code_8h_65f498a58da214934dd19d6892bd838d}
+
+\begin{CompactList}\small\item\em Retain a pointer to a Huffman codec object. \item\end{CompactList}\item 
+int {\bf huff\_\-code\_\-free} (huff\_\-code\_\-t $\ast$hc)\label{huff__code_8h_e11af2c92c2eb047cb926dd97789eea2}
+
+\begin{CompactList}\small\item\em Release a pointer to a Huffman codec object. \item\end{CompactList}\item 
+FILE $\ast$ {\bf huff\_\-code\_\-attach} (huff\_\-code\_\-t $\ast$hc, FILE $\ast$fh, char const $\ast$mode)\label{huff__code_8h_967b15414f2a48342cdf8dd6488a934a}
+
+\begin{CompactList}\small\item\em Attach a Huffman codec to a file handle for input/output. \item\end{CompactList}\item 
+FILE $\ast$ {\bf huff\_\-code\_\-detach} (huff\_\-code\_\-t $\ast$hc)\label{huff__code_8h_197d8985c1f32747b5b1b116b246ccc2}
+
+\begin{CompactList}\small\item\em Detach a Huffman codec from its file handle. \item\end{CompactList}\item 
+int {\bf huff\_\-code\_\-encode\_\-int} (huff\_\-code\_\-t $\ast$hc, int32 sym, uint32 $\ast$outcw)\label{huff__code_8h_2813bf45e26e8af3d3bb37c4821a3cc4}
+
+\begin{CompactList}\small\item\em Encode an integer, writing it to the file handle, if any. \item\end{CompactList}\item 
+int {\bf huff\_\-code\_\-encode\_\-str} (huff\_\-code\_\-t $\ast$hc, char const $\ast$sym, uint32 $\ast$outcw)\label{huff__code_8h_2312cc30520a54f4e46a92fefa82fe7d}
+
+\begin{CompactList}\small\item\em Encode a string, writing it to the file handle, if any. \item\end{CompactList}\item 
+int {\bf huff\_\-code\_\-decode\_\-int} (huff\_\-code\_\-t $\ast$hc, int $\ast$outval, char const $\ast$$\ast$inout\_\-data, size\_\-t $\ast$inout\_\-data\_\-len, int $\ast$inout\_\-offset)\label{huff__code_8h_a1eb2eb1261251af7875d022611e3b8d}
+
+\begin{CompactList}\small\item\em Decode an integer, reading it from the file if no data given. \item\end{CompactList}\item 
+char const $\ast$ {\bf huff\_\-code\_\-decode\_\-str} (huff\_\-code\_\-t $\ast$hc, char const $\ast$$\ast$inout\_\-data, size\_\-t $\ast$inout\_\-data\_\-len, int $\ast$inout\_\-offset)\label{huff__code_8h_cd63ae1d68e8fb50c9bd7b7b6030badd}
+
+\begin{CompactList}\small\item\em Decode a string, reading it from the file if no data given. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Huffman code and bitstream implementation. 
+
+This interface supports building canonical Huffman codes from string and integer values. It also provides support for encoding and decoding from strings and files, and for reading and writing codebooks from files. 
+
+Definition in file {\bf huff\_\-code.h}.

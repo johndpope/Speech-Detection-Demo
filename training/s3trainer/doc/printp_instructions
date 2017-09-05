@@ -1,0 +1,22 @@
+printp: 
+
+     This executable can be used for printing out the binary model
+     paramter files in ascii format. Depending on which file
+     you are want to look at, one or more of the following flags must
+     be set appropriately:
+
+     [Switch]     [Default] [Description] 
+     -tmatfn                The transition matrix parameter file name
+     -mixwfn                The mixture weight parameter file name
+     -mixws                 Start id of mixing weight subinterval
+     -mixwe                 End id of mixing weight subinterval
+     -gaufn                 A Gaussian parameter file name 
+                            (either for means or vars)
+     -gaucntfn              A Gaussian parameter weighted vector file
+     -regmatcntfn           MLLR regression matrix count file
+     -moddeffn              The model definition file
+     -lambdafn              The interpolation weight file
+     -lambdamin   0         Print int. wt. >= this
+     -lambdamax   1         Print int. wt. <= this
+     -norm        yes       Print normalized parameters
+     -sigfig      4         Number of significant digits in 'e' notation 

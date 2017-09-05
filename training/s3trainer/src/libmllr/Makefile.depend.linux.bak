@@ -1,0 +1,14 @@
+# DO NOT DELETE
+
+mllr.o: /usr/include/string.h /usr/include/features.h
+mllr.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+mllr.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mllr.o: /usr/include/math.h /usr/include/bits/huge_val.h
+mllr.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+mllr.o: ../include/s3/mllr.h
+mllr_io.o: /usr/include/string.h /usr/include/features.h
+mllr_io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+mllr_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mllr_io.o: /usr/include/math.h /usr/include/bits/huge_val.h
+mllr_io.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+mllr_io.o: ../include/s3/mllr.h ../include/s3/mllr_io.h

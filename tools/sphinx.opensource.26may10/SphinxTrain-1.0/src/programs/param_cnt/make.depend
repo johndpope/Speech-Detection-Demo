@@ -1,0 +1,73 @@
+# cb_cnt.c
+obj.x86_64-unknown-linux-gnu/cb_cnt.o: cb_cnt.c cb_cnt.h cnt_fn.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/model_def_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h mk_sseq.h ../../../include/s3/cvt2triphone.h \
+  ../../../include/s3/ckd_alloc.h
+
+# enum_corpus.c
+obj.x86_64-unknown-linux-gnu/enum_corpus.o: enum_corpus.c enum_corpus.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/lts.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h cnt_fn.h mk_sseq.h phone_cnt.h \
+  ../../../include/s3/ck_seg.h ../../../include/s3/corpus.h \
+  ../../../include/s3/vector.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/mk_wordlist.h ../../../include/s3/mk_phone_list.h \
+  ../../../include/s3/feat.h ../../../include/s3/ckd_alloc.h
+
+# main.c
+obj.x86_64-unknown-linux-gnu/main.o: main.c parse_cmd_ln.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h param_cnt.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/lts.h \
+  ../../../include/s3/model_def_io.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h ts_cnt.h \
+  ../../../include/s3/s3ts2cb_io.h ../../../include/s3/ts2cb.h \
+  ../../../include/s3/corpus.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/sys_compat/file.h
+
+# mk_sseq.c
+obj.x86_64-unknown-linux-gnu/mk_sseq.o: mk_sseq.c mk_sseq.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/model_def.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/s2_param.h
+
+# param_cnt.c
+obj.x86_64-unknown-linux-gnu/param_cnt.o: param_cnt.c param_cnt.h cnt_fn.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h ts_cnt.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/lts.h cb_cnt.h \
+  phone_cnt.h enum_corpus.h ../../../include/s3/ckd_alloc.h
+
+# parse_cmd_ln.c
+obj.x86_64-unknown-linux-gnu/parse_cmd_ln.o: parse_cmd_ln.c parse_cmd_ln.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# phone_cnt.c
+obj.x86_64-unknown-linux-gnu/phone_cnt.o: phone_cnt.c phone_cnt.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/model_def_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/cvt2triphone.h
+
+# ts_cnt.c
+obj.x86_64-unknown-linux-gnu/ts_cnt.o: ts_cnt.c ts_cnt.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/lts.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h mk_sseq.h ../../../include/s3/cvt2triphone.h \
+  ../../../include/s3/ckd_alloc.h
+

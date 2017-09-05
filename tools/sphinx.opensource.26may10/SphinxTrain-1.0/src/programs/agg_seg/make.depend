@@ -1,0 +1,111 @@
+# agg_all_seg.c
+obj.x86_64-unknown-linux-gnu/agg_all_seg.o: agg_all_seg.c agg_all_seg.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/segdmp.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/vector.h \
+  ../../../include/s3/corpus.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/s3io.h ../../../include/s3/feat.h \
+  ../../../include/s3/ck_seg.h ../../../include/s3/mk_phone_seq.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/lts.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h ../../../include/s3/cmd_ln.h \
+  ../../../include/sys_compat/misc.h
+
+# agg_phn_seg.c
+obj.x86_64-unknown-linux-gnu/agg_phn_seg.o: agg_phn_seg.c agg_phn_seg.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/lts.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/segdmp.h \
+  ../../../include/s3/vector.h mk_seg.h ../../../include/s3/corpus.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/mk_wordlist.h \
+  ../../../include/s3/mk_phone_list.h ../../../include/s3/ck_seg.h \
+  ../../../include/s3/cvt2triphone.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/feat.h
+
+# agg_seg.c
+obj.x86_64-unknown-linux-gnu/agg_seg.o: agg_seg.c agg_seg.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/lts.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h mk_seg.h ../../../include/s3/segdmp.h \
+  ../../../include/s3/vector.h ../../../include/s3/corpus.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/mk_wordlist.h \
+  ../../../include/s3/mk_phone_list.h ../../../include/s3/ck_seg.h \
+  ../../../include/s3/cvt2triphone.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/feat.h
+
+# agg_st_seg.c
+obj.x86_64-unknown-linux-gnu/agg_st_seg.o: agg_st_seg.c agg_st_seg.h ../../../include/s3/model_def.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/lts.h \
+  ../../../include/s3/segdmp.h ../../../include/s3/vector.h \
+  ../../../include/s3/corpus.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/mllr.h ../../../include/s3/feat.h \
+  ../../../include/s3/matrix.h ../../../include/s3/ck_seg.h \
+  ../../../include/s3/mk_sseq.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/mk_phone_seq.h ../../../include/s3/ckd_alloc.h
+
+# cnt_phn_seg.c
+obj.x86_64-unknown-linux-gnu/cnt_phn_seg.o: cnt_phn_seg.c cnt_phn_seg.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/lts.h mk_seg.h \
+  ../../../include/s3/corpus.h ../../../include/s3/vector.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/segdmp.h \
+  ../../../include/s3/feat.h ../../../include/s3/ck_seg.h \
+  ../../../include/s3/mk_sseq.h ../../../include/s3/mk_phone_seq.h \
+  ../../../include/s3/ckd_alloc.h
+
+# cnt_st_seg.c
+obj.x86_64-unknown-linux-gnu/cnt_st_seg.o: cnt_st_seg.c cnt_st_seg.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/model_def_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/lts.h ../../../include/s3/corpus.h \
+  ../../../include/s3/vector.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/segdmp.h ../../../include/s3/feat.h \
+  ../../../include/s3/ck_seg.h ../../../include/s3/mk_sseq.h \
+  ../../../include/s3/mk_phone_seq.h ../../../include/s3/ckd_alloc.h
+
+# main.c
+obj.x86_64-unknown-linux-gnu/main.o: main.c parse_cmd_ln.h agg_phn_seg.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/lts.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/segdmp.h \
+  ../../../include/s3/vector.h cnt_st_seg.h cnt_phn_seg.h agg_st_seg.h \
+  agg_all_seg.h ../../../include/s3/fp_cache.h \
+  ../../../include/s3/ts2cb.h ../../../include/s3/s3ts2cb_io.h \
+  ../../../include/s3/s3cb2mllr_io.h \
+  ../../../include/s3/state_param_def_io.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/corpus.h ../../../include/s3/s3phseg_io.h
+
+# mk_seg.c
+obj.x86_64-unknown-linux-gnu/mk_seg.o: mk_seg.c mk_seg.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# parse_cmd_ln.c
+obj.x86_64-unknown-linux-gnu/parse_cmd_ln.o: parse_cmd_ln.c parse_cmd_ln.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/err.h
+

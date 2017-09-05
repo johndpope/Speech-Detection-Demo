@@ -1,0 +1,44 @@
+set exptname = MODELSET1
+
+# directory in which you want to train
+set base_dir = ../../../
+#set bindir = $base_dir/s3trainer/bin.linux
+set bindir = $base_dir/tools/sphinx.opensource.26may10/SphinxTrain-1.0/bin.x86_64-unknown-linux-gnu
+
+# Input to the trainer.
+set listoffiles    = $base_dir/transcripts/TRAIN.ALL.ctl
+set transcriptfile = $base_dir/transcripts/TRAIN.ALL.trans
+set dictionary     = $base_dir/transcripts/train.dict
+set fillerdict     = $base_dir/transcripts/train.fillerdict
+set phonefile      = $base_dir/transcripts/train.phonelist
+
+
+# Preprocessing
+set featfiles_dir = ../../features
+set featfile_extension = 50-6800_40filts.mfc
+set vector_length = 13
+
+
+#HMM definition
+set statesperhmm = 3
+set skipstate = no
+set gaussiansperstate = 4
+
+set agc = none
+set cmn = current
+set varnorm = no
+
+set feature = 1s_c_d_dd
+#set feature = 1s_12c_12d_3p_12dd
+set type = .cont.
+set n_tied_states = 1000
+
+
+set npart = 2
+set npart_untied = 2
+set qtype = normal 
+
+set convergence_ratio = 0.001
+set maxiter = 8
+
+

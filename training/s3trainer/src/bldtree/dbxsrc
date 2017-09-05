@@ -1,0 +1,19 @@
+run \
+ -treefn /net/goofy/usr3/rsingh/SPINE/trees/semi_2000sen.unpruned/AA-1.dtree \
+ -moddeffn /net/goofy/usr3/rsingh/SPINE/model_architecture/semi_2000sen.untied.mdef \
+ -mixwfn /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/mixture_weights \
+ -ts2cbfn .semi. \
+ -meanfn /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/means \
+ -varfn /net/goofy/usr3/rsingh/SPINE/model_parameters/semi_2000sen.cd_semi_untied/variances \
+ -mwfloor 1e-8 \
+ -psetfn /net/goofy/usr3/rsingh/SPINE/model_architecture/semi_2000sen.tree_questions \
+ -phone AA \
+ -state 1 \
+ -stwt 1.0 0.05 0.0 \
+ -ssplitmin 1 \
+ -ssplitmax 7 \
+ -ssplitthr 0 \
+ -csplitmin 1 \
+ -csplitmax 2000 \
+ -csplitthr 0 \
+ -cntthresh 1

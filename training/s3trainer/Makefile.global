@@ -1,0 +1,96 @@
+#
+# Global defines
+#
+PKG_ROOT = /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer
+LIBDIR   = $(PKG_ROOT)/lib.$(MACHINE)
+BINDIR   = $(PKG_ROOT)/bin.$(MACHINE)
+
+set arch = linux
+set MACHINE = linux
+#set arch = alpha
+#set MACHINE = alpha
+
+
+#
+# Machine dependent defines for alpha, HP PA RISC, and Sun.
+#
+
+#
+# DEC Alpha OSF/1 specific
+#
+alpha_CFLAGS  = -O2 -tune generic -std1 -trapuv -verbose -warnprotos
+#alpha_CFLAGS  = -g -tune generic -std1 -trapuv -verbose -warnprotos
+alpha_INCFLAG = -I
+alpha_MFLAGS  =
+# DEC OSF/1 ar(1) has ranlib functionality built-in
+alpha_RANLIB = /bin/echo
+alpha_CC = cc
+alpha_AR = /bin/ar
+alpha_PURIFY = 
+
+#
+# HP PA-RISC specific
+#
+hppa_CFLAGS  = -O -Aa -D_HPUX_SOURCE
+hppa_INCFLAG = -I
+hppa_MFLAGS  = -I..
+# HP's ar(1) has ranlib functionality built-in
+hppa_RANLIB = /bin/echo
+hppa_CC = cc
+hppa_AR = ar
+hppa_PURIFY = purify
+
+#
+# Sun specific
+#
+sun_CFLAGS  = -O -Wall
+sun_INCFLAG = -I
+sun_MFLAGS  = -I..
+sun_RANLIB = ranlib
+sun_CC = gcc
+sun_AR = ar
+sun_PURIFY = purify
+
+#
+# linux specific
+#
+#linux_CFLAGS  = -g -Wall
+linux_CFLAGS  = -O2 -Wall
+linux_INCFLAG = -I
+linux_MFLAGS  = -I..
+linux_RANLIB = ranlib
+linux_CC = cc
+linux_AR = ar
+linux_PURIFY =
+
+
+#
+#
+#
+# USE THE NEXT ONE ONLY FOR LINUX
+#DEPEND_HPATHS = -I. -I./include -I$(PKG_ROOT)/include -I/usr/lib/gcc-lib/i386-linux/2.7.2.1/include
+
+DEPEND_HPATHS = -I. -I./include -I$(PKG_ROOT)/include -I/usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include
+
+DEPEND_HPATHS = -I. -I./include -I$(PKG_ROOT)/include 
+BUILD_HPATHS  = -I.. -I../include -I$(PKG_ROOT)/include
+
+CFLAGS = $(ADDL_CFLAGS) ${$(MACHINE)_CFLAGS} $(BUILD_HPATHS)
+INCFLAG = ${$(MACHINE)_INCFLAG}
+CC = ${$(MACHINE)_CC}
+
+LDFLAGS = $(ADDL_LDFLAGS) -L$(LIBDIR)
+
+AR = ${$(MACHINE)_AR}
+
+PURIFY = ${$(MACHINE)_PURIFY}
+
+RANLIB = ${$(MACHINE)_RANLIB}
+
+.SUFFIXES: .c .o .u
+
+.c.u:
+	$(CC) -j $(CFLAGS) $>
+
+
+

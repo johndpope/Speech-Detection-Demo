@@ -1,0 +1,112 @@
+# accum.c
+obj.x86_64-unknown-linux-gnu/accum.o: accum.c accum.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/vector.h ../../../include/s3/gauden.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/model_inventory.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/model_def.h ../../../include/s3/state.h \
+  ../../../include/s3/s3gau_io.h ../../../include/s3/s3mixw_io.h \
+  ../../../include/s3/s3tmat_io.h ../../../include/s3/corpus.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/matrix.h \
+  ../../../include/s3/lda.h ../../../include/s3/state_seq.h \
+  ../../../include/s3/model_def_io.h ../../../include/sys_compat/file.h \
+  ../../../include/s3/mixw_param_io.h ../../../include/s3/tmat_param_io.h
+
+# backward.c
+obj.x86_64-unknown-linux-gnu/backward.o: backward.c ../../../include/s3/model_inventory.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/gauden.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/vector.h \
+  ../../../include/s3/model_def.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/state.h ../../../include/s3/profile.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/feat.h accum.h
+
+# baum_welch.c
+obj.x86_64-unknown-linux-gnu/baum_welch.o: baum_welch.c baum_welch.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/vector.h ../../../include/s3/state.h \
+  ../../../include/s3/model_inventory.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/gauden.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s3phseg_io.h forward.h viterbi.h backward.h accum.h \
+  ../../../include/s3/state_seq.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/profile.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/s2_param.h
+
+# forward.c
+obj.x86_64-unknown-linux-gnu/forward.o: forward.c ../../../include/s3/model_inventory.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/gauden.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/vector.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/state.h \
+  ../../../include/s3/feat.h ../../../include/s3/profile.h \
+  ../../../include/s3/prim_type.h
+
+# main.c
+obj.x86_64-unknown-linux-gnu/main.o: main.c train_cmd_ln.h forward.h ../../../include/s3/state.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/model_inventory.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/gauden.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/vector.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s3phseg_io.h viterbi.h next_utt_states.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/lts.h baum_welch.h \
+  accum.h ../../../include/s3/common.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/corpus.h ../../../include/s3/n_words.h \
+  ../../../include/s3/remap.h ../../../include/s3/prefetch.h \
+  ../../../include/s3/profile.h ../../../include/s3/get_host_name.h \
+  ../../../include/s3/mk_wordlist.h ../../../include/s3/mk_phone_list.h \
+  ../../../include/s3/cvt2triphone.h ../../../include/s3/mk_sseq.h \
+  ../../../include/s3/model_def_io.h ../../../include/s3/mk_trans_seq.h \
+  ../../../include/s3/silcomp.h ../../../include/s3/s3ts2cb_io.h \
+  ../../../include/s3/mllr.h ../../../include/s3/mllr_io.h \
+  ../../../include/s3/ts2cb.h ../../../include/s3/lda.h \
+  ../../../include/s3/s3cb2mllr_io.h ../../../include/s3/s2_param.h \
+  ../../../include/sys_compat/misc.h ../../../include/sys_compat/time.h \
+  ../../../include/sys_compat/file.h
+
+# next_utt_states.c
+obj.x86_64-unknown-linux-gnu/next_utt_states.o: next_utt_states.c ../../../include/s3/lexicon.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/lts.h ../../../include/s3/model_inventory.h \
+  ../../../include/s3/gauden.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/vector.h \
+  ../../../include/s3/model_def.h ../../../include/s3/mk_wordlist.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/mk_phone_list.h \
+  ../../../include/s3/cvt2triphone.h ../../../include/s3/state_seq.h \
+  ../../../include/s3/state.h ../../../include/s3/model_def_io.h \
+  next_utt_states.h
+
+# train_cmd_ln.c
+obj.x86_64-unknown-linux-gnu/train_cmd_ln.o: train_cmd_ln.c train_cmd_ln.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h \
+  ../../../include/sys_compat/file.h
+
+# viterbi.c
+obj.x86_64-unknown-linux-gnu/viterbi.o: viterbi.c forward.h ../../../include/s3/state.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/model_inventory.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/gauden.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/vector.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s3phseg_io.h backward.h viterbi.h accum.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/profile.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/remap.h \
+  ../../../include/s3/corpus.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s2/byteorder.h
+

@@ -1,0 +1,49 @@
+../..//s3trainer/bin.linux/mk_mdef_gen \
+ -phnlstfn ../..//lists/phonelist \
+ -dictfn ../..//lists/train.dict \
+ -lsnfn ../..//lists/train.transcripts \
+ -ountiedmdef ../..//model_architecture/MODELSET1.untied.mdef \
+ -n_state_pm 3
+
+[Switch]      [Default] [Value]
+-phnlstfn               ../..//lists/phonelist
+-inCImdef                      
+-triphnlstfn                   
+-inCDmdef                      
+-dictfn                 ../..//lists/train.dict
+-fdictfn                       
+-lsnfn                  ../..//lists/train.transcripts
+-n_state_pm   3         3      
+-ocountfn                      
+-ocimdef                       
+-oalltphnmdef                  
+-ountiedmdef            ../..//model_architecture/MODELSET1.untied.mdef
+-minocc       1         1      
+-maxtriphones 100000    100000 
+INFO: ../main.c(61): Will write untied mdef file ../..//model_architecture/MODELSET1.untied.mdef
+INFO: ../mk_mdef_gen.c(152): 0 single word triphones in input phone list
+INFO: ../mk_mdef_gen.c(153): 0 word beginning triphones in input phone list
+INFO: ../mk_mdef_gen.c(154): 0 word internal triphones in input phone list
+INFO: ../mk_mdef_gen.c(155): 0 word ending triphones in input phone list
+INFO: ../mk_mdef_gen.c(241): Reading dict ../..//lists/train.dict
+INFO: ../mk_mdef_gen.c(273): 243 words in dict ../..//lists/train.dict
+INFO: ../mk_mdef_gen.c(390): 243 words in dictionary
+INFO: ../mk_mdef_gen.c(391): 9657 unique single word triphones in dictionary
+INFO: ../mk_mdef_gen.c(392): 4263 unique word beginning triphones in dictionary
+INFO: ../mk_mdef_gen.c(393): 521 unique word internal triphones in dictionary
+INFO: ../mk_mdef_gen.c(394): 4847 unique word ending triphones in dictionary
+WARNING: "../mk_mdef_gen.c", line 424: Out of vocabulary words in transcript will be mapped to SIL!
+INFO: ../mk_mdef_gen.c(537): 339 words in transcripts
+INFO: ../mk_mdef_gen.c(538): 17 single word triphones in transcripts
+INFO: ../mk_mdef_gen.c(539): 268 word beginning triphones in transcripts
+INFO: ../mk_mdef_gen.c(540): 686 word internal triphones in transcripts
+INFO: ../mk_mdef_gen.c(541): 268 word ending triphones in transcripts
+INFO: ../mk_mdef_gen.c(582): 1239 triphones extracted from transcripts
+INFO: ../mk_mdef_gen.c(583): 950 unique triphones extracted from transcripts
+INFO: ../mk_mdef_gen.c(584): 771 triphones occur once in the transcripts
+INFO: ../mk_mdef_gen.c(585): 126 triphones occur twice in the transcripts
+INFO: ../mk_mdef_gen.c(586): 28 triphones occur thrice in the transcripts
+INFO: ../mk_mdef_gen.c(587): The rest of the triphones occur more than three times
+INFO: ../mk_mdef_gen.c(588): Count threshold is 1
+INFO: ../mk_mdef_gen.c(809): 50 n_base, 950 n_tri
+INFO: ../mk_mdef_gen.c(881): Wrote mdef file ../..//model_architecture/MODELSET1.untied.mdef

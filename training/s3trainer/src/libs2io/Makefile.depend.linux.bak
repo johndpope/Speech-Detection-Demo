@@ -1,0 +1,153 @@
+# DO NOT DELETE
+
+s2_read_map.o: ../include/s3/s2_read_map.h /usr/include/string.h
+s2_read_map.o: /usr/include/features.h /usr/include/sys/cdefs.h
+s2_read_map.o: /usr/include/gnu/stubs.h
+s2_read_map.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_read_map.o: /usr/include/assert.h /usr/include/stdio.h
+s2_read_map.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_read_map.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_read_map.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_read_map.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_read_map.o: /usr/include/bits/stdio_lim.h
+s2_read_seno.o: ../include/s3/s2_read_seno.h ../include/s3/s2_read_map.h
+s2_read_seno.o: ../include/s3/s2io.h /usr/include/math.h
+s2_read_seno.o: /usr/include/features.h /usr/include/sys/cdefs.h
+s2_read_seno.o: /usr/include/gnu/stubs.h /usr/include/bits/huge_val.h
+s2_read_seno.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+s2_read_seno.o: /usr/include/stdio.h
+s2_read_seno.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_read_seno.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_read_seno.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_read_seno.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_read_seno.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_read_seno.o: /usr/include/bits/stdio_lim.h
+s2_read_tmat.o: ../include/s3/s2_read_tmat.h ../include/s3/int32_io.h
+s2_read_tmat.o: /usr/include/stdio.h /usr/include/features.h
+s2_read_tmat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_read_tmat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_read_tmat.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_read_tmat.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_read_tmat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_read_tmat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_read_tmat.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+s2_read_cb.o: ../include/s3/s2_read_cb.h ../include/s3/s2io.h
+s2_read_cb.o: /usr/include/stdio.h /usr/include/features.h
+s2_read_cb.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_read_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_read_cb.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_read_cb.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_read_cb.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_read_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_read_cb.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+s2_read_cb.o: /usr/include/string.h
+s2_write_cb.o: ../include/s3/s2_write_cb.h ../include/s3/s2io.h
+s2_write_cb.o: /usr/include/stdio.h /usr/include/features.h
+s2_write_cb.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_write_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_write_cb.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_write_cb.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_write_cb.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_write_cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_write_cb.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+s2_write_cb.o: /usr/include/string.h
+s2_write_seno.o: ../include/s3/s2_write_seno.h ../include/s3/s2io.h
+s2_write_hmm.o: ../include/s3/s2_write_hmm.h /usr/include/assert.h
+s2_write_hmm.o: /usr/include/features.h /usr/include/sys/cdefs.h
+s2_write_hmm.o: /usr/include/gnu/stubs.h /usr/include/stdio.h
+s2_write_hmm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_write_hmm.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_write_hmm.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_write_hmm.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_write_hmm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_write_hmm.o: /usr/include/bits/stdio_lim.h
+s2_mixing_weights.o: ../include/s3/s2_mixing_weights.h ../include/s3/int32_io.h
+s2_mixing_weights.o: /usr/include/stdio.h /usr/include/features.h
+s2_mixing_weights.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_mixing_weights.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_mixing_weights.o: /usr/include/bits/types.h /usr/include/libio.h
+s2_mixing_weights.o: /usr/include/_G_config.h /usr/include/wchar.h
+s2_mixing_weights.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_mixing_weights.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_mixing_weights.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+areadfloat.o: ../include/s3/s2io.h /usr/include/stdio.h
+areadfloat.o: /usr/include/features.h /usr/include/sys/cdefs.h
+areadfloat.o: /usr/include/gnu/stubs.h
+areadfloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+areadfloat.o: /usr/include/bits/types.h /usr/include/libio.h
+areadfloat.o: /usr/include/_G_config.h /usr/include/wchar.h
+areadfloat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+areadfloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+areadfloat.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+areadfloat.o: /usr/include/stdlib.h /usr/include/string.h
+areadfloat.o: /usr/include/sys/types.h /usr/include/time.h
+areadfloat.o: /usr/include/sys/stat.h /usr/include/bits/stat.h
+areadint.o: ../include/s3/s2io.h /usr/include/stdio.h /usr/include/features.h
+areadint.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+areadint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+areadint.o: /usr/include/bits/types.h /usr/include/libio.h
+areadint.o: /usr/include/_G_config.h /usr/include/wchar.h
+areadint.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+areadint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+areadint.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+areadshort.o: ../include/s3/s2io.h /usr/include/stdio.h
+areadshort.o: /usr/include/features.h /usr/include/sys/cdefs.h
+areadshort.o: /usr/include/gnu/stubs.h
+areadshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+areadshort.o: /usr/include/bits/types.h /usr/include/libio.h
+areadshort.o: /usr/include/_G_config.h /usr/include/wchar.h
+areadshort.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+areadshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+areadshort.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+awriteshort.o: /usr/include/stdio.h /usr/include/features.h
+awriteshort.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+awriteshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+awriteshort.o: /usr/include/bits/types.h /usr/include/libio.h
+awriteshort.o: /usr/include/_G_config.h /usr/include/wchar.h
+awriteshort.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+awriteshort.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+awriteshort.o: /usr/include/bits/stdio_lim.h
+areadchar.o: ../include/s3/s2io.h /usr/include/stdio.h /usr/include/features.h
+areadchar.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+areadchar.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+areadchar.o: /usr/include/bits/types.h /usr/include/libio.h
+areadchar.o: /usr/include/_G_config.h /usr/include/wchar.h
+areadchar.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+areadchar.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+areadchar.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+awritefloat.o: ../include/s3/s2io.h /usr/include/stdio.h
+awritefloat.o: /usr/include/features.h /usr/include/sys/cdefs.h
+awritefloat.o: /usr/include/gnu/stubs.h
+awritefloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+awritefloat.o: /usr/include/bits/types.h /usr/include/libio.h
+awritefloat.o: /usr/include/_G_config.h /usr/include/wchar.h
+awritefloat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+awritefloat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+awritefloat.o: /usr/include/bits/stdio_lim.h
+awriteint.o: ../include/s3/s2io.h /usr/include/stdio.h /usr/include/features.h
+awriteint.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+awriteint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+awriteint.o: /usr/include/bits/types.h /usr/include/libio.h
+awriteint.o: /usr/include/_G_config.h /usr/include/wchar.h
+awriteint.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+awriteint.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+awriteint.o: /usr/include/bits/stdio_lim.h
+pset_io.o: ../include/s3/pset_io.h /usr/include/string.h
+pset_io.o: /usr/include/features.h /usr/include/sys/cdefs.h
+pset_io.o: /usr/include/gnu/stubs.h
+pset_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+pset_io.o: /usr/include/stdlib.h /usr/include/stdio.h
+pset_io.o: /usr/include/bits/types.h /usr/include/libio.h
+pset_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+pset_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+pset_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+pset_io.o: /usr/include/bits/stdio_lim.h
+int32_io.o: ../include/s3/int32_io.h /usr/include/stdio.h
+int32_io.o: /usr/include/features.h /usr/include/sys/cdefs.h
+int32_io.o: /usr/include/gnu/stubs.h
+int32_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+int32_io.o: /usr/include/bits/types.h /usr/include/libio.h
+int32_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+int32_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+int32_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+int32_io.o: /usr/include/bits/stdio_lim.h

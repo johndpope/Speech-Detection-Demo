@@ -1,0 +1,32 @@
+# DO NOT DELETE
+
+main.o: cmd_ln.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3mixw_io.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3gau_io.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3tmat_io.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+main.o: /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h
+main.o: /usr/include/gnu/stubs.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+main.o: /usr/include/bits/types.h /usr/include/libio.h
+main.o: /usr/include/_G_config.h /usr/include/wchar.h
+main.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+main.o: /usr/include/bits/stdio_lim.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+main.o: /usr/include/stdlib.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+cmd_ln.o: cmd_ln.h
+cmd_ln.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+cmd_ln.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+cmd_ln.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+cmd_ln.o: /usr/include/stdlib.h /usr/include/features.h
+cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+cmd_ln.o: cmd_ln_defn.h

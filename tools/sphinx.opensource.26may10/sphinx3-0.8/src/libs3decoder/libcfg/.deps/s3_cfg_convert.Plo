@@ -1,0 +1,214 @@
+s3_cfg_convert.lo: s3_cfg_convert.c \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/libutil.h \
+  /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.3.2/include/stddef.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.3.2/include/stdarg.h \
+  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+  /usr/include/bits/stdio.h /usr/include/stdlib.h \
+  /usr/include/sys/types.h /usr/include/time.h /usr/include/endian.h \
+  /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+  /usr/include/sys/select.h /usr/include/bits/select.h \
+  /usr/include/bits/sigset.h /usr/include/bits/time.h \
+  /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+  /usr/include/alloca.h /usr/include/string.h /usr/include/bits/string.h \
+  /usr/include/bits/string2.h /usr/include/assert.h /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+  /usr/include/getopt.h /usr/include/math.h /usr/include/bits/huge_val.h \
+  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+  /usr/include/bits/mathinline.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/sphinxbase_export.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/prim_type.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/sphinx_config.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/bitvec.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/ckd_alloc.h \
+  /usr/include/setjmp.h /usr/include/bits/setjmp.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/case.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/listelem_alloc.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/cmd_ln.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/err.h \
+  /usr/include/errno.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/filename.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/glist.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/hash_table.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/heap.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/pio.h \
+  /usr/include/sys/stat.h /usr/include/bits/stat.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/profile.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/strfuncs.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/unlimit.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/info.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/genrand.h \
+  ../../../include/s3_cfg.h \
+  /home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/logmath.h \
+  ../../../include/s3_arraylist.h ../../../include/sphinx3_export.h \
+  ../../../include/fsg.h ../../../include/s3types.h \
+  /usr/lib/gcc/x86_64-redhat-linux/4.3.2/include/float.h \
+  ../../../include/sphinx3_export.h ../../../include/fsg.h
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/libutil.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.3.2/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.3.2/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/assert.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/sphinxbase_export.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/prim_type.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/sphinx_config.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/bitvec.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/ckd_alloc.h:
+
+/usr/include/setjmp.h:
+
+/usr/include/bits/setjmp.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/case.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/listelem_alloc.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/cmd_ln.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/err.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/filename.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/glist.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/hash_table.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/heap.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/pio.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/profile.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/strfuncs.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/unlimit.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/info.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/genrand.h:
+
+../../../include/s3_cfg.h:
+
+/home/rsingh/work/genietrain/sphinx.opensource.26may10/sphinx3-0.8/../sphinxbase-0.6/include/logmath.h:
+
+../../../include/s3_arraylist.h:
+
+../../../include/sphinx3_export.h:
+
+../../../include/fsg.h:
+
+../../../include/s3types.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.3.2/include/float.h:
+
+../../../include/sphinx3_export.h:
+
+../../../include/fsg.h:

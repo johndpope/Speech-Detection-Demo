@@ -1,0 +1,160 @@
+# agc.c
+obj.x86_64-unknown-linux-gnu/agc.o: agc.c ../../../include/s3/agc.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/agc_max.h ../../../include/s3/agc_emax.h \
+  ../../../include/s3/r_agc_noise.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/err.h
+
+# agc_emax.c
+obj.x86_64-unknown-linux-gnu/agc_emax.o: agc_emax.c ../../../include/s3/agc_emax.h \
+  ../../../include/s3/prim_type.h
+
+# agc_max.c
+obj.x86_64-unknown-linux-gnu/agc_max.o: agc_max.c ../../../include/s3/agc_max.h \
+  ../../../include/s3/prim_type.h
+
+# cep_frame.c
+obj.x86_64-unknown-linux-gnu/cep_frame.o: cep_frame.c cep_frame.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/err.h
+
+# cmn.c
+obj.x86_64-unknown-linux-gnu/cmn.o: cmn.c ../../../include/s3/cmn.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/norm.h ../../../include/s3/live_norm.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/err.h
+
+# dcep_frame.c
+obj.x86_64-unknown-linux-gnu/dcep_frame.o: dcep_frame.c dcep_frame.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/vector.h ../../../include/s3/feat.h
+
+# ddcep_frame.c
+obj.x86_64-unknown-linux-gnu/ddcep_frame.o: ddcep_frame.c ddcep_frame.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h dcep_frame.h ../../../include/s3/feat.h
+
+# del_sil_seg.c
+obj.x86_64-unknown-linux-gnu/del_sil_seg.o: del_sil_seg.c ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/err.h
+
+# feat.c
+obj.x86_64-unknown-linux-gnu/feat.o: feat.c s2_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h v1_feat.h v2_feat.h v3_feat.h v4_feat.h \
+  v5_feat.h v6_feat.h v7_feat.h v8_feat.h cep_frame.h \
+  ../../../include/s3/feat.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/lda.h
+
+# live_norm.c
+obj.x86_64-unknown-linux-gnu/live_norm.o: live_norm.c ../../../include/s3/live_norm.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# lda.c
+obj.x86_64-unknown-linux-gnu/lda.o: lda.c ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s3io.h ../../../include/s3/err.h
+
+# norm.c
+obj.x86_64-unknown-linux-gnu/norm.o: norm.c ../../../include/s3/norm.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h
+
+# r_agc_noise.c
+obj.x86_64-unknown-linux-gnu/r_agc_noise.o: r_agc_noise.c ../../../include/s3/r_agc_noise.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# s2_cep.c
+obj.x86_64-unknown-linux-gnu/s2_cep.o: s2_cep.c s2_cep.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s2_param.h
+
+# s2_dcep.c
+obj.x86_64-unknown-linux-gnu/s2_dcep.o: s2_dcep.c s2_dcep.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s2_param.h
+
+# s2_ddcep.c
+obj.x86_64-unknown-linux-gnu/s2_ddcep.o: s2_ddcep.c s2_ddcep.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s2_param.h
+
+# s2_feat.c
+obj.x86_64-unknown-linux-gnu/s2_feat.o: s2_feat.c s2_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h s2_cep.h \
+  s2_dcep.h s2_ddcep.h ../../../include/s3/agc.h \
+  ../../../include/s3/cmn.h ../../../include/s3/silcomp.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# silcomp.c
+obj.x86_64-unknown-linux-gnu/silcomp.o: silcomp.c del_sil_seg.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/vector.h ../../../include/s3/silcomp.h \
+  ../../../include/s3/r_agc_noise.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/err.h
+
+# v1_feat.c
+obj.x86_64-unknown-linux-gnu/v1_feat.o: v1_feat.c v1_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h cep_frame.h \
+  dcep_frame.h ddcep_frame.h ../../../include/s3/agc.h \
+  ../../../include/s3/cmn.h ../../../include/s3/silcomp.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# v2_feat.c
+obj.x86_64-unknown-linux-gnu/v2_feat.o: v2_feat.c v2_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/agc.h ../../../include/s3/cmn.h \
+  ../../../include/s3/silcomp.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# v3_feat.c
+obj.x86_64-unknown-linux-gnu/v3_feat.o: v3_feat.c v3_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h cep_frame.h \
+  dcep_frame.h ddcep_frame.h ../../../include/s3/agc.h \
+  ../../../include/s3/cmn.h ../../../include/s3/silcomp.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# v4_feat.c
+obj.x86_64-unknown-linux-gnu/v4_feat.o: v4_feat.c v4_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h cep_frame.h \
+  dcep_frame.h ddcep_frame.h ../../../include/s3/agc.h \
+  ../../../include/s3/cmn.h ../../../include/s3/silcomp.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# v5_feat.c
+obj.x86_64-unknown-linux-gnu/v5_feat.o: v5_feat.c v5_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/agc.h ../../../include/s3/cmn.h \
+  ../../../include/s3/silcomp.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# v6_feat.c
+obj.x86_64-unknown-linux-gnu/v6_feat.o: v6_feat.c v6_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h cep_frame.h \
+  dcep_frame.h ddcep_frame.h ../../../include/s3/agc.h \
+  ../../../include/s3/cmn.h ../../../include/s3/silcomp.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# v7_feat.c
+obj.x86_64-unknown-linux-gnu/v7_feat.o: v7_feat.c v7_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/agc.h ../../../include/s3/cmn.h \
+  ../../../include/s3/silcomp.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# v8_feat.c
+obj.x86_64-unknown-linux-gnu/v8_feat.o: v8_feat.c v8_feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/agc.h ../../../include/s3/cmn.h \
+  ../../../include/s3/silcomp.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+

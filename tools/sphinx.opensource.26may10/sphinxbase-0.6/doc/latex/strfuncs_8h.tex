@@ -1,0 +1,160 @@
+\section{include/strfuncs.h File Reference}
+\label{strfuncs_8h}\index{include/strfuncs.h@{include/strfuncs.h}}
+Miscellaneous useful string functions.  
+
+
+{\tt \#include $<$stdarg.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum {\bf string\_\-edge\_\-e} \{ {\bf STRING\_\-START}, 
+{\bf STRING\_\-END}, 
+{\bf STRING\_\-BOTH}
+ \}
+\begin{CompactList}\small\item\em Which end of a string to operate on for \doxyref{string\_\-trim()}{p.}{strfuncs_8h_c36a095632a4f16cf4e0fbcdb01de5ad}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT char $\ast$ {\bf string\_\-join} (const char $\ast$base,...)\label{strfuncs_8h_317522f23d291311e366de34ef86b777}
+
+\begin{CompactList}\small\item\em Concatenate a NULL-terminated argument list of strings, returning a newly allocated string. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT char $\ast$ {\bf string\_\-trim} (char $\ast$string, enum {\bf string\_\-edge\_\-e} which)
+\begin{CompactList}\small\item\em Remove whitespace from a string, modifying it in-place. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT double {\bf atof\_\-c} (char const $\ast$str)
+\begin{CompactList}\small\item\em Locale independent version of atof(). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT uint32 \textbf{utf8\_\-decode} (uint32 $\ast$state, uint32 $\ast$codep, uint32 $\ast$byte)\label{strfuncs_8h_ab1bdad6b50285de4b7cd042f67314dd}
+
+\item 
+SPHINXBASE\_\-EXPORT int32 {\bf str2words} (char $\ast$line, char $\ast$$\ast$wptr, int32 n\_\-wptr)
+\begin{CompactList}\small\item\em Convert a line to an array of \char`\"{}words\char`\"{}, based on whitespace separators. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf nextword} (char $\ast$line, const char $\ast$delim, char $\ast$$\ast$word, char $\ast$delimfound)
+\begin{CompactList}\small\item\em Yet another attempt at a clean \char`\"{}next-word-in-string\char`\"{} function. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Miscellaneous useful string functions. 
+
+
+
+Definition in file {\bf strfuncs.h}.
+
+\subsection{Enumeration Type Documentation}
+\index{strfuncs.h@{strfuncs.h}!string\_\-edge\_\-e@{string\_\-edge\_\-e}}
+\index{string\_\-edge\_\-e@{string\_\-edge\_\-e}!strfuncs.h@{strfuncs.h}}
+\subsubsection[{string\_\-edge\_\-e}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf string\_\-edge\_\-e}}\label{strfuncs_8h_b5c9ca15770a4bd3047705762b815df9}
+
+
+Which end of a string to operate on for \doxyref{string\_\-trim()}{p.}{strfuncs_8h_c36a095632a4f16cf4e0fbcdb01de5ad}. 
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{STRING\_\-START@{STRING\_\-START}!strfuncs.h@{strfuncs.h}}\index{strfuncs.h@{strfuncs.h}!STRING\_\-START@{STRING\_\-START}}\item[{\em 
+STRING\_\-START\label{strfuncs_8h_b5c9ca15770a4bd3047705762b815df95e4d73e6ca445be10fa48351b9571125}
+}]Beginning of string. 
+
+\index{STRING\_\-END@{STRING\_\-END}!strfuncs.h@{strfuncs.h}}\index{strfuncs.h@{strfuncs.h}!STRING\_\-END@{STRING\_\-END}}\item[{\em 
+STRING\_\-END\label{strfuncs_8h_b5c9ca15770a4bd3047705762b815df911f31598e50bf3cf1d0aa97d967bb9b9}
+}]End of string. 
+
+\index{STRING\_\-BOTH@{STRING\_\-BOTH}!strfuncs.h@{strfuncs.h}}\index{strfuncs.h@{strfuncs.h}!STRING\_\-BOTH@{STRING\_\-BOTH}}\item[{\em 
+STRING\_\-BOTH\label{strfuncs_8h_b5c9ca15770a4bd3047705762b815df94fcbb0fe16fa4aa48723ba3ba10c26dd}
+}]Both ends of string. 
+
+\end{description}
+\end{Desc}
+
+
+
+Definition at line 70 of file strfuncs.h.
+
+\subsection{Function Documentation}
+\index{strfuncs.h@{strfuncs.h}!atof\_\-c@{atof\_\-c}}
+\index{atof\_\-c@{atof\_\-c}!strfuncs.h@{strfuncs.h}}
+\subsubsection[{atof\_\-c}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT double atof\_\-c (char const $\ast$ {\em str})}\label{strfuncs_8h_b708351fe7308551632a782bfad75a1e}
+
+
+Locale independent version of atof(). 
+
+This function behaves like atof() in the \char`\"{}C\char`\"{} locale. Switching locale in a threaded program is extremely uncool, therefore we need this since we pass floats as strings in 1000 different places. 
+
+Definition at line 56 of file strfuncs.c.
+
+References atof\_\-c().
+
+Referenced by atof\_\-c(), and logmath\_\-read().\index{strfuncs.h@{strfuncs.h}!nextword@{nextword}}
+\index{nextword@{nextword}!strfuncs.h@{strfuncs.h}}
+\subsubsection[{nextword}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 nextword (char $\ast$ {\em line}, \/  const char $\ast$ {\em delim}, \/  char $\ast$$\ast$ {\em word}, \/  char $\ast$ {\em delimfound})}\label{strfuncs_8h_41d9a59e4326b545bf1282401319f553}
+
+
+Yet another attempt at a clean \char`\"{}next-word-in-string\char`\"{} function. 
+
+See arguments below. \begin{Desc}
+\item[Returns:]Length of word returned, or -1 if nothing found. This allows you to scan through a line:\end{Desc}
+\small\begin{alltt}
+ while ((n = nextword(line, delim, &word, &delimfound)) >= 0) \{
+     ... do something with word ..
+     word[n] = delimfound;
+     line = word + n;
+ \}
+ \end{alltt}
+\normalsize 
+ \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+line}]Input: String being searched for next word. Will be modified by this function (NUL characters inserted) \item[{\em 
+delim}]Input: A word, if found, must be delimited at either end by a character from this string (or at the end by the NULL char) \item[{\em 
+word}]Output: $\ast$word = ptr within line to beginning of first word, if found. Delimiter at the end of word replaced with the NULL char. \item[{\em 
+delimfound}]Output: $\ast$delimfound = original delimiter found at the end of the word. (This way, the caller can restore the delimiter, preserving the original string.) \end{description}
+\end{Desc}
+
+
+Definition at line 158 of file strfuncs.c.
+
+References nextword().
+
+Referenced by nextword().\index{strfuncs.h@{strfuncs.h}!str2words@{str2words}}
+\index{str2words@{str2words}!strfuncs.h@{strfuncs.h}}
+\subsubsection[{str2words}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 str2words (char $\ast$ {\em line}, \/  char $\ast$$\ast$ {\em wptr}, \/  int32 {\em n\_\-wptr})}\label{strfuncs_8h_5b520fdebcca599db86faaf75a82173f}
+
+
+Convert a line to an array of \char`\"{}words\char`\"{}, based on whitespace separators. 
+
+A word is a string with no whitespace chars in it. Note that the string line is modified as a result: NULL chars are placed after every word in the line. Return value: No. of words found; -1 if no. of words in line exceeds n\_\-wptr. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+line}]In/Out: line to be parsed. This string will be modified! (NUL characters inserted at word boundaries) \item[{\em 
+wptr}]In/Out: Array of pointers to words found in line. The array must be allocated by the caller. It may be NULL in which case the number of words will be counted. This allows you to allcate it to the proper size, e.g.:
+
+n = str2words(line, NULL, 0); wptr = ckd\_\-calloc(n, sizeof($\ast$wptr)); str2words(line, wptr, n); \item[{\em 
+n\_\-wptr}]In: Size of wptr array, ignored if wptr == NULL \end{description}
+\end{Desc}
+
+
+Definition at line 115 of file strfuncs.c.
+
+References str2words().
+
+Referenced by str2words().\index{strfuncs.h@{strfuncs.h}!string\_\-trim@{string\_\-trim}}
+\index{string\_\-trim@{string\_\-trim}!strfuncs.h@{strfuncs.h}}
+\subsubsection[{string\_\-trim}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT char$\ast$ string\_\-trim (char $\ast$ {\em string}, \/  enum {\bf string\_\-edge\_\-e} {\em which})}\label{strfuncs_8h_c36a095632a4f16cf4e0fbcdb01de5ad}
+
+
+Remove whitespace from a string, modifying it in-place. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]string to trim, contents will be modified. \item[{\em which}]one of STRING\_\-START, STRING\_\-END, or STRING\_\-BOTH. \end{description}
+\end{Desc}
+
+
+Definition at line 89 of file strfuncs.c.
+
+References STRING\_\-BOTH, STRING\_\-END, STRING\_\-START, and string\_\-trim().
+
+Referenced by string\_\-trim().

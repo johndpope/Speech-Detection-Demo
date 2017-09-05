@@ -1,0 +1,57 @@
+\section{include/filename.h File Reference}
+\label{filename_8h}\index{include/filename.h@{include/filename.h}}
+File names related operation.  
+
+
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT void {\bf path2basename} (const char $\ast$path, char $\ast$base)
+\begin{CompactList}\small\item\em Strip off leading path components from the given path and copy the base into base. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf path2dirname} (const char $\ast$path, char $\ast$dir)\label{filename_8h_678be92ddb74695f26a9e4f527b073b0}
+
+\begin{CompactList}\small\item\em Strip off filename from the given path and copy the directory name into dir Caller must have allocated dir (hint: it's always shorter than path). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf strip\_\-fileext} (const char $\ast$file, char $\ast$root)
+\begin{CompactList}\small\item\em Strip off the smallest trailing file-extension suffix and copy the rest into the given root argument. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int {\bf path\_\-is\_\-absolute} (const char $\ast$file)\label{filename_8h_c59add2db73b33e81b354de114268e7a}
+
+\begin{CompactList}\small\item\em Test whether a pathname is absolute for the current OS. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+File names related operation. 
+
+
+
+Definition in file {\bf filename.h}.
+
+\subsection{Function Documentation}
+\index{filename.h@{filename.h}!path2basename@{path2basename}}
+\index{path2basename@{path2basename}!filename.h@{filename.h}}
+\subsubsection[{path2basename}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void path2basename (const char $\ast$ {\em path}, \/  char $\ast$ {\em base})}\label{filename_8h_d8a88d52ec0af498bc126a90871b2efe}
+
+
+Strip off leading path components from the given path and copy the base into base. 
+
+Caller must have allocated base (hint: it's always shorter than path). 
+
+Definition at line 75 of file filename.c.
+
+References path2basename().
+
+Referenced by path2basename().\index{filename.h@{filename.h}!strip\_\-fileext@{strip\_\-fileext}}
+\index{strip\_\-fileext@{strip\_\-fileext}!filename.h@{filename.h}}
+\subsubsection[{strip\_\-fileext}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void strip\_\-fileext (const char $\ast$ {\em file}, \/  char $\ast$ {\em root})}\label{filename_8h_d40b54252813d276ff2ebb097b242657}
+
+
+Strip off the smallest trailing file-extension suffix and copy the rest into the given root argument. 
+
+Caller must have allocated root. 
+
+Definition at line 111 of file filename.c.
+
+References strip\_\-fileext().
+
+Referenced by strip\_\-fileext().

@@ -1,0 +1,266 @@
+\section{include/bio.h File Reference}
+\label{bio_8h}\index{include/bio.h@{include/bio.h}}
+Cross platform binary IO to process files in sphinx3 format.  
+
+
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+{\tt \#include $<$byteorder.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \textbf{BYTE\_\-ORDER\_\-MAGIC}~(0x11223344)\label{bio_8h_c08e1e4728563a03ff6c937bfa8fd845}
+
+\item 
+\#define {\bf REVERSE\_\-SENSE\_\-SWAP\_\-INT16}(x)
+\begin{CompactList}\small\item\em \char`\"{}reversed senses\char`\"{} SWAP, ARCHAN: This is still incorporated in Sphinx 3 because lm3g2dmp used it. \item\end{CompactList}\item 
+\#define \textbf{REVERSE\_\-SENSE\_\-SWAP\_\-INT32}(x)\label{bio_8h_2c277e579a007b5c46bd762a7d18b2cf}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT int32 {\bf bio\_\-readhdr} (FILE $\ast$fp, char $\ast$$\ast$$\ast$name, char $\ast$$\ast$$\ast$val, int32 $\ast$swap)
+\begin{CompactList}\small\item\em Read binary file format header: has the following format. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf bio\_\-writehdr\_\-version} (FILE $\ast$fp, char $\ast$version)
+\begin{CompactList}\small\item\em Write a simple binary file header, containing only the version string. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf bio\_\-hdrarg\_\-free} (char $\ast$$\ast$name, char $\ast$$\ast$val)
+\begin{CompactList}\small\item\em Free name and value strings previously allocated and returned by bio\_\-readhdr. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf bio\_\-fread} (void $\ast$buf, int32 el\_\-sz, int32 n\_\-el, FILE $\ast$fp, int32 swap, uint32 $\ast$chksum)
+\begin{CompactList}\small\item\em Like fread but perform byteswapping and accumulate checksum (the 2 extra arguments). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf bio\_\-fwrite} (void $\ast$buf, int32 el\_\-sz, int32 n\_\-el, FILE $\ast$fp, int32 swap, uint32 $\ast$chksum)
+\begin{CompactList}\small\item\em Like fwrite but perform byteswapping and accumulate checksum (the 2 extra arguments). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf bio\_\-fread\_\-1d} (void $\ast$$\ast$buf, size\_\-t el\_\-sz, uint32 $\ast$n\_\-el, FILE $\ast$fp, int32 sw, uint32 $\ast$ck)
+\begin{CompactList}\small\item\em Read a 1-d array (fashioned after fread):. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf bio\_\-fread\_\-2d} (void $\ast$$\ast$$\ast$arr, size\_\-t e\_\-sz, uint32 $\ast$d1, uint32 $\ast$d2, FILE $\ast$fp, uint32 swap, uint32 $\ast$chksum)
+\begin{CompactList}\small\item\em Read a 2-d matrix:. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf bio\_\-fread\_\-3d} (void $\ast$$\ast$$\ast$$\ast$arr, size\_\-t e\_\-sz, uint32 $\ast$d1, uint32 $\ast$d2, uint32 $\ast$d3, FILE $\ast$fp, uint32 swap, uint32 $\ast$chksum)
+\begin{CompactList}\small\item\em Read a 3-d array (set of matrices). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf bio\_\-verify\_\-chksum} (FILE $\ast$fp, int32 byteswap, uint32 chksum)
+\begin{CompactList}\small\item\em Read and verify checksum at the end of binary file. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Cross platform binary IO to process files in sphinx3 format. 
+
+
+
+Definition in file {\bf bio.h}.
+
+\subsection{Define Documentation}
+\index{bio.h@{bio.h}!REVERSE\_\-SENSE\_\-SWAP\_\-INT16@{REVERSE\_\-SENSE\_\-SWAP\_\-INT16}}
+\index{REVERSE\_\-SENSE\_\-SWAP\_\-INT16@{REVERSE\_\-SENSE\_\-SWAP\_\-INT16}!bio.h@{bio.h}}
+\subsubsection[{REVERSE\_\-SENSE\_\-SWAP\_\-INT16}]{\setlength{\rightskip}{0pt plus 5cm}\#define REVERSE\_\-SENSE\_\-SWAP\_\-INT16(x)}\label{bio_8h_bf9af8ac9d8a67710371365812869c92}
+
+
+\char`\"{}reversed senses\char`\"{} SWAP, ARCHAN: This is still incorporated in Sphinx 3 because lm3g2dmp used it. 
+
+Don't think that I am very happy with it. 
+
+Definition at line 102 of file bio.h.
+
+\subsection{Function Documentation}
+\index{bio.h@{bio.h}!bio\_\-fread@{bio\_\-fread}}
+\index{bio\_\-fread@{bio\_\-fread}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-fread}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 bio\_\-fread (void $\ast$ {\em buf}, \/  int32 {\em el\_\-sz}, \/  int32 {\em n\_\-el}, \/  FILE $\ast$ {\em fp}, \/  int32 {\em swap}, \/  uint32 $\ast$ {\em chksum})}\label{bio_8h_7068bb61e421bc46a6989cef3b37c833}
+
+
+Like fread but perform byteswapping and accumulate checksum (the 2 extra arguments). 
+
+But unlike fread, returns -1 if required number of elements (n\_\-el) not read; also, no byteswapping or checksum accumulation is performed in that case. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fp}]In: An input file pointer \item[{\em 
+swap}]In: Byteswap iff (swap != 0) \item[{\em 
+chksum}]In/Out: Accumulated checksum \end{description}
+\end{Desc}
+
+
+Definition at line 274 of file bio.c.
+
+References bio\_\-fread().
+
+Referenced by bio\_\-fread(), bio\_\-fread\_\-1d(), bio\_\-fread\_\-2d(), bio\_\-fread\_\-3d(), and logmath\_\-read().\index{bio.h@{bio.h}!bio\_\-fread\_\-1d@{bio\_\-fread\_\-1d}}
+\index{bio\_\-fread\_\-1d@{bio\_\-fread\_\-1d}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-fread\_\-1d}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 bio\_\-fread\_\-1d (void $\ast$$\ast$ {\em buf}, \/  size\_\-t {\em el\_\-sz}, \/  uint32 $\ast$ {\em n\_\-el}, \/  FILE $\ast$ {\em fp}, \/  int32 {\em sw}, \/  uint32 $\ast$ {\em ck})}\label{bio_8h_aeda1ca5a5c0ca5a9e5b4820c442bbe5}
+
+
+Read a 1-d array (fashioned after fread):. 
+
+\begin{itemize}
+\item 4-byte array size (returned in n\_\-el)\item memory allocated for the array and read (returned in buf)\end{itemize}
+
+
+Byteswapping and checksum accumulation performed as necessary. Fails fatally if expected data not read. Return value: number of array elements allocated and read; -1 if error. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+buf}]Out: contains array data; allocated by this function; can be freed using ckd\_\-free \item[{\em 
+el\_\-sz}]In: Array element size \item[{\em 
+n\_\-el}]Out: Number of array elements allocated/read \item[{\em 
+fp}]In: File to read \item[{\em 
+sw}]In: Byteswap iff (swap != 0) \item[{\em 
+ck}]In/Out: Accumulated checksum \end{description}
+\end{Desc}
+
+
+Definition at line 312 of file bio.c.
+
+References bio\_\-fread(), bio\_\-fread\_\-1d(), ckd\_\-calloc, and E\_\-FATAL.
+
+Referenced by bio\_\-fread\_\-1d(), bio\_\-fread\_\-2d(), and bio\_\-fread\_\-3d().\index{bio.h@{bio.h}!bio\_\-fread\_\-2d@{bio\_\-fread\_\-2d}}
+\index{bio\_\-fread\_\-2d@{bio\_\-fread\_\-2d}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-fread\_\-2d}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 bio\_\-fread\_\-2d (void $\ast$$\ast$$\ast$ {\em arr}, \/  size\_\-t {\em e\_\-sz}, \/  uint32 $\ast$ {\em d1}, \/  uint32 $\ast$ {\em d2}, \/  FILE $\ast$ {\em fp}, \/  uint32 {\em swap}, \/  uint32 $\ast$ {\em chksum})}\label{bio_8h_70604d0f8035f0868f9284fa82e4fdb8}
+
+
+Read a 2-d matrix:. 
+
+\begin{itemize}
+\item 4-byte \# rows, \# columns (returned in d1, d2, d3)\item memory allocated for the array and read (returned in buf)\end{itemize}
+
+
+Byteswapping and checksum accumulation performed as necessary. Fails fatally if expected data not read. Return value: number of array elements allocated and read; -1 if error. 
+
+Definition at line 332 of file bio.c.
+
+References bio\_\-fread(), bio\_\-fread\_\-1d(), bio\_\-fread\_\-2d(), ckd\_\-alloc\_\-2d\_\-ptr, and E\_\-ERROR\_\-SYSTEM.
+
+Referenced by bio\_\-fread\_\-2d().\index{bio.h@{bio.h}!bio\_\-fread\_\-3d@{bio\_\-fread\_\-3d}}
+\index{bio\_\-fread\_\-3d@{bio\_\-fread\_\-3d}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-fread\_\-3d}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 bio\_\-fread\_\-3d (void $\ast$$\ast$$\ast$$\ast$ {\em arr}, \/  size\_\-t {\em e\_\-sz}, \/  uint32 $\ast$ {\em d1}, \/  uint32 $\ast$ {\em d2}, \/  uint32 $\ast$ {\em d3}, \/  FILE $\ast$ {\em fp}, \/  uint32 {\em swap}, \/  uint32 $\ast$ {\em chksum})}\label{bio_8h_ca6a6b71d02b9e5ca6b136a28640e0c1}
+
+
+Read a 3-d array (set of matrices). 
+
+\begin{itemize}
+\item 4-byte \# matrices, \# rows, \# columns (returned in d1, d2, d3)\item memory allocated for the array and read (returned in buf)\end{itemize}
+
+
+Byteswapping and checksum accumulation performed as necessary. Fails fatally if expected data not read. Return value: number of array elements allocated and read; -1 if error. 
+
+Definition at line 378 of file bio.c.
+
+References bio\_\-fread(), bio\_\-fread\_\-1d(), bio\_\-fread\_\-3d(), ckd\_\-alloc\_\-3d\_\-ptr, and E\_\-ERROR\_\-SYSTEM.
+
+Referenced by bio\_\-fread\_\-3d(), and feat\_\-read\_\-lda().\index{bio.h@{bio.h}!bio\_\-fwrite@{bio\_\-fwrite}}
+\index{bio\_\-fwrite@{bio\_\-fwrite}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-fwrite}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 bio\_\-fwrite (void $\ast$ {\em buf}, \/  int32 {\em el\_\-sz}, \/  int32 {\em n\_\-el}, \/  FILE $\ast$ {\em fp}, \/  int32 {\em swap}, \/  uint32 $\ast$ {\em chksum})}\label{bio_8h_3b131beb20492e1a6f46c9b4dd81a64e}
+
+
+Like fwrite but perform byteswapping and accumulate checksum (the 2 extra arguments). 
+
+\begin{Desc}
+\item[Returns:]the number of elemens written (like fwrite). \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fp}]In: An input file pointer \item[{\em 
+swap}]In: Byteswap iff (swap != 0) \item[{\em 
+chksum}]In/Out: Accumulated checksum \end{description}
+\end{Desc}
+
+
+Definition at line 290 of file bio.c.
+
+References bio\_\-fwrite(), ckd\_\-calloc, and ckd\_\-free().
+
+Referenced by bio\_\-fwrite(), and logmath\_\-write().\index{bio.h@{bio.h}!bio\_\-hdrarg\_\-free@{bio\_\-hdrarg\_\-free}}
+\index{bio\_\-hdrarg\_\-free@{bio\_\-hdrarg\_\-free}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-hdrarg\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void bio\_\-hdrarg\_\-free (char $\ast$$\ast$ {\em name}, \/  char $\ast$$\ast$ {\em val})}\label{bio_8h_db3c858a50381aeff022ccd4271af2d9}
+
+
+Free name and value strings previously allocated and returned by bio\_\-readhdr. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+name}]In: Array previously returned by bio\_\-readhdr \item[{\em 
+val}]In: Array previously returned by bio\_\-readhdr \end{description}
+\end{Desc}
+
+
+Definition at line 121 of file bio.c.
+
+References bio\_\-hdrarg\_\-free(), and ckd\_\-free().
+
+Referenced by bio\_\-hdrarg\_\-free(), feat\_\-read\_\-lda(), and logmath\_\-read().\index{bio.h@{bio.h}!bio\_\-readhdr@{bio\_\-readhdr}}
+\index{bio\_\-readhdr@{bio\_\-readhdr}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-readhdr}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 bio\_\-readhdr (FILE $\ast$ {\em fp}, \/  char $\ast$$\ast$$\ast$ {\em name}, \/  char $\ast$$\ast$$\ast$ {\em val}, \/  int32 $\ast$ {\em swap})}\label{bio_8h_7a155ff51740f1d9a31f7bb7b6e4bc3a}
+
+
+Read binary file format header: has the following format. 
+
+\small\begin{alltt}
+     s3
+     <argument-name> <argument-value>
+     <argument-name> <argument-value>
+     ...
+     endhdr
+     4-byte byte-order word used to find file byte ordering relative to host machine.
+ \end{alltt}
+\normalsize 
+ Lines beginning with \# are ignored. Memory for name and val allocated by this function; use bio\_\-hdrarg\_\-free to free them. \begin{Desc}
+\item[Returns:]: 0 if successful, -1 otherwise. \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fp}]In: File to read \item[{\em 
+name}]Out: array of argument name strings read \item[{\em 
+val}]Out: corresponding value strings read \item[{\em 
+swap}]Out: file needs byteswapping iff ($\ast$swap) \end{description}
+\end{Desc}
+
+
+Definition at line 153 of file bio.c.
+
+References bio\_\-readhdr(), ckd\_\-calloc, ckd\_\-salloc, and E\_\-FATAL.
+
+Referenced by bio\_\-readhdr(), feat\_\-read\_\-lda(), and logmath\_\-read().\index{bio.h@{bio.h}!bio\_\-verify\_\-chksum@{bio\_\-verify\_\-chksum}}
+\index{bio\_\-verify\_\-chksum@{bio\_\-verify\_\-chksum}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-verify\_\-chksum}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void bio\_\-verify\_\-chksum (FILE $\ast$ {\em fp}, \/  int32 {\em byteswap}, \/  uint32 {\em chksum})}\label{bio_8h_d07e2ee9f2f01d3ff3232008098295a0}
+
+
+Read and verify checksum at the end of binary file. 
+
+Fails fatally if there is a mismatch. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fp}]In: File to read \item[{\em 
+byteswap}]In: Byteswap iff (swap != 0) \item[{\em 
+chksum}]In: Value to compare with checksum in file \end{description}
+\end{Desc}
+
+
+Definition at line 440 of file bio.c.
+
+References bio\_\-verify\_\-chksum(), and E\_\-FATAL.
+
+Referenced by bio\_\-verify\_\-chksum(), and logmath\_\-read().\index{bio.h@{bio.h}!bio\_\-writehdr\_\-version@{bio\_\-writehdr\_\-version}}
+\index{bio\_\-writehdr\_\-version@{bio\_\-writehdr\_\-version}!bio.h@{bio.h}}
+\subsubsection[{bio\_\-writehdr\_\-version}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 bio\_\-writehdr\_\-version (FILE $\ast$ {\em fp}, \/  char $\ast$ {\em version})}\label{bio_8h_9662c09be1f18377488dedb8e7ca0bfd}
+
+
+Write a simple binary file header, containing only the version string. 
+
+Also write the byte order magic word. \begin{Desc}
+\item[Returns:]: 0 if successful, -1 otherwise. \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fp}]Output: File to write \item[{\em 
+version}]Input: A string of version \end{description}
+\end{Desc}
+
+
+Definition at line 135 of file bio.c.
+
+References bio\_\-writehdr\_\-version().
+
+Referenced by bio\_\-writehdr\_\-version().

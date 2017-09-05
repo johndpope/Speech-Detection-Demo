@@ -1,0 +1,33 @@
+# DO NOT DELETE
+
+mk_model_def.o: parse_cmd_ln.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+mk_model_def.o: /usr/include/stdarg.h /usr/include/standards.h
+mk_model_def.o: /usr/include/va_list.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+mk_model_def.o: /usr/include/stdlib.h /usr/include/getopt.h
+mk_model_def.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+mk_model_def.o: /usr/include/sys/select.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_read_map.h
+mk_model_def.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+mk_model_def.o: /usr/include/stdio.h /usr/include/sys/seek.h
+mk_model_def.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+mk_model_def.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+mk_model_def.o: /usr/include/sys/rt_limits.h /usr/include/string.h
+mk_model_def.o: /usr/include/strings.h /usr/include/assert.h
+mk_model_def.o: /usr/include/time.h /usr/include/sys/timers.h
+mk_model_def.o: /usr/include/sys/sysmisc.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+parse_cmd_ln.o: parse_cmd_ln.h /usr/include/stdlib.h /usr/include/standards.h
+parse_cmd_ln.o: /usr/include/getopt.h /usr/include/sys/types.h
+parse_cmd_ln.o: /usr/include/mach/machine/vm_types.h
+parse_cmd_ln.o: /usr/include/sys/select.h

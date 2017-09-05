@@ -1,0 +1,28 @@
+# accum_wt_param.c
+obj.x86_64-unknown-linux-gnu/accum_wt_param.o: accum_wt_param.c accum_wt_param.h \
+  ../../../include/s3/vector.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/s3gau_io.h ../../../include/s3/gauden.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/sys_compat/file.h
+
+# inc_densities.c
+obj.x86_64-unknown-linux-gnu/inc_densities.o: inc_densities.c inc_densities.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/feat.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# main.c
+obj.x86_64-unknown-linux-gnu/main.o: main.c parse_cmd_ln.h accum_wt_param.h \
+  ../../../include/s3/vector.h ../../../include/s3/prim_type.h \
+  inc_densities.h ../../../include/s3/gauden.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/s3gau_io.h \
+  ../../../include/s3/s3mixw_io.h ../../../include/s3/feat.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/cmd_ln.h
+
+# parse_cmd_ln.c
+obj.x86_64-unknown-linux-gnu/parse_cmd_ln.o: parse_cmd_ln.c parse_cmd_ln.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/err.h
+

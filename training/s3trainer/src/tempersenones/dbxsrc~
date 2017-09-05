@@ -1,0 +1,6 @@
+/net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/src/tempersenones/linux/tempermodel \
+ -varfn ./semi_2000sen.cd_semi_2000_delinterp/variances \
+  -out_varfn ./semi_2000sen.cd_semi_2000_delinterp/xx \
+   -mixwfn ./semi_2000sen.cd_semi_2000_delinterp/mixture_weights \
+    -out_mixwfn ./semi_2000sen.cd_semi_2000_delinterp/yy \
+     -eta 0.9

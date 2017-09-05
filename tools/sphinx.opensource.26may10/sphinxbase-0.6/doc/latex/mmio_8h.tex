@@ -1,0 +1,51 @@
+\section{include/mmio.h File Reference}
+\label{mmio_8h}\index{include/mmio.h@{include/mmio.h}}
+Memory-mapped I/O wrappers for files.  
+
+
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct {\bf mmio\_\-file\_\-s} {\bf mmio\_\-file\_\-t}\label{mmio_8h_e27ed04d8142d77aae885c8cb8c9fa3b}
+
+\begin{CompactList}\small\item\em Abstract structure representing a memory-mapped file. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT {\bf mmio\_\-file\_\-t} $\ast$ {\bf mmio\_\-file\_\-read} (const char $\ast$filename)
+\begin{CompactList}\small\item\em Memory-map a file for reading. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void $\ast$ {\bf mmio\_\-file\_\-ptr} ({\bf mmio\_\-file\_\-t} $\ast$mf)\label{mmio_8h_5e6d8bf5cd7785563abc18c70a31ce0d}
+
+\begin{CompactList}\small\item\em Get a pointer to the memory mapped for a file. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf mmio\_\-file\_\-unmap} ({\bf mmio\_\-file\_\-t} $\ast$mf)\label{mmio_8h_341a9c1cc8a3c4bddfd2d29a1b0993f6}
+
+\begin{CompactList}\small\item\em Unmap a file, releasing memory associated with it. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Memory-mapped I/O wrappers for files. 
+
+\begin{Desc}
+\item[Author:]David Huggins-Daines $<${\tt dhuggins@cs.cmu.edu}$>$ \end{Desc}
+
+
+Definition in file {\bf mmio.h}.
+
+\subsection{Function Documentation}
+\index{mmio.h@{mmio.h}!mmio\_\-file\_\-read@{mmio\_\-file\_\-read}}
+\index{mmio\_\-file\_\-read@{mmio\_\-file\_\-read}!mmio.h@{mmio.h}}
+\subsubsection[{mmio\_\-file\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT {\bf mmio\_\-file\_\-t}$\ast$ mmio\_\-file\_\-read (const char $\ast$ {\em filename})}\label{mmio_8h_e3367a51a50a6108178ecfdd6c983c61}
+
+
+Memory-map a file for reading. 
+
+\begin{Desc}
+\item[Returns:]a mmio\_\-file\_\-t $\ast$ or NULL for failure. \end{Desc}
+
+
+Definition at line 204 of file mmio.c.
+
+References ckd\_\-calloc, E\_\-ERROR, E\_\-ERROR\_\-SYSTEM, mmio\_\-file\_\-s::mapsize, mmio\_\-file\_\-read(), and mmio\_\-file\_\-s::ptr.
+
+Referenced by logmath\_\-read(), and mmio\_\-file\_\-read().

@@ -1,0 +1,134 @@
+\section{include/jsgf.h File Reference}
+\label{jsgf_8h}\index{include/jsgf.h@{include/jsgf.h}}
+JSGF grammar compiler.  
+
+
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$hash\_\-table.h$>$}\par
+{\tt \#include $<$fsg\_\-model.h$>$}\par
+{\tt \#include $<$logmath.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf jsgf\_\-rule\_\-iter\_\-next}(itor)~hash\_\-table\_\-iter\_\-next(itor)\label{jsgf_8h_7216bc3a99823fb509e0dd4f8ee02b75}
+
+\begin{CompactList}\small\item\em Advance an iterator to the next rule in the grammar. \item\end{CompactList}\item 
+\#define {\bf jsgf\_\-rule\_\-iter\_\-rule}(itor)~((jsgf\_\-rule\_\-t $\ast$)(itor) $\rightarrow$ ent $\rightarrow$ val)\label{jsgf_8h_23b17eb0a92ba7e3c4aa086a33e3c5e6}
+
+\begin{CompactList}\small\item\em Get the current rule in a rule iterator. \item\end{CompactList}\item 
+\#define {\bf jsgf\_\-rule\_\-iter\_\-free}(itor)~hash\_\-table\_\-iter\_\-free(itor)\label{jsgf_8h_697875f60dede64c607180514e4ab2c4}
+
+\begin{CompactList}\small\item\em Free a rule iterator (if the end hasn't been reached). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct jsgf\_\-s \textbf{jsgf\_\-t}\label{jsgf_8h_ee85cf9f007eac61cebba97d6aaccaea}
+
+\item 
+typedef struct jsgf\_\-rule\_\-s \textbf{jsgf\_\-rule\_\-t}\label{jsgf_8h_3bb0c86e5f9ba2c29b1fa91e1583bf00}
+
+\item 
+typedef hash\_\-iter\_\-t {\bf jsgf\_\-rule\_\-iter\_\-t}\label{jsgf_8h_c1e450c03748feb7e1db2a487b21c3fa}
+
+\begin{CompactList}\small\item\em Iterator over rules in a grammar. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT jsgf\_\-t $\ast$ {\bf jsgf\_\-grammar\_\-new} (jsgf\_\-t $\ast$parent)
+\begin{CompactList}\small\item\em Create a new JSGF grammar. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT jsgf\_\-t $\ast$ {\bf jsgf\_\-parse\_\-file} (const char $\ast$filename, jsgf\_\-t $\ast$parent)
+\begin{CompactList}\small\item\em Parse a JSGF grammar from a file. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf jsgf\_\-grammar\_\-free} (jsgf\_\-t $\ast$jsgf)\label{jsgf_8h_8bbbd8834e0248bd8c52252e93c9822b}
+
+\begin{CompactList}\small\item\em Free a JSGF grammar. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT {\bf jsgf\_\-rule\_\-iter\_\-t} $\ast$ {\bf jsgf\_\-rule\_\-iter} (jsgf\_\-t $\ast$grammar)\label{jsgf_8h_9617a53c34041e32f0800795aa1341ca}
+
+\begin{CompactList}\small\item\em Get an iterator over all rules in a grammar. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT jsgf\_\-rule\_\-t $\ast$ {\bf jsgf\_\-get\_\-rule} (jsgf\_\-t $\ast$grammar, char const $\ast$name)\label{jsgf_8h_0329f14f22c4253c975a448dc5e0c3ec}
+
+\begin{CompactList}\small\item\em Get a rule by name from a grammar. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT char const $\ast$ {\bf jsgf\_\-rule\_\-name} (jsgf\_\-rule\_\-t $\ast$rule)\label{jsgf_8h_b1e5791530b5075f76ab085f248e8f0f}
+
+\begin{CompactList}\small\item\em Get the rule name from a rule. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int {\bf jsgf\_\-rule\_\-public} (jsgf\_\-rule\_\-t $\ast$rule)\label{jsgf_8h_85d7895c7a11d82c85b4529f6009c213}
+
+\begin{CompactList}\small\item\em Test if a rule is public or not. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT {\bf fsg\_\-model\_\-t} $\ast$ {\bf jsgf\_\-build\_\-fsg} (jsgf\_\-t $\ast$grammar, jsgf\_\-rule\_\-t $\ast$rule, {\bf logmath\_\-t} $\ast$lmath, float32 lw)\label{jsgf_8h_c355893a25aa071eba6874fae1d51ad2}
+
+\begin{CompactList}\small\item\em Build a Sphinx FSG object from a JSGF rule. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT {\bf fsg\_\-model\_\-t} $\ast$ {\bf jsgf\_\-build\_\-fsg\_\-raw} (jsgf\_\-t $\ast$grammar, jsgf\_\-rule\_\-t $\ast$rule, {\bf logmath\_\-t} $\ast$lmath, float32 lw)
+\begin{CompactList}\small\item\em Build a Sphinx FSG object from a JSGF rule. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int {\bf jsgf\_\-write\_\-fsg} (jsgf\_\-t $\ast$grammar, jsgf\_\-rule\_\-t $\ast$rule, FILE $\ast$outfh)
+\begin{CompactList}\small\item\em Convert a JSGF rule to Sphinx FSG text form. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+JSGF grammar compiler. 
+
+This file defines the data structures for parsing JSGF grammars into Sphinx finite-state grammars. 
+
+Definition in file {\bf jsgf.h}.
+
+\subsection{Function Documentation}
+\index{jsgf.h@{jsgf.h}!jsgf\_\-build\_\-fsg\_\-raw@{jsgf\_\-build\_\-fsg\_\-raw}}
+\index{jsgf\_\-build\_\-fsg\_\-raw@{jsgf\_\-build\_\-fsg\_\-raw}!jsgf.h@{jsgf.h}}
+\subsubsection[{jsgf\_\-build\_\-fsg\_\-raw}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT {\bf fsg\_\-model\_\-t}$\ast$ jsgf\_\-build\_\-fsg\_\-raw (jsgf\_\-t $\ast$ {\em grammar}, \/  jsgf\_\-rule\_\-t $\ast$ {\em rule}, \/  {\bf logmath\_\-t} $\ast$ {\em lmath}, \/  float32 {\em lw})}\label{jsgf_8h_5873c31ddf99379d123c0db2e36600ba}
+
+
+Build a Sphinx FSG object from a JSGF rule. 
+
+This differs from \doxyref{jsgf\_\-build\_\-fsg()}{p.}{jsgf_8h_c355893a25aa071eba6874fae1d51ad2} in that it does not do closure on epsilon transitions or any other postprocessing. For the time being this is necessary in order to write it to a file - the FSG code will be fixed soon. 
+
+Definition at line 500 of file jsgf.c.
+
+Referenced by jsgf\_\-write\_\-fsg().\index{jsgf.h@{jsgf.h}!jsgf\_\-grammar\_\-new@{jsgf\_\-grammar\_\-new}}
+\index{jsgf\_\-grammar\_\-new@{jsgf\_\-grammar\_\-new}!jsgf.h@{jsgf.h}}
+\subsubsection[{jsgf\_\-grammar\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT jsgf\_\-t$\ast$ jsgf\_\-grammar\_\-new (jsgf\_\-t $\ast$ {\em parent})}\label{jsgf_8h_504181dfffafe125df5763e4b841b658}
+
+
+Create a new JSGF grammar. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em parent}]optional parent grammar for this one (NULL, usually). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]new JSGF grammar object, or NULL on failure. \end{Desc}
+
+
+Definition at line 81 of file jsgf.c.
+
+References ckd\_\-calloc, ckd\_\-salloc, glist\_\-add\_\-ptr(), glist\_\-reverse(), and hash\_\-table\_\-new().
+
+Referenced by jsgf\_\-parse\_\-file().\index{jsgf.h@{jsgf.h}!jsgf\_\-parse\_\-file@{jsgf\_\-parse\_\-file}}
+\index{jsgf\_\-parse\_\-file@{jsgf\_\-parse\_\-file}!jsgf.h@{jsgf.h}}
+\subsubsection[{jsgf\_\-parse\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT jsgf\_\-t$\ast$ jsgf\_\-parse\_\-file (const char $\ast$ {\em filename}, \/  jsgf\_\-t $\ast$ {\em parent})}\label{jsgf_8h_c67cab54fdb6ead62a3be79ccffb0836}
+
+
+Parse a JSGF grammar from a file. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filename}]the name of the file to parse. \item[{\em parent}]optional parent grammar for this one (NULL, usually). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]new JSGF grammar object, or NULL on failure. \end{Desc}
+
+
+Definition at line 699 of file jsgf.c.
+
+References jsgf\_\-grammar\_\-free(), and jsgf\_\-grammar\_\-new().\index{jsgf.h@{jsgf.h}!jsgf\_\-write\_\-fsg@{jsgf\_\-write\_\-fsg}}
+\index{jsgf\_\-write\_\-fsg@{jsgf\_\-write\_\-fsg}!jsgf.h@{jsgf.h}}
+\subsubsection[{jsgf\_\-write\_\-fsg}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int jsgf\_\-write\_\-fsg (jsgf\_\-t $\ast$ {\em grammar}, \/  jsgf\_\-rule\_\-t $\ast$ {\em rule}, \/  FILE $\ast$ {\em outfh})}\label{jsgf_8h_bc18712a5a7bda442a8afba38f5827e7}
+
+
+Convert a JSGF rule to Sphinx FSG text form. 
+
+This does a direct conversion without doing transitive closure on null transitions and so forth. 
+
+Definition at line 507 of file jsgf.c.
+
+References jsgf\_\-build\_\-fsg\_\-raw(), logmath\_\-free(), and logmath\_\-init().

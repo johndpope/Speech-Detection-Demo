@@ -1,0 +1,77 @@
+# DO NOT DELETE
+
+main.o: parse_cmd_ln.h accum_wt_param.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+main.o: inc_densities.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+main.o: /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h
+main.o: /usr/include/gnu/stubs.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+main.o: /usr/include/bits/types.h /usr/include/libio.h
+main.o: /usr/include/_G_config.h /usr/include/wchar.h
+main.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+main.o: /usr/include/bits/stdio_lim.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3gau_io.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3mixw_io.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+main.o: /usr/include/stdlib.h
+main.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+parse_cmd_ln.o: parse_cmd_ln.h /usr/include/stdlib.h /usr/include/features.h
+parse_cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+parse_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+parse_cmd_ln.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+parse_cmd_ln.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+parse_cmd_ln.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+parse_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+accum_wt_param.o: accum_wt_param.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3gau_io.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+accum_wt_param.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+accum_wt_param.o: /usr/include/stdio.h /usr/include/features.h
+accum_wt_param.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+accum_wt_param.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+accum_wt_param.o: /usr/include/bits/types.h /usr/include/libio.h
+accum_wt_param.o: /usr/include/_G_config.h /usr/include/wchar.h
+accum_wt_param.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+accum_wt_param.o: /usr/include/bits/stdio_lim.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+accum_wt_param.o: /usr/include/stdlib.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/matrix.h
+accum_wt_param.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+accum_wt_param.o: /usr/include/sys/file.h /usr/include/fcntl.h
+accum_wt_param.o: /usr/include/bits/fcntl.h /usr/include/sys/types.h
+accum_wt_param.o: /usr/include/time.h /usr/include/sys/param.h
+accum_wt_param.o: /usr/include/limits.h
+accum_wt_param.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+accum_wt_param.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+accum_wt_param.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+accum_wt_param.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+accum_wt_param.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+accum_wt_param.o: /usr/include/bits/confname.h
+inc_densities.o: inc_densities.h
+inc_densities.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+inc_densities.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+inc_densities.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+inc_densities.o: /usr/include/stdlib.h /usr/include/features.h
+inc_densities.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+inc_densities.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+inc_densities.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+inc_densities.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+inc_densities.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+inc_densities.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+inc_densities.o: /usr/include/string.h /usr/include/stdio.h
+inc_densities.o: /usr/include/bits/types.h /usr/include/libio.h
+inc_densities.o: /usr/include/_G_config.h /usr/include/wchar.h
+inc_densities.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+inc_densities.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+inc_densities.o: /usr/include/math.h /usr/include/bits/huge_val.h
+inc_densities.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h

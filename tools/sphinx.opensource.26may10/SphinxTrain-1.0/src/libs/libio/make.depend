@@ -1,0 +1,160 @@
+# corpus.c
+obj.x86_64-unknown-linux-gnu/corpus.o: corpus.c ../../../include/s3/corpus.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/vector.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/read_line.h \
+  ../../../include/s3/prefetch.h ../../../include/s3/mllr_io.h \
+  ../../../include/sys_compat/file.h ../../../include/sys_compat/misc.h \
+  ../../../include/s3/s2io.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/s2_param.h
+
+# fgets_wo_nl.c
+obj.x86_64-unknown-linux-gnu/fgets_wo_nl.o: fgets_wo_nl.c ../../../include/s3/fgets_wo_nl.h \
+  ../../../include/s3/err.h ../../../include/s3/prim_type.h
+
+# fp_cache.c
+obj.x86_64-unknown-linux-gnu/fp_cache.o: fp_cache.c ../../../include/s3/fp_cache.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h
+
+# fread_retry.c
+obj.x86_64-unknown-linux-gnu/fread_retry.o: fread_retry.c ../../../include/s3/fread_retry.h \
+  ../../../include/sys_compat/misc.h ../../../include/s3/err.h
+
+# model_def_io.c
+obj.x86_64-unknown-linux-gnu/model_def_io.o: model_def_io.c ../../../include/s3/read_line.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/model_def_io.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/ckd_alloc.h
+
+# read_line.c
+obj.x86_64-unknown-linux-gnu/read_line.o: read_line.c ../../../include/s3/read_line.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/err.h
+
+# s3_open.c
+obj.x86_64-unknown-linux-gnu/s3_open.o: s3_open.c ../../../include/s3/s3_open.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/bcomment_io.h \
+  ../../../include/s3/swap.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# s3cb2mllr_io.c
+obj.x86_64-unknown-linux-gnu/s3cb2mllr_io.o: s3cb2mllr_io.c ../../../include/s3/s3cb2mllr_io.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3map_io.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h
+
+# s3gau_io.c
+obj.x86_64-unknown-linux-gnu/s3gau_io.o: s3gau_io.c ../../../include/s3/s3gau_io.h \
+  ../../../include/s3/vector.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/matrix.h ../../../include/s3/s3io.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# s3gau_full_io.c
+obj.x86_64-unknown-linux-gnu/s3gau_full_io.o: s3gau_full_io.c ../../../include/s3/s3gau_io.h \
+  ../../../include/s3/vector.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/matrix.h ../../../include/s3/s3io.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# s3io.c
+obj.x86_64-unknown-linux-gnu/s3io.o: s3io.c ../../../include/s3/s3io.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/swap.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/ckd_alloc.h
+
+# s3acc_io.c
+obj.x86_64-unknown-linux-gnu/s3acc_io.o: s3acc_io.c ../../../include/s3/s3acc_io.h \
+  ../../../include/s3/vector.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/s3tmat_io.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/s3mixw_io.h \
+  ../../../include/s3/s3gau_io.h ../../../include/s3/matrix.h \
+  ../../../include/s3/s3io.h ../../../include/s3/gauden.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/sys_compat/file.h \
+  ../../../include/sys_compat/misc.h
+
+# s3lamb_io.c
+obj.x86_64-unknown-linux-gnu/s3lamb_io.o: s3lamb_io.c ../../../include/s3/s3lamb_io.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3io.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# s3map_io.c
+obj.x86_64-unknown-linux-gnu/s3map_io.o: s3map_io.c ../../../include/s3/s3map_io.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3io.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# s3mixw_io.c
+obj.x86_64-unknown-linux-gnu/s3mixw_io.o: s3mixw_io.c ../../../include/s3/s3mixw_io.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/matrix.h \
+  ../../../include/s3/vector.h ../../../include/s3/s3io.h
+
+# s3regmat_io.c
+obj.x86_64-unknown-linux-gnu/s3regmat_io.o: s3regmat_io.c ../../../include/s3/s3regmat_io.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3io.h \
+  ../../../include/s3/err.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s3.h
+
+# s3tmat_io.c
+obj.x86_64-unknown-linux-gnu/s3tmat_io.o: s3tmat_io.c ../../../include/s3/s3tmat_io.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/matrix.h \
+  ../../../include/s3/vector.h ../../../include/s3/s3io.h
+
+# s3ts2cb_io.c
+obj.x86_64-unknown-linux-gnu/s3ts2cb_io.o: s3ts2cb_io.c ../../../include/s3/s3ts2cb_io.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3map_io.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h
+
+# s3phseg_io.c
+obj.x86_64-unknown-linux-gnu/s3phseg_io.o: s3phseg_io.c ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# segdmp.c
+obj.x86_64-unknown-linux-gnu/segdmp.o: segdmp.c ../../../include/s3/segdmp.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/vector.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/s3io.h ../../../include/s3/fp_cache.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/swap.h ../../../include/sys_compat/file.h \
+  ../../../include/sys_compat/misc.h
+
+# share_ctl.c
+obj.x86_64-unknown-linux-gnu/share_ctl.o: share_ctl.c ../../../include/s3/prim_type.h \
+  ../../../include/s3/swap.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/bo_magic.h \
+  ../../../include/sys_compat/file.h
+
+# swap.c
+obj.x86_64-unknown-linux-gnu/swap.o: swap.c ../../../include/s3/bo_magic.h ../../../include/s3/swap.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/fread_retry.h
+
+# topo_read.c
+obj.x86_64-unknown-linux-gnu/topo_read.o: topo_read.c ../../../include/s3/topo_read.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/read_line.h \
+  ../../../include/s3/common.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h
+
+# uttfile.c
+obj.x86_64-unknown-linux-gnu/uttfile.o: uttfile.c ../../../include/s3/uttfile.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/fgets_wo_nl.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h
+

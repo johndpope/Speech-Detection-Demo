@@ -1,0 +1,173 @@
+\section{include/matrix.h File Reference}
+\label{matrix_8h}\index{include/matrix.h@{include/matrix.h}}
+Matrix and linear algebra functions.  
+
+
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT float64 {\bf determinant} (float32 $\ast$$\ast$a, int32 len)
+\begin{CompactList}\small\item\em Calculate the determinant of a positive definite matrix. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf invert} (float32 $\ast$$\ast$out\_\-ainv, float32 $\ast$$\ast$a, int32 len)
+\begin{CompactList}\small\item\em Invert (if possible) a positive definite matrix. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf solve} (float32 $\ast$$\ast$a, float32 $\ast$b, float32 $\ast$out\_\-x, int32 n)
+\begin{CompactList}\small\item\em Solve (if possible) a positive-definite system of linear equations AX=B for X. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf outerproduct} (float32 $\ast$$\ast$out\_\-a, float32 $\ast$x, float32 $\ast$y, int32 len)
+\begin{CompactList}\small\item\em Calculate the outer product of two vectors. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf matrixmultiply} (float32 $\ast$$\ast$out\_\-c, float32 $\ast$$\ast$a, float32 $\ast$$\ast$b, int32 n)
+\begin{CompactList}\small\item\em Multiply C=AB where A and B are symmetric matrices. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf scalarmultiply} (float32 $\ast$$\ast$inout\_\-a, float32 x, int32 n)
+\begin{CompactList}\small\item\em Multiply a symmetric matrix by a constant in-place. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf matrixadd} (float32 $\ast$$\ast$inout\_\-a, float32 $\ast$$\ast$b, int32 n)
+\begin{CompactList}\small\item\em Add A += B. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Matrix and linear algebra functions. 
+
+This file contains some basic matrix and linear algebra operations. In general these operate on positive definite matrices ONLY, because all matrices we're likely to encounter are either covariance matrices or are derived from them, and therefore a non-positive-definite matrix indicates some kind of pathological condition. 
+
+Definition in file {\bf matrix.h}.
+
+\subsection{Function Documentation}
+\index{matrix.h@{matrix.h}!determinant@{determinant}}
+\index{determinant@{determinant}!matrix.h@{matrix.h}}
+\subsubsection[{determinant}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT float64 determinant (float32 $\ast$$\ast$ {\em a}, \/  int32 {\em len})}\label{matrix_8h_0c810028195f6078c9e99f3b5c29c42b}
+
+
+Calculate the determinant of a positive definite matrix. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]The input matrix, must be positive definite. \item[{\em len}]The dimension of the input matrix. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The determinant of the input matrix, or -1.0 if the matrix is not positive definite.\end{Desc}
+\begin{Desc}
+\item[Note:]These can be vanishingly small hence the float64 return type. Also note that only the upper triangular portion of a is considered, therefore the check for positive-definiteness is not reliable. \end{Desc}
+
+
+Definition at line 51 of file matrix.c.
+
+References determinant(), and E\_\-FATAL.
+
+Referenced by determinant().\index{matrix.h@{matrix.h}!invert@{invert}}
+\index{invert@{invert}!matrix.h@{matrix.h}}
+\subsubsection[{invert}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 invert (float32 $\ast$$\ast$ {\em out\_\-ainv}, \/  float32 $\ast$$\ast$ {\em a}, \/  int32 {\em len})}\label{matrix_8h_a20f437dbe9fcd6f0adda31f181bfbea}
+
+
+Invert (if possible) a positive definite matrix. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em out\_\-ainv}]The inverse of a will be stored here. \item[{\em a}]The input matrix, must be positive definite. \item[{\em len}]The dimension of the input matrix. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 for success or -1 for a non-positive-definite matrix.\end{Desc}
+\begin{Desc}
+\item[Note:]Only the upper triangular portion of a is considered, therefore the check for positive-definiteness is not reliable. \end{Desc}
+
+
+Definition at line 57 of file matrix.c.
+
+References E\_\-FATAL, and invert().
+
+Referenced by invert().\index{matrix.h@{matrix.h}!matrixadd@{matrixadd}}
+\index{matrixadd@{matrixadd}!matrix.h@{matrix.h}}
+\subsubsection[{matrixadd}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void matrixadd (float32 $\ast$$\ast$ {\em inout\_\-a}, \/  float32 $\ast$$\ast$ {\em b}, \/  int32 {\em n})}\label{matrix_8h_545d251a51cc473bad38a83b2a05f61c}
+
+
+Add A += B. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em inout\_\-a}]The A matrix to add. \item[{\em b}]The B matrix to add to A. \item[{\em n}]dimension of a and b. \end{description}
+\end{Desc}
+
+
+Definition at line 210 of file matrix.c.
+
+References matrixadd().
+
+Referenced by matrixadd().\index{matrix.h@{matrix.h}!matrixmultiply@{matrixmultiply}}
+\index{matrixmultiply@{matrixmultiply}!matrix.h@{matrix.h}}
+\subsubsection[{matrixmultiply}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void matrixmultiply (float32 $\ast$$\ast$ {\em out\_\-c}, \/  float32 $\ast$$\ast$ {\em a}, \/  float32 $\ast$$\ast$ {\em b}, \/  int32 {\em n})}\label{matrix_8h_caaf5d2c02d9d12f10abc462ac65cde9}
+
+
+Multiply C=AB where A and B are symmetric matrices. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em out\_\-c}]The output matrix C. \item[{\em a}]The input matrix A. \item[{\em b}]The input matrix B. \item[{\em n}]Dimensionality of A and B. \end{description}
+\end{Desc}
+
+
+Definition at line 70 of file matrix.c.
+
+References matrixmultiply().
+
+Referenced by matrixmultiply().\index{matrix.h@{matrix.h}!outerproduct@{outerproduct}}
+\index{outerproduct@{outerproduct}!matrix.h@{matrix.h}}
+\subsubsection[{outerproduct}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void outerproduct (float32 $\ast$$\ast$ {\em out\_\-a}, \/  float32 $\ast$ {\em x}, \/  float32 $\ast$ {\em y}, \/  int32 {\em len})}\label{matrix_8h_a2d31d63ec277fd389d4ef51d3b2bc2b}
+
+
+Calculate the outer product of two vectors. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em out\_\-a}]A (pre-allocated) len x len array. The outer product will be stored here. \item[{\em x}]A vector of length len. \item[{\em y}]A vector of length len. \item[{\em len}]The length of the input vectors. \end{description}
+\end{Desc}
+
+
+Definition at line 182 of file matrix.c.
+
+References outerproduct().
+
+Referenced by outerproduct().\index{matrix.h@{matrix.h}!scalarmultiply@{scalarmultiply}}
+\index{scalarmultiply@{scalarmultiply}!matrix.h@{matrix.h}}
+\subsubsection[{scalarmultiply}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void scalarmultiply (float32 $\ast$$\ast$ {\em inout\_\-a}, \/  float32 {\em x}, \/  int32 {\em n})}\label{matrix_8h_dc8ee5f4e4792328e4f33309bc99ebfb}
+
+
+Multiply a symmetric matrix by a constant in-place. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em inout\_\-a}]The matrix to multiply. \item[{\em x}]The constant to multiply it by. \item[{\em n}]dimension of a. \end{description}
+\end{Desc}
+
+
+Definition at line 196 of file matrix.c.
+
+References scalarmultiply().
+
+Referenced by scalarmultiply().\index{matrix.h@{matrix.h}!solve@{solve}}
+\index{solve@{solve}!matrix.h@{matrix.h}}
+\subsubsection[{solve}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 solve (float32 $\ast$$\ast$ {\em a}, \/  float32 $\ast$ {\em b}, \/  float32 $\ast$ {\em out\_\-x}, \/  int32 {\em n})}\label{matrix_8h_174a82dac39a15828af6c87edcba3708}
+
+
+Solve (if possible) a positive-definite system of linear equations AX=B for X. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]The A matrix on the left-hand side of the equation, must be positive-definite. \item[{\em b}]The B vector on the right-hand side of the equation. \item[{\em out\_\-x}]The X vector will be stored here. \item[{\em n}]The dimension of the A matrix (n by n) and the B and X vectors. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]0 for success or -1 for a non-positive-definite matrix.\end{Desc}
+\begin{Desc}
+\item[Note:]Only the upper triangular portion of a is considered, therefore the check for positive-definiteness is not reliable. \end{Desc}
+
+
+Definition at line 63 of file matrix.c.
+
+References E\_\-FATAL, and solve().
+
+Referenced by solve().

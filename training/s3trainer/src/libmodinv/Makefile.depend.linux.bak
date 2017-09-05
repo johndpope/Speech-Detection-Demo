@@ -1,0 +1,22 @@
+# DO NOT DELETE
+
+mod_inv.o: ../include/s3/model_inventory.h ../include/s3/gauden.h
+mod_inv.o: /usr/include/stdio.h /usr/include/features.h
+mod_inv.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+mod_inv.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mod_inv.o: /usr/include/bits/types.h /usr/include/libio.h
+mod_inv.o: /usr/include/_G_config.h /usr/include/wchar.h
+mod_inv.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+mod_inv.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+mod_inv.o: /usr/include/bits/stdio_lim.h
+gauden.o: ../include/s3/gauden.h /usr/include/stdio.h /usr/include/features.h
+gauden.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+gauden.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+gauden.o: /usr/include/bits/types.h /usr/include/libio.h
+gauden.o: /usr/include/_G_config.h /usr/include/wchar.h
+gauden.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+gauden.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+gauden.o: /usr/include/bits/stdio_lim.h /usr/include/math.h
+gauden.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+gauden.o: /usr/include/bits/mathcalls.h /usr/include/assert.h
+gauden.o: /usr/include/string.h

@@ -1,0 +1,19 @@
+# DO NOT DELETE
+
+main.o: parse_cmd_ln.h accum_wt_param.h inc_densities.h
+parse_cmd_ln.o: parse_cmd_ln.h /usr/include/stdlib.h /usr/include/features.h
+parse_cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+parse_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+accum_wt_param.o: accum_wt_param.h
+inc_densities.o: inc_densities.h /usr/include/string.h
+inc_densities.o: /usr/include/features.h /usr/include/sys/cdefs.h
+inc_densities.o: /usr/include/gnu/stubs.h
+inc_densities.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+inc_densities.o: /usr/include/stdio.h /usr/include/bits/types.h
+inc_densities.o: /usr/include/libio.h /usr/include/_G_config.h
+inc_densities.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+inc_densities.o: /usr/include/gconv.h
+inc_densities.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+inc_densities.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+inc_densities.o: /usr/include/math.h /usr/include/bits/huge_val.h
+inc_densities.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h

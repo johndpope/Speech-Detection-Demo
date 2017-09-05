@@ -1,0 +1,34 @@
+(C) Copyright Carnegie Mellon University
+  All the source code and binaries in these directories are
+  copyrighted to the speech group of the School of Computer
+  Science of Carnegie Mellon University. 
+===============================================================
+
+Modify Makefile.global to point to the root (this) directory
+Change the following line
+PKG_ROOT = ...
+
+The makefiles here have been tested only for alphas and linuxes
+(although they are supposed to compile for hps - with arch variable
+set to hppa - and suns - with arch=sun - as well)
+
+In order to compile for linuxes modify the following line
+DEPEND_HPATHS  = ...
+in Makefile.global (the linux version is currently commented out
+in Makefile.global. Also, the actual paths being used are specific
+to CMU's Computer Science Dept. network setup and may need to be modified)
+
+setenv arch linux (or alpha)
+set arch = linux (or alpha)
+setenv MACHINE linux (or alpha)
+set MACHINE = linux (or alpha)
+
+Create the lib.linux (or lib.alpha) directory in the root (this)
+directory
+
+cd src
+make depend
+make install
+
+This should install all libraries and binaries in the lib.$arch
+and bin.$arch directories cleanly. 

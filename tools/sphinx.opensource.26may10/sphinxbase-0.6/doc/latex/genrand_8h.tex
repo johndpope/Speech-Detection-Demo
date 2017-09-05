@@ -1,0 +1,48 @@
+\section{include/genrand.h File Reference}
+\label{genrand_8h}\index{include/genrand.h@{include/genrand.h}}
+High performance prortable random generator created by Takuji Nishimura and Makoto Matsumoto.  
+
+
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \textbf{S3\_\-RAND\_\-MAX\_\-INT32}~0x7fffffff\label{genrand_8h_29d6253e4a57e7c4d56cf7f6155b4007}
+
+\item 
+\#define {\bf s3\_\-rand\_\-seed}(s)~genrand\_\-seed(s);\label{genrand_8h_88ed88daecb88e115d8559c1b0a09bb7}
+
+\begin{CompactList}\small\item\em Macros to simplify calling of random generator function. \item\end{CompactList}\item 
+\#define \textbf{s3\_\-rand\_\-int31}()~genrand\_\-int31()\label{genrand_8h_3dcc058023a95c0a0ca1f12d1fdec9b9}
+
+\item 
+\#define \textbf{s3\_\-rand\_\-real}()~genrand\_\-real3()\label{genrand_8h_85a5844eace98dcbb4742d408a75d5e7}
+
+\item 
+\#define \textbf{s3\_\-rand\_\-res53}()~genrand\_\-res53()\label{genrand_8h_226b9a1deec002aeb1f1775b830a3062}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT void {\bf genrand\_\-seed} (unsigned long s)\label{genrand_8h_2881c7b606d9a2b2852e5946d71d32b7}
+
+\begin{CompactList}\small\item\em Initialize the seed of the random generator. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT long {\bf genrand\_\-int31} (void)\label{genrand_8h_10263695978c84103fb3526fdae21d4c}
+
+\begin{CompactList}\small\item\em generates a random number on [0,0x7fffffff]-interval \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT double {\bf genrand\_\-real3} (void)\label{genrand_8h_d5fbfda1cb738d2beff277444bc71b1a}
+
+\begin{CompactList}\small\item\em generates a random number on (0,1)-real-interval \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT double {\bf genrand\_\-res53} (void)\label{genrand_8h_2fca03c5dad1835f55e09c6e66d3b960}
+
+\begin{CompactList}\small\item\em generates a random number on [0,1) with 53-bit resolution \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+High performance prortable random generator created by Takuji Nishimura and Makoto Matsumoto. 
+
+A high performance which applied Mersene twister primes to generate random number. If probably seeded, the random generator can achieve 19937-bits period. For technical detail. Please take a look at (FIXME! Need to search for the web site.) {\tt http://www.} 
+
+Definition in file {\bf genrand.h}.

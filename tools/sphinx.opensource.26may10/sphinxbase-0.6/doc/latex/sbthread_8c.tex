@@ -1,0 +1,125 @@
+\section{src/libsphinxbase/util/sbthread.c File Reference}
+\label{sbthread_8c}\index{src/libsphinxbase/util/sbthread.c@{src/libsphinxbase/util/sbthread.c}}
+Simple portable thread functions.  
+
+
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include \char`\"{}sbthread.h\char`\"{}}\par
+{\tt \#include \char`\"{}ckd\_\-alloc.h\char`\"{}}\par
+{\tt \#include \char`\"{}err.h\char`\"{}}\par
+{\tt \#include $<$pthread.h$>$}\par
+{\tt \#include $<$sys/time.h$>$}\par
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct \textbf{sbthread\_\-s}
+\item 
+struct \textbf{sbmsgq\_\-s}
+\item 
+struct \textbf{sbevent\_\-s}
+\item 
+struct \textbf{sbmtx\_\-s}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+{\bf sbthread\_\-t} $\ast$ {\bf sbthread\_\-start} ({\bf cmd\_\-ln\_\-t} $\ast$config, {\bf sbthread\_\-main} func, void $\ast$arg)\label{sbthread_8c_0ba06f52feda5c218dc38373e930017c}
+
+\begin{CompactList}\small\item\em Start a new thread. \item\end{CompactList}\item 
+int {\bf sbthread\_\-wait} ({\bf sbthread\_\-t} $\ast$th)\label{sbthread_8c_d4cc725834be72ea986f80c4f4ecb24d}
+
+\begin{CompactList}\small\item\em Wait for a thread to complete. \item\end{CompactList}\item 
+{\bf sbmsgq\_\-t} $\ast$ {\bf sbmsgq\_\-init} (size\_\-t depth)
+\begin{CompactList}\small\item\em Create a message queue. \item\end{CompactList}\item 
+void {\bf sbmsgq\_\-free} ({\bf sbmsgq\_\-t} $\ast$msgq)\label{sbthread_8c_a8483d06a1456207643abcfebc3b2e0a}
+
+\begin{CompactList}\small\item\em Free a message queue. \item\end{CompactList}\item 
+int {\bf sbmsgq\_\-send} ({\bf sbmsgq\_\-t} $\ast$q, size\_\-t len, void const $\ast$data)\label{sbthread_8c_e6c214bf1fab2f10cb51648b7e736698}
+
+\begin{CompactList}\small\item\em Post a message to a queue. \item\end{CompactList}\item 
+void $\ast$ {\bf sbmsgq\_\-wait} ({\bf sbmsgq\_\-t} $\ast$q, size\_\-t $\ast$out\_\-len, int sec, int nsec)\label{sbthread_8c_5ef0a82190db1efc97e5921d2f822535}
+
+\begin{CompactList}\small\item\em Wait for a message from a queue. \item\end{CompactList}\item 
+{\bf sbevent\_\-t} $\ast$ {\bf sbevent\_\-init} (void)\label{sbthread_8c_d6f018be06301acbfd2b41888ca1d345}
+
+\begin{CompactList}\small\item\em Initialize an event. \item\end{CompactList}\item 
+void {\bf sbevent\_\-free} ({\bf sbevent\_\-t} $\ast$evt)\label{sbthread_8c_bba6d18d863334a98eecbaf5ffe81ab1}
+
+\begin{CompactList}\small\item\em Free an event. \item\end{CompactList}\item 
+int {\bf sbevent\_\-signal} ({\bf sbevent\_\-t} $\ast$evt)\label{sbthread_8c_89f88d25e27146dc7e4956211e69a6d5}
+
+\begin{CompactList}\small\item\em Signal an event. \item\end{CompactList}\item 
+int {\bf sbevent\_\-wait} ({\bf sbevent\_\-t} $\ast$evt, int sec, int nsec)\label{sbthread_8c_9f48001ca75395a3b192902b37edd5e0}
+
+\begin{CompactList}\small\item\em Wait for an event to be signalled. \item\end{CompactList}\item 
+{\bf sbmtx\_\-t} $\ast$ {\bf sbmtx\_\-init} (void)\label{sbthread_8c_690fb21b06b7ef9f958a4a204bc04269}
+
+\begin{CompactList}\small\item\em Create a mutex. \item\end{CompactList}\item 
+int {\bf sbmtx\_\-trylock} ({\bf sbmtx\_\-t} $\ast$mtx)\label{sbthread_8c_aca10c92363d8979100c8fddeb783f9a}
+
+\begin{CompactList}\small\item\em Try to acquire a mutex. \item\end{CompactList}\item 
+int {\bf sbmtx\_\-lock} ({\bf sbmtx\_\-t} $\ast$mtx)\label{sbthread_8c_000d9d0610c6b91649edde95e3bafa6c}
+
+\begin{CompactList}\small\item\em Acquire a mutex. \item\end{CompactList}\item 
+int {\bf sbmtx\_\-unlock} ({\bf sbmtx\_\-t} $\ast$mtx)\label{sbthread_8c_b3fdc55976e2b0581e598bd20187ce3a}
+
+\begin{CompactList}\small\item\em Release a mutex. \item\end{CompactList}\item 
+void {\bf sbmtx\_\-free} ({\bf sbmtx\_\-t} $\ast$mtx)\label{sbthread_8c_f1f9eb876ca9fc93d6c548120af14197}
+
+\begin{CompactList}\small\item\em Dispose of a mutex. \item\end{CompactList}\item 
+{\bf cmd\_\-ln\_\-t} $\ast$ {\bf sbthread\_\-config} ({\bf sbthread\_\-t} $\ast$th)\label{sbthread_8c_95c25385f31541c412a458deb9ee94e5}
+
+\begin{CompactList}\small\item\em Get configuration object from a thread. \item\end{CompactList}\item 
+void $\ast$ {\bf sbthread\_\-arg} ({\bf sbthread\_\-t} $\ast$th)\label{sbthread_8c_94e4cf2b756764e453b1469df79b3140}
+
+\begin{CompactList}\small\item\em Get argument pointer from a thread. \item\end{CompactList}\item 
+{\bf sbmsgq\_\-t} $\ast$ {\bf sbthread\_\-msgq} ({\bf sbthread\_\-t} $\ast$th)\label{sbthread_8c_f13e76cf03ad458f48f9604ec4731bdc}
+
+\begin{CompactList}\small\item\em Get message queue from a thread. \item\end{CompactList}\item 
+int {\bf sbthread\_\-send} ({\bf sbthread\_\-t} $\ast$th, size\_\-t len, void const $\ast$data)
+\begin{CompactList}\small\item\em Send an asynchronous message to a thread. \item\end{CompactList}\item 
+void {\bf sbthread\_\-free} ({\bf sbthread\_\-t} $\ast$th)\label{sbthread_8c_2b80d955dab72ff602d9048551dc7489}
+
+\begin{CompactList}\small\item\em Free a thread object. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Simple portable thread functions. 
+
+\begin{Desc}
+\item[Author:]David Huggins-Daines $<${\tt dhuggins@cs.cmu.edu}$>$ \end{Desc}
+
+
+Definition in file {\bf sbthread.c}.
+
+\subsection{Function Documentation}
+\index{sbthread.c@{sbthread.c}!sbmsgq\_\-init@{sbmsgq\_\-init}}
+\index{sbmsgq\_\-init@{sbmsgq\_\-init}!sbthread.c@{sbthread.c}}
+\subsubsection[{sbmsgq\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sbmsgq\_\-t}$\ast$ sbmsgq\_\-init (size\_\-t {\em depth})}\label{sbthread_8c_76852d201655b6f08ed6c35f6ebf8b4b}
+
+
+Create a message queue. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em depth}]Depth of the queue. \end{description}
+\end{Desc}
+
+
+Definition at line 444 of file sbthread.c.
+
+References ckd\_\-calloc, and ckd\_\-free().
+
+Referenced by sbthread\_\-start().\index{sbthread.c@{sbthread.c}!sbthread\_\-send@{sbthread\_\-send}}
+\index{sbthread\_\-send@{sbthread\_\-send}!sbthread.c@{sbthread.c}}
+\subsubsection[{sbthread\_\-send}]{\setlength{\rightskip}{0pt plus 5cm}int sbthread\_\-send ({\bf sbthread\_\-t} $\ast$ {\em th}, \/  size\_\-t {\em len}, \/  void const $\ast$ {\em data})}\label{sbthread_8c_fae533b302b310a828cf2eed1f2f5995}
+
+
+Send an asynchronous message to a thread. 
+
+Each thread gets a message queue by default, so this is just a wrapper around \doxyref{sbmsgq\_\-send()}{p.}{sbthread_8h_b0591b5cb626be52dd22edf8fa13a3e3}. 
+
+Definition at line 728 of file sbthread.c.
+
+References sbmsgq\_\-send().

@@ -1,0 +1,39 @@
+../..//s3trainer/bin.linux/norm.mop64 \
+ -accumdir ../..//bwaccumdir/MODELSET1_buff_1 ../..//bwaccumdir/MODELSET1_buff_2 \
+ -mixwfn ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights \
+ -tmatfn ../..//model_parameters/MODELSET1.cd_continuous_untied/transition_matrices \
+ -meanfn ../..//model_parameters/MODELSET1.cd_continuous_untied/means \
+ -varfn ../..//model_parameters/MODELSET1.cd_continuous_untied/variances
+
+[Switch]   [Default] [Value]
+-accumdir            ../..//bwaccumdir/MODELSET1_buff_1 ../..//bwaccumdir/MODELSET1_buff_2
+-oaccumdir                  
+-tmatfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/transition_matrices
+-mixwfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+-meanfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/means
+-varfn               ../..//model_parameters/MODELSET1.cd_continuous_untied/variances
+-regmatfn                   
+-dcountfn                   
+-inmixwfn                   
+-inmeanfn                   
+-invarfn                    
+INFO: ../main.c(476): Reading and accumulating counts from ../..//bwaccumdir/MODELSET1_buff_1
+INFO: ../s3mixw_io.c(92): Read ../..//bwaccumdir/MODELSET1_buff_1/mixw_counts [3000x1x1 array]
+INFO: ../s3tmat_io.c(92): Read ../..//bwaccumdir/MODELSET1_buff_1/tmat_counts [50x3x4 array]
+INFO: ../s3gau_io.c(343): Read ../..//bwaccumdir/MODELSET1_buff_1/gauden_counts with means with vars (2pass) [3000x1x1 vector arrays]
+INFO: ../main.c(476): Reading and accumulating counts from ../..//bwaccumdir/MODELSET1_buff_2
+INFO: ../s3mixw_io.c(92): Read ../..//bwaccumdir/MODELSET1_buff_2/mixw_counts [3000x1x1 array]
+INFO: ../s3tmat_io.c(92): Read ../..//bwaccumdir/MODELSET1_buff_2/tmat_counts [50x3x4 array]
+INFO: ../s3gau_io.c(343): Read ../..//bwaccumdir/MODELSET1_buff_2/gauden_counts with means with vars (2pass) [3000x1x1 vector arrays]
+INFO: ../main.c(674): Normalizing mean for n_mgau= 3000, n_stream= 1, n_density= 1
+WARNING: "../gauden.c", line 1354: (mgau= 672, feat= 0, density= 0) never observed
+WARNING: "../gauden.c", line 1354: (mgau= 673, feat= 0, density= 0) never observed
+WARNING: "../gauden.c", line 1354: (mgau= 674, feat= 0, density= 0) never observed
+INFO: ../main.c(688): Normalizing var
+INFO: ../s3mixw_io.c(212): Wrote ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights [3000x1x1 array]
+INFO: ../s3tmat_io.c(152): Wrote ../..//model_parameters/MODELSET1.cd_continuous_untied/transition_matrices [50x3x4 array]
+INFO: ../s3gau_io.c(188): Wrote ../..//model_parameters/MODELSET1.cd_continuous_untied/means [3000x1x1 array]
+INFO: ../s3gau_io.c(188): Wrote ../..//model_parameters/MODELSET1.cd_continuous_untied/variances [3000x1x1 array]
+Thu Mar 18 15:35:48 EST 2004
+Current Overall Likelihood Per Frame = 25.7357
+Convergence Ratio = 0.002579

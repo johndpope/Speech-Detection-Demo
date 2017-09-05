@@ -1,0 +1,51 @@
+WDBNDRY_B
+WDBNDRY_E
+WDBNDRY_S
+VOICED      AE E EH I II U AX AA O AO OO AW AY EY OW L R W Y ER M N ng JH B D DH G V Z ed ez
+SON         AE E EH I II EY AX AY OO O AO U OW AA ER AW L R W Y ed ez
+VOWEL       AE E EH I II U AX AA O AO OO AW AY EY OW ER
+BACK-R      U O AO OO OW AA ER L R W AY
+BACK-L      OO O AO U OW AA ER L R W AW
+FRNT-R      E AE EH E I II EY AX Y AW O
+TENSE       II EY AE OO OW AA AO AY AW
+FRNT-L      E AE EH I II EY AX Y AY
+ROUND       U AO OO OW W ER O
+TENSE-MAX   II EY OO AA AO AE
+ORSTP1      B D G P T K CH JH ed 
+DIPH        OO AW AY EY II OW
+DENTAL-MAX  T D S Z TH DH N ed
+FRIC1       DH TH S SH Z V F ez
+ALVELR      N D T S Z D ed ez
+LAX         EH I U AA AX E
+LOW         AE AA AO AW AY 
+LABIAL      W M B P V F
+DELSTP      P T K B D G ed
+HIGH        I II U OO Y
+PALATL      Y CH JH SH ez
+YGLIDE      II AY EY Y
+FRIC2       TH S SH F
+SCHWA       E AX I ER
+WGLIDE      OO AW OW W
+LQGL        L R W Y
+VELAR       ng G K
+FRIC3       DH Z V ez
+S/Z/SH/ZH   S Z SH ez
+LQGL-B      L R W
+NASAL       M N ng
+VELSTP      G K ng
+ORSTP2      P T K
+ORSTP3      B D G ed
+ALVSTP      D T N
+LABSTP      B P M
+DENTAL      DH TH
+LIQUID      L R
+LW          L W
+LABFRIC     F V
+ALVFRIC     S Z
+S/SH        S SH
+AFFRIC      CH JH
+RETRO       R ER
+ASPSEG      HH
+SIL         SIL
+SYLBIC      ER ed ez
+VELFRIC     SH

@@ -1,0 +1,378 @@
+# DO NOT DELETE
+
+heap.o: ../include/s3/heap.h ../include/s3/prim_type.h ../include/s3/err.h
+heap.o: /usr/include/stdarg.h /usr/include/standards.h /usr/include/va_list.h
+heap.o: ../include/s3/s3.h
+enum_subset.o: ../include/s3/enum_subset.h ../include/s3/prim_type.h
+enum_subset.o: ../include/s3/s3.h ../include/s3/err.h /usr/include/stdarg.h
+enum_subset.o: /usr/include/standards.h /usr/include/va_list.h
+cmd_ln.o: ../include/s3/common.h ../include/s3/cmd_ln.h
+cmd_ln.o: ../include/s3/prim_type.h ../include/s3/ckd_alloc.h
+cmd_ln.o: /usr/include/stdlib.h /usr/include/standards.h
+cmd_ln.o: /usr/include/getopt.h /usr/include/sys/types.h
+cmd_ln.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+cmd_ln.o: ../include/s3/matrix.h ../include/s3/vector.h
+cmd_ln.o: ../include/s3/prefix_upto.h ../include/s3/list.h ../include/s3/hash.h
+cmd_ln.o: ../include/s3/prim_type.h ../include/s3/corpus.h
+cmd_ln.o: ../include/s3/n_words.h ../include/s3/remap.h
+cmd_ln.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+cmd_ln.o: ../include/s3/itree.h ../include/s3/lexicon.h
+cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+cmd_ln.o: ../include/s3/err.h /usr/include/stdarg.h /usr/include/va_list.h
+cmd_ln.o: ../include/s3/s3.h /usr/include/assert.h /usr/include/stdio.h
+cmd_ln.o: /usr/include/sys/seek.h /usr/include/sys/limits.h
+cmd_ln.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+cmd_ln.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+cmd_ln.o: /usr/include/string.h /usr/include/strings.h /usr/include/ctype.h
+cmd_ln.o: /usr/include/sys/localedef.h /usr/include/sys/lc_core.h
+cmd_ln.o: /usr/include/locale.h /usr/include/nl_types.h /usr/include/mesg.h
+cmd_ln.o: /usr/include/limits.h
+ckd_alloc.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+ckd_alloc.o: /usr/include/standards.h /usr/include/getopt.h
+ckd_alloc.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+ckd_alloc.o: /usr/include/sys/select.h ../include/s3/s3.h ../include/s3/err.h
+ckd_alloc.o: /usr/include/stdarg.h /usr/include/va_list.h
+ckd_alloc.o: ../include/s3/prim_type.h /usr/include/stdio.h
+ckd_alloc.o: /usr/include/sys/seek.h /usr/include/sys/limits.h
+ckd_alloc.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+ckd_alloc.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+ckd_alloc.o: /usr/include/string.h /usr/include/strings.h
+prefix_upto.o: ../include/s3/prefix_upto.h /usr/include/assert.h
+prefix_upto.o: /usr/include/standards.h /usr/include/string.h
+prefix_upto.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+prefix_upto.o: /usr/include/sys/select.h /usr/include/strings.h
+prefix_upto.o: /usr/include/stdio.h /usr/include/sys/seek.h
+prefix_upto.o: /usr/include/getopt.h /usr/include/sys/limits.h
+prefix_upto.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+prefix_upto.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+vector.o: ../include/s3/vector.h ../include/s3/prim_type.h
+vector.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+vector.o: /usr/include/standards.h /usr/include/getopt.h
+vector.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+vector.o: /usr/include/sys/select.h ../include/s3/s3.h ../include/s3/err.h
+vector.o: /usr/include/stdarg.h /usr/include/va_list.h /usr/include/stdio.h
+vector.o: /usr/include/sys/seek.h /usr/include/sys/limits.h
+vector.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+vector.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+vector.o: /usr/include/assert.h
+hash.o: ../include/s3/prim_type.h ../include/s3/err.h /usr/include/stdarg.h
+hash.o: /usr/include/standards.h /usr/include/va_list.h
+hash.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h /usr/include/getopt.h
+hash.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+hash.o: /usr/include/sys/select.h ../include/s3/hash.h
+hash.o: ../include/s3/prim_type.h /usr/include/stdio.h /usr/include/sys/seek.h
+hash.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+hash.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+hash.o: /usr/include/sys/rt_limits.h /usr/include/string.h
+hash.o: /usr/include/strings.h /usr/include/assert.h
+n_words.o: ../include/s3/n_words.h ../include/s3/prim_type.h
+n_words.o: /usr/include/ctype.h /usr/include/standards.h
+n_words.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+n_words.o: /usr/include/sys/select.h /usr/include/sys/localedef.h
+n_words.o: /usr/include/sys/lc_core.h /usr/include/locale.h
+n_words.o: /usr/include/nl_types.h /usr/include/mesg.h /usr/include/stdio.h
+n_words.o: /usr/include/sys/seek.h /usr/include/getopt.h
+n_words.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+n_words.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+n_words.o: /usr/include/sys/rt_limits.h /usr/include/limits.h
+n_words.o: /usr/include/va_list.h
+mk_wordlist.o: ../include/s3/mk_wordlist.h ../include/s3/prim_type.h
+mk_wordlist.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+mk_wordlist.o: /usr/include/standards.h /usr/include/getopt.h
+mk_wordlist.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+mk_wordlist.o: /usr/include/sys/select.h ../include/s3/n_words.h
+mk_wordlist.o: /usr/include/assert.h /usr/include/string.h
+mk_wordlist.o: /usr/include/strings.h /usr/include/stdio.h
+mk_wordlist.o: /usr/include/sys/seek.h /usr/include/sys/limits.h
+mk_wordlist.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+mk_wordlist.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+remap.o: ../include/s3/remap.h ../include/s3/prim_type.h
+remap.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+remap.o: /usr/include/standards.h /usr/include/getopt.h
+remap.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+remap.o: /usr/include/sys/select.h ../include/s3/s3.h ../include/s3/err.h
+remap.o: /usr/include/stdarg.h /usr/include/va_list.h /usr/include/string.h
+remap.o: /usr/include/strings.h /usr/include/math.h
+lexicon.o: ../include/s3/lexicon.h ../include/s3/acmod_set.h
+lexicon.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+lexicon.o: ../include/s3/itree.h ../include/s3/list.h /usr/include/sys/types.h
+lexicon.o: /usr/include/standards.h /usr/include/mach/machine/vm_types.h
+lexicon.o: /usr/include/sys/select.h ../include/s3/hash.h
+lexicon.o: ../include/s3/prim_type.h ../include/s3/ckd_alloc.h
+lexicon.o: /usr/include/stdlib.h /usr/include/getopt.h ../include/s3/n_words.h
+lexicon.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/read_line.h
+lexicon.o: /usr/include/stdio.h /usr/include/sys/seek.h
+lexicon.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+lexicon.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+lexicon.o: /usr/include/sys/rt_limits.h ../include/s3/s3.h ../include/s3/err.h
+lexicon.o: /usr/include/stdarg.h /usr/include/va_list.h /usr/include/assert.h
+lexicon.o: /usr/include/string.h /usr/include/strings.h
+itree.o: ../include/s3/itree.h ../include/s3/prim_type.h
+itree.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+itree.o: /usr/include/standards.h /usr/include/getopt.h
+itree.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+itree.o: /usr/include/sys/select.h ../include/s3/s3.h ../include/s3/err.h
+itree.o: /usr/include/stdarg.h /usr/include/va_list.h /usr/include/stdio.h
+itree.o: /usr/include/sys/seek.h /usr/include/sys/limits.h
+itree.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+itree.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+itree.o: /usr/include/assert.h
+acmod_set.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+acmod_set.o: ../include/s3/prim_type.h ../include/s3/itree.h
+acmod_set.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+acmod_set.o: /usr/include/standards.h /usr/include/getopt.h
+acmod_set.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+acmod_set.o: /usr/include/sys/select.h ../include/s3/s2_param.h
+acmod_set.o: ../include/s3/s3.h ../include/s3/err.h /usr/include/stdarg.h
+acmod_set.o: /usr/include/va_list.h /usr/include/stdio.h
+acmod_set.o: /usr/include/sys/seek.h /usr/include/sys/limits.h
+acmod_set.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+acmod_set.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+acmod_set.o: /usr/include/string.h /usr/include/strings.h
+acmod_set.o: /usr/include/assert.h
+err.o: /usr/include/stdio.h /usr/include/standards.h /usr/include/sys/seek.h
+err.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+err.o: /usr/include/sys/select.h /usr/include/getopt.h
+err.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+err.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+err.o: /usr/include/sys/rt_limits.h /usr/include/errno.h
+err.o: /usr/include/stdlib.h ../include/s3/err.h /usr/include/stdarg.h
+err.o: /usr/include/va_list.h
+matrix.o: ../include/s3/matrix.h ../include/s3/prim_type.h ../include/s3/err.h
+matrix.o: /usr/include/stdarg.h /usr/include/standards.h
+matrix.o: /usr/include/va_list.h
+get_time.o: ../include/s3/get_time.h ../include/s3/prim_type.h
+get_time.o: ../include/s3/err.h /usr/include/stdarg.h /usr/include/standards.h
+get_time.o: /usr/include/va_list.h ../include/s3/s3.h
+get_time.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/time.h
+get_time.o: /usr/include/sys/time.h /usr/include/sys/limits.h
+get_time.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+get_time.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+get_time.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+get_time.o: /usr/include/sys/select.h /usr/include/sys/signal.h
+get_time.o: /usr/include/sys/siginfo.h /usr/include/sys/sysmisc.h
+get_time.o: /usr/include/machine/signal.h /usr/include/machine/context.h
+get_time.o: /usr/include/sys/procset.h /usr/include/time.h
+get_time.o: /usr/include/sys/timers.h /usr/include/unistd.h
+get_time.o: /usr/include/sys/access.h /usr/include/sys/seek.h
+get_time.o: /usr/include/getopt.h /usr/include/stddef.h
+get_cpu_time.o: ../include/s3/prim_type.h ../include/s3/s3.h ../include/s3/err.h
+get_cpu_time.o: /usr/include/stdarg.h /usr/include/standards.h
+get_cpu_time.o: /usr/include/va_list.h /usr/include/sys/time.h
+get_cpu_time.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+get_cpu_time.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+get_cpu_time.o: /usr/include/sys/rt_limits.h /usr/include/sys/types.h
+get_cpu_time.o: /usr/include/mach/machine/vm_types.h
+get_cpu_time.o: /usr/include/sys/select.h /usr/include/sys/signal.h
+get_cpu_time.o: /usr/include/sys/siginfo.h /usr/include/sys/sysmisc.h
+get_cpu_time.o: /usr/include/machine/signal.h /usr/include/machine/context.h
+get_cpu_time.o: /usr/include/sys/procset.h /usr/include/time.h
+get_cpu_time.o: /usr/include/sys/timers.h /usr/include/sys/resource.h
+profile.o: /usr/include/stdio.h /usr/include/standards.h
+profile.o: /usr/include/sys/seek.h /usr/include/sys/types.h
+profile.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+profile.o: /usr/include/getopt.h /usr/include/sys/limits.h
+profile.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+profile.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+profile.o: /usr/include/stdlib.h /usr/include/string.h /usr/include/strings.h
+profile.o: /usr/include/sys/time.h /usr/include/sys/signal.h
+profile.o: /usr/include/sys/siginfo.h /usr/include/sys/sysmisc.h
+profile.o: /usr/include/machine/signal.h /usr/include/machine/context.h
+profile.o: /usr/include/sys/procset.h /usr/include/time.h
+profile.o: /usr/include/sys/timers.h /usr/include/sys/resource.h
+profile.o: ../include/s3/profile.h ../include/s3/prim_type.h ../include/s3/err.h
+profile.o: /usr/include/stdarg.h /usr/include/va_list.h
+profile.o: ../include/s3/ckd_alloc.h
+mk_phone_list.o: ../include/s3/mk_phone_list.h ../include/s3/acmod_set.h
+mk_phone_list.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+mk_phone_list.o: ../include/s3/itree.h ../include/s3/lexicon.h
+mk_phone_list.o: ../include/s3/list.h /usr/include/sys/types.h
+mk_phone_list.o: /usr/include/standards.h
+mk_phone_list.o: /usr/include/mach/machine/vm_types.h
+mk_phone_list.o: /usr/include/sys/select.h ../include/s3/hash.h
+mk_phone_list.o: ../include/s3/prim_type.h ../include/s3/ckd_alloc.h
+mk_phone_list.o: /usr/include/stdlib.h /usr/include/getopt.h
+mk_phone_list.o: ../include/s3/s3.h ../include/s3/err.h /usr/include/stdarg.h
+mk_phone_list.o: /usr/include/va_list.h /usr/include/stdio.h
+mk_phone_list.o: /usr/include/sys/seek.h /usr/include/sys/limits.h
+mk_phone_list.o: /usr/include/machine/machlimits.h
+mk_phone_list.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+mk_phone_list.o: /usr/include/sys/rt_limits.h /usr/include/string.h
+mk_phone_list.o: /usr/include/strings.h /usr/include/assert.h
+cvt2triphone.o: ../include/s3/cvt2triphone.h ../include/s3/acmod_set.h
+cvt2triphone.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+cvt2triphone.o: ../include/s3/itree.h ../include/s3/s3.h ../include/s3/err.h
+cvt2triphone.o: /usr/include/stdarg.h /usr/include/standards.h
+cvt2triphone.o: /usr/include/va_list.h /usr/include/stdio.h
+cvt2triphone.o: /usr/include/sys/seek.h /usr/include/sys/types.h
+cvt2triphone.o: /usr/include/mach/machine/vm_types.h
+cvt2triphone.o: /usr/include/sys/select.h /usr/include/getopt.h
+cvt2triphone.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+cvt2triphone.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+cvt2triphone.o: /usr/include/sys/rt_limits.h /usr/include/assert.h
+was_added.o: ../include/s3/was_added.h ../include/s3/prim_type.h
+was_added.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+was_added.o: /usr/include/standards.h /usr/include/getopt.h
+was_added.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+was_added.o: /usr/include/sys/select.h
+ck_seg.o: ../include/s3/ck_seg.h ../include/s3/acmod_set.h
+ck_seg.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+ck_seg.o: ../include/s3/itree.h ../include/s3/s2_param.h ../include/s3/s3.h
+ck_seg.o: ../include/s3/err.h /usr/include/stdarg.h /usr/include/standards.h
+ck_seg.o: /usr/include/va_list.h
+mk_sseq.o: ../include/s3/mk_sseq.h ../include/s3/prim_type.h
+mk_sseq.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+mk_sseq.o: ../include/s3/itree.h
+mk_sseq.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+mk_sseq.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+mk_sseq.o: ../include/s3/s3.h ../include/s3/err.h /usr/include/stdarg.h
+mk_sseq.o: /usr/include/standards.h /usr/include/va_list.h
+mk_sseq.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+mk_sseq.o: /usr/include/getopt.h /usr/include/sys/types.h
+mk_sseq.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+mk_sseq.o: ../include/s3/s2_param.h /usr/include/assert.h
+mk_trans_seq.o: ../include/s3/mk_trans_seq.h ../include/s3/prim_type.h
+mk_trans_seq.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+mk_trans_seq.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+mk_trans_seq.o: ../include/s3/itree.h ../include/s3/s2_param.h
+mk_trans_seq.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+mk_trans_seq.o: /usr/include/standards.h /usr/include/getopt.h
+mk_trans_seq.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+mk_trans_seq.o: /usr/include/sys/select.h ../include/s3/s3.h
+mk_trans_seq.o: ../include/s3/err.h /usr/include/stdarg.h
+mk_trans_seq.o: /usr/include/va_list.h /usr/include/assert.h
+quest.o: ../include/s3/quest.h ../include/s3/prim_type.h
+quest.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+quest.o: ../include/s3/itree.h /usr/include/stdio.h /usr/include/standards.h
+quest.o: /usr/include/sys/seek.h /usr/include/sys/types.h
+quest.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+quest.o: /usr/include/getopt.h /usr/include/sys/limits.h
+quest.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+quest.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+quest.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/bquest_io.h
+quest.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h ../include/s3/s3.h
+quest.o: ../include/s3/err.h /usr/include/stdarg.h /usr/include/va_list.h
+quest.o: /usr/include/string.h /usr/include/strings.h /usr/include/assert.h
+quest.o: /usr/include/ctype.h /usr/include/sys/localedef.h
+quest.o: /usr/include/sys/lc_core.h /usr/include/locale.h
+quest.o: /usr/include/nl_types.h /usr/include/mesg.h /usr/include/limits.h
+btree.o: ../include/s3/btree.h ../include/s3/prim_type.h
+btree.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+btree.o: /usr/include/standards.h /usr/include/getopt.h
+btree.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+btree.o: /usr/include/sys/select.h ../include/s3/err.h /usr/include/stdarg.h
+btree.o: /usr/include/va_list.h /usr/include/assert.h /usr/include/stddef.h
+btree.o: /usr/include/stdio.h /usr/include/sys/seek.h
+btree.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+btree.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+btree.o: /usr/include/sys/rt_limits.h
+mk_ts2ci.o: ../include/s3/mk_ts2ci.h
+mk_ts2ci.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+mk_ts2ci.o: ../include/s3/prim_type.h ../include/s3/acmod_set.h
+mk_ts2ci.o: ../include/s3/acmod_set_ds.h ../include/s3/itree.h
+mk_ts2ci.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+mk_ts2ci.o: /usr/include/standards.h /usr/include/getopt.h
+mk_ts2ci.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+mk_ts2ci.o: /usr/include/sys/select.h ../include/s3/err.h
+mk_ts2ci.o: /usr/include/stdarg.h /usr/include/va_list.h ../include/s3/s3.h
+mk_ts2ci.o: /usr/include/assert.h
+state_seq.o: ../include/s3/state_seq.h ../include/s3/state.h
+state_seq.o: ../include/s3/prim_type.h
+state_seq.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_inventory.h
+state_seq.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+state_seq.o: ../include/s3/itree.h
+state_seq.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/gauden.h
+state_seq.o: ../include/s3/s3.h ../include/s3/err.h /usr/include/stdarg.h
+state_seq.o: /usr/include/standards.h /usr/include/va_list.h
+state_seq.o: ../include/s3/vector.h /usr/include/stdio.h
+state_seq.o: /usr/include/sys/seek.h /usr/include/sys/types.h
+state_seq.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+state_seq.o: /usr/include/getopt.h /usr/include/sys/limits.h
+state_seq.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+state_seq.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+state_seq.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+state_seq.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+state_seq.o: ../include/s3/remap.h ../include/s3/cmd_ln.h
+state_seq.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+state_seq.o: ../include/s3/s2_param.h ../include/s3/array_alloc.h
+state_seq.o: /usr/include/stddef.h /usr/include/string.h
+state_seq.o: /usr/include/strings.h /usr/include/assert.h
+get_host_name.o: ../include/s3/get_host_name.h
+get_host_name.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/misc.h
+get_host_name.o: /usr/include/unistd.h /usr/include/standards.h
+get_host_name.o: /usr/include/sys/types.h
+get_host_name.o: /usr/include/mach/machine/vm_types.h
+get_host_name.o: /usr/include/sys/select.h /usr/include/sys/access.h
+get_host_name.o: /usr/include/sys/seek.h /usr/include/getopt.h
+get_host_name.o: /usr/include/stdlib.h /usr/include/sys/param.h
+get_host_name.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+get_host_name.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+get_host_name.o: /usr/include/sys/rt_limits.h
+get_host_name.o: /usr/include/machine/machparam.h
+get_host_name.o: /usr/include/machine/endian.h /usr/include/sys/signal.h
+get_host_name.o: /usr/include/sys/siginfo.h /usr/include/sys/sysmisc.h
+get_host_name.o: /usr/include/machine/signal.h /usr/include/machine/context.h
+get_host_name.o: /usr/include/sys/procset.h /usr/include/string.h
+get_host_name.o: /usr/include/strings.h
+mk_phone_seq.o: ../include/s3/mk_phone_seq.h ../include/s3/acmod_set.h
+mk_phone_seq.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+mk_phone_seq.o: ../include/s3/itree.h ../include/s3/lexicon.h
+mk_phone_seq.o: ../include/s3/list.h /usr/include/sys/types.h
+mk_phone_seq.o: /usr/include/standards.h /usr/include/mach/machine/vm_types.h
+mk_phone_seq.o: /usr/include/sys/select.h ../include/s3/hash.h
+mk_phone_seq.o: ../include/s3/prim_type.h ../include/s3/mk_wordlist.h
+mk_phone_seq.o: ../include/s3/mk_phone_list.h ../include/s3/cvt2triphone.h
+mk_phone_seq.o: ../include/s3/corpus.h ../include/s3/ckd_alloc.h
+mk_phone_seq.o: /usr/include/stdlib.h /usr/include/getopt.h
+mk_phone_seq.o: ../include/s3/err.h /usr/include/stdarg.h
+mk_phone_seq.o: /usr/include/va_list.h ../include/s3/s3.h /usr/include/stdio.h
+mk_phone_seq.o: /usr/include/sys/seek.h /usr/include/sys/limits.h
+mk_phone_seq.o: /usr/include/machine/machlimits.h
+mk_phone_seq.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+mk_phone_seq.o: /usr/include/sys/rt_limits.h
+ts2cb.o: ../include/s3/ts2cb.h ../include/s3/prim_type.h
+ts2cb.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+ts2cb.o: /usr/include/standards.h /usr/include/getopt.h
+ts2cb.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+ts2cb.o: /usr/include/sys/select.h
+dtree.o: ../include/s3/dtree.h
+dtree.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/pset_io.h
+dtree.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+dtree.o: ../include/s3/prim_type.h ../include/s3/itree.h ../include/s3/quest.h
+dtree.o: /usr/include/stdio.h /usr/include/standards.h
+dtree.o: /usr/include/sys/seek.h /usr/include/sys/types.h
+dtree.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+dtree.o: /usr/include/getopt.h /usr/include/sys/limits.h
+dtree.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+dtree.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+dtree.o: ../include/s3/btree.h ../include/s3/best_q.h ../include/s3/two_class.h
+dtree.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+dtree.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/read_line.h
+dtree.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/div.h
+dtree.o: ../include/s3/err.h /usr/include/stdarg.h /usr/include/va_list.h
+dtree.o: ../include/s3/s3.h ../include/s3/cmd_ln.h /usr/include/assert.h
+dtree.o: /usr/include/string.h /usr/include/strings.h ../include/s3/heap.h
+best_q.o: ../include/s3/best_q.h ../include/s3/prim_type.h ../include/s3/quest.h
+best_q.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+best_q.o: ../include/s3/itree.h /usr/include/stdio.h /usr/include/standards.h
+best_q.o: /usr/include/sys/seek.h /usr/include/sys/types.h
+best_q.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+best_q.o: /usr/include/getopt.h /usr/include/sys/limits.h
+best_q.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+best_q.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+best_q.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/metric.h
+best_q.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h ../include/s3/err.h
+best_q.o: /usr/include/stdarg.h /usr/include/va_list.h ../include/s3/s3.h
+best_q.o: ../include/s3/cmd_ln.h
+best_q.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/div.h
+best_q.o: /usr/include/string.h /usr/include/strings.h
+two_class.o: ../include/s3/two_class.h ../include/s3/prim_type.h
+two_class.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+two_class.o: /usr/include/standards.h /usr/include/getopt.h
+two_class.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+two_class.o: /usr/include/sys/select.h ../include/s3/enum_subset.h
+two_class.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/metric.h
+two_class.o: ../include/s3/err.h /usr/include/stdarg.h /usr/include/va_list.h
+two_class.o: ../include/s3/s3.h ../include/s3/cmd_ln.h
+two_class.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/div.h
+two_class.o: /usr/include/string.h /usr/include/strings.h

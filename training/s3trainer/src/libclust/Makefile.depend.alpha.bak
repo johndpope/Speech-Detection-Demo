@@ -1,0 +1,32 @@
+# DO NOT DELETE
+
+kmeans.o: ../include/s3/kmeans.h
+kmeans.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+kmeans.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+kmeans.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+kmeans.o: /usr/include/stdlib.h /usr/include/standards.h
+kmeans.o: /usr/include/getopt.h /usr/include/sys/types.h
+kmeans.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+kmeans.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/profile.h
+kmeans.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+kmeans.o: /usr/include/stdio.h /usr/include/sys/seek.h /usr/include/va_list.h
+kmeans.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+kmeans.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+kmeans.o: /usr/include/sys/rt_limits.h
+kmeans.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+kmeans.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+kmeans.o: /usr/include/stdarg.h /usr/include/assert.h
+div.o: /usr/include/math.h /usr/include/standards.h /usr/include/stdlib.h
+div.o: /usr/include/getopt.h /usr/include/sys/types.h
+div.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+div.o: ../include/s3/div.h
+div.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+div.o: /usr/include/assert.h
+metric.o: ../include/s3/metric.h
+metric.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+metric.o: ../include/s3/div.h
+merge_den.o: ../include/s3/merge_den.h
+merge_den.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+merge_den.o: /usr/include/string.h /usr/include/standards.h
+merge_den.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+merge_den.o: /usr/include/sys/select.h /usr/include/strings.h

@@ -1,0 +1,333 @@
+# DO NOT DELETE
+
+
+accum.o: accum.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set_ds.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/ckd_alloc.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/corpus.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/err.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/feat.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/gauden.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/itree.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mixw_param_io.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def_io.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_inventory.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prim_type.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s2_param.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3gau_io.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3mixw_io.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3regmat_io.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3tmat_io.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state_seq.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/tmat_param_io.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/vector.h
+accum.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/sys_compat/file.h
+accum.o: /usr/include/alloca.h /usr/include/asm/param.h /usr/include/assert.h
+accum.o: /usr/include/bits/confname.h /usr/include/bits/endian.h
+accum.o: /usr/include/bits/environments.h /usr/include/bits/fcntl.h
+accum.o: /usr/include/bits/huge_val.h /usr/include/bits/local_lim.h
+accum.o: /usr/include/bits/mathcalls.h /usr/include/bits/mathdef.h
+accum.o: /usr/include/bits/nan.h /usr/include/bits/posix1_lim.h
+accum.o: /usr/include/bits/posix2_lim.h /usr/include/bits/posix_opt.h
+accum.o: /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h
+accum.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+accum.o: /usr/include/bits/stat.h /usr/include/bits/stdio_lim.h
+accum.o: /usr/include/bits/time.h /usr/include/bits/types.h
+accum.o: /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h
+accum.o: /usr/include/bits/wchar.h /usr/include/bits/wordsize.h
+accum.o: /usr/include/bits/xopen_lim.h /usr/include/endian.h
+accum.o: /usr/include/fcntl.h /usr/include/features.h /usr/include/_G_config.h
+accum.o: /usr/include/gconv.h /usr/include/getopt.h /usr/include/gnu/stubs.h
+accum.o: /usr/include/libio.h /usr/include/limits.h
+accum.o: /usr/include/linux/limits.h /usr/include/linux/param.h
+accum.o: /usr/include/math.h /usr/include/stdio.h /usr/include/stdlib.h
+accum.o: /usr/include/string.h /usr/include/sys/cdefs.h
+accum.o: /usr/include/sys/fcntl.h /usr/include/sys/file.h
+accum.o: /usr/include/sys/param.h /usr/include/sys/select.h
+accum.o: /usr/include/sys/stat.h /usr/include/sys/sysmacros.h
+accum.o: /usr/include/sys/types.h /usr/include/time.h /usr/include/unistd.h
+accum.o: /usr/include/wchar.h /usr/include/xlocale.h
+accum.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+accum.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+accum.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+accum.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/syslimits.h
+backward.o: accum.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set_ds.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/ckd_alloc.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/err.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/feat.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/gauden.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/itree.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_inventory.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prim_type.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/profile.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s2_param.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state.h
+backward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/vector.h
+backward.o: train_cmd_ln.h /usr/include/alloca.h /usr/include/assert.h
+backward.o: /usr/include/bits/endian.h /usr/include/bits/huge_val.h
+backward.o: /usr/include/bits/mathcalls.h /usr/include/bits/mathdef.h
+backward.o: /usr/include/bits/nan.h /usr/include/bits/pthreadtypes.h
+backward.o: /usr/include/bits/sched.h /usr/include/bits/select.h
+backward.o: /usr/include/bits/sigset.h /usr/include/bits/stdio_lim.h
+backward.o: /usr/include/bits/time.h /usr/include/bits/types.h
+backward.o: /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h
+backward.o: /usr/include/bits/wchar.h /usr/include/endian.h
+backward.o: /usr/include/features.h /usr/include/_G_config.h
+backward.o: /usr/include/gconv.h /usr/include/gnu/stubs.h /usr/include/libio.h
+backward.o: /usr/include/math.h /usr/include/stdio.h /usr/include/stdlib.h
+backward.o: /usr/include/string.h /usr/include/sys/cdefs.h
+backward.o: /usr/include/sys/select.h /usr/include/sys/sysmacros.h
+backward.o: /usr/include/sys/types.h /usr/include/time.h /usr/include/wchar.h
+backward.o: /usr/include/xlocale.h
+backward.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+backward.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+baum_welch.o: accum.h backward.h baum_welch.h forward.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set_ds.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/ckd_alloc.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/corpus.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/err.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/gauden.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/itree.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def_io.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_inventory.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prim_type.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/profile.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s2_param.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state_seq.h
+baum_welch.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/vector.h
+baum_welch.o: /usr/include/alloca.h /usr/include/assert.h
+baum_welch.o: /usr/include/bits/endian.h /usr/include/bits/huge_val.h
+baum_welch.o: /usr/include/bits/mathcalls.h /usr/include/bits/mathdef.h
+baum_welch.o: /usr/include/bits/nan.h /usr/include/bits/pthreadtypes.h
+baum_welch.o: /usr/include/bits/sched.h /usr/include/bits/select.h
+baum_welch.o: /usr/include/bits/sigset.h /usr/include/bits/stdio_lim.h
+baum_welch.o: /usr/include/bits/time.h /usr/include/bits/types.h
+baum_welch.o: /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h
+baum_welch.o: /usr/include/bits/wchar.h /usr/include/endian.h
+baum_welch.o: /usr/include/features.h /usr/include/_G_config.h
+baum_welch.o: /usr/include/gconv.h /usr/include/gnu/stubs.h
+baum_welch.o: /usr/include/libio.h /usr/include/math.h /usr/include/stdio.h
+baum_welch.o: /usr/include/stdlib.h /usr/include/string.h
+baum_welch.o: /usr/include/sys/cdefs.h /usr/include/sys/select.h
+baum_welch.o: /usr/include/sys/sysmacros.h /usr/include/sys/types.h
+baum_welch.o: /usr/include/time.h /usr/include/wchar.h /usr/include/xlocale.h
+baum_welch.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+baum_welch.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set_ds.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/ckd_alloc.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/err.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/feat.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/gauden.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/itree.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_inventory.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prim_type.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/profile.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state.h
+forward.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/vector.h
+forward.o: /usr/include/alloca.h /usr/include/assert.h
+forward.o: /usr/include/bits/endian.h /usr/include/bits/huge_val.h
+forward.o: /usr/include/bits/mathcalls.h /usr/include/bits/mathdef.h
+forward.o: /usr/include/bits/nan.h /usr/include/bits/pthreadtypes.h
+forward.o: /usr/include/bits/sched.h /usr/include/bits/select.h
+forward.o: /usr/include/bits/sigset.h /usr/include/bits/stdio_lim.h
+forward.o: /usr/include/bits/time.h /usr/include/bits/types.h
+forward.o: /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h
+forward.o: /usr/include/bits/wchar.h /usr/include/endian.h
+forward.o: /usr/include/features.h /usr/include/_G_config.h
+forward.o: /usr/include/gconv.h /usr/include/gnu/stubs.h /usr/include/libio.h
+forward.o: /usr/include/math.h /usr/include/stdio.h /usr/include/stdlib.h
+forward.o: /usr/include/sys/cdefs.h /usr/include/sys/select.h
+forward.o: /usr/include/sys/sysmacros.h /usr/include/sys/types.h
+forward.o: /usr/include/time.h /usr/include/wchar.h /usr/include/xlocale.h
+forward.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+forward.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+main.o: accum.h baum_welch.h forward.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set_ds.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/ckd_alloc.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/cmd_ln.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/common.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/corpus.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/cvt2triphone.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/err.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/feat.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/gauden.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/get_host_name.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/hash.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/itree.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/lexicon.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/list.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/matrix.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mk_phone_list.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mk_sseq.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mk_trans_seq.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mk_wordlist.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mllr.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mllr_io.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def_io.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_inventory.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/n_words.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prefetch.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prefix_upto.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prim_type.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/profile.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/remap.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s2_param.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3cb2mllr_io.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3ts2cb_io.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/silcomp.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/ts2cb.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/vector.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/sys_compat/file.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/sys_compat/misc.h
+main.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/sys_compat/time.h
+main.o: next_utt_states.h train_cmd_ln.h /usr/include/alloca.h
+main.o: /usr/include/asm/param.h /usr/include/assert.h
+main.o: /usr/include/bits/confname.h /usr/include/bits/endian.h
+main.o: /usr/include/bits/environments.h /usr/include/bits/fcntl.h
+main.o: /usr/include/bits/huge_val.h /usr/include/bits/local_lim.h
+main.o: /usr/include/bits/mathcalls.h /usr/include/bits/mathdef.h
+main.o: /usr/include/bits/nan.h /usr/include/bits/posix1_lim.h
+main.o: /usr/include/bits/posix2_lim.h /usr/include/bits/posix_opt.h
+main.o: /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h
+main.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+main.o: /usr/include/bits/stat.h /usr/include/bits/stdio_lim.h
+main.o: /usr/include/bits/time.h /usr/include/bits/types.h
+main.o: /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h
+main.o: /usr/include/bits/wchar.h /usr/include/bits/wordsize.h
+main.o: /usr/include/bits/xopen_lim.h /usr/include/endian.h
+main.o: /usr/include/fcntl.h /usr/include/features.h /usr/include/_G_config.h
+main.o: /usr/include/gconv.h /usr/include/getopt.h /usr/include/gnu/stubs.h
+main.o: /usr/include/libio.h /usr/include/limits.h /usr/include/linux/limits.h
+main.o: /usr/include/linux/param.h /usr/include/math.h /usr/include/stdio.h
+main.o: /usr/include/stdlib.h /usr/include/string.h /usr/include/sys/cdefs.h
+main.o: /usr/include/sys/fcntl.h /usr/include/sys/file.h
+main.o: /usr/include/sys/param.h /usr/include/sys/select.h
+main.o: /usr/include/sys/stat.h /usr/include/sys/sysmacros.h
+main.o: /usr/include/sys/time.h /usr/include/sys/types.h /usr/include/time.h
+main.o: /usr/include/unistd.h /usr/include/wchar.h /usr/include/xlocale.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/syslimits.h viterbi.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set_ds.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/ckd_alloc.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/cvt2triphone.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/err.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/gauden.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/hash.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/itree.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/lexicon.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/list.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mk_phone_list.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/mk_wordlist.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def_io.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_inventory.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prim_type.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state_seq.h
+next_utt_states.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/vector.h
+next_utt_states.o: next_utt_states.h /usr/include/alloca.h
+next_utt_states.o: /usr/include/bits/endian.h /usr/include/bits/pthreadtypes.h
+next_utt_states.o: /usr/include/bits/sched.h /usr/include/bits/select.h
+next_utt_states.o: /usr/include/bits/sigset.h /usr/include/bits/stdio_lim.h
+next_utt_states.o: /usr/include/bits/time.h /usr/include/bits/types.h
+next_utt_states.o: /usr/include/bits/waitflags.h
+next_utt_states.o: /usr/include/bits/waitstatus.h /usr/include/bits/wchar.h
+next_utt_states.o: /usr/include/endian.h /usr/include/features.h
+next_utt_states.o: /usr/include/_G_config.h /usr/include/gconv.h
+next_utt_states.o: /usr/include/gnu/stubs.h /usr/include/libio.h
+next_utt_states.o: /usr/include/stdio.h /usr/include/stdlib.h
+next_utt_states.o: /usr/include/sys/cdefs.h /usr/include/sys/select.h
+next_utt_states.o: /usr/include/sys/sysmacros.h /usr/include/sys/types.h
+next_utt_states.o: /usr/include/time.h /usr/include/wchar.h
+next_utt_states.o: /usr/include/xlocale.h
+next_utt_states.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+next_utt_states.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+train_cmd_ln.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/cmd_ln.h
+train_cmd_ln.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/err.h
+train_cmd_ln.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prim_type.h
+train_cmd_ln.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3.h
+train_cmd_ln.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/sys_compat/file.h
+train_cmd_ln.o: train_cmd_ln.h /usr/include/alloca.h /usr/include/asm/param.h
+train_cmd_ln.o: /usr/include/assert.h /usr/include/bits/confname.h
+train_cmd_ln.o: /usr/include/bits/endian.h /usr/include/bits/environments.h
+train_cmd_ln.o: /usr/include/bits/fcntl.h /usr/include/bits/local_lim.h
+train_cmd_ln.o: /usr/include/bits/posix1_lim.h /usr/include/bits/posix2_lim.h
+train_cmd_ln.o: /usr/include/bits/posix_opt.h /usr/include/bits/pthreadtypes.h
+train_cmd_ln.o: /usr/include/bits/sched.h /usr/include/bits/select.h
+train_cmd_ln.o: /usr/include/bits/sigset.h /usr/include/bits/stat.h
+train_cmd_ln.o: /usr/include/bits/stdio_lim.h /usr/include/bits/time.h
+train_cmd_ln.o: /usr/include/bits/types.h /usr/include/bits/waitflags.h
+train_cmd_ln.o: /usr/include/bits/waitstatus.h /usr/include/bits/wchar.h
+train_cmd_ln.o: /usr/include/bits/wordsize.h /usr/include/bits/xopen_lim.h
+train_cmd_ln.o: /usr/include/endian.h /usr/include/fcntl.h
+train_cmd_ln.o: /usr/include/features.h /usr/include/_G_config.h
+train_cmd_ln.o: /usr/include/gconv.h /usr/include/getopt.h
+train_cmd_ln.o: /usr/include/gnu/stubs.h /usr/include/libio.h
+train_cmd_ln.o: /usr/include/limits.h /usr/include/linux/limits.h
+train_cmd_ln.o: /usr/include/linux/param.h /usr/include/stdio.h
+train_cmd_ln.o: /usr/include/stdlib.h /usr/include/string.h
+train_cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/sys/fcntl.h
+train_cmd_ln.o: /usr/include/sys/file.h /usr/include/sys/param.h
+train_cmd_ln.o: /usr/include/sys/select.h /usr/include/sys/stat.h
+train_cmd_ln.o: /usr/include/sys/sysmacros.h /usr/include/sys/types.h
+train_cmd_ln.o: /usr/include/time.h /usr/include/unistd.h /usr/include/wchar.h
+train_cmd_ln.o: /usr/include/xlocale.h
+train_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/limits.h
+train_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+train_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+train_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/syslimits.h
+viterbi.o: accum.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set_ds.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/acmod_set.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/ckd_alloc.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/err.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/gauden.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/itree.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_def.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/model_inventory.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/prim_type.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/profile.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/remap.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/s3.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/state.h
+viterbi.o: /homes/bhiksha/work/s3trainer/trainerlatest/include/s3/vector.h
+viterbi.o: /usr/include/alloca.h /usr/include/assert.h
+viterbi.o: /usr/include/bits/endian.h /usr/include/bits/huge_val.h
+viterbi.o: /usr/include/bits/mathcalls.h /usr/include/bits/mathdef.h
+viterbi.o: /usr/include/bits/nan.h /usr/include/bits/pthreadtypes.h
+viterbi.o: /usr/include/bits/sched.h /usr/include/bits/select.h
+viterbi.o: /usr/include/bits/sigset.h /usr/include/bits/stdio_lim.h
+viterbi.o: /usr/include/bits/time.h /usr/include/bits/types.h
+viterbi.o: /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h
+viterbi.o: /usr/include/bits/wchar.h /usr/include/endian.h
+viterbi.o: /usr/include/features.h /usr/include/_G_config.h
+viterbi.o: /usr/include/gconv.h /usr/include/gnu/stubs.h /usr/include/libio.h
+viterbi.o: /usr/include/math.h /usr/include/stdio.h /usr/include/stdlib.h
+viterbi.o: /usr/include/sys/cdefs.h /usr/include/sys/select.h
+viterbi.o: /usr/include/sys/sysmacros.h /usr/include/sys/types.h
+viterbi.o: /usr/include/time.h /usr/include/wchar.h /usr/include/xlocale.h
+viterbi.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+viterbi.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h viterbi.h

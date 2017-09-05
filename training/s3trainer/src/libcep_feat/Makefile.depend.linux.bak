@@ -1,0 +1,189 @@
+# DO NOT DELETE
+
+agc_emax.o: ../include/s3/agc_emax.h /usr/include/string.h
+agc_emax.o: /usr/include/features.h /usr/include/sys/cdefs.h
+agc_emax.o: /usr/include/gnu/stubs.h
+agc_emax.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+agc_max.o: ../include/s3/agc_max.h
+r_agc_noise.o: ../include/s3/r_agc_noise.h /usr/include/stdio.h
+r_agc_noise.o: /usr/include/features.h /usr/include/sys/cdefs.h
+r_agc_noise.o: /usr/include/gnu/stubs.h
+r_agc_noise.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+r_agc_noise.o: /usr/include/bits/types.h /usr/include/libio.h
+r_agc_noise.o: /usr/include/_G_config.h /usr/include/wchar.h
+r_agc_noise.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+r_agc_noise.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+r_agc_noise.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+agc.o: ../include/s3/agc.h ../include/s3/agc_max.h ../include/s3/agc_emax.h
+agc.o: ../include/s3/r_agc_noise.h /usr/include/string.h
+agc.o: /usr/include/features.h /usr/include/sys/cdefs.h
+agc.o: /usr/include/gnu/stubs.h
+agc.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+norm.o: ../include/s3/norm.h /usr/include/stdio.h /usr/include/features.h
+norm.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+norm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+norm.o: /usr/include/bits/types.h /usr/include/libio.h
+norm.o: /usr/include/_G_config.h /usr/include/wchar.h
+norm.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+norm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+norm.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+norm.o: /usr/include/math.h /usr/include/bits/huge_val.h
+norm.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+live_norm.o: ../include/s3/live_norm.h /usr/include/stdio.h
+live_norm.o: /usr/include/features.h /usr/include/sys/cdefs.h
+live_norm.o: /usr/include/gnu/stubs.h
+live_norm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+live_norm.o: /usr/include/bits/types.h /usr/include/libio.h
+live_norm.o: /usr/include/_G_config.h /usr/include/wchar.h
+live_norm.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+live_norm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+live_norm.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+cmn.o: ../include/s3/cmn.h ../include/s3/norm.h ../include/s3/live_norm.h
+cmn.o: /usr/include/string.h /usr/include/features.h /usr/include/sys/cdefs.h
+cmn.o: /usr/include/gnu/stubs.h
+cmn.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+varnorm.o: ../include/s3/varnorm.h /usr/include/stdio.h
+varnorm.o: /usr/include/features.h /usr/include/sys/cdefs.h
+varnorm.o: /usr/include/gnu/stubs.h
+varnorm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+varnorm.o: /usr/include/bits/types.h /usr/include/libio.h
+varnorm.o: /usr/include/_G_config.h /usr/include/wchar.h
+varnorm.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+varnorm.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+varnorm.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+varnorm.o: /usr/include/math.h /usr/include/bits/huge_val.h
+varnorm.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+silcomp.o: del_sil_seg.h ../include/s3/silcomp.h ../include/s3/r_agc_noise.h
+silcomp.o: /usr/include/string.h /usr/include/features.h
+silcomp.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+silcomp.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+del_sil_seg.o: ../include/s3/feat.h /usr/include/string.h
+del_sil_seg.o: /usr/include/features.h /usr/include/sys/cdefs.h
+del_sil_seg.o: /usr/include/gnu/stubs.h
+del_sil_seg.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+del_sil_seg.o: /usr/include/assert.h
+s2_cep.o: s2_cep.h /usr/include/stdlib.h /usr/include/features.h
+s2_cep.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_cep.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_cep.o: /usr/include/assert.h
+s2_dcep.o: s2_dcep.h /usr/include/string.h /usr/include/features.h
+s2_dcep.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_dcep.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_ddcep.o: s2_ddcep.h /usr/include/string.h /usr/include/features.h
+s2_ddcep.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_ddcep.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_feat.o: s2_feat.h ../include/s3/feat.h s2_cep.h s2_dcep.h s2_ddcep.h
+s2_feat.o: /usr/include/assert.h /usr/include/features.h
+s2_feat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s2_feat.o: /usr/include/string.h
+s2_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s2_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+s2_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+s2_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s2_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s2_feat.o: /usr/include/bits/stdio_lim.h
+v1_feat.o: v1_feat.h ../include/s3/feat.h cep_frame.h dcep_frame.h
+v1_feat.o: ddcep_frame.h /usr/include/assert.h /usr/include/features.h
+v1_feat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+v1_feat.o: /usr/include/string.h
+v1_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+v1_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+v1_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+v1_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+v1_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+v1_feat.o: /usr/include/bits/stdio_lim.h
+v2_feat.o: v2_feat.h ../include/s3/feat.h /usr/include/assert.h
+v2_feat.o: /usr/include/features.h /usr/include/sys/cdefs.h
+v2_feat.o: /usr/include/gnu/stubs.h /usr/include/string.h
+v2_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+v2_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+v2_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+v2_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+v2_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+v2_feat.o: /usr/include/bits/stdio_lim.h
+v3_feat.o: v3_feat.h ../include/s3/feat.h cep_frame.h dcep_frame.h
+v3_feat.o: ddcep_frame.h /usr/include/assert.h /usr/include/features.h
+v3_feat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+v3_feat.o: /usr/include/string.h
+v3_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+v3_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+v3_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+v3_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+v3_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+v3_feat.o: /usr/include/bits/stdio_lim.h
+v4_feat.o: v4_feat.h ../include/s3/feat.h cep_frame.h dcep_frame.h
+v4_feat.o: ddcep_frame.h /usr/include/assert.h /usr/include/features.h
+v4_feat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+v4_feat.o: /usr/include/string.h
+v4_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+v4_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+v4_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+v4_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+v4_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+v4_feat.o: /usr/include/bits/stdio_lim.h
+v5_feat.o: v5_feat.h ../include/s3/feat.h /usr/include/assert.h
+v5_feat.o: /usr/include/features.h /usr/include/sys/cdefs.h
+v5_feat.o: /usr/include/gnu/stubs.h /usr/include/string.h
+v5_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+v5_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+v5_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+v5_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+v5_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+v5_feat.o: /usr/include/bits/stdio_lim.h
+v6_feat.o: v6_feat.h ../include/s3/feat.h cep_frame.h dcep_frame.h
+v6_feat.o: ddcep_frame.h /usr/include/assert.h /usr/include/features.h
+v6_feat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+v6_feat.o: /usr/include/string.h
+v6_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+v6_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+v6_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+v6_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+v6_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+v6_feat.o: /usr/include/bits/stdio_lim.h
+v7_feat.o: v7_feat.h ../include/s3/feat.h /usr/include/assert.h
+v7_feat.o: /usr/include/features.h /usr/include/sys/cdefs.h
+v7_feat.o: /usr/include/gnu/stubs.h /usr/include/string.h
+v7_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+v7_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+v7_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+v7_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+v7_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+v7_feat.o: /usr/include/bits/stdio_lim.h
+v8_feat.o: v8_feat.h ../include/s3/feat.h /usr/include/assert.h
+v8_feat.o: /usr/include/features.h /usr/include/sys/cdefs.h
+v8_feat.o: /usr/include/gnu/stubs.h /usr/include/string.h
+v8_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+v8_feat.o: /usr/include/stdio.h /usr/include/bits/types.h
+v8_feat.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+v8_feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+v8_feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+v8_feat.o: /usr/include/bits/stdio_lim.h
+cep_frame.o: cep_frame.h /usr/include/string.h /usr/include/features.h
+cep_frame.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+cep_frame.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+dcep_frame.o: dcep_frame.h ../include/s3/feat.h
+ddcep_frame.o: ddcep_frame.h dcep_frame.h ../include/s3/feat.h
+feat.o: s2_feat.h v1_feat.h v2_feat.h v3_feat.h v4_feat.h v5_feat.h v6_feat.h
+feat.o: v7_feat.h v8_feat.h cep_frame.h ../include/s3/feat.h
+feat.o: ../include/s3/silcomp.h ../include/s3/cmn.h ../include/s3/agc.h
+feat.o: ../include/s3/varnorm.h /usr/include/stdio.h /usr/include/features.h
+feat.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+feat.o: /usr/include/bits/types.h /usr/include/libio.h
+feat.o: /usr/include/_G_config.h /usr/include/wchar.h
+feat.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+feat.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+feat.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+feat.o: /usr/include/assert.h
+feat2.o: s2_feat.h v1_feat.h v2_feat.h v3_feat.h v4_feat.h v5_feat.h
+feat2.o: v6_feat.h v7_feat.h v8_feat.h cep_frame.h ../include/s3/feat.h
+feat2.o: ../include/s3/silcomp.h ../include/s3/cmn.h ../include/s3/agc.h
+feat2.o: ../include/s3/varnorm.h /usr/include/stdio.h /usr/include/features.h
+feat2.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+feat2.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+feat2.o: /usr/include/bits/types.h /usr/include/libio.h
+feat2.o: /usr/include/_G_config.h /usr/include/wchar.h
+feat2.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+feat2.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+feat2.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+feat2.o: /usr/include/assert.h

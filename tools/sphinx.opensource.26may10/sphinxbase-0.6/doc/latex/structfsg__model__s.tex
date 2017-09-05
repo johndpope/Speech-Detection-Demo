@@ -1,0 +1,150 @@
+\section{fsg\_\-model\_\-s Struct Reference}
+\label{structfsg__model__s}\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}}
+Word level FSG definition.  
+
+
+{\tt \#include $<$fsg\_\-model.h$>$}
+
+\subsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+int {\bf refcount}
+\begin{CompactList}\small\item\em Reference count. \item\end{CompactList}\item 
+char $\ast$ {\bf name}\label{structfsg__model__s_b23ae2c362f1a3b18bbe135b97dfb467}
+
+\begin{CompactList}\small\item\em A unique string identifier for this FSG. \item\end{CompactList}\item 
+int32 {\bf n\_\-word}\label{structfsg__model__s_99ed2894f7690a960d11e1590d11a6b9}
+
+\begin{CompactList}\small\item\em Number of unique words in this FSG. \item\end{CompactList}\item 
+int32 {\bf n\_\-word\_\-alloc}\label{structfsg__model__s_329ae88c26111df8cd64657b46b9108f}
+
+\begin{CompactList}\small\item\em Number of words allocated in vocab. \item\end{CompactList}\item 
+char $\ast$$\ast$ {\bf vocab}
+\begin{CompactList}\small\item\em Vocabulary for this FSG. \item\end{CompactList}\item 
+bitvec\_\-t $\ast$ {\bf silwords}
+\begin{CompactList}\small\item\em Indicates which words are silence/fillers. \item\end{CompactList}\item 
+bitvec\_\-t $\ast$ {\bf altwords}
+\begin{CompactList}\small\item\em Indicates which words are pronunciation alternates. \item\end{CompactList}\item 
+{\bf logmath\_\-t} $\ast$ {\bf lmath}
+\begin{CompactList}\small\item\em Pointer to log math computation object. \item\end{CompactList}\item 
+int32 {\bf n\_\-state}\label{structfsg__model__s_80cdb0b5e7463221ce14135c9f5a3b01}
+
+\begin{CompactList}\small\item\em number of states in FSG \item\end{CompactList}\item 
+int32 {\bf start\_\-state}
+\begin{CompactList}\small\item\em Must be in the range [0. \item\end{CompactList}\item 
+int32 {\bf final\_\-state}
+\begin{CompactList}\small\item\em Must be in the range [0. \item\end{CompactList}\item 
+float32 {\bf lw}\label{structfsg__model__s_eaff529953d494b9891dbc0fdac8e97f}
+
+\begin{CompactList}\small\item\em Language weight that's been applied to transition logprobs. \item\end{CompactList}\item 
+{\bf glist\_\-t} $\ast$$\ast$ {\bf trans}
+\begin{CompactList}\small\item\em trans[i][j] = glist of non-epsilon transitions or links (fsg\_\-link\_\-t $\ast$) from state i to state j, if any; NULL if none. \item\end{CompactList}\item 
+fsg\_\-link\_\-t $\ast$$\ast$$\ast$ {\bf null\_\-trans}
+\begin{CompactList}\small\item\em null\_\-trans[i][j] = epsilon or null link from state i to j, if any; NULL if none. \item\end{CompactList}\item 
+{\bf listelem\_\-alloc\_\-t} $\ast$ {\bf link\_\-alloc}
+\begin{CompactList}\small\item\em Allocator for FSG links. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Word level FSG definition. 
+
+States are simply integers 0..n\_\-state-1. A transition emits a word and has a given probability of being taken. There can also be null or epsilon transitions, with no associated emitted word. 
+
+Definition at line 86 of file fsg\_\-model.h.
+
+\subsection{Field Documentation}
+\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!altwords@{altwords}}
+\index{altwords@{altwords}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{altwords}]{\setlength{\rightskip}{0pt plus 5cm}bitvec\_\-t$\ast$ {\bf fsg\_\-model\_\-s::altwords}}\label{structfsg__model__s_db51d840853d7ef3315bd833cddeb748}
+
+
+Indicates which words are pronunciation alternates. 
+
+
+
+Definition at line 93 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!final\_\-state@{final\_\-state}}
+\index{final\_\-state@{final\_\-state}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{final\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf fsg\_\-model\_\-s::final\_\-state}}\label{structfsg__model__s_da19c76db4f1fc89c8b5cd674ec865da}
+
+
+Must be in the range [0. 
+
+.n\_\-state-1] 
+
+Definition at line 97 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!link\_\-alloc@{link\_\-alloc}}
+\index{link\_\-alloc@{link\_\-alloc}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{link\_\-alloc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf listelem\_\-alloc\_\-t}$\ast$ {\bf fsg\_\-model\_\-s::link\_\-alloc}}\label{structfsg__model__s_c4e2a36305bbe62a5c7468588eb058b1}
+
+
+Allocator for FSG links. 
+
+
+
+Definition at line 107 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!lmath@{lmath}}
+\index{lmath@{lmath}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{lmath}]{\setlength{\rightskip}{0pt plus 5cm}{\bf logmath\_\-t}$\ast$ {\bf fsg\_\-model\_\-s::lmath}}\label{structfsg__model__s_b0b22dadb593ee1901829f89c4a47fe2}
+
+
+Pointer to log math computation object. 
+
+
+
+Definition at line 94 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!null\_\-trans@{null\_\-trans}}
+\index{null\_\-trans@{null\_\-trans}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{null\_\-trans}]{\setlength{\rightskip}{0pt plus 5cm}fsg\_\-link\_\-t$\ast$$\ast$$\ast$ {\bf fsg\_\-model\_\-s::null\_\-trans}}\label{structfsg__model__s_65161ba6859bcab943485ed5e3b06891}
+
+
+null\_\-trans[i][j] = epsilon or null link from state i to j, if any; NULL if none. 
+
+(At most one null transition between two given states.) 
+
+Definition at line 103 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!refcount@{refcount}}
+\index{refcount@{refcount}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{refcount}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf fsg\_\-model\_\-s::refcount}}\label{structfsg__model__s_f329127556a42f6ea3b27f41a99a0b17}
+
+
+Reference count. 
+
+
+
+Definition at line 87 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!silwords@{silwords}}
+\index{silwords@{silwords}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{silwords}]{\setlength{\rightskip}{0pt plus 5cm}bitvec\_\-t$\ast$ {\bf fsg\_\-model\_\-s::silwords}}\label{structfsg__model__s_b5709e67c1b7506ab024f2060d50331c}
+
+
+Indicates which words are silence/fillers. 
+
+
+
+Definition at line 92 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!start\_\-state@{start\_\-state}}
+\index{start\_\-state@{start\_\-state}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{start\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}int32 {\bf fsg\_\-model\_\-s::start\_\-state}}\label{structfsg__model__s_4ff49da3938ecc236d45a68d009f97b9}
+
+
+Must be in the range [0. 
+
+.n\_\-state-1] 
+
+Definition at line 96 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!trans@{trans}}
+\index{trans@{trans}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{trans}]{\setlength{\rightskip}{0pt plus 5cm}{\bf glist\_\-t}$\ast$$\ast$ {\bf fsg\_\-model\_\-s::trans}}\label{structfsg__model__s_c6ce03fadfbd11166a0eb9d9cb79b854}
+
+
+trans[i][j] = glist of non-epsilon transitions or links (fsg\_\-link\_\-t $\ast$) from state i to state j, if any; NULL if none. 
+
+
+
+Definition at line 100 of file fsg\_\-model.h.\index{fsg\_\-model\_\-s@{fsg\_\-model\_\-s}!vocab@{vocab}}
+\index{vocab@{vocab}!fsg_model_s@{fsg\_\-model\_\-s}}
+\subsubsection[{vocab}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ {\bf fsg\_\-model\_\-s::vocab}}\label{structfsg__model__s_6bbfce2d672624d792ff964200a64031}
+
+
+Vocabulary for this FSG. 
+
+
+
+Definition at line 91 of file fsg\_\-model.h.
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/fsg\_\-model.h\end{CompactItemize}

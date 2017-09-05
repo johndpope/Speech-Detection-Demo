@@ -1,0 +1,332 @@
+# DO NOT DELETE
+
+heap.o: ../include/s3/heap.h ../include/s3/prim_type.h ../include/s3/err.h
+heap.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+heap.o: ../include/s3/s3.h
+enum_subset.o: ../include/s3/enum_subset.h ../include/s3/prim_type.h
+enum_subset.o: ../include/s3/s3.h ../include/s3/err.h
+enum_subset.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+cmd_ln.o: ../include/s3/common.h ../include/s3/cmd_ln.h
+cmd_ln.o: ../include/s3/prim_type.h ../include/s3/ckd_alloc.h
+cmd_ln.o: /usr/include/stdlib.h /usr/include/features.h
+cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+cmd_ln.o: ../include/s3/matrix.h ../include/s3/vector.h
+cmd_ln.o: ../include/s3/prefix_upto.h ../include/s3/list.h
+cmd_ln.o: /usr/include/sys/types.h /usr/include/bits/types.h
+cmd_ln.o: /usr/include/time.h ../include/s3/hash.h ../include/s3/prim_type.h
+cmd_ln.o: ../include/s3/corpus.h ../include/s3/n_words.h ../include/s3/remap.h
+cmd_ln.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+cmd_ln.o: ../include/s3/itree.h ../include/s3/lexicon.h ../include/s3/err.h
+cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+cmd_ln.o: ../include/s3/s3.h /usr/include/assert.h /usr/include/stdio.h
+cmd_ln.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+cmd_ln.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+cmd_ln.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+cmd_ln.o: /usr/include/ctype.h /usr/include/endian.h
+cmd_ln.o: /usr/include/bits/endian.h
+ckd_alloc.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+ckd_alloc.o: /usr/include/features.h /usr/include/sys/cdefs.h
+ckd_alloc.o: /usr/include/gnu/stubs.h
+ckd_alloc.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+ckd_alloc.o: ../include/s3/s3.h ../include/s3/err.h
+ckd_alloc.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+ckd_alloc.o: ../include/s3/prim_type.h /usr/include/stdio.h
+ckd_alloc.o: /usr/include/bits/types.h /usr/include/libio.h
+ckd_alloc.o: /usr/include/_G_config.h /usr/include/wchar.h
+ckd_alloc.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+ckd_alloc.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+prefix_upto.o: ../include/s3/prefix_upto.h /usr/include/assert.h
+prefix_upto.o: /usr/include/features.h /usr/include/sys/cdefs.h
+prefix_upto.o: /usr/include/gnu/stubs.h /usr/include/string.h
+prefix_upto.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+prefix_upto.o: /usr/include/stdio.h /usr/include/bits/types.h
+prefix_upto.o: /usr/include/libio.h /usr/include/_G_config.h
+prefix_upto.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+prefix_upto.o: /usr/include/gconv.h
+prefix_upto.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+prefix_upto.o: /usr/include/bits/stdio_lim.h
+vector.o: ../include/s3/vector.h ../include/s3/prim_type.h
+vector.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+vector.o: /usr/include/features.h /usr/include/sys/cdefs.h
+vector.o: /usr/include/gnu/stubs.h
+vector.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+vector.o: ../include/s3/s3.h ../include/s3/err.h
+vector.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+vector.o: /usr/include/stdio.h /usr/include/bits/types.h /usr/include/libio.h
+vector.o: /usr/include/_G_config.h /usr/include/wchar.h
+vector.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+vector.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+hash.o: ../include/s3/prim_type.h ../include/s3/err.h
+hash.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+hash.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+hash.o: /usr/include/features.h /usr/include/sys/cdefs.h
+hash.o: /usr/include/gnu/stubs.h
+hash.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+hash.o: ../include/s3/hash.h ../include/s3/prim_type.h /usr/include/stdio.h
+hash.o: /usr/include/bits/types.h /usr/include/libio.h
+hash.o: /usr/include/_G_config.h /usr/include/wchar.h
+hash.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+hash.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+hash.o: /usr/include/assert.h
+n_words.o: ../include/s3/n_words.h ../include/s3/prim_type.h
+n_words.o: /usr/include/ctype.h /usr/include/features.h
+n_words.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+n_words.o: /usr/include/bits/types.h
+n_words.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+n_words.o: /usr/include/endian.h /usr/include/bits/endian.h
+mk_wordlist.o: ../include/s3/mk_wordlist.h ../include/s3/prim_type.h
+mk_wordlist.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+mk_wordlist.o: /usr/include/features.h /usr/include/sys/cdefs.h
+mk_wordlist.o: /usr/include/gnu/stubs.h
+mk_wordlist.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mk_wordlist.o: ../include/s3/n_words.h /usr/include/assert.h
+mk_wordlist.o: /usr/include/string.h /usr/include/stdio.h
+mk_wordlist.o: /usr/include/bits/types.h /usr/include/libio.h
+mk_wordlist.o: /usr/include/_G_config.h /usr/include/wchar.h
+mk_wordlist.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+mk_wordlist.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+mk_wordlist.o: /usr/include/bits/stdio_lim.h
+remap.o: ../include/s3/remap.h ../include/s3/prim_type.h
+remap.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+remap.o: /usr/include/features.h /usr/include/sys/cdefs.h
+remap.o: /usr/include/gnu/stubs.h
+remap.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+remap.o: ../include/s3/s3.h ../include/s3/err.h
+remap.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+remap.o: /usr/include/string.h /usr/include/math.h
+remap.o: /usr/include/bits/huge_val.h /usr/include/bits/mathdef.h
+remap.o: /usr/include/bits/mathcalls.h
+lexicon.o: ../include/s3/lexicon.h ../include/s3/acmod_set.h
+lexicon.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+lexicon.o: ../include/s3/itree.h ../include/s3/list.h /usr/include/sys/types.h
+lexicon.o: /usr/include/features.h /usr/include/sys/cdefs.h
+lexicon.o: /usr/include/gnu/stubs.h /usr/include/bits/types.h
+lexicon.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+lexicon.o: /usr/include/time.h ../include/s3/hash.h ../include/s3/prim_type.h
+lexicon.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+lexicon.o: ../include/s3/n_words.h ../include/s3/s3.h ../include/s3/err.h
+lexicon.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+lexicon.o: /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h
+lexicon.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+lexicon.o: /usr/include/gconv.h /usr/include/bits/stdio_lim.h
+lexicon.o: /usr/include/assert.h /usr/include/string.h
+itree.o: ../include/s3/itree.h ../include/s3/prim_type.h
+itree.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+itree.o: /usr/include/features.h /usr/include/sys/cdefs.h
+itree.o: /usr/include/gnu/stubs.h
+itree.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+itree.o: ../include/s3/s3.h ../include/s3/err.h
+itree.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+itree.o: /usr/include/stdio.h /usr/include/bits/types.h /usr/include/libio.h
+itree.o: /usr/include/_G_config.h /usr/include/wchar.h
+itree.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+itree.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+acmod_set.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+acmod_set.o: ../include/s3/prim_type.h ../include/s3/itree.h
+acmod_set.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+acmod_set.o: /usr/include/features.h /usr/include/sys/cdefs.h
+acmod_set.o: /usr/include/gnu/stubs.h
+acmod_set.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+acmod_set.o: ../include/s3/s2_param.h ../include/s3/s3.h ../include/s3/err.h
+acmod_set.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+acmod_set.o: /usr/include/stdio.h /usr/include/bits/types.h
+acmod_set.o: /usr/include/libio.h /usr/include/_G_config.h
+acmod_set.o: /usr/include/wchar.h /usr/include/bits/wchar.h
+acmod_set.o: /usr/include/gconv.h /usr/include/bits/stdio_lim.h
+acmod_set.o: /usr/include/string.h /usr/include/assert.h
+err.o: /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h
+err.o: /usr/include/gnu/stubs.h
+err.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+err.o: /usr/include/bits/types.h /usr/include/libio.h
+err.o: /usr/include/_G_config.h /usr/include/wchar.h
+err.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+err.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+err.o: /usr/include/bits/stdio_lim.h /usr/include/errno.h
+err.o: /usr/include/bits/errno.h /usr/include/linux/errno.h
+err.o: /usr/include/asm/errno.h /usr/include/stdlib.h ../include/s3/err.h
+matrix.o: ../include/s3/matrix.h ../include/s3/prim_type.h ../include/s3/err.h
+matrix.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+get_time.o: ../include/s3/get_time.h ../include/s3/prim_type.h
+get_time.o: ../include/s3/err.h
+get_time.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+get_time.o: ../include/s3/s3.h
+get_time.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+get_cpu_time.o: ../include/s3/prim_type.h ../include/s3/s3.h ../include/s3/err.h
+get_cpu_time.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+get_cpu_time.o: /usr/include/sys/time.h /usr/include/features.h
+get_cpu_time.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+get_cpu_time.o: /usr/include/bits/types.h
+get_cpu_time.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+get_cpu_time.o: /usr/include/time.h /usr/include/bits/time.h
+get_cpu_time.o: /usr/include/sys/select.h /usr/include/bits/select.h
+get_cpu_time.o: /usr/include/bits/sigset.h /usr/include/sys/resource.h
+get_cpu_time.o: /usr/include/bits/resource.h
+profile.o: /usr/include/stdio.h /usr/include/features.h
+profile.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+profile.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+profile.o: /usr/include/bits/types.h /usr/include/libio.h
+profile.o: /usr/include/_G_config.h /usr/include/wchar.h
+profile.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+profile.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+profile.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+profile.o: /usr/include/string.h /usr/include/sys/time.h /usr/include/time.h
+profile.o: /usr/include/bits/time.h /usr/include/sys/select.h
+profile.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+profile.o: /usr/include/sys/resource.h /usr/include/bits/resource.h
+profile.o: ../include/s3/profile.h ../include/s3/prim_type.h ../include/s3/err.h
+profile.o: ../include/s3/ckd_alloc.h
+mk_phone_list.o: ../include/s3/mk_phone_list.h ../include/s3/acmod_set.h
+mk_phone_list.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+mk_phone_list.o: ../include/s3/itree.h ../include/s3/lexicon.h
+mk_phone_list.o: ../include/s3/list.h /usr/include/sys/types.h
+mk_phone_list.o: /usr/include/features.h /usr/include/sys/cdefs.h
+mk_phone_list.o: /usr/include/gnu/stubs.h /usr/include/bits/types.h
+mk_phone_list.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mk_phone_list.o: /usr/include/time.h ../include/s3/hash.h
+mk_phone_list.o: ../include/s3/prim_type.h ../include/s3/ckd_alloc.h
+mk_phone_list.o: /usr/include/stdlib.h ../include/s3/s3.h ../include/s3/err.h
+mk_phone_list.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+mk_phone_list.o: /usr/include/stdio.h /usr/include/libio.h
+mk_phone_list.o: /usr/include/_G_config.h /usr/include/wchar.h
+mk_phone_list.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+mk_phone_list.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+mk_phone_list.o: /usr/include/assert.h
+cvt2triphone.o: ../include/s3/cvt2triphone.h ../include/s3/acmod_set.h
+cvt2triphone.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+cvt2triphone.o: ../include/s3/itree.h ../include/s3/s3.h ../include/s3/err.h
+cvt2triphone.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+cvt2triphone.o: /usr/include/stdio.h /usr/include/features.h
+cvt2triphone.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+cvt2triphone.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+cvt2triphone.o: /usr/include/bits/types.h /usr/include/libio.h
+cvt2triphone.o: /usr/include/_G_config.h /usr/include/wchar.h
+cvt2triphone.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+cvt2triphone.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+was_added.o: ../include/s3/was_added.h ../include/s3/prim_type.h
+was_added.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+was_added.o: /usr/include/features.h /usr/include/sys/cdefs.h
+was_added.o: /usr/include/gnu/stubs.h
+was_added.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+ck_seg.o: ../include/s3/ck_seg.h ../include/s3/acmod_set.h
+ck_seg.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+ck_seg.o: ../include/s3/itree.h ../include/s3/s2_param.h ../include/s3/s3.h
+ck_seg.o: ../include/s3/err.h
+ck_seg.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+mk_sseq.o: ../include/s3/mk_sseq.h ../include/s3/prim_type.h
+mk_sseq.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+mk_sseq.o: ../include/s3/itree.h ../include/s3/ckd_alloc.h
+mk_sseq.o: /usr/include/stdlib.h /usr/include/features.h
+mk_sseq.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+mk_sseq.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mk_sseq.o: ../include/s3/s2_param.h /usr/include/assert.h
+mk_trans_seq.o: ../include/s3/mk_trans_seq.h ../include/s3/prim_type.h
+mk_trans_seq.o: ../include/s3/s2_param.h ../include/s3/ckd_alloc.h
+mk_trans_seq.o: /usr/include/stdlib.h /usr/include/features.h
+mk_trans_seq.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+mk_trans_seq.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mk_trans_seq.o: ../include/s3/s3.h ../include/s3/err.h
+mk_trans_seq.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+mk_trans_seq.o: /usr/include/assert.h
+quest.o: ../include/s3/quest.h ../include/s3/prim_type.h
+quest.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+quest.o: ../include/s3/itree.h /usr/include/stdio.h /usr/include/features.h
+quest.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+quest.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+quest.o: /usr/include/bits/types.h /usr/include/libio.h
+quest.o: /usr/include/_G_config.h /usr/include/wchar.h
+quest.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+quest.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+quest.o: /usr/include/bits/stdio_lim.h ../include/s3/ckd_alloc.h
+quest.o: /usr/include/stdlib.h ../include/s3/s3.h ../include/s3/err.h
+quest.o: /usr/include/string.h /usr/include/assert.h /usr/include/ctype.h
+quest.o: /usr/include/endian.h /usr/include/bits/endian.h
+btree.o: ../include/s3/btree.h ../include/s3/prim_type.h
+btree.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+btree.o: /usr/include/features.h /usr/include/sys/cdefs.h
+btree.o: /usr/include/gnu/stubs.h
+btree.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+btree.o: ../include/s3/err.h
+btree.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+btree.o: /usr/include/assert.h /usr/include/stdio.h /usr/include/bits/types.h
+btree.o: /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h
+btree.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+btree.o: /usr/include/bits/stdio_lim.h
+mk_ts2ci.o: ../include/s3/mk_ts2ci.h ../include/s3/ckd_alloc.h
+mk_ts2ci.o: /usr/include/stdlib.h /usr/include/features.h
+mk_ts2ci.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+mk_ts2ci.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mk_ts2ci.o: ../include/s3/err.h
+mk_ts2ci.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+mk_ts2ci.o: ../include/s3/s3.h ../include/s3/prim_type.h /usr/include/assert.h
+state_seq.o: ../include/s3/state_seq.h ../include/s3/state.h
+state_seq.o: ../include/s3/prim_type.h ../include/s3/remap.h
+state_seq.o: ../include/s3/cmd_ln.h ../include/s3/ckd_alloc.h
+state_seq.o: /usr/include/stdlib.h /usr/include/features.h
+state_seq.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+state_seq.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+state_seq.o: ../include/s3/s2_param.h ../include/s3/acmod_set.h
+state_seq.o: ../include/s3/acmod_set_ds.h ../include/s3/itree.h
+state_seq.o: ../include/s3/array_alloc.h /usr/include/string.h
+state_seq.o: /usr/include/assert.h
+get_host_name.o: ../include/s3/get_host_name.h /usr/include/string.h
+get_host_name.o: /usr/include/features.h /usr/include/sys/cdefs.h
+get_host_name.o: /usr/include/gnu/stubs.h
+get_host_name.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mk_phone_seq.o: ../include/s3/mk_phone_seq.h ../include/s3/acmod_set.h
+mk_phone_seq.o: ../include/s3/acmod_set_ds.h ../include/s3/prim_type.h
+mk_phone_seq.o: ../include/s3/itree.h ../include/s3/lexicon.h
+mk_phone_seq.o: ../include/s3/list.h /usr/include/sys/types.h
+mk_phone_seq.o: /usr/include/features.h /usr/include/sys/cdefs.h
+mk_phone_seq.o: /usr/include/gnu/stubs.h /usr/include/bits/types.h
+mk_phone_seq.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+mk_phone_seq.o: /usr/include/time.h ../include/s3/hash.h
+mk_phone_seq.o: ../include/s3/prim_type.h ../include/s3/mk_wordlist.h
+mk_phone_seq.o: ../include/s3/mk_phone_list.h ../include/s3/cvt2triphone.h
+mk_phone_seq.o: ../include/s3/corpus.h ../include/s3/ckd_alloc.h
+mk_phone_seq.o: /usr/include/stdlib.h ../include/s3/err.h
+mk_phone_seq.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+mk_phone_seq.o: ../include/s3/s3.h /usr/include/stdio.h /usr/include/libio.h
+mk_phone_seq.o: /usr/include/_G_config.h /usr/include/wchar.h
+mk_phone_seq.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+mk_phone_seq.o: /usr/include/bits/stdio_lim.h
+ts2cb.o: ../include/s3/ts2cb.h ../include/s3/prim_type.h
+ts2cb.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+ts2cb.o: /usr/include/features.h /usr/include/sys/cdefs.h
+ts2cb.o: /usr/include/gnu/stubs.h
+ts2cb.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+dtree.o: ../include/s3/dtree.h ../include/s3/prim_type.h
+dtree.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+dtree.o: ../include/s3/itree.h ../include/s3/btree.h ../include/s3/quest.h
+dtree.o: /usr/include/stdio.h /usr/include/features.h
+dtree.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+dtree.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+dtree.o: /usr/include/bits/types.h /usr/include/libio.h
+dtree.o: /usr/include/_G_config.h /usr/include/wchar.h
+dtree.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+dtree.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+dtree.o: /usr/include/bits/stdio_lim.h ../include/s3/best_q.h
+dtree.o: ../include/s3/two_class.h ../include/s3/ckd_alloc.h
+dtree.o: /usr/include/stdlib.h ../include/s3/err.h ../include/s3/s3.h
+dtree.o: ../include/s3/cmd_ln.h /usr/include/assert.h /usr/include/string.h
+dtree.o: ../include/s3/heap.h
+best_q.o: ../include/s3/best_q.h ../include/s3/prim_type.h ../include/s3/quest.h
+best_q.o: ../include/s3/acmod_set.h ../include/s3/acmod_set_ds.h
+best_q.o: ../include/s3/itree.h /usr/include/stdio.h /usr/include/features.h
+best_q.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+best_q.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+best_q.o: /usr/include/bits/types.h /usr/include/libio.h
+best_q.o: /usr/include/_G_config.h /usr/include/wchar.h
+best_q.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+best_q.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+best_q.o: /usr/include/bits/stdio_lim.h ../include/s3/ckd_alloc.h
+best_q.o: /usr/include/stdlib.h ../include/s3/err.h ../include/s3/s3.h
+best_q.o: ../include/s3/cmd_ln.h /usr/include/string.h
+two_class.o: ../include/s3/two_class.h ../include/s3/prim_type.h
+two_class.o: ../include/s3/ckd_alloc.h /usr/include/stdlib.h
+two_class.o: /usr/include/features.h /usr/include/sys/cdefs.h
+two_class.o: /usr/include/gnu/stubs.h
+two_class.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+two_class.o: ../include/s3/enum_subset.h ../include/s3/err.h
+two_class.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+two_class.o: ../include/s3/s3.h ../include/s3/cmd_ln.h /usr/include/string.h

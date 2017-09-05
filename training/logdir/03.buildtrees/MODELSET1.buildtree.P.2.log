@@ -1,0 +1,77 @@
+../..//s3trainer/bin.linux/bldtree \
+ -treefn ../..//trees/MODELSET1.unpruned/P-2.dtree \
+ -moddeffn ../..//model_architecture/MODELSET1.untied.mdef \
+ -mixwfn ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights \
+ -ts2cbfn .cont. \
+ -meanfn ../..//model_parameters/MODELSET1.cd_continuous_untied/means \
+ -varfn ../..//model_parameters/MODELSET1.cd_continuous_untied/variances \
+ -mwfloor 1e-8 \
+ -psetfn ../..//c_scripts/03.buildtrees/linguistic_questions.automatic \
+ -phone P \
+ -state 2 \
+ -stwt 1.0 0.05 0.0 \
+ -ssplitmin 1 \
+ -ssplitmax 7 \
+ -ssplitthr 0 \
+ -csplitmin 1 \
+ -csplitmax 2000 \
+ -csplitthr 0 \
+ -cntthresh 1
+
+[Switch]   [Default] [Value]
+-treefn              ../..//trees/MODELSET1.unpruned/P-2.dtree
+-moddeffn            ../..//model_architecture/MODELSET1.untied.mdef
+-ts2cbfn   .semi.    .cont. 
+-meanfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/means
+-varfn               ../..//model_parameters/MODELSET1.cd_continuous_untied/variances
+-varfloor  0.00001   1.000000e-05
+-cntthresh 0.00001   1.000000e+00
+-mixwfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+-psetfn              ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+-phone               P      
+-state               2      
+-mwfloor   1e-4      1.000000e-08
+-stwt                1.0 0.05 0.0
+-ssplitthr 8e-4      0.000000e+00
+-ssplitmin 1         1      
+-ssplitmax 5         7      
+-csplitthr 8e-4      0.000000e+00
+-csplitmin 1         1      
+-csplitmax 100       2000   
+INFO: ../main.c(152): Reading: ../..//model_architecture/MODELSET1.untied.mdef
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 1000 total models defined (50 base, 950 tri)
+INFO: ../model_def_io.c(564): 4000 total states
+INFO: ../model_def_io.c(565): 3000 total tied states
+INFO: ../model_def_io.c(566): 150 total tied CI states
+INFO: ../model_def_io.c(567): 50 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+INFO: ../main.c(196): Building trees for [P AE I i] through [P Z ER b]
+INFO: ../main.c(224): Covering states |[2115 2177]| == 63
+INFO: ../main.c(231): Reading: ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+INFO: ../s3mixw_io.c(151): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights [63x1x1 array]
+INFO: ../main.c(269): 21 of 21 models have observation count greater than 1.000000
+INFO: ../main.c(67): nrm stwt: 0.000 0.048 0.952 
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/means [3000x1x1 array]
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/variances [3000x1x1 array]
+INFO: ../main.c(510): Reading: ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+INFO: ../main.c(547): 176 total simple questions (168 phone; 8 word bndry)
+INFO: ../main.c(549): 42 Left Only questions, and 42 Right Only questions
+N model = 21
+s>    ( QUESTION6 1 -3.607e+02 2.457e+02 8.096e+01
+s>        ( - 2.441e+02 1 0)
+s>        ( QUESTION12 -1 -3.591e+02 1.414e+02 7.996e+01
+s>            ( - -5.812e+01 1 0)
+s>            ( QUESTION0_2_R 1 -1.595e+02 1.199e+02 6.896e+01
+s>                ( QUESTION4 -1 3.652e+01 2.466e+02 3.996e+01
+s>                    ( - 2.441e+02 1 0)
+s>                    ( QUESTION2 -1 3.905e+01 1.106e+02 3.896e+01
+s>                        ( - 5.309e+01 6 0 QUESTION0_6_R 1 2.415e+02 2.496e+01)
+s>                        ( - 9.656e+01 5 0 QUESTION0_6_R 1 1.407e+02 1.399e+01)))
+s>                ( SILENCE -1 -7.621e+01 1.385e+02 2.900e+01
+s>                    ( - 1.495e+02 1 0)
+s>                    ( QUESTION2_5_L -1 -8.719e+01 1.166e+02 2.700e+01
+s>                        ( - 1.151e+02 1 0)
+s>                        ( - -8.568e+01 5 0 QUESTION4 -1 9.788e+01 2.400e+01))))))INFO: ../dtree.c(1327): Comp split 0
+INFO: ../dtree.c(1336): stop. b_n->wt_ent_dec (-2.807e+02) <= 0

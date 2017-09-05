@@ -1,0 +1,277 @@
+\section{include/profile.h File Reference}
+\label{profile_8h}\index{include/profile.h@{include/profile.h}}
+Implementation of profiling, include counting , timing, cpu clock checking.  
+
+
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct {\bf pctr\_\-t}
+\begin{CompactList}\small\item\em Generic event counter for profiling. \item\end{CompactList}\item 
+struct {\bf ptmr\_\-t}
+\begin{CompactList}\small\item\em Generic timer structures and functions for coarse-grained performance measurements using standard system calls. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT {\bf pctr\_\-t} $\ast$ {\bf pctr\_\-new} (char $\ast$name)
+\begin{CompactList}\small\item\em operations of \doxyref{pctr\_\-t}{p.}{structpctr__t} \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf pctr\_\-reset} ({\bf pctr\_\-t} $\ast$ctr)
+\begin{CompactList}\small\item\em Reset a counter. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf pctr\_\-print} (FILE $\ast$fp, {\bf pctr\_\-t} $\ast$ctr)
+\begin{CompactList}\small\item\em Print a counter. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf pctr\_\-increment} ({\bf pctr\_\-t} $\ast$ctr, int32 inc)
+\begin{CompactList}\small\item\em Increment a counter. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf pctr\_\-free} ({\bf pctr\_\-t} $\ast$ctr)
+\begin{CompactList}\small\item\em Free the counter. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ptmr\_\-start} ({\bf ptmr\_\-t} $\ast$tmr)
+\begin{CompactList}\small\item\em Start timing using tmr. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ptmr\_\-stop} ({\bf ptmr\_\-t} $\ast$tmr)
+\begin{CompactList}\small\item\em Stop timing and accumulate tmr-$>$\{t\_\-cpu, t\_\-elapsed, t\_\-tot\_\-cpu, t\_\-tot\_\-elapsed\}. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ptmr\_\-reset} ({\bf ptmr\_\-t} $\ast$tmr)
+\begin{CompactList}\small\item\em Reset tmr-$>$\{t\_\-cpu, t\_\-elapsed\} to 0.0. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ptmr\_\-init} ({\bf ptmr\_\-t} $\ast$tmr)
+\begin{CompactList}\small\item\em Reset tmr-$>$\{t\_\-cpu, t\_\-elapsed, t\_\-tot\_\-cpu, t\_\-tot\_\-elapsed\} to 0.0. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ptmr\_\-reset\_\-all} ({\bf ptmr\_\-t} $\ast$tmr)
+\begin{CompactList}\small\item\em Reset t\_\-cpu, t\_\-elapsed of all timer modules in array tmr[] to 0.0. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ptmr\_\-print\_\-all} (FILE $\ast$fp, {\bf ptmr\_\-t} $\ast$tmr, float64 norm)
+\begin{CompactList}\small\item\em Print t\_\-cpu for all timer modules in tmr[], normalized by norm (i.e., t\_\-cpu/norm). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf host\_\-pclk} (int32 dummy)
+\begin{CompactList}\small\item\em Return the processor clock speed (in MHz); only available on some machines (Alphas). \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 \textbf{host\_\-endian} (void)\label{profile_8h_a23a14aa8ae716d64e632d61b1c2ed77}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of profiling, include counting , timing, cpu clock checking. 
+
+Currently, function host\_\-endian is also in this function. It is not documented. 
+
+Definition in file {\bf profile.h}.
+
+\subsection{Function Documentation}
+\index{profile.h@{profile.h}!host\_\-pclk@{host\_\-pclk}}
+\index{host\_\-pclk@{host\_\-pclk}!profile.h@{profile.h}}
+\subsubsection[{host\_\-pclk}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 host\_\-pclk (int32 {\em dummy})}\label{profile_8h_4315a0c6da4e9d3ef3c0ce264620ce28}
+
+
+Return the processor clock speed (in MHz); only available on some machines (Alphas). 
+
+The dummy argument can be any integer value. \index{profile.h@{profile.h}!pctr\_\-free@{pctr\_\-free}}
+\index{pctr\_\-free@{pctr\_\-free}!profile.h@{profile.h}}
+\subsubsection[{pctr\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void pctr\_\-free ({\bf pctr\_\-t} $\ast$ {\em ctr})}\label{profile_8h_90821b8f5c4593ead9f8ebea8ca6994c}
+
+
+Free the counter. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+ctr}]A pointer of a counter \end{description}
+\end{Desc}
+
+
+Definition at line 140 of file profile.c.
+
+References ckd\_\-free(), pctr\_\-t::name, and pctr\_\-free().
+
+Referenced by pctr\_\-free().\index{profile.h@{profile.h}!pctr\_\-increment@{pctr\_\-increment}}
+\index{pctr\_\-increment@{pctr\_\-increment}!profile.h@{profile.h}}
+\subsubsection[{pctr\_\-increment}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void pctr\_\-increment ({\bf pctr\_\-t} $\ast$ {\em ctr}, \/  int32 {\em inc})}\label{profile_8h_29e1c5d5f5b462d24a84204e532943fa}
+
+
+Increment a counter. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+ctr}]A pointer of a counter \item[{\em 
+inc}]The increment of the counter \end{description}
+\end{Desc}
+
+
+Definition at line 126 of file profile.c.
+
+References pctr\_\-t::count, and pctr\_\-increment().
+
+Referenced by pctr\_\-increment().\index{profile.h@{profile.h}!pctr\_\-new@{pctr\_\-new}}
+\index{pctr\_\-new@{pctr\_\-new}!profile.h@{profile.h}}
+\subsubsection[{pctr\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT {\bf pctr\_\-t}$\ast$ pctr\_\-new (char $\ast$ {\em name})}\label{profile_8h_cc5bd9ca1cc61377433a308b082d34b8}
+
+
+operations of \doxyref{pctr\_\-t}{p.}{structpctr__t} 
+
+Initialize a counter \begin{Desc}
+\item[Returns:]an initialized counter \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+name}]The name of the counter \end{description}
+\end{Desc}
+
+
+Definition at line 107 of file profile.c.
+
+References ckd\_\-calloc, ckd\_\-salloc, pctr\_\-t::count, pctr\_\-t::name, and pctr\_\-new().
+
+Referenced by pctr\_\-new().\index{profile.h@{profile.h}!pctr\_\-print@{pctr\_\-print}}
+\index{pctr\_\-print@{pctr\_\-print}!profile.h@{profile.h}}
+\subsubsection[{pctr\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void pctr\_\-print (FILE $\ast$ {\em fp}, \/  {\bf pctr\_\-t} $\ast$ {\em ctr})}\label{profile_8h_4333e06af6db1fd806846c9f9b1f3f78}
+
+
+Print a counter. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fp}]A file pointer \item[{\em 
+ctr}]A pointer of a counter \end{description}
+\end{Desc}
+
+
+Definition at line 133 of file profile.c.
+
+References pctr\_\-t::count, pctr\_\-t::name, and pctr\_\-print().
+
+Referenced by pctr\_\-print().\index{profile.h@{profile.h}!pctr\_\-reset@{pctr\_\-reset}}
+\index{pctr\_\-reset@{pctr\_\-reset}!profile.h@{profile.h}}
+\subsubsection[{pctr\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void pctr\_\-reset ({\bf pctr\_\-t} $\ast$ {\em ctr})}\label{profile_8h_7d072965099f09c49a58e3fd422c48f4}
+
+
+Reset a counter. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+ctr}]A pointer of a counter \end{description}
+\end{Desc}
+
+
+Definition at line 119 of file profile.c.
+
+References pctr\_\-t::count, and pctr\_\-reset().
+
+Referenced by pctr\_\-reset().\index{profile.h@{profile.h}!ptmr\_\-init@{ptmr\_\-init}}
+\index{ptmr\_\-init@{ptmr\_\-init}!profile.h@{profile.h}}
+\subsubsection[{ptmr\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void ptmr\_\-init ({\bf ptmr\_\-t} $\ast$ {\em tmr})}\label{profile_8h_5260d9143ed28fa82c2ab410abce6749}
+
+
+Reset tmr-$>$\{t\_\-cpu, t\_\-elapsed, t\_\-tot\_\-cpu, t\_\-tot\_\-elapsed\} to 0.0. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+tmr}]The timer \end{description}
+\end{Desc}
+
+
+Definition at line 265 of file profile.c.
+
+References ptmr\_\-init(), ptmr\_\-t::t\_\-cpu, ptmr\_\-t::t\_\-elapsed, ptmr\_\-t::t\_\-tot\_\-cpu, and ptmr\_\-t::t\_\-tot\_\-elapsed.
+
+Referenced by ptmr\_\-init().\index{profile.h@{profile.h}!ptmr\_\-print\_\-all@{ptmr\_\-print\_\-all}}
+\index{ptmr\_\-print\_\-all@{ptmr\_\-print\_\-all}!profile.h@{profile.h}}
+\subsubsection[{ptmr\_\-print\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void ptmr\_\-print\_\-all (FILE $\ast$ {\em fp}, \/  {\bf ptmr\_\-t} $\ast$ {\em tmr}, \/  float64 {\em norm})}\label{profile_8h_08a625009ff1a5e2ee8aa02b53009f66}
+
+
+Print t\_\-cpu for all timer modules in tmr[], normalized by norm (i.e., t\_\-cpu/norm). 
+
+The array should be terminated with a sentinel with .name = NULL. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+fp}]The file pointer \item[{\em 
+tmr}]The timer \end{description}
+\end{Desc}
+
+
+Definition at line 283 of file profile.c.
+
+References ptmr\_\-t::name, ptmr\_\-print\_\-all(), and ptmr\_\-t::t\_\-cpu.
+
+Referenced by ptmr\_\-print\_\-all().\index{profile.h@{profile.h}!ptmr\_\-reset@{ptmr\_\-reset}}
+\index{ptmr\_\-reset@{ptmr\_\-reset}!profile.h@{profile.h}}
+\subsubsection[{ptmr\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void ptmr\_\-reset ({\bf ptmr\_\-t} $\ast$ {\em tmr})}\label{profile_8h_32b1bf9f877946fb455c493a6aa3613f}
+
+
+Reset tmr-$>$\{t\_\-cpu, t\_\-elapsed\} to 0.0. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+tmr}]The timer \end{description}
+\end{Desc}
+
+
+Definition at line 257 of file profile.c.
+
+References ptmr\_\-reset(), ptmr\_\-t::t\_\-cpu, and ptmr\_\-t::t\_\-elapsed.
+
+Referenced by ptmr\_\-reset(), and ptmr\_\-reset\_\-all().\index{profile.h@{profile.h}!ptmr\_\-reset\_\-all@{ptmr\_\-reset\_\-all}}
+\index{ptmr\_\-reset\_\-all@{ptmr\_\-reset\_\-all}!profile.h@{profile.h}}
+\subsubsection[{ptmr\_\-reset\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void ptmr\_\-reset\_\-all ({\bf ptmr\_\-t} $\ast$ {\em tmr})}\label{profile_8h_0aaa0953b76ae8c9947d6d982bbbd4a7}
+
+
+Reset t\_\-cpu, t\_\-elapsed of all timer modules in array tmr[] to 0.0. 
+
+The array should be terminated with a sentinel with .name = NULL. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+tmr}]The timer \end{description}
+\end{Desc}
+
+
+Definition at line 275 of file profile.c.
+
+References ptmr\_\-t::name, ptmr\_\-reset(), and ptmr\_\-reset\_\-all().
+
+Referenced by ptmr\_\-reset\_\-all().\index{profile.h@{profile.h}!ptmr\_\-start@{ptmr\_\-start}}
+\index{ptmr\_\-start@{ptmr\_\-start}!profile.h@{profile.h}}
+\subsubsection[{ptmr\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void ptmr\_\-start ({\bf ptmr\_\-t} $\ast$ {\em tmr})}\label{profile_8h_ada447eb3dc8c9ffb17fd7331ae671e7}
+
+
+Start timing using tmr. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+tmr}]The timer \end{description}
+\end{Desc}
+
+
+Definition at line 178 of file profile.c.
+
+References ptmr\_\-start(), ptmr\_\-t::start\_\-cpu, and ptmr\_\-t::start\_\-elapsed.
+
+Referenced by ptmr\_\-start().\index{profile.h@{profile.h}!ptmr\_\-stop@{ptmr\_\-stop}}
+\index{ptmr\_\-stop@{ptmr\_\-stop}!profile.h@{profile.h}}
+\subsubsection[{ptmr\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT void ptmr\_\-stop ({\bf ptmr\_\-t} $\ast$ {\em tmr})}\label{profile_8h_de42334cf2db0bc8858ff966e55a4ffb}
+
+
+Stop timing and accumulate tmr-$>$\{t\_\-cpu, t\_\-elapsed, t\_\-tot\_\-cpu, t\_\-tot\_\-elapsed\}. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+tmr}]The timer \end{description}
+\end{Desc}
+
+
+Definition at line 212 of file profile.c.
+
+References ptmr\_\-stop(), ptmr\_\-t::start\_\-cpu, ptmr\_\-t::start\_\-elapsed, ptmr\_\-t::t\_\-cpu, ptmr\_\-t::t\_\-elapsed, ptmr\_\-t::t\_\-tot\_\-cpu, and ptmr\_\-t::t\_\-tot\_\-elapsed.
+
+Referenced by ptmr\_\-stop().

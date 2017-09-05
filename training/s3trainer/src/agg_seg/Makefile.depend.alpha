@@ -1,0 +1,217 @@
+# DO NOT DELETE
+
+main.o: parse_cmd_ln.h agg_phn_seg.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+main.o: /usr/include/sys/types.h /usr/include/standards.h
+main.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+main.o: /usr/include/stdarg.h /usr/include/va_list.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/segdmp.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+main.o: cnt_st_seg.h cnt_phn_seg.h agg_st_seg.h agg_all_seg.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/fp_cache.h
+main.o: /usr/include/stdio.h /usr/include/sys/seek.h /usr/include/getopt.h
+main.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+main.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+main.o: /usr/include/sys/rt_limits.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ts2cb.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3ts2cb_io.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3cb2mllr_io.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/state_param_def_io.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+main.o: /usr/include/stdlib.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+main.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+main.o: /usr/include/stddef.h /usr/include/string.h /usr/include/strings.h
+cnt_st_seg.o: cnt_st_seg.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+cnt_st_seg.o: /usr/include/stdarg.h /usr/include/standards.h
+cnt_st_seg.o: /usr/include/va_list.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+cnt_st_seg.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+cnt_st_seg.o: /usr/include/sys/select.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+cnt_st_seg.o: /usr/include/stdio.h /usr/include/sys/seek.h
+cnt_st_seg.o: /usr/include/getopt.h /usr/include/sys/limits.h
+cnt_st_seg.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+cnt_st_seg.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+cnt_st_seg.o: /usr/include/stddef.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/segdmp.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ck_seg.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_sseq.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_phone_seq.h
+cnt_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+cnt_st_seg.o: /usr/include/stdlib.h
+cnt_phn_seg.o: cnt_phn_seg.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+cnt_phn_seg.o: /usr/include/stdarg.h /usr/include/standards.h
+cnt_phn_seg.o: /usr/include/va_list.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+cnt_phn_seg.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+cnt_phn_seg.o: /usr/include/sys/select.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+cnt_phn_seg.o: mk_seg.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+cnt_phn_seg.o: /usr/include/stdio.h /usr/include/sys/seek.h
+cnt_phn_seg.o: /usr/include/getopt.h /usr/include/sys/limits.h
+cnt_phn_seg.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+cnt_phn_seg.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+cnt_phn_seg.o: /usr/include/stddef.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/segdmp.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ck_seg.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_sseq.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_phone_seq.h
+cnt_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+cnt_phn_seg.o: /usr/include/stdlib.h
+agg_phn_seg.o: agg_phn_seg.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+agg_phn_seg.o: /usr/include/sys/types.h /usr/include/standards.h
+agg_phn_seg.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+agg_phn_seg.o: /usr/include/stdarg.h /usr/include/va_list.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/segdmp.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+agg_phn_seg.o: mk_seg.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+agg_phn_seg.o: /usr/include/stdio.h /usr/include/sys/seek.h
+agg_phn_seg.o: /usr/include/getopt.h /usr/include/sys/limits.h
+agg_phn_seg.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+agg_phn_seg.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+agg_phn_seg.o: /usr/include/stddef.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_wordlist.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_phone_list.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ck_seg.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cvt2triphone.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+agg_phn_seg.o: /usr/include/stdlib.h
+agg_phn_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+agg_phn_seg.o: /usr/include/assert.h
+agg_st_seg.o: agg_st_seg.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+agg_st_seg.o: /usr/include/sys/types.h /usr/include/standards.h
+agg_st_seg.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/segdmp.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+agg_st_seg.o: /usr/include/stdio.h /usr/include/sys/seek.h
+agg_st_seg.o: /usr/include/getopt.h /usr/include/sys/limits.h
+agg_st_seg.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+agg_st_seg.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+agg_st_seg.o: /usr/include/stddef.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mllr.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ck_seg.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_sseq.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def_io.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+agg_st_seg.o: /usr/include/stdarg.h /usr/include/va_list.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_phone_seq.h
+agg_st_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+agg_st_seg.o: /usr/include/stdlib.h
+agg_all_seg.o: agg_all_seg.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/segdmp.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+agg_all_seg.o: /usr/include/stdio.h /usr/include/standards.h
+agg_all_seg.o: /usr/include/sys/seek.h /usr/include/sys/types.h
+agg_all_seg.o: /usr/include/mach/machine/vm_types.h /usr/include/sys/select.h
+agg_all_seg.o: /usr/include/getopt.h /usr/include/sys/limits.h
+agg_all_seg.o: /usr/include/machine/machlimits.h /usr/include/sys/syslimits.h
+agg_all_seg.o: /usr/include/machine/machtime.h /usr/include/sys/rt_limits.h
+agg_all_seg.o: /usr/include/stddef.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3io.h
+agg_all_seg.o: /usr/include/stdlib.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ck_seg.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/mk_phone_seq.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+agg_all_seg.o: /usr/include/stdarg.h /usr/include/va_list.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+agg_all_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/misc.h
+agg_all_seg.o: /usr/include/unistd.h /usr/include/sys/access.h
+agg_all_seg.o: /usr/include/sys/param.h /usr/include/machine/machparam.h
+agg_all_seg.o: /usr/include/machine/endian.h /usr/include/sys/signal.h
+agg_all_seg.o: /usr/include/sys/siginfo.h /usr/include/sys/sysmisc.h
+agg_all_seg.o: /usr/include/machine/signal.h /usr/include/machine/context.h
+agg_all_seg.o: /usr/include/sys/procset.h
+mk_seg.o: mk_seg.h
+mk_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+mk_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+mk_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+mk_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+mk_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+mk_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+mk_seg.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+mk_seg.o: /usr/include/stdarg.h /usr/include/standards.h
+mk_seg.o: /usr/include/va_list.h /usr/include/assert.h
+parse_cmd_ln.o: parse_cmd_ln.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+parse_cmd_ln.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+parse_cmd_ln.o: /usr/include/stdarg.h /usr/include/standards.h
+parse_cmd_ln.o: /usr/include/va_list.h /usr/include/stdlib.h
+parse_cmd_ln.o: /usr/include/getopt.h /usr/include/sys/types.h
+parse_cmd_ln.o: /usr/include/mach/machine/vm_types.h
+parse_cmd_ln.o: /usr/include/sys/select.h

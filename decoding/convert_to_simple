@@ -1,0 +1,13 @@
+if (test $# -eq 1)
+then
+    gawk '1==1 {for(i=13;i<NF-1;i+=4) printf("%s ",$i); printf("%s\n",$(NF-1));}
+' $1 | sed -e 's+(.)++g' -e 's+(..)++g'
+else
+while read line || break
+do
+#echo $line | gawk '1==1 {for(i=13;i<NF-1;i+=4) printf("%s ",$i); printf("%s\n",
+$(NF-1));}'  | sed -e 's+(.)++g' -e 's+(..)++g'
+echo $line | gawk '1==1 {for(i=13;i<NF-1;i+=4) printf("%s ",$i); printf("%s ",$(
+NF-1)); print $1;}'  | sed -e 's+(.)++g' -e 's+(..)++g'
+done
+fi

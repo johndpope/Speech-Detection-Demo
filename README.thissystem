@@ -1,0 +1,134 @@
+
+TRAINING DATA RECORDINGS:
+A good recording looks like this: ./goodrecording.jpg  
+The current recording on which we will train and test looks 
+like this  : ./919448.jpg and ./919448.3sec.jpg  
+
+The signal in the current recording is full-wave rectified (This is an
+example of a real recording for which speech recognition systems have
+been specially deployed. For legal reasons, the actual signal is
+not being made available in this course) The data are 16bit, 8KHz sampled, 
+single channel. Due to the nature of this recording, no standard 
+set of acoustic models can be used for recognition on this task. We 
+have to to train models specifically with this kind of data, or else fix 
+the recording setup to get normal speech signals. When a signal is full-wave 
+rectified, a lot of information is lost. The transformation in frequency 
+domain is nonlinear, therefore the information cannot be recovered.
+
+This directory contains the setup required to train on a single machine.
+The training can however be easily farmed out to many machines when you 
+have large amounts of data, and some batch system running on a network
+of machines. 
+
+TO TRAIN:
+
+Before you train, you must compute feature files to train with.
+Use the script ThisDirectory/training/c_scripts/compute_features.csh
+It needs a list of files to compute features for. Currently, you can
+just give the command:
+compute_features.csh PathToThisDirectory/training/lists/wavefile_list
+
+This will compute mfcc features for the files listed in wavefile_list
+and put them in 
+ThisDirectory/features/
+
+Then, Go to ThisDirectory/training/c_scripts/ and first study the file
+variables.def. It points to many other files, the formats of which you must
+study very carefully to understand how to prepare files to train. The setup
+currently uses a single transcribed audio file alone for training. Prepare
+training data in a similar fashion - you need to have at least a few hours
+of training data before you can begin to get reasonable performance.
+
+After you understand variables.def, go to these directories in
+sequence, giving the corresponding COMMAND from it:
+
+DIRECTORY: 01.ci-chmm    
+COMMAND: ./slave_convg.csh
+DIRECTORY: 02.cd-untied
+COMMAND:  ./slave_convg.csh
+DIRECTORY: 03.buildtrees  
+COMMAND: ./slave.treebuilder.csh
+DIRECTORY: 04.tiestate
+COMMAND: ./slave_tiestate.csh
+DIRECTORY: 05.cd-chmm 
+COMMAND: ./slave_convg.csh
+
+When prompted for anything, enter y (for yes). Wait till the jobs from one
+directory have finished running before you go to the next.
+Models will be created in the directory
+ThisDirectory/training/model_parameters
+Model index files will be put in the directory
+ThisDirectory/training/model_architecture
+Logfiles will be in the directory
+ThisDirectory/training/logdir
+in appropriate subdirectories.
+
+TO DECODE:
+
+For now, use only the models in 
+ThisDirectory/training/model_parameters/...ci_continuous/ since there is
+very little data to train models, although the system does train them.
+Many of the parameters of the finer models are zero and the decodes 
+will not run.
+
+Go to the directory
+ThisDirectory/decoding/
+and run
+./run_decode.csh 1 1 &
+
+Currently, this file points to the ci models, and all other appropriate
+files. Study this carefully. Study the files it points to carefully.
+
+The decode results will be put in the directory result/ in the
+decoding directory. Hypotheses will appear in file(s) with extension
+.match and corresponding log file(s) will have the extension .log
+
+If you want to run the decode in many parts (on multiple machines):
+
+For example, if you have a list of 100 files and you want to
+run decodes on 20 machines, then on each machine give
+./rundecode.csh N 20 &
+where N is a number between 1 and 20 (it means part 1 of 20 parts, 
+part 2 of 20 parts, etc..)
+
+To compute accuracy, currently, give
+./compute_acc.csh REF.transcripts result/<filename>.match
+The performance measures will appear on the screen. More
+detailed performance analysis will be put in result/<filename>.align
+
+LANGUAGE MODELING
+
+Go to the directory ThisDirectory/langauge_modeling/
+I have installed the CMU-Cambridge language modeling toolkit here.
+Go to tthe directory scripts/ and run
+./makelm.csh on the command line. It will ask for a textfile, a vocabulary
+file, the value of N in N-gram lm, and an outpuit file.
+Currently, the file sandra2.lm in lm_files/ is being used for
+decoding. 
+
+You can generate a trigram LM file using the command:
+./makelm.csh ../processed_text/textfile ../processed_text/vocab 3 ../lm_files/MYLM.lm
+
+FORCE ALIGNMENT
+----------------
+Go to ThisDirectory/force_alignment
+and give 
+falign.csh 1 1 &
+from the linux commandline.
+The script uses the trained acoustic models and feature files to insert
+silence markers in the transcripts for the training utterances. Obviously,
+in order to do this correctly, the transcripts provided to the program
+must not contain any silence markers (see the transcript file pointed to
+by the script). 
+The script creates a directory called falignout in ThisDirectory/training/
+and writes out the forced-aligned transcripts within it. Note that for larger
+databases, many transcripts do not get forced aligned, and therefore cannot 
+be used for further training. After forced-alignment, a fresh control file
+must be made corresponding to the forced aligned transcripts. The new control
+file, the ditionary used for falignment, the filler dictionary used for 
+falignment, and the faligned transcripts must be used together for the
+next round of training.
+
+-------------------------------------------------------------------------
+Last updated:
+Thu Mar  18 15:36:47 EDT 2004

@@ -1,0 +1,146 @@
+# add-table.c
+obj.x86_64-unknown-linux-gnu/add-table.o: add-table.c
+
+# areadchar.c
+obj.x86_64-unknown-linux-gnu/areadchar.o: areadchar.c ../../../include/s2/byteorder.h \
+  ../../../include/s3/s2io.h ../../../include/sys_compat/file.h
+
+# areadfloat.c
+obj.x86_64-unknown-linux-gnu/areadfloat.o: areadfloat.c ../../../include/s2/byteorder.h \
+  ../../../include/s3/s2io.h ../../../include/sys_compat/file.h
+
+# areadint.c
+obj.x86_64-unknown-linux-gnu/areadint.o: areadint.c ../../../include/s2/byteorder.h \
+  ../../../include/s3/s2io.h ../../../include/sys_compat/file.h
+
+# areadshort.c
+obj.x86_64-unknown-linux-gnu/areadshort.o: areadshort.c ../../../include/sys_compat/file.h \
+  ../../../include/s2/byteorder.h ../../../include/s3/s2io.h
+
+# awritefloat.c
+obj.x86_64-unknown-linux-gnu/awritefloat.o: awritefloat.c ../../../include/s2/byteorder.h \
+  ../../../include/s3/s2io.h ../../../include/sys_compat/file.h
+
+# awriteint.c
+obj.x86_64-unknown-linux-gnu/awriteint.o: awriteint.c ../../../include/s2/byteorder.h \
+  ../../../include/s3/s2io.h ../../../include/sys_compat/file.h
+
+# awriteshort.c
+obj.x86_64-unknown-linux-gnu/awriteshort.o: awriteshort.c ../../../include/sys_compat/file.h \
+  ../../../include/s2/byteorder.h
+
+# int32_io.c
+obj.x86_64-unknown-linux-gnu/int32_io.o: int32_io.c ../../../include/s3/int32_io.h \
+  ../../../include/s3/prim_type.h
+
+# pset_io.c
+obj.x86_64-unknown-linux-gnu/pset_io.o: pset_io.c ../../../include/s3/pset_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/quest.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h
+
+# s2_mixing_weights.c
+obj.x86_64-unknown-linux-gnu/s2_mixing_weights.o: s2_mixing_weights.c \
+  ../../../include/s3/s2_mixing_weights.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/int32_io.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s2/log.h \
+  ../../../include/s2/magic.h
+
+# s2_read_cb.c
+obj.x86_64-unknown-linux-gnu/s2_read_cb.o: s2_read_cb.c ../../../include/s3/s2_read_cb.h \
+  ../../../include/s3/gauden.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/vector.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/s2io.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/sys_compat/file.h
+
+# s2_read_map.c
+obj.x86_64-unknown-linux-gnu/s2_read_map.o: s2_read_map.c ../../../include/s3/s2_read_map.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# s2_read_seno.c
+obj.x86_64-unknown-linux-gnu/s2_read_seno.o: s2_read_seno.c ../../../include/s3/s2_read_seno.h \
+  ../../../include/s3/model_inventory.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/itree.h ../../../include/s3/gauden.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/vector.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s2_read_map.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/common.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/corpus.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/s2io.h ../../../include/s2/log.h \
+  ../../../include/sys_compat/file.h
+
+# s2_read_tmat.c
+obj.x86_64-unknown-linux-gnu/s2_read_tmat.o: s2_read_tmat.c ../../../include/s3/s2_read_tmat.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/int32_io.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s2/log.h ../../../include/s2/magic.h \
+  ../../../include/sys_compat/file.h
+
+# s2_write_cb.c
+obj.x86_64-unknown-linux-gnu/s2_write_cb.o: s2_write_cb.c ../../../include/s3/s2_write_cb.h \
+  ../../../include/s3/gauden.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/vector.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/s2io.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/sys_compat/file.h
+
+# s2_write_hmm.c
+obj.x86_64-unknown-linux-gnu/s2_write_hmm.o: s2_write_hmm.c ../../../include/s3/s2_write_hmm.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/model_def.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h \
+  ../../../include/s2/log.h ../../../include/s2/magic.h \
+  ../../../include/s2/byteorder.h ../../../include/sys_compat/file.h
+
+# s2_write_seno.c
+obj.x86_64-unknown-linux-gnu/s2_write_seno.o: s2_write_seno.c ../../../include/s3/s2_write_seno.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s2io.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h ../../../include/s3/model_inventory.h \
+  ../../../include/s3/gauden.h ../../../include/s3/vector.h \
+  ../../../include/s3/model_def.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/corpus.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s2/log.h ../../../include/sys_compat/file.h
+

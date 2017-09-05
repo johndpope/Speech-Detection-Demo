@@ -1,0 +1,247 @@
+# acmod_set.c
+obj.x86_64-unknown-linux-gnu/acmod_set.o: acmod_set.c ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/itree.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# best_q.c
+obj.x86_64-unknown-linux-gnu/best_q.o: best_q.c ../../../include/s3/best_q.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/quest.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/metric.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/div.h
+
+# btree.c
+obj.x86_64-unknown-linux-gnu/btree.o: btree.c ../../../include/s3/btree.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/err.h
+
+# ck_seg.c
+obj.x86_64-unknown-linux-gnu/ck_seg.o: ck_seg.c ../../../include/s3/ck_seg.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# ckd_alloc.c
+obj.x86_64-unknown-linux-gnu/ckd_alloc.o: ckd_alloc.c ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/prim_type.h
+
+# cmd_ln.c
+obj.x86_64-unknown-linux-gnu/cmd_ln.o: cmd_ln.c ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/matrix.h \
+  ../../../include/s3/prefix_upto.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/corpus.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3phseg_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/n_words.h ../../../include/s3/remap.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/lts.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h
+
+# cmu6_lts_rules.c
+obj.x86_64-unknown-linux-gnu/cmu6_lts_rules.o: cmu6_lts_rules.c ../../../include/s3/lts.h \
+  cmu6_lts_rules.h
+
+# cvt2triphone.c
+obj.x86_64-unknown-linux-gnu/cvt2triphone.o: cvt2triphone.c ../../../include/s3/cvt2triphone.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# dtree.c
+obj.x86_64-unknown-linux-gnu/dtree.o: dtree.c ../../../include/s3/dtree.h \
+  ../../../include/s3/pset_io.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/itree.h ../../../include/s3/quest.h \
+  ../../../include/s3/btree.h ../../../include/s3/best_q.h \
+  ../../../include/s3/two_class.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/read_line.h ../../../include/s3/div.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/heap.h
+
+# enum_subset.c
+obj.x86_64-unknown-linux-gnu/enum_subset.o: enum_subset.c ../../../include/s3/enum_subset.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# err.c
+obj.x86_64-unknown-linux-gnu/err.o: err.c ../../../include/s3/err.h
+
+# get_cpu_time.c
+obj.x86_64-unknown-linux-gnu/get_cpu_time.o: get_cpu_time.c ../../../include/s3/prim_type.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# get_host_name.c
+obj.x86_64-unknown-linux-gnu/get_host_name.o: get_host_name.c ../../../include/s3/get_host_name.h \
+  ../../../include/sys_compat/misc.h
+
+# get_time.c
+obj.x86_64-unknown-linux-gnu/get_time.o: get_time.c ../../../include/s3/get_time.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h ../../../include/sys_compat/time.h
+
+# hash.c
+obj.x86_64-unknown-linux-gnu/hash.o: hash.c ../../../include/s3/prim_type.h ../../../include/s3/err.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h
+
+# heap.c
+obj.x86_64-unknown-linux-gnu/heap.o: heap.c ../../../include/s3/heap.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h
+
+# itree.c
+obj.x86_64-unknown-linux-gnu/itree.o: itree.c ../../../include/s3/itree.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# lexicon.c
+obj.x86_64-unknown-linux-gnu/lexicon.o: lexicon.c ../../../include/s3/lexicon.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/lts.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/n_words.h ../../../include/s3/read_line.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# lts.c
+obj.x86_64-unknown-linux-gnu/lts.o: lts.c ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/common.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/matrix.h ../../../include/s3/prefix_upto.h \
+  ../../../include/s3/hash.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/corpus.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/n_words.h \
+  ../../../include/s3/remap.h ../../../include/s3/lexicon.h \
+  ../../../include/s3/lts.h ../../../include/s2/byteorder.h
+
+# matrix.c
+obj.x86_64-unknown-linux-gnu/matrix.o: matrix.c ../../../include/s3/matrix.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/vector.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/clapack_lite.h ../../../include/s3/f2c.h \
+  ../../../include/s3/ckd_alloc.h
+
+# mk_phone_list.c
+obj.x86_64-unknown-linux-gnu/mk_phone_list.o: mk_phone_list.c ../../../include/s3/mk_phone_list.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/lts.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# mk_phone_seq.c
+obj.x86_64-unknown-linux-gnu/mk_phone_seq.o: mk_phone_seq.c ../../../include/s3/mk_phone_seq.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/itree.h \
+  ../../../include/s3/lexicon.h ../../../include/s3/hash.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/lts.h \
+  ../../../include/s3/mk_wordlist.h ../../../include/s3/mk_phone_list.h \
+  ../../../include/s3/cvt2triphone.h ../../../include/s3/corpus.h \
+  ../../../include/s3/vector.h ../../../include/s3/s3phseg_io.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/err.h \
+  ../../../include/s3/s3.h
+
+# mk_sseq.c
+obj.x86_64-unknown-linux-gnu/mk_sseq.o: mk_sseq.c ../../../include/s3/mk_sseq.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/model_def_io.h ../../../include/s3/model_def.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/s2_param.h
+
+# mk_trans_seq.c
+obj.x86_64-unknown-linux-gnu/mk_trans_seq.o: mk_trans_seq.c ../../../include/s3/mk_trans_seq.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/model_def.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/s2_param.h \
+  ../../../include/s3/ckd_alloc.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h
+
+# mk_ts2ci.c
+obj.x86_64-unknown-linux-gnu/mk_ts2ci.o: mk_ts2ci.c ../../../include/s3/mk_ts2ci.h \
+  ../../../include/s3/model_def.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h
+
+# mk_wordlist.c
+obj.x86_64-unknown-linux-gnu/mk_wordlist.o: mk_wordlist.c ../../../include/s3/mk_wordlist.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/n_words.h
+
+# n_words.c
+obj.x86_64-unknown-linux-gnu/n_words.o: n_words.c ../../../include/s3/n_words.h \
+  ../../../include/s3/prim_type.h
+
+# prefetch.c
+obj.x86_64-unknown-linux-gnu/prefetch.o: prefetch.c
+
+# prefix_upto.c
+obj.x86_64-unknown-linux-gnu/prefix_upto.o: prefix_upto.c ../../../include/s3/prefix_upto.h
+
+# profile.c
+obj.x86_64-unknown-linux-gnu/profile.o: profile.c ../../../include/s3/profile.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/err.h \
+  ../../../include/s3/ckd_alloc.h
+
+# quest.c
+obj.x86_64-unknown-linux-gnu/quest.o: quest.c ../../../include/s3/quest.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/bquest_io.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# remap.c
+obj.x86_64-unknown-linux-gnu/remap.o: remap.c ../../../include/s3/remap.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# state_seq.c
+obj.x86_64-unknown-linux-gnu/state_seq.o: state_seq.c ../../../include/s3/state_seq.h \
+  ../../../include/s3/state.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/model_inventory.h ../../../include/s3/acmod_set.h \
+  ../../../include/s3/acmod_set_ds.h ../../../include/s3/itree.h \
+  ../../../include/s3/gauden.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/vector.h \
+  ../../../include/s3/model_def.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/remap.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s2_param.h ../../../include/s3/array_alloc.h
+
+# timer.c
+obj.x86_64-unknown-linux-gnu/timer.o: timer.c ../../../include/s3/timer.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/get_time.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# ts2cb.c
+obj.x86_64-unknown-linux-gnu/ts2cb.o: ts2cb.c ../../../include/s3/ts2cb.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h
+
+# two_class.c
+obj.x86_64-unknown-linux-gnu/two_class.o: two_class.c ../../../include/s3/two_class.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/enum_subset.h ../../../include/s3/metric.h \
+  ../../../include/s3/err.h ../../../include/s3/s3.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h ../../../include/s3/div.h
+
+# vector.c
+obj.x86_64-unknown-linux-gnu/vector.o: vector.c ../../../include/s3/vector.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/s3.h ../../../include/s3/err.h
+
+# was_added.c
+obj.x86_64-unknown-linux-gnu/was_added.o: was_added.c ../../../include/s3/was_added.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/ckd_alloc.h
+

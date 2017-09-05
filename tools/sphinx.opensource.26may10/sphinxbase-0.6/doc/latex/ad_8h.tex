@@ -1,0 +1,151 @@
+\section{include/ad.h File Reference}
+\label{ad_8h}\index{include/ad.h@{include/ad.h}}
+generic live audio interface for recording and playback  
+
+
+{\tt \#include $<$sphinx\_\-config.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+\subsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+struct \textbf{ad\_\-rec\_\-t}
+\item 
+struct \textbf{ad\_\-play\_\-t}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \textbf{AD\_\-SAMPLE\_\-SIZE}~(sizeof(int16))\label{ad_8h_21e7cf6f08592c2fa2f78eb069f0e161}
+
+\item 
+\#define \textbf{DEFAULT\_\-SAMPLES\_\-PER\_\-SEC}~16000\label{ad_8h_f6fb753bcfbd8dedec800ba4d0fb8546}
+
+\item 
+\#define \textbf{AD\_\-OK}~0\label{ad_8h_8d1358baba080a2f6b0d350928af7a89}
+
+\item 
+\#define \textbf{AD\_\-EOF}~-1\label{ad_8h_8aa969c2d485c3c17cf9abfd1bb88bdd}
+
+\item 
+\#define \textbf{AD\_\-ERR\_\-GEN}~-1\label{ad_8h_d75f71249c0e72e6867599af315fe27d}
+
+\item 
+\#define \textbf{AD\_\-ERR\_\-NOT\_\-OPEN}~-2\label{ad_8h_7ac31adbbd108d40792fc6ba3d14929f}
+
+\item 
+\#define \textbf{AD\_\-ERR\_\-WAVE}~-3\label{ad_8h_bdeca1c656c9ed4699402adb3556ae39}
+
+\item 
+\#define \textbf{DEFAULT\_\-DEVICE}~NULL\label{ad_8h_84cb8bbda8042a324f49102bc200cc54}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT ad\_\-rec\_\-t $\ast$ {\bf ad\_\-open\_\-dev} (const char $\ast$dev, int32 samples\_\-per\_\-sec)
+\begin{CompactList}\small\item\em Open a specific audio device for recording. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT ad\_\-rec\_\-t $\ast$ {\bf ad\_\-open\_\-sps} (int32 samples\_\-per\_\-sec)
+\begin{CompactList}\small\item\em Open the default audio device with a given sampling rate. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT ad\_\-rec\_\-t $\ast$ {\bf ad\_\-open} (void)\label{ad_8h_3def0da951e840fb4c72ef9259540686}
+
+\begin{CompactList}\small\item\em Open the default audio device. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 \textbf{ad\_\-start\_\-rec} (ad\_\-rec\_\-t $\ast$)\label{ad_8h_9cb212b93cb439ba04dec2109ca043ff}
+
+\item 
+SPHINXBASE\_\-EXPORT int32 \textbf{ad\_\-stop\_\-rec} (ad\_\-rec\_\-t $\ast$)\label{ad_8h_20fb285a5f93e172f6a6e04359216aa5}
+
+\item 
+SPHINXBASE\_\-EXPORT int32 \textbf{ad\_\-close} (ad\_\-rec\_\-t $\ast$)\label{ad_8h_6bcf3ed5e9d0c2d51086cae93bc3b3fc}
+
+\item 
+SPHINXBASE\_\-EXPORT int32 \textbf{ad\_\-read} (ad\_\-rec\_\-t $\ast$, int16 $\ast$buf, int32 max)\label{ad_8h_d4a5f4ab5267003169f6d3e15e54f697}
+
+\item 
+SPHINXBASE\_\-EXPORT ad\_\-play\_\-t $\ast$ \textbf{ad\_\-open\_\-play\_\-sps} (int32 samples\_\-per\_\-sec)\label{ad_8h_89f8a1820e1c5ea658e692d2d15a7315}
+
+\item 
+SPHINXBASE\_\-EXPORT ad\_\-play\_\-t $\ast$ \textbf{ad\_\-open\_\-play} (void)\label{ad_8h_859bfe925f634f6bb3faa1a52c013388}
+
+\item 
+SPHINXBASE\_\-EXPORT int32 \textbf{ad\_\-start\_\-play} (ad\_\-play\_\-t $\ast$)\label{ad_8h_899e10aaecde4ab33b9849ed7bb9fb73}
+
+\item 
+SPHINXBASE\_\-EXPORT int32 \textbf{ad\_\-stop\_\-play} (ad\_\-play\_\-t $\ast$)\label{ad_8h_823c2efb2892ff2c9b112ffcda58ce17}
+
+\item 
+SPHINXBASE\_\-EXPORT int32 \textbf{ad\_\-close\_\-play} (ad\_\-play\_\-t $\ast$)\label{ad_8h_a65454c205e3f573f4f3433a6a044448}
+
+\item 
+SPHINXBASE\_\-EXPORT int32 {\bf ad\_\-write} (ad\_\-play\_\-t $\ast$, int16 $\ast$buf, int32 len)
+\begin{CompactList}\small\item\em Queue a block of audio samples for playback. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf ad\_\-mu2li} (int16 $\ast$outbuf, unsigned char $\ast$inbuf, int32 n\_\-samp)\label{ad_8h_7eab4d2f35d221c569b85d4240b83600}
+
+\begin{CompactList}\small\item\em Convert mu-law data to int16 linear PCM format. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+generic live audio interface for recording and playback 
+
+
+
+Definition in file {\bf ad.h}.
+
+\subsection{Function Documentation}
+\index{ad.h@{ad.h}!ad\_\-open\_\-dev@{ad\_\-open\_\-dev}}
+\index{ad\_\-open\_\-dev@{ad\_\-open\_\-dev}!ad.h@{ad.h}}
+\subsubsection[{ad\_\-open\_\-dev}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT ad\_\-rec\_\-t$\ast$ ad\_\-open\_\-dev (const char $\ast$ {\em dev}, \/  int32 {\em samples\_\-per\_\-sec})}\label{ad_8h_43f66257a2457d6c711dc5c694bfc02f}
+
+
+Open a specific audio device for recording. 
+
+The device is opened in non-blocking mode and placed in idle state.
+
+\begin{Desc}
+\item[Returns:]pointer to read-only ad\_\-rec\_\-t structure if successful, NULL otherwise. The return value to be used as the first argument to other recording functions. \end{Desc}
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+dev}]Device name (platform-specific) \item[{\em 
+samples\_\-per\_\-sec}]Samples per second \end{description}
+\end{Desc}
+
+
+Definition at line 252 of file ad\_\-alsa.c.
+
+References ad\_\-open\_\-dev().
+
+Referenced by ad\_\-open\_\-dev(), and ad\_\-open\_\-sps().\index{ad.h@{ad.h}!ad\_\-open\_\-sps@{ad\_\-open\_\-sps}}
+\index{ad\_\-open\_\-sps@{ad\_\-open\_\-sps}!ad.h@{ad.h}}
+\subsubsection[{ad\_\-open\_\-sps}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT ad\_\-rec\_\-t$\ast$ ad\_\-open\_\-sps (int32 {\em samples\_\-per\_\-sec})}\label{ad_8h_71b4eec805fbe5c398ea0897816de6f0}
+
+
+Open the default audio device with a given sampling rate. 
+
+\begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+samples\_\-per\_\-sec}]Samples per second \end{description}
+\end{Desc}
+
+
+Definition at line 290 of file ad\_\-alsa.c.
+
+References ad\_\-open\_\-dev(), and ad\_\-open\_\-sps().
+
+Referenced by ad\_\-open(), and ad\_\-open\_\-sps().\index{ad.h@{ad.h}!ad\_\-write@{ad\_\-write}}
+\index{ad\_\-write@{ad\_\-write}!ad.h@{ad.h}}
+\subsubsection[{ad\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 ad\_\-write (ad\_\-play\_\-t $\ast$, \/  int16 $\ast$ {\em buf}, \/  int32 {\em len})}\label{ad_8h_ea278a0c26051f4fe011778f225ea9c4}
+
+
+Queue a block of audio samples for playback. 
+
+Write the next block of [len] samples from rawbuf to the A/D device for playback. The device may queue less than len samples, possibly 0, since it is non-blocking. The application should resubmit the remaining data to be played. Return value: \# samples accepted for playback; -1 if error. 
+
+Definition at line 373 of file play\_\-win32.c.
+
+References ad\_\-write().
+
+Referenced by ad\_\-write().

@@ -1,0 +1,39 @@
+\section{src/libsphinxad/audio\_\-utils\_\-sunos.h File Reference}
+\label{audio__utils__sunos_8h}\index{src/libsphinxad/audio\_\-utils\_\-sunos.h@{src/libsphinxad/audio\_\-utils\_\-sunos.h}}
+Implemtation for Sun audio utilities.  
+
+
+{\tt \#include $<$sys/audioio.h$>$}\par
+{\tt \#include $<$sys/filio.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+int \textbf{audioOpen} (const char $\ast$dev, int rate)\label{audio__utils__sunos_8h_1c2f842b06424256d46dc930b2df2ac7}
+
+\item 
+void \textbf{audioPause} (void)\label{audio__utils__sunos_8h_3c36756e01944a21cd116f845a0192f9}
+
+\item 
+void \textbf{audioFlush} (void)\label{audio__utils__sunos_8h_3b8ff906e10285a64c1f78ba160a2349}
+
+\item 
+void \textbf{audioStartRecord} (void)\label{audio__utils__sunos_8h_7a3b2fb58ef7fa179bceb737335465ec}
+
+\item 
+void \textbf{audioStopRecord} (void)\label{audio__utils__sunos_8h_c3350f3f057e4cba5669ad8b0723a500}
+
+\item 
+void \textbf{audioClose} (void)\label{audio__utils__sunos_8h_2ddd50c6ba6bcc4c63132cf1dab6b644}
+
+\item 
+int \textbf{audioSetRecordGain} (int gain)\label{audio__utils__sunos_8h_aa8bb7d093daf454ef50074ba639142c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implemtation for Sun audio utilities. 
+
+
+
+Definition in file {\bf audio\_\-utils\_\-sunos.h}.

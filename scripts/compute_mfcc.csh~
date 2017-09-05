@@ -1,0 +1,41 @@
+#!/bin/csh -f
+
+if ($#argv != 1) then
+    echo "USAGE:  $0  ctlfile"
+    exit 0
+endif
+
+set ctlfile = $1
+
+set indir = ../../databases/resource_management/training/si_train/ind_trn
+set outdir = ../../features/resource_management/training/cepstra
+if (! -e $outdir) mkdir -p $outdir
+
+set w2feat = ../../bin/wave2feat
+
+set logfiletag = $ctlfile:t
+set logfile = ./LOG.$logfiletag
+
+/bin/rm -rf $logfile
+touch $logfile
+
+foreach x (`cat $ctlfile`)
+   echo -n "working on $x..."
+   set infile = $indir/${x}.wav
+   set dir = $x:h
+   if (! -e $outdir/$dir) mkdir -p $outdir/$dir
+   set outfile = $outdir/$x.mfc
+
+   $w2feat -i $infile \
+        -o $outfile \
+        -srate 16000 \
+        -frate 100  \
+        -lowerf 130  \
+        -upperf 6800 \
+        -dither      \
+        -nfilt  40    \
+        -nist
+   echo "done"
+end
+
+exit 0

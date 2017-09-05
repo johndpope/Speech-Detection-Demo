@@ -1,0 +1,51 @@
+\section{include/listelem\_\-alloc.h File Reference}
+\label{listelem__alloc_8h}\index{include/listelem\_\-alloc.h@{include/listelem\_\-alloc.h}}
+Fast memory allocator for uniformly sized objects.  
+
+
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define {\bf listelem\_\-malloc}(le)~\_\-\_\-listelem\_\-malloc\_\-\_\-((le),\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)\label{listelem__alloc_8h_d0c40e65d9cca0d7ec08fcf416b09af2}
+
+\begin{CompactList}\small\item\em Macro of \_\-\_\-listelem\_\-malloc\_\-\_\-. \item\end{CompactList}\item 
+\#define {\bf listelem\_\-free}(le, el)~\_\-\_\-listelem\_\-free\_\-\_\-((le),(el),\_\-\_\-FILE\_\-\_\-,\_\-\_\-LINE\_\-\_\-)\label{listelem__alloc_8h_67de661d7ca552347fa6f03005e25d74}
+
+\begin{CompactList}\small\item\em Macro of \_\-\_\-listelem\_\-free\_\-\_\-. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef struct {\bf listelem\_\-alloc\_\-s} {\bf listelem\_\-alloc\_\-t}\label{listelem__alloc_8h_3fd3950d7834feaa2bbdf84afb98ce32}
+
+\begin{CompactList}\small\item\em List element allocator object. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT {\bf listelem\_\-alloc\_\-t} $\ast$ {\bf listelem\_\-alloc\_\-init} (size\_\-t elemsize)\label{listelem__alloc_8h_4b08b49eaa74cbe9a3c95170cee78de7}
+
+\begin{CompactList}\small\item\em Initialize and return a list element allocator. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf listelem\_\-alloc\_\-free} ({\bf listelem\_\-alloc\_\-t} $\ast$le)\label{listelem__alloc_8h_94c02e93a0abaa2bd79636cbac6cced2}
+
+\begin{CompactList}\small\item\em Finalize and release all memory associated with a list element allocator. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void $\ast$ {\bf \_\-\_\-listelem\_\-malloc\_\-\_\-} ({\bf listelem\_\-alloc\_\-t} $\ast$le, char $\ast$file, int line)\label{listelem__alloc_8h_04e5512f4dcedc2e84e58108bf61f1ff}
+
+\begin{CompactList}\small\item\em Allocate a list element and return pointer to it. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf \_\-\_\-listelem\_\-free\_\-\_\-} ({\bf listelem\_\-alloc\_\-t} $\ast$le, void $\ast$elem, char $\ast$file, int line)\label{listelem__alloc_8h_b83a7a6fd086c14140ad2c8c4162709b}
+
+\begin{CompactList}\small\item\em Free list element of given size. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT void {\bf listelem\_\-stats} ({\bf listelem\_\-alloc\_\-t} $\ast$le)\label{listelem__alloc_8h_838d9361ba76a89a834a7ea6a185b57d}
+
+\begin{CompactList}\small\item\em Print number of allocation, numer of free operation stats. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Fast memory allocator for uniformly sized objects. 
+
+\begin{Desc}
+\item[Author:]M K Ravishankar $<${\tt rkm@cs.cmu.edu}$>$ \end{Desc}
+
+
+Definition in file {\bf listelem\_\-alloc.h}.

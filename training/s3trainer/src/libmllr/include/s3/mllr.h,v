@@ -1,0 +1,76 @@
+head	1.1;
+access;
+symbols;
+locks
+	eht:1.1; strict;
+comment	@ * @;
+
+
+1.1
+date	97.07.16.11.39.10;	author eht;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#include <s3/feat.h>
+#define TINY 1.0e-20;
+
+
+int32 regmat_read (
+	     const char    *accumdir,
+             float32 ******regl,
+             float32 *****regr,
+             const uint32  **veclen,
+             uint32  *n_mllr_class,
+             uint32  *n_stream,
+             uint32  *mllr_mult,
+             uint32  *mllr_add
+            );
+
+
+int32 compute_mllr (
+             float32 *****regl,
+             float32 ****regr,
+             const uint32  *veclen,
+             uint32  nclass,
+             uint32  nfeat,
+             uint32  mllr_mult,
+             uint32  mllr_add,
+             float32 *****A,
+             float32 ****B
+            );
+
+
+int32 solve  (
+        float32 **regl,
+        float32 *regr,
+        int32   len,
+        float32 *A
+       );
+
+int32 ludcmp (
+         float32 **a,
+         int32   n,
+         int32   *indx,
+         float32 *d
+        );
+
+int32 lubksb(
+       float32 **a,
+       int32   n,
+       int32   *indx,
+       float32 b[],
+       float32 x[]
+      );
+
+
+@

@@ -1,0 +1,28 @@
+run \
+ -moddeffn /net/goofy/usr1/rsingh/model_architecture/lowerbw.ci.mdef \
+ -ts2cbfn .cont. \
+ -mixwfn /net/goofy/usr1/rsingh/model_parameters/lowerbw.ci_continuous_flatinitial/mixture_weights \
+ -mwfloor 1e-8 \
+ -tmatfn /net/goofy/usr1/rsingh/model_parameters/lowerbw.ci_continuous_flatinitial/transition_matrices \
+ -meanfn /net/goofy/usr1/rsingh/model_parameters/lowerbw.ci_continuous_flatinitial/means \
+ -varfn /net/goofy/usr1/rsingh/model_parameters/lowerbw.ci_continuous_flatinitial/variances \
+ -dictfn /net/goofy/usr1/rsingh/lists/mydict_lists/train.dict \
+ -fdictfn /net/goofy/usr1/rsingh/lists/mydict_lists/fillerdict \
+ -ctlfn /net/goofy/usr1/rsingh/lists/mydict_lists/jon.45hrs.ctl \
+ -part 1 \
+ -npart 15 \
+ -cepdir /net/ears7/usr4/hub4_newfeats \
+ -cepext dbwmfc \
+ -lsnfn /net/goofy/usr1/rsingh/lists/mydict_lists/jon.45hrs.trans \
+ -varfloor 1e-4 \
+ -topn 64 \
+ -abeam 1e-90 \
+ -bbeam 1e-10 \
+ -agc none \
+ -cmn current \
+ -varnorm no \
+ -meanreest yes \
+ -varreest yes -2passvar no \
+ -tmatreest yes \
+ -feat 1s_12c_12d_3p_12dd \
+ -ceplen 13

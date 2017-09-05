@@ -1,0 +1,54 @@
+\section{ptmr\_\-t Struct Reference}
+\label{structptmr__t}\index{ptmr\_\-t@{ptmr\_\-t}}
+Generic timer structures and functions for coarse-grained performance measurements using standard system calls.  
+
+
+{\tt \#include $<$profile.h$>$}
+
+\subsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+const char $\ast$ {\bf name}
+\begin{CompactList}\small\item\em Timer print name; NULL terminates an array of timers. \item\end{CompactList}\item 
+float64 {\bf t\_\-cpu}\label{structptmr__t_cbd784f7332329999925d396deae3a5d}
+
+\begin{CompactList}\small\item\em CPU time accumulated since most recent reset op. \item\end{CompactList}\item 
+float64 {\bf t\_\-elapsed}\label{structptmr__t_743fce329d82fd7a9130cba5bbccd991}
+
+\begin{CompactList}\small\item\em Elapsed time accumulated since most recent reset. \item\end{CompactList}\item 
+float64 {\bf t\_\-tot\_\-cpu}\label{structptmr__t_301d13acc21718143b8b39b7af8b6677}
+
+\begin{CompactList}\small\item\em Total CPU time since creation. \item\end{CompactList}\item 
+float64 {\bf t\_\-tot\_\-elapsed}\label{structptmr__t_2dc87aa035c8eb542279ca4496dd76f1}
+
+\begin{CompactList}\small\item\em Total elapsed time since creation. \item\end{CompactList}\item 
+float64 {\bf start\_\-cpu}\label{structptmr__t_85c0c5f0e321cf11fb478b92a05223e8}
+
+\begin{CompactList}\small\item\em ---- FOR INTERNAL USE ONLY ---- \item\end{CompactList}\item 
+float64 {\bf start\_\-elapsed}\label{structptmr__t_1702b16a6c6bcb82f6c636f5e68af188}
+
+\begin{CompactList}\small\item\em ---- FOR INTERNAL USE ONLY ---- \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Generic timer structures and functions for coarse-grained performance measurements using standard system calls. 
+
+Definition at line 157 of file profile.h.
+
+\subsection{Field Documentation}
+\index{ptmr\_\-t@{ptmr\_\-t}!name@{name}}
+\index{name@{name}!ptmr_t@{ptmr\_\-t}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf ptmr\_\-t::name}}\label{structptmr__t_73b51c5a047300d77b3a82a7dcaf44f1}
+
+
+Timer print name; NULL terminates an array of timers. 
+
+Used by ptmr\_\-print\_\-all 
+
+Definition at line 158 of file profile.h.
+
+Referenced by ptmr\_\-print\_\-all(), and ptmr\_\-reset\_\-all().
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/{\bf profile.h}\end{CompactItemize}

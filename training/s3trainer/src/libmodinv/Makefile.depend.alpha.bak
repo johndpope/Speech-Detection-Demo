@@ -1,0 +1,68 @@
+# DO NOT DELETE
+
+mod_inv.o: ../include/s3/model_inventory.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/acmod_set_ds.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/itree.h
+mod_inv.o: ../include/s3/gauden.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+mod_inv.o: /usr/include/stdarg.h /usr/include/standards.h
+mod_inv.o: /usr/include/va_list.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+mod_inv.o: /usr/include/stdio.h /usr/include/sys/seek.h
+mod_inv.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+mod_inv.o: /usr/include/sys/select.h /usr/include/getopt.h
+mod_inv.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+mod_inv.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+mod_inv.o: /usr/include/sys/rt_limits.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/model_def.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+mod_inv.o: /usr/include/stdlib.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s2_param.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/common.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/matrix.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prefix_upto.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/list.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/hash.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/corpus.h
+mod_inv.o: /usr/include/stddef.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/n_words.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/remap.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/lexicon.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3mixw_io.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3tmat_io.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3gau_io.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3regmat_io.h
+mod_inv.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/sys_compat/file.h
+mod_inv.o: /usr/include/sys/file.h /usr/include/sys/param.h
+mod_inv.o: /usr/include/machine/machparam.h /usr/include/machine/endian.h
+mod_inv.o: /usr/include/sys/signal.h /usr/include/sys/siginfo.h
+mod_inv.o: /usr/include/sys/sysmisc.h /usr/include/machine/signal.h
+mod_inv.o: /usr/include/machine/context.h /usr/include/sys/procset.h
+mod_inv.o: /usr/include/sys/access.h /usr/include/sys/fcntl.h
+mod_inv.o: /usr/include/sys/mode.h /usr/include/sys/stat.h
+mod_inv.o: /usr/include/unistd.h
+gauden.o: ../include/s3/gauden.h
+gauden.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+gauden.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+gauden.o: /usr/include/stdarg.h /usr/include/standards.h
+gauden.o: /usr/include/va_list.h
+gauden.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+gauden.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+gauden.o: /usr/include/stdio.h /usr/include/sys/seek.h
+gauden.o: /usr/include/sys/types.h /usr/include/mach/machine/vm_types.h
+gauden.o: /usr/include/sys/select.h /usr/include/getopt.h
+gauden.o: /usr/include/sys/limits.h /usr/include/machine/machlimits.h
+gauden.o: /usr/include/sys/syslimits.h /usr/include/machine/machtime.h
+gauden.o: /usr/include/sys/rt_limits.h
+gauden.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+gauden.o: /usr/include/stdlib.h
+gauden.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/cmd_ln.h
+gauden.o: /net/alf24/usr2/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/feat.h
+gauden.o: /usr/include/math.h /usr/include/assert.h /usr/include/string.h
+gauden.o: /usr/include/strings.h

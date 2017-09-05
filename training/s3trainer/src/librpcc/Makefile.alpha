@@ -1,0 +1,29 @@
+include ../../Makefile.config
+include ../../Makefile.mdep
+
+CFLAGS = ${$(MACHINE)_CFLAGS}
+
+TARGET = librpcc.a
+OBJS = rpcc.o
+
+default:
+	(cd $(MACHINE); $(MAKE) ${$(MACHINE)_MFLAGS} -f ../Makefile.$(MACHINE) VPATH=.. $(TARGET))
+
+clean:
+	(cd $(MACHINE); rm -f $(OBJS))
+
+install: $(TARGET)
+	(cd $(MACHINE); $(MAKE) ${$(MACHINE)_MFLAGS} -f ../Makefile.$(MACHINE) VPATH=.. install.mdep)
+
+install.mdep: $(PKG_ROOT)/lib.$(MACHINE)/$(TARGET)
+
+$(PKG_ROOT)/lib.$(MACHINE)/$(TARGET): $(TARGET)
+	cp -p $(TARGET) $(PKG_ROOT)/lib.$(MACHINE)
+
+$(TARGET): $(OBJS)
+	ar crv $@ $?
+	ranlib $@
+
+depend:
+	touch Makefile.depend.$(MACHINE)
+

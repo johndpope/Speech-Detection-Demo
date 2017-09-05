@@ -1,0 +1,1 @@
+run -accumdir /net/gonzo/usr1/rsingh/bwaccumdir/swb1unfaligned_buff_1 -ctlfn /net/gonzo/usr1/rsingh/lists/TRAIN.CTL -part 1 -npart 1 -cepdir /net/ears6/usr3/swbfeatures -cepext dbwmfc -feat 1s_c_d_dd -ceplen 13 -agc none -cmn current -varnorm no

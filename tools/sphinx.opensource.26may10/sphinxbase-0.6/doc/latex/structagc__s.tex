@@ -1,0 +1,38 @@
+\section{agc\_\-s Struct Reference}
+\label{structagc__s}\index{agc\_\-s@{agc\_\-s}}
+Structure holding data for doing AGC.  
+
+
+{\tt \#include $<$agc.h$>$}
+
+\subsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+mfcc\_\-t {\bf max}\label{structagc__s_6a55c54c76a2e0373a907d186b89fa8e}
+
+\begin{CompactList}\small\item\em Estimated max for current utterance (for AGC\_\-EMAX). \item\end{CompactList}\item 
+mfcc\_\-t {\bf obs\_\-max}\label{structagc__s_20c5289a6328895101e89cc3b418a1e4}
+
+\begin{CompactList}\small\item\em Observed max in current utterance. \item\end{CompactList}\item 
+int32 {\bf obs\_\-frame}\label{structagc__s_5a6c2e967089085bd4f6020876bcb92a}
+
+\begin{CompactList}\small\item\em Whether any data was observed after prev update. \item\end{CompactList}\item 
+int32 {\bf obs\_\-utt}\label{structagc__s_e4ce95dcfb26c7f14ea316ac3ab202b2}
+
+\begin{CompactList}\small\item\em Whether any utterances have been observed. \item\end{CompactList}\item 
+mfcc\_\-t \textbf{obs\_\-max\_\-sum}\label{structagc__s_760e1204ad4a77903c99d549dfaff3ab}
+
+\item 
+mfcc\_\-t {\bf noise\_\-thresh}\label{structagc__s_4c896e65da00c79b77b23272474fcffc}
+
+\begin{CompactList}\small\item\em Noise threshold (for AGC\_\-NOISE only). \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Structure holding data for doing AGC. 
+
+Definition at line 113 of file agc.h.
+
+The documentation for this struct was generated from the following file:\begin{CompactItemize}
+\item 
+include/{\bf agc.h}\end{CompactItemize}

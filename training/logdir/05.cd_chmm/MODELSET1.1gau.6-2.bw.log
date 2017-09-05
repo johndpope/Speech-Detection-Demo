@@ -1,0 +1,156 @@
+dumbo.speech.cs.cmu.edu
+INFO: ../main.c(141): Compiled on Apr 10 2003 at 21:48:12
+../..//s3trainer/bin.linux/bw.mop64 \
+ -moddeffn ../..//model_architecture/MODELSET1.300.mdef \
+ -ts2cbfn .cont. \
+ -mixwfn ../..//model_parameters/MODELSET1.cd_continuous/mixture_weights \
+ -mwfloor 1e-5 \
+ -tmatfn ../..//model_parameters/MODELSET1.cd_continuous/transition_matrices \
+ -tpfloor 1e-5 \
+ -meanfn ../..//model_parameters/MODELSET1.cd_continuous/means \
+ -varfn ../..//model_parameters/MODELSET1.cd_continuous/variances \
+ -dictfn ../..//lists/train.dict \
+ -fdictfn ../..//lists/fillerdict \
+ -ctlfn ../..//lists/train.ctl \
+ -part 2 \
+ -npart 2 \
+ -cepdir ../../../features \
+ -cepext mfc \
+ -lsnfn ../..//lists/train.transcripts \
+ -accumdir ../..//bwaccumdir/MODELSET1_buff_2 \
+ -varfloor 1e-4 \
+ -topn 16 \
+ -abeam 1e-90 \
+ -bbeam 1e-10 \
+ -agc none \
+ -cmn current \
+ -varnorm no \
+ -meanreest yes \
+ -varreest yes -2passvar yes \
+ -tmatreest yes \
+ -feat 1s_12c_12d_3p_12dd \
+ -ceplen 13
+
+[Switch]   [Default] [Value]
+-moddeffn            ../..//model_architecture/MODELSET1.300.mdef
+-tmatfn              ../..//model_parameters/MODELSET1.cd_continuous/transition_matrices
+-mixwfn              ../..//model_parameters/MODELSET1.cd_continuous/mixture_weights
+-meanfn              ../..//model_parameters/MODELSET1.cd_continuous/means
+-varfn               ../..//model_parameters/MODELSET1.cd_continuous/variances
+-mwfloor   0.00001   1.000000e-05
+-tpfloor   0.0001    1.000000e-05
+-varfloor  0.00001   1.000000e-04
+-topn      4         16     
+-dictfn              ../..//lists/train.dict
+-fdictfn             ../..//lists/fillerdict
+-ctlfn               ../..//lists/train.ctl
+-nskip                      
+-runlen    -1        -1     
+-part                2      
+-npart               2      
+-cepext    mfc       mfc    
+-cepdir              ../../../features
+-segext    v8_seg    v8_seg 
+-segdir                     
+-sentdir                    
+-sentext   sent      sent   
+-lsnfn               ../..//lists/train.transcripts
+-accumdir            ../..//bwaccumdir/MODELSET1_buff_2
+-ceplen    13        13     
+-agc       max       none   
+-cmn       current   current
+-varnorm   no        no     
+-silcomp   none      none   
+-abeam     1e-100    1.000000e-90
+-bbeam     1e-100    1.000000e-10
+-varreest  yes       yes    
+-meanreest yes       yes    
+-mixwreest yes       yes    
+-tmatreest yes       yes    
+-spkrxfrm                   
+-mllrmult  no        no     
+-mllradd   no        no     
+-ts2cbfn             .cont. 
+-feat                1s_12c_12d_3p_12dd
+-timing    yes       yes    
+-viterbi   no        no     
+-2passvar  no        yes    
+-sildelfn                   
+-cb2mllrfn                  
+-spthresh  0.0       0.000000e+00
+-maxuttlen 0         0      
+-ckptintv                   
+INFO: ../main.c(158): Reading ../..//model_architecture/MODELSET1.300.mdef
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 19338 total models defined (50 base, 19288 tri)
+INFO: ../model_def_io.c(564): 77352 total states
+INFO: ../model_def_io.c(565): 450 total tied states
+INFO: ../model_def_io.c(566): 150 total tied CI states
+INFO: ../model_def_io.c(567): 50 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+INFO: ../s3mixw_io.c(92): Read ../..//model_parameters/MODELSET1.cd_continuous/mixture_weights [450x1x1 array]
+WARNING: "../mod_inv.c", line 328: Model inventory n_density not set; setting to value in mixw file, 1.
+INFO: ../s3tmat_io.c(92): Read ../..//model_parameters/MODELSET1.cd_continuous/transition_matrices [50x3x4 array]
+INFO: ../mod_inv.c(256): inserting tprob floor 1.000000e-05 and renormalizing
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous/means [450x1x1 array]
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous/variances [450x1x1 array]
+INFO: ../gauden.c(142): 450 total mgau
+INFO: ../gauden.c(114): 1 feature streams (|0|=39 )
+INFO: ../gauden.c(153): 1 total densities
+INFO: ../gauden.c(62): min_var=1.000000e-04
+WARNING: "../mod_inv.c", line 216: n_top 16 > n_density 1.  n_top <- 1
+INFO: ../gauden.c(131): compute 1 densities/frame
+INFO: ../main.c(254): Will reestimate mixing weights
+INFO: ../main.c(256): Will reestimate means
+INFO: ../main.c(258): Will reestimate variances
+INFO: ../main.c(260): Will NOT reestimate MLLR multiplicative term
+INFO: ../main.c(262): Will NOT reestimate MLLR additive term
+INFO: ../main.c(270): Will reestimate transition matrices
+INFO: ../main.c(285): Reading main lexicon: ../..//lists/train.dict
+INFO: ../lexicon.c(207): 243 entries added from ../..//lists/train.dict
+INFO: ../main.c(296): Reading filler lexicon: ../..//lists/fillerdict
+INFO: ../lexicon.c(207): 9 entries added from ../..//lists/fillerdict
+INFO: ../corpus.c(545): skipping 5 utts.
+INFO: ../corpus.c(549): Last utt skipped: (919448_FEMALE_SANDRA_WOZNIAK_56.36_59.66)
+INFO: ../corpus.c(1368): Will process all remaining utts starting at 5
+INFO: ../main.c(505): Reestimation: Baum-Welch
+column defns
+	<seq>
+	<id>
+	<n_frame_in>
+	<n_frame_del>
+	<n_state_shmm>
+	<avg_states_alpha>
+	<avg_states_beta>
+	<avg_states_reest>
+	<avg_posterior_prune>
+	<frame_log_lik>
+	<utt_log_lik>
+	... timing info ... 
+utt>     5 (919448_FEMALE_SANDRA_WOZNIAK_66.23_87.55) 2133    0WARNING: "../corpus.c", line 2117: LSN utt id, 919448_FEMALE_SANDRA_WOZNIAK_66.23_87.55, does not match ctl utt id, (919448_FEMALE_SANDRA_WOZNIAK_66.23_87.55).
+   636 23  1 3 2.613815e-12 6.692140e+00 1.427433e+04 utt 0.012x 0.973e upd 0.012x 0.995e fwd 0.006x 1.035e bwd 0.005x 0.995e gau 0.007x 0.751e rsts 0.001x 0.466e rstf 0.002x 1.143e rstu 0.000x 68632108405866.797e
+utt>     6 (919448_FEMALE_SANDRA_WOZNIAK_87.56_105.56) 1801    0WARNING: "../corpus.c", line 2117: LSN utt id, 919448_FEMALE_SANDRA_WOZNIAK_87.56_105.56, does not match ctl utt id, (919448_FEMALE_SANDRA_WOZNIAK_87.56_105.56).
+   584 21  1 3 2.600398e-12 8.430426e+00 1.518320e+04 utt 0.011x 1.004e upd 0.011x 0.986e fwd 0.006x 1.033e bwd 0.005x 0.996e gau 0.004x 1.268e rsts 0.001x 0.563e rstf 0.003x 0.782e rstu 0.001x 0.120e
+utt>     7 (919448_FEMALE_SANDRA_WOZNIAK_105.57_112.95)  739    0WARNING: "../corpus.c", line 2117: LSN utt id, 919448_FEMALE_SANDRA_WOZNIAK_105.57_112.95, does not match ctl utt id, (919448_FEMALE_SANDRA_WOZNIAK_105.57_112.95).
+   384 27  2 5 3.648375e-12 2.229354e+00 1.647492e+03 utt 0.012x 1.090e upd 0.012x 1.077e fwd 0.007x 1.022e bwd 0.005x 1.082e gau 0.007x 1.097e rsts 0.001x 0.752e rstf 0.001x 1.748e rstu -0.000x 0.000e
+utt>     8 (919448_FEMALE_SANDRA_WOZNIAK_112.96_138.39) 2544    0WARNING: "../corpus.c", line 2117: LSN utt id, 919448_FEMALE_SANDRA_WOZNIAK_112.96_138.39, does not match ctl utt id, (919448_FEMALE_SANDRA_WOZNIAK_112.96_138.39).
+   828 25  2 3 3.221696e-12 3.844113e+00 9.779425e+03 utt 0.012x 1.052e upd 0.012x 1.037e fwd 0.007x 1.019e bwd 0.006x 1.017e gau 0.004x 1.682e rsts 0.001x 0.633e rstf 0.003x 0.909e rstu -0.000x 0.000e
+utt>     9 (919448_FEMALE_SANDRA_WOZNIAK_138.40_142.64)  425    0WARNING: "../corpus.c", line 2117: LSN utt id, 919448_FEMALE_SANDRA_WOZNIAK_138.40_142.64, does not match ctl utt id, (919448_FEMALE_SANDRA_WOZNIAK_138.40_142.64).
+   172 22  2 4 3.677501e-12 4.412999e+00 1.875525e+03 utt 0.014x 0.848e upd 0.012x 1.000e fwd 0.005x 1.320e bwd 0.005x 1.099e gau 0.014x 0.457e rsts -0.000x 0.000e rstf -0.000x 0.000e rstu 0.002x 0.070e
+utt>    10 (919447_FEMALE_SANDRA_WOZNIAK_142.65_156.85) 1421    0WARNING: "../corpus.c", line 2117: LSN utt id, 919447_FEMALE_SANDRA_WOZNIAK_142.65_156.85, does not match ctl utt id, (919447_FEMALE_SANDRA_WOZNIAK_142.65_156.85).
+   624 27  2 4 3.930874e-12 2.565441e+00 3.645491e+03 utt 0.013x 1.009e upd 0.013x 0.997e fwd 0.007x 1.029e bwd 0.006x 0.916e gau 0.006x 1.128e rsts 0.003x 0.329e rstf 0.001x 1.807e rstu 0.000x 10010603908610.057e
+overall> dumbo 9063 (-0) 5.120321e+00 4.640546e+04 0.012x 1.009e
+WARNING: "../accum.c", line 556: The following seno never occur in the input data
+	12 13 14 161 168 173 177 185 195 196 
+	197 199 202 211 215 216 223 224 226 236 
+	237 239 245 247 248 253 254 256 260 264 
+	265 268 270 272 291 306 311 316 318 324 
+	326 340 345 357 358 368 380 396 397 398 
+	399 403 420 421 423 439 443 444 449 
+INFO: ../s3mixw_io.c(212): Wrote ../..//bwaccumdir/MODELSET1_buff_2/mixw_counts [450x1x1 array]
+INFO: ../s3tmat_io.c(152): Wrote ../..//bwaccumdir/MODELSET1_buff_2/tmat_counts [50x3x4 array]
+INFO: ../s3gau_io.c(443): Wrote ../..//bwaccumdir/MODELSET1_buff_2/gauden_counts with means with vars (2pass) [450x1x1 vector arrays]
+INFO: ../accum.c(929): MLLR regmat not reestimated.  No ../..//bwaccumdir/MODELSET1_buff_2/regmat_counts produced.
+INFO: ../main.c(900): Counts saved to ../..//bwaccumdir/MODELSET1_buff_2
+Thu Mar 18 15:52:03 EST 2004

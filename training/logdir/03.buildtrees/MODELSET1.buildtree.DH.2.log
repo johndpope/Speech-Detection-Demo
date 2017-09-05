@@ -1,0 +1,84 @@
+../..//s3trainer/bin.linux/bldtree \
+ -treefn ../..//trees/MODELSET1.unpruned/DH-2.dtree \
+ -moddeffn ../..//model_architecture/MODELSET1.untied.mdef \
+ -mixwfn ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights \
+ -ts2cbfn .cont. \
+ -meanfn ../..//model_parameters/MODELSET1.cd_continuous_untied/means \
+ -varfn ../..//model_parameters/MODELSET1.cd_continuous_untied/variances \
+ -mwfloor 1e-8 \
+ -psetfn ../..//c_scripts/03.buildtrees/linguistic_questions.automatic \
+ -phone DH \
+ -state 2 \
+ -stwt 1.0 0.05 0.0 \
+ -ssplitmin 1 \
+ -ssplitmax 7 \
+ -ssplitthr 0 \
+ -csplitmin 1 \
+ -csplitmax 2000 \
+ -csplitthr 0 \
+ -cntthresh 1
+
+[Switch]   [Default] [Value]
+-treefn              ../..//trees/MODELSET1.unpruned/DH-2.dtree
+-moddeffn            ../..//model_architecture/MODELSET1.untied.mdef
+-ts2cbfn   .semi.    .cont. 
+-meanfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/means
+-varfn               ../..//model_parameters/MODELSET1.cd_continuous_untied/variances
+-varfloor  0.00001   1.000000e-05
+-cntthresh 0.00001   1.000000e+00
+-mixwfn              ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+-psetfn              ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+-phone               DH     
+-state               2      
+-mwfloor   1e-4      1.000000e-08
+-stwt                1.0 0.05 0.0
+-ssplitthr 8e-4      0.000000e+00
+-ssplitmin 1         1      
+-ssplitmax 5         7      
+-csplitthr 8e-4      0.000000e+00
+-csplitmin 1         1      
+-csplitmax 100       2000   
+INFO: ../main.c(152): Reading: ../..//model_architecture/MODELSET1.untied.mdef
+INFO: ../model_def_io.c(562): Model definition info:
+INFO: ../model_def_io.c(563): 1000 total models defined (50 base, 950 tri)
+INFO: ../model_def_io.c(564): 4000 total states
+INFO: ../model_def_io.c(565): 3000 total tied states
+INFO: ../model_def_io.c(566): 150 total tied CI states
+INFO: ../model_def_io.c(567): 50 total tied transition matrices
+INFO: ../model_def_io.c(568): 4 max state/model
+INFO: ../model_def_io.c(569): 20 min state/model
+INFO: ../main.c(196): Building trees for [DH D AE b] through [DH Z AX b]
+INFO: ../main.c(224): Covering states |[714 758]| == 45
+INFO: ../main.c(231): Reading: ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights
+INFO: ../s3mixw_io.c(151): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/mixture_weights [45x1x1 array]
+INFO: ../main.c(269): 15 of 15 models have observation count greater than 1.000000
+INFO: ../main.c(67): nrm stwt: 0.000 0.048 0.952 
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/means [3000x1x1 array]
+INFO: ../s3gau_io.c(128): Read ../..//model_parameters/MODELSET1.cd_continuous_untied/variances [3000x1x1 array]
+INFO: ../main.c(510): Reading: ../..//c_scripts/03.buildtrees/linguistic_questions.automatic
+INFO: ../main.c(547): 176 total simple questions (168 phone; 8 word bndry)
+INFO: ../main.c(549): 42 Left Only questions, and 42 Right Only questions
+N model = 15
+s>    ( QUESTION19 1 -9.894e+01 2.594e+02 6.499e+01
+s>        ( - 2.393e+02 1 0)
+s>        ( QUESTION0_5_R 1 -7.886e+01 2.515e+02 6.399e+01
+s>            ( - 2.411e+02 1 0)
+s>            ( QUESTION9 -1 -6.848e+01 2.481e+02 6.299e+01
+s>                ( - 2.440e+02 1 0)
+s>                ( SILENCE -1 -6.445e+01 2.391e+02 6.199e+01
+s>                    ( - 2.440e+02 1 0)
+s>                    ( QUESTION2_6_L -1 -6.938e+01 1.646e+02 6.099e+01
+s>                        ( - 8.341e+01 2 0 QUESTION0_2_R 1 1.029e+02 2.899e+01)
+s>                        ( QUESTION0_16_R 1 1.184e+01 1.596e+02 3.200e+01
+s>                            ( - 1.507e+02 1 0)
+s>                            ( WDBNDRY_E 0 2.075e+01 1.186e+02 2.900e+01
+s>                                ( - 1.096e+02 1 0)
+s>                                ( - 2.975e+01 7 0 QUESTION2 -1 1.160e+02 1.700e+01))))))))INFO: ../dtree.c(1327): Comp split 0
+INFO: ../dtree.c(1459): stop. leaf nodes are specific
+s>    ( QUESTION0_5_R 1 -7.886e+01 2.515e+02 6.399e+01
+s>        ( - 2.411e+02 1 0)
+s>        ( QUESTION9 -1 -6.848e+01 2.481e+02 6.299e+01
+s>            ( - 2.440e+02 1 0)
+s>            ( - -6.445e+01 12 0)))INFO: ../dtree.c(1327): Comp split 1
+INFO: ../dtree.c(1327): Comp split 2
+INFO: ../dtree.c(1330): stop. leaf nodes are specific

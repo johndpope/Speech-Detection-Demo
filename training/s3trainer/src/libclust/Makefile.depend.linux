@@ -1,0 +1,30 @@
+# DO NOT DELETE
+
+kmeans.o: ../include/s3/kmeans.h
+kmeans.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+kmeans.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/vector.h
+kmeans.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/ckd_alloc.h
+kmeans.o: /usr/include/stdlib.h /usr/include/features.h
+kmeans.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+kmeans.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+kmeans.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/profile.h
+kmeans.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+kmeans.o: /usr/include/stdio.h /usr/include/bits/types.h /usr/include/libio.h
+kmeans.o: /usr/include/_G_config.h /usr/include/wchar.h
+kmeans.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+kmeans.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+kmeans.o: /usr/include/bits/stdio_lim.h
+kmeans.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/s3.h
+kmeans.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/err.h
+kmeans.o: /usr/include/assert.h
+div.o: /usr/include/math.h /usr/include/features.h /usr/include/sys/cdefs.h
+div.o: /usr/include/gnu/stubs.h /usr/include/bits/huge_val.h
+div.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+div.o: ../include/s3/div.h
+div.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+div.o: /usr/include/assert.h
+merge_den.o: ../include/s3/merge_den.h
+merge_den.o: /net/journal/usr0/rsingh/public/sphinx3lab/lab6/SPHINX3/s3trainer/include/s3/prim_type.h
+merge_den.o: /usr/include/string.h /usr/include/features.h
+merge_den.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+merge_den.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h

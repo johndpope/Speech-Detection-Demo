@@ -1,0 +1,94 @@
+# DO NOT DELETE
+
+parse_cmd_ln.o: parse_cmd_ln.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/common.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/cmd_ln.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/prim_type.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/ckd_alloc.h
+parse_cmd_ln.o: /usr/include/stdlib.h /usr/include/features.h
+parse_cmd_ln.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+parse_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+parse_cmd_ln.o: /usr/include/sys/types.h /usr/include/bits/types.h
+parse_cmd_ln.o: /usr/include/time.h /usr/include/endian.h
+parse_cmd_ln.o: /usr/include/bits/endian.h /usr/include/sys/select.h
+parse_cmd_ln.o: /usr/include/bits/select.h /usr/include/bits/sigset.h
+parse_cmd_ln.o: /usr/include/sys/sysmacros.h /usr/include/alloca.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/matrix.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/vector.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/prefix_upto.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/list.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/hash.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/prim_type.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/corpus.h
+parse_cmd_ln.o: /usr/include/stdio.h
+parse_cmd_ln.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+parse_cmd_ln.o: /usr/include/libio.h /usr/include/_G_config.h
+parse_cmd_ln.o: /usr/include/bits/stdio_lim.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/n_words.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/remap.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/acmod_set.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/acmod_set_ds.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/itree.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/lexicon.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/feat.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/err.h
+parse_cmd_ln.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/s3.h
+parse_cmd_ln.o: /usr/include/assert.h /usr/include/sys/stat.h
+parse_cmd_ln.o: /usr/include/bits/stat.h
+main.o: parse_cmd_ln.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/common.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/cmd_ln.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/prim_type.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/ckd_alloc.h
+main.o: /usr/include/stdlib.h /usr/include/features.h
+main.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stddef.h
+main.o: /usr/include/sys/types.h /usr/include/bits/types.h
+main.o: /usr/include/time.h /usr/include/endian.h /usr/include/bits/endian.h
+main.o: /usr/include/sys/select.h /usr/include/bits/select.h
+main.o: /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h
+main.o: /usr/include/alloca.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/matrix.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/vector.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/prefix_upto.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/list.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/hash.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/prim_type.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/corpus.h
+main.o: /usr/include/stdio.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/stdarg.h
+main.o: /usr/include/libio.h /usr/include/_G_config.h
+main.o: /usr/include/bits/stdio_lim.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/n_words.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/remap.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/acmod_set.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/acmod_set_ds.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/itree.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/lexicon.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/feat.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/err.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/model_inventory.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/gauden.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/s3.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/model_def.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/model_def_io.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/s3gau_io.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/s3tmat_io.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/s3mixw_io.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/s3lamb_io.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/s3regmat_io.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/sys_compat/file.h
+main.o: /usr/include/sys/file.h /usr/include/fcntl.h
+main.o: /usr/include/bits/fcntl.h /usr/include/sys/param.h
+main.o: /usr/include/limits.h /usr/include/bits/posix1_lim.h
+main.o: /usr/include/bits/local_lim.h /usr/include/linux/limits.h
+main.o: /usr/include/bits/posix2_lim.h /usr/include/linux/param.h
+main.o: /usr/include/asm/param.h /usr/include/sys/stat.h
+main.o: /usr/include/bits/stat.h /usr/include/sys/fcntl.h
+main.o: /usr/include/unistd.h /usr/include/bits/posix_opt.h
+main.o: /usr/include/bits/confname.h /usr/include/getopt.h
+main.o: /server/users/rsingh/04..hmmlab/s3trainer/include/s3/s2_param.h
+main.o: /usr/include/math.h /usr/include/bits/huge_val.h
+main.o: /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h
+main.o: /usr/lib/gcc-lib/i386-redhat-linux/egcs-2.91.66/include/float.h
+main.o: /usr/include/assert.h

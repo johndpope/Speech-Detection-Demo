@@ -1,0 +1,31 @@
+# mk_mdef_gen.c
+obj.x86_64-unknown-linux-gnu/mk_mdef_gen.o: mk_mdef_gen.c ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/s3/prim_type.h \
+  ../../../include/s3/acmod_set.h ../../../include/s3/acmod_set_ds.h \
+  ../../../include/s3/itree.h ../../../include/s3/model_def_io.h \
+  ../../../include/s3/model_def.h ../../../include/s3/ckd_alloc.h \
+  ../../../include/s3/cmd_ln.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h parse_cmd_ln.h heap.h hash.h
+
+# parse_cmd_ln.c
+obj.x86_64-unknown-linux-gnu/parse_cmd_ln.o: parse_cmd_ln.c ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/feat.h \
+  ../../../include/s3/vector.h parse_cmd_ln.h ../../../include/s3/s3.h \
+  ../../../include/s3/err.h ../../../include/sys_compat/misc.h \
+  ../../../include/sys_compat/file.h
+
+# heap.c
+obj.x86_64-unknown-linux-gnu/heap.o: heap.c ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/prim_type.h heap.h
+
+# hash.c
+obj.x86_64-unknown-linux-gnu/hash.o: hash.c ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/prim_type.h hash.h
+
+# main.c
+obj.x86_64-unknown-linux-gnu/main.o: main.c ../../../include/s3/s3.h ../../../include/s3/err.h \
+  ../../../include/s3/prim_type.h ../../../include/s3/cmd_ln.h \
+  ../../../include/s3/feat.h ../../../include/s3/vector.h \
+  ../../../include/s3/ckd_alloc.h parse_cmd_ln.h heap.h hash.h \
+  mk_untied.h
+

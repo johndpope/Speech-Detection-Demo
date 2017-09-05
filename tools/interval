@@ -1,0 +1,11 @@
+#!/bin/csh -f
+
+if ($#argv != 2) exit 0
+
+set i = $1
+set j = $2
+
+while ($i <= $j)
+   echo $i
+@  i = $i + 1
+end

@@ -1,0 +1,14 @@
+flat initializing
+../..//tools/sphinx.opensource.26may10/SphinxTrain-1.0/bin.x86_64-unknown-linux-gnu/mk_flat: Command not found.
+ACCUMULATING FOR MEAN
+../..//tools/sphinx.opensource.26may10/SphinxTrain-1.0/bin.x86_64-unknown-linux-gnu/init_gau: Command not found.
+COMPUTING GLOBAL MEAN
+../..//tools/sphinx.opensource.26may10/SphinxTrain-1.0/bin.x86_64-unknown-linux-gnu/norm: Command not found.
+ACCUMULATING FOR VARIANCE
+../..//tools/sphinx.opensource.26may10/SphinxTrain-1.0/bin.x86_64-unknown-linux-gnu/init_gau: Command not found.
+COMPUTING GLOBAL VARIANCE
+../..//tools/sphinx.opensource.26may10/SphinxTrain-1.0/bin.x86_64-unknown-linux-gnu/norm: Command not found.
+COPYING MEANS
+../..//tools/sphinx.opensource.26may10/SphinxTrain-1.0/bin.x86_64-unknown-linux-gnu/cp_parm: Command not found.
+COPYING VARIANCES
+../..//tools/sphinx.opensource.26may10/SphinxTrain-1.0/bin.x86_64-unknown-linux-gnu/cp_parm: Command not found.

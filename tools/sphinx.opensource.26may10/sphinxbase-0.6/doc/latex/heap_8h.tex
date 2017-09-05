@@ -1,0 +1,99 @@
+\section{include/heap.h File Reference}
+\label{heap_8h}\index{include/heap.h@{include/heap.h}}
+Heap Implementation.  
+
+
+{\tt \#include $<$sphinxbase\_\-export.h$>$}\par
+{\tt \#include $<$prim\_\-type.h$>$}\par
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef void $\ast$ \textbf{heap\_\-t}\label{heap_8h_940dac139dbe58a03237e72a176833a2}
+
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+SPHINXBASE\_\-EXPORT heap\_\-t {\bf heap\_\-new} (void)\label{heap_8h_5b174d0db189ce4c517aa24d71c562dd}
+
+\begin{CompactList}\small\item\em Allocate a new heap and return handle to it. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf heap\_\-insert} (heap\_\-t heap, void $\ast$data, int32 val)
+\begin{CompactList}\small\item\em Insert a new item into the given heap. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf heap\_\-top} (heap\_\-t heap, void $\ast$$\ast$data, int32 $\ast$val)
+\begin{CompactList}\small\item\em Return the topmost item in the heap. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf heap\_\-pop} (heap\_\-t heap, void $\ast$$\ast$data, int32 $\ast$val)\label{heap_8h_098bf692ecfc3ee7f3b49a72adc8c7b7}
+
+\begin{CompactList}\small\item\em Like heap\_\-top but also pop the top item off the heap. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf heap\_\-size} (heap\_\-t heap)\label{heap_8h_42a4791822d16ccabd72906b4b6892c6}
+
+\begin{CompactList}\small\item\em Return the number of items in the heap. \item\end{CompactList}\item 
+SPHINXBASE\_\-EXPORT int32 {\bf heap\_\-destroy} (heap\_\-t heap)
+\begin{CompactList}\small\item\em Destroy the given heap; free the heap nodes. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Heap Implementation. 
+
+General Comment: Sorted heap structure with three main operations:
+
+1. Insert a data item (with two attributes: an application supplied pointer and an integer value; the heap is maintained in ascending order of the integer value). 2. Return the currently topmost item (i.e., item with smallest associated value). 3. Return the currently topmost item and pop it off the heap. 
+
+Definition in file {\bf heap.h}.
+
+\subsection{Function Documentation}
+\index{heap.h@{heap.h}!heap\_\-destroy@{heap\_\-destroy}}
+\index{heap\_\-destroy@{heap\_\-destroy}!heap.h@{heap.h}}
+\subsubsection[{heap\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 heap\_\-destroy (heap\_\-t {\em heap})}\label{heap_8h_d8d290888b0cf3bf94b0296d93a61c8e}
+
+
+Destroy the given heap; free the heap nodes. 
+
+NOTE: Data pointers in the nodes are NOT freed. Return value: 0 if successful, -1 otherwise. 
+
+Definition at line 260 of file heap.c.
+
+References ckd\_\-free(), heap\_\-destroy(), and heap\_\-pop().
+
+Referenced by heap\_\-destroy(), huff\_\-code\_\-build\_\-int(), and huff\_\-code\_\-build\_\-str().\index{heap.h@{heap.h}!heap\_\-insert@{heap\_\-insert}}
+\index{heap\_\-insert@{heap\_\-insert}!heap.h@{heap.h}}
+\subsubsection[{heap\_\-insert}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 heap\_\-insert (heap\_\-t {\em heap}, \/  void $\ast$ {\em data}, \/  int32 {\em val})}\label{heap_8h_d1c648ca164bf39d03431d7126ef4a8d}
+
+
+Insert a new item into the given heap. 
+
+Return value: 0 if successful, -1 otherwise. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+heap}]In: Heap into which item is to be inserted \item[{\em 
+data}]In: Application-determined data pointer \item[{\em 
+val}]In: According to item entered in sorted heap \end{description}
+\end{Desc}
+
+
+Definition at line 157 of file heap.c.
+
+References heap\_\-insert().
+
+Referenced by heap\_\-insert(), huff\_\-code\_\-build\_\-int(), and huff\_\-code\_\-build\_\-str().\index{heap.h@{heap.h}!heap\_\-top@{heap\_\-top}}
+\index{heap\_\-top@{heap\_\-top}!heap.h@{heap.h}}
+\subsubsection[{heap\_\-top}]{\setlength{\rightskip}{0pt plus 5cm}SPHINXBASE\_\-EXPORT int32 heap\_\-top (heap\_\-t {\em heap}, \/  void $\ast$$\ast$ {\em data}, \/  int32 $\ast$ {\em val})}\label{heap_8h_06cc985d3d5a4c275179fd47ede7316d}
+
+
+Return the topmost item in the heap. 
+
+Return value: 1 if heap is not empty and the topmost value is returned; 0 if heap is empty; -1 if some error occurred. \begin{Desc}
+\item[Parameters: ]\par
+\begin{description}
+\item[{\em 
+heap}]In: Heap whose topmost item is to be returned \item[{\em 
+data}]Out: Data pointer associated with the topmost item \item[{\em 
+val}]Out: Value associated with the topmost item \end{description}
+\end{Desc}
+
+
+Definition at line 230 of file heap.c.
+
+References heap\_\-s::data, heap\_\-top(), and heap\_\-s::val.
+
+Referenced by heap\_\-top().

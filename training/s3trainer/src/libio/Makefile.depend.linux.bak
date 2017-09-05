@@ -1,0 +1,199 @@
+# DO NOT DELETE
+
+read_line.o: ../include/s3/read_line.h /usr/include/sys/types.h
+read_line.o: /usr/include/features.h /usr/include/sys/cdefs.h
+read_line.o: /usr/include/gnu/stubs.h /usr/include/bits/types.h
+read_line.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+read_line.o: /usr/include/time.h /usr/include/stdio.h /usr/include/libio.h
+read_line.o: /usr/include/_G_config.h /usr/include/wchar.h
+read_line.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+read_line.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+read_line.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+model_def_io.o: ../include/s3/read_line.h /usr/include/sys/types.h
+model_def_io.o: /usr/include/features.h /usr/include/sys/cdefs.h
+model_def_io.o: /usr/include/gnu/stubs.h /usr/include/bits/types.h
+model_def_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+model_def_io.o: /usr/include/time.h /usr/include/stdio.h /usr/include/libio.h
+model_def_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+model_def_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+model_def_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+model_def_io.o: /usr/include/bits/stdio_lim.h ../include/s3/model_def_io.h
+model_def_io.o: ../include/s3/model_def.h /usr/include/assert.h
+model_def_io.o: /usr/include/string.h
+swap.o: ../include/s3/bo_magic.h ../include/s3/swap.h /usr/include/stdio.h
+swap.o: /usr/include/features.h /usr/include/sys/cdefs.h
+swap.o: /usr/include/gnu/stubs.h
+swap.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+swap.o: /usr/include/bits/types.h /usr/include/libio.h
+swap.o: /usr/include/_G_config.h /usr/include/wchar.h
+swap.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+swap.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+swap.o: /usr/include/bits/stdio_lim.h ../include/s3/fread_retry.h
+swap.o: /usr/include/sys/types.h /usr/include/time.h /usr/include/assert.h
+swap.o: /usr/include/string.h
+topo_read.o: ../include/s3/topo_read.h ../include/s3/read_line.h
+topo_read.o: /usr/include/sys/types.h /usr/include/features.h
+topo_read.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+topo_read.o: /usr/include/bits/types.h
+topo_read.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+topo_read.o: /usr/include/time.h /usr/include/stdio.h /usr/include/libio.h
+topo_read.o: /usr/include/_G_config.h /usr/include/wchar.h
+topo_read.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+topo_read.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+topo_read.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h
+topo_read.o: /usr/include/string.h
+fread_retry.o: ../include/s3/fread_retry.h /usr/include/stdio.h
+fread_retry.o: /usr/include/features.h /usr/include/sys/cdefs.h
+fread_retry.o: /usr/include/gnu/stubs.h
+fread_retry.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+fread_retry.o: /usr/include/bits/types.h /usr/include/libio.h
+fread_retry.o: /usr/include/_G_config.h /usr/include/wchar.h
+fread_retry.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+fread_retry.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+fread_retry.o: /usr/include/bits/stdio_lim.h /usr/include/sys/types.h
+fread_retry.o: /usr/include/time.h
+corpus.o: ../include/s3/corpus.h /usr/include/stdio.h /usr/include/features.h
+corpus.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+corpus.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+corpus.o: /usr/include/bits/types.h /usr/include/libio.h
+corpus.o: /usr/include/_G_config.h /usr/include/wchar.h
+corpus.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+corpus.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+corpus.o: /usr/include/bits/stdio_lim.h ../include/s3/read_line.h
+corpus.o: /usr/include/sys/types.h /usr/include/time.h /usr/include/string.h
+corpus.o: /usr/include/stdlib.h /usr/include/ctype.h /usr/include/endian.h
+corpus.o: /usr/include/bits/endian.h /usr/include/assert.h
+share_ctl.o: ../include/s3/swap.h /usr/include/stdio.h /usr/include/features.h
+share_ctl.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+share_ctl.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+share_ctl.o: /usr/include/bits/types.h /usr/include/libio.h
+share_ctl.o: /usr/include/_G_config.h /usr/include/wchar.h
+share_ctl.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+share_ctl.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+share_ctl.o: /usr/include/bits/stdio_lim.h ../include/s3/bo_magic.h
+s3_open.o: ../include/s3/s3_open.h /usr/include/stdio.h
+s3_open.o: /usr/include/features.h /usr/include/sys/cdefs.h
+s3_open.o: /usr/include/gnu/stubs.h
+s3_open.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3_open.o: /usr/include/bits/types.h /usr/include/libio.h
+s3_open.o: /usr/include/_G_config.h /usr/include/wchar.h
+s3_open.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s3_open.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s3_open.o: /usr/include/bits/stdio_lim.h ../include/s3/bcomment_io.h
+s3_open.o: ../include/s3/swap.h /usr/include/string.h
+segdmp.o: ../include/s3/segdmp.h ../include/s3/s3io.h /usr/include/stdio.h
+segdmp.o: /usr/include/features.h /usr/include/sys/cdefs.h
+segdmp.o: /usr/include/gnu/stubs.h
+segdmp.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+segdmp.o: /usr/include/bits/types.h /usr/include/libio.h
+segdmp.o: /usr/include/_G_config.h /usr/include/wchar.h
+segdmp.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+segdmp.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+segdmp.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+segdmp.o: ../include/s3/fp_cache.h ../include/s3/swap.h /usr/include/assert.h
+segdmp.o: /usr/include/string.h
+s3io.o: ../include/s3/s3io.h /usr/include/stdio.h /usr/include/features.h
+s3io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s3io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3io.o: /usr/include/bits/types.h /usr/include/libio.h
+s3io.o: /usr/include/_G_config.h /usr/include/wchar.h
+s3io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s3io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s3io.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+s3io.o: ../include/s3/swap.h /usr/include/string.h /usr/include/assert.h
+s3mixw_io.o: ../include/s3/s3mixw_io.h ../include/s3/s3io.h
+s3mixw_io.o: /usr/include/stdio.h /usr/include/features.h
+s3mixw_io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s3mixw_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3mixw_io.o: /usr/include/bits/types.h /usr/include/libio.h
+s3mixw_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+s3mixw_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s3mixw_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s3mixw_io.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+s3mixw_io.o: /usr/include/string.h
+s3tmat_io.o: ../include/s3/s3tmat_io.h ../include/s3/s3io.h
+s3tmat_io.o: /usr/include/stdio.h /usr/include/features.h
+s3tmat_io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s3tmat_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3tmat_io.o: /usr/include/bits/types.h /usr/include/libio.h
+s3tmat_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+s3tmat_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s3tmat_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s3tmat_io.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+s3tmat_io.o: /usr/include/string.h
+s3gau_io.o: ../include/s3/s3gau_io.h ../include/s3/s3io.h /usr/include/stdio.h
+s3gau_io.o: /usr/include/features.h /usr/include/sys/cdefs.h
+s3gau_io.o: /usr/include/gnu/stubs.h
+s3gau_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3gau_io.o: /usr/include/bits/types.h /usr/include/libio.h
+s3gau_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+s3gau_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s3gau_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s3gau_io.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+s3gau_io.o: /usr/include/assert.h /usr/include/string.h
+s3map_io.o: ../include/s3/s3map_io.h /usr/include/stdlib.h
+s3map_io.o: /usr/include/features.h /usr/include/sys/cdefs.h
+s3map_io.o: /usr/include/gnu/stubs.h
+s3map_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3map_io.o: ../include/s3/s3io.h /usr/include/stdio.h
+s3map_io.o: /usr/include/bits/types.h /usr/include/libio.h
+s3map_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+s3map_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s3map_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s3map_io.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+s3ts2cb_io.o: ../include/s3/s3ts2cb_io.h ../include/s3/s3map_io.h
+s3ts2cb_io.o: /usr/include/stdlib.h /usr/include/features.h
+s3ts2cb_io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s3ts2cb_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3cb2mllr_io.o: ../include/s3/s3cb2mllr_io.h ../include/s3/s3map_io.h
+s3cb2mllr_io.o: /usr/include/stdlib.h /usr/include/features.h
+s3cb2mllr_io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s3cb2mllr_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3lamb_io.o: ../include/s3/s3lamb_io.h ../include/s3/s3io.h
+s3lamb_io.o: /usr/include/stdio.h /usr/include/features.h
+s3lamb_io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s3lamb_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3lamb_io.o: /usr/include/bits/types.h /usr/include/libio.h
+s3lamb_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+s3lamb_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s3lamb_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s3lamb_io.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+s3lamb_io.o: /usr/include/string.h
+s3regmat_io.o: ../include/s3/s3regmat_io.h ../include/s3/s3io.h
+s3regmat_io.o: /usr/include/stdio.h /usr/include/features.h
+s3regmat_io.o: /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h
+s3regmat_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+s3regmat_io.o: /usr/include/bits/types.h /usr/include/libio.h
+s3regmat_io.o: /usr/include/_G_config.h /usr/include/wchar.h
+s3regmat_io.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+s3regmat_io.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+s3regmat_io.o: /usr/include/bits/stdio_lim.h /usr/include/stdlib.h
+s3regmat_io.o: /usr/include/string.h
+fgets_wo_nl.o: ../include/s3/fgets_wo_nl.h /usr/include/stdio.h
+fgets_wo_nl.o: /usr/include/features.h /usr/include/sys/cdefs.h
+fgets_wo_nl.o: /usr/include/gnu/stubs.h
+fgets_wo_nl.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+fgets_wo_nl.o: /usr/include/bits/types.h /usr/include/libio.h
+fgets_wo_nl.o: /usr/include/_G_config.h /usr/include/wchar.h
+fgets_wo_nl.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+fgets_wo_nl.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+fgets_wo_nl.o: /usr/include/bits/stdio_lim.h /usr/include/string.h
+uttfile.o: ../include/s3/uttfile.h /usr/include/stdio.h
+uttfile.o: /usr/include/features.h /usr/include/sys/cdefs.h
+uttfile.o: /usr/include/gnu/stubs.h
+uttfile.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+uttfile.o: /usr/include/bits/types.h /usr/include/libio.h
+uttfile.o: /usr/include/_G_config.h /usr/include/wchar.h
+uttfile.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+uttfile.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+uttfile.o: /usr/include/bits/stdio_lim.h ../include/s3/fgets_wo_nl.h
+uttfile.o: /usr/include/string.h /usr/include/assert.h
+fp_cache.o: ../include/s3/fp_cache.h /usr/include/stdio.h
+fp_cache.o: /usr/include/features.h /usr/include/sys/cdefs.h
+fp_cache.o: /usr/include/gnu/stubs.h
+fp_cache.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stddef.h
+fp_cache.o: /usr/include/bits/types.h /usr/include/libio.h
+fp_cache.o: /usr/include/_G_config.h /usr/include/wchar.h
+fp_cache.o: /usr/include/bits/wchar.h /usr/include/gconv.h
+fp_cache.o: /usr/lib/gcc-lib/i386-redhat-linux/2.96/include/stdarg.h
+fp_cache.o: /usr/include/bits/stdio_lim.h /usr/include/assert.h

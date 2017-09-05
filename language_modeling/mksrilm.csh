@@ -1,0 +1,39 @@
+#!/bin/csh -f
+
+if ($#argv != 3) then
+    echo "USAGE: $0 textfile lmfile lmorder"
+    exit 0
+endif
+
+# The text file is simply a file with each sentence on a different line.
+
+set textfile = $1
+set lmfile = $2
+set lmorder = $3
+
+
+set tmp1 = /tmp/lm.$$
+set tmp2 = /tmp/lm2.$$
+echo $tmp1 $tmp2
+onintr cleanup
+
+set binpath = ./sri_toolkit/srilm/bin/i686-m64
+
+# Build a basic LM of order "lmorder" from the text in the text file.
+$binpath/ngram-count -text $textfile \
+                                             -order $lmorder \
+					     -vocab ./processed_text/vocab \
+                                             -lm $tmp1
+
+echo made ngram-count
+# Add "0" backoff weights to make the format of the LM uniform
+$binpath/add-dummy-bows < $tmp1 >! $tmp2
+
+echo made add-dummy-bows
+# Sort the LM to be in alphabetical order
+$binpath/sort-lm < $tmp2 >! $lmfile 
+
+cleanup:
+/bin/rm -f $tmp1 $tmp2
+
+exit 0

@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>CMU Human Profiling Demo</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous">
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+
+<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.js"></script>
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="viz">
+		<div id="viz3">
+			<canvas id="spectrogram" width="1600" height="300"></canvas>
+		</div>
+		<div id="viz4">
+			<!-- <canvas id="wavedisplay" width="1600" height="500"></canvas> -->
+			<h1>Positive Personality Traits</h1>
+			<div id="chartForBar"></div>
+			<h1>Negative Personality Traits</h1>
+			<div id="chartForBar2"></div>
+			<h1>Conversation Analysis</h1>
+			<div id="chartForBar3"></div>
+			<h1>Speech to Text</h1>
+			<div id="chartForBar4">
+				<span id="speech"></span>
+			</div>
+		</div>
+		
+		<div id="viz5">
+			<div  style="" class="gaugebox">
+				<h4 style="color:white">Aphonic</h4>
+				<svg id="fillgauge2" width="100%" height="100%" onclick="gauge2.update(NewValue());"></svg>
+			</div>
+	        
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Biphonic</h4>
+	            <svg id="fillgauge3" width="100%" height="100%" onclick="gauge3.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Breathy</h4>
+	            <svg id="fillgauge4" width="100%" height="100%" onclick="gauge4.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Covered</h4>
+	            <svg id="fillgauge5" width="100%" height="100%" onclick="gauge5.update(NewValue());"></svg>
+	        </div>
+	         <div  style="" class="gaugebox">
+	            <h4 style="color:white">Creaky</h4>
+	            <svg id="fillgauge6" width="100%" height="100%" onclick="gauge6.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Diplophonic</h4>
+	            <svg id="fillgauge7" width="100%" height="100%" onclick="gauge7.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Flutter</h4>
+	            <svg id="fillgauge8" width="100%" height="100%" onclick="gauge8.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Glottalized</h4>
+	            <svg id="fillgauge9" width="100%" height="100%" onclick="gauge9.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Hoarse/Raspy</h4>
+	            <svg id="fillgauge10" width="100%" height="100%" onclick="gauge10.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Honky</h4>
+	            <svg id="fillgauge11" width="100%" height="100%" onclick="gauge11.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Jitter</h4>
+	            <svg id="fillgauge12" width="100%" height="100%" onclick="gauge12.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Nasal</h4>
+	            <svg id="fillgauge13" width="100%" height="100%" onclick="gauge13.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Pressed</h4>
+	            <svg id="fillgauge14" width="100%" height="100%" onclick="gauge14.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Pulsed</h4>
+	            <svg id="fillgauge15" width="100%" height="100%" onclick="gauge15.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Resonant</h4>
+	            <svg id="fillgauge16" width="100%" height="100%" onclick="gauge16.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Rough</h4>
+	            <svg id="fillgauge17" width="100%" height="100%" onclick="gauge17.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Shimmer</h4>
+	            <svg id="fillgauge18" width="100%" height="100%" onclick="gauge18.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Strained</h4>
+	            <svg id="fillgauge19" width="100%" height="100%" onclick="gauge19.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Strohbass</h4>
+	            <svg id="fillgauge20" width="100%" height="100%" onclick="gauge20.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Tremerous</h4>
+	            <svg id="fillgauge21" width="100%" height="100%" onclick="gauge21.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Twangy</h4>
+	            <svg id="fillgauge22" width="100%" height="100%" onclick="gauge22.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Ventricular</h4>
+	            <svg id="fillgauge23" width="100%" height="100%" onclick="gauge23.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Wobble</h4>
+	            <svg id="fillgauge24" width="100%" height="100%" onclick="gauge24.update(NewValue());"></svg>
+	        </div>
+	        <div  style="" class="gaugebox">
+	            <h4 style="color:white">Yawny</h4>
+	            <svg id="fillgauge25" width="100%" height="100%" onclick="gauge25.update(NewValue());"></svg>
+	        </div>
+	</div>
+</div>
+
+
+<div id="controls">
+	<a id="save"><img src="img/analyse.png"></a>
+	<img id="record" src="img/mic128.png" onclick="toggleRecording(this);">
+</div>
+
+<script src="js/recorderjs/recorder.js"></script>
+<script src="js/data.js"></script>
+<script src="js/audiodisplay.js"></script>
+
+<script src="scripts/audiobuffer-slice.js"></script>
+<script src="scripts/vendor/chroma.js"></script>
+<script src="spectrogram.js"></script>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="updatingBarChart.js"></script>
+<script src="js/LiquidFillGauge.js" language="JavaScript"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
